@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Superduper</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
@@ -15,13 +15,99 @@
               blue: "#073B74",
               grey: "#858C8E",
               lightw: "#D9D9D9",
+              lighgrey: "#343A40",
             },
           },
         },
       };
     </script>
-</head>
-<body>
-    
-</body>
+   
+  </head>
+  <body>
+    <!-- forgot form start -->
+    <div class="flex justify-center items-center z-1 p-5">
+      <div class="max-w-4xl w-full">
+        <img src="images\logo1.png" alt="logoimg" class="w-[180px]" />
+
+        <div
+          class="flex gap-6 md:flex-nowrap flex-wrap items-end h-fit-content mt-5"
+        >
+          <div>
+            <img src="images\forgotpas.png" alt="forgotimg" class="w-[350px]" />
+          </div>
+          <div class="pb-5">
+            <p class="text-center text-blue font-bold text-2xl">
+              Forgot Password ?
+            </p>
+            <div
+              class="p-4 mt-3 max-w-md rounded-md border-l-4 border-blue border-r-2 border-blue border-t-8 border-blue border-b-8 border-blue"
+            >
+              <!-- form start -->
+              <div class="px-8 py-4">
+                <form>
+                  <p class="text-lighgrey">
+                    enter the email address associated with your account. we’ll
+                    send you instructions to reset your password.
+                  </p>
+                  <div class="mt-3">
+                    <label
+                      for="lname"
+                      class="text-lighgrey text-[15px] font-semibold"
+                      >Email</label
+                    ><br />
+                    <input
+                      placeholder="Enter your email"
+                      type="email"
+                      name="fname"
+                      class="border-[1px] bg-lightw text-sm border-grey w-full p-2 px-3 rounded-md focus:outline-none"
+                    />
+                  </div>
+                  <a href="./setnewpassword.html">
+                    <input
+                      value="continue"
+                      class="bg-blue w-full focus:outline-none text-center py-2 text-white mt-7 rounded-md"
+                  /></a>
+
+                  <div class="text-center mt-3 font-semibold">
+                    <span class="text-lighgrey">Don't have an account ?</span>
+                    <!-- <a href="./index.html"> -->
+
+                    <span class="text-blue text-md">Singup</span>
+                    <!-- </a> -->
+                  </div>
+                </form>
+              </div>
+              <!-- form end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- forgot form end -->
+  
+    <script src="js/main.js"></script>
+    <script>
+      let currentStep = 1;
+
+      function nextStep(step) {
+        if (step < 3) {
+          document.querySelector(`.step.active`).classList.remove("active");
+          document
+            .querySelector(`.step:nth-child(${step + 1})`)
+            .classList.add("active");
+          currentStep = step + 1;
+        }
+      }
+
+      function prevStep(step) {
+        if (step > 1) {
+          document.querySelector(`.step.active`).classList.remove("active");
+          document
+            .querySelector(`.step:nth-child(${step - 1})`)
+            .classList.add("active");
+          currentStep = step - 1;
+        }
+      }
+    </script>
+  </body>
 </html>
