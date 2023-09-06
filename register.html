@@ -31,26 +31,18 @@
               grey: "#858C8E",
               lightw: "#D9D9D9",
               lighgrey: "#343A40",
+              green: "#159800",
             },
           },
         },
       };
     </script>
-    <!-- <style>
-      /* Custom styles for the stepper */
-      .step {
-        display: none;
-      }
-      .step.active {
-        display: block;
-      }
-    </style> -->
   </head>
   <body>
     <!-- try steper ster -->
     <div class="flex justify-center items-center z-1 p-5">
       <div
-        class="max-w-xl p-4 w-full rounded-md border-l-4 border-blue border-r-2 border-blue border-t-8 border-blue border-b-8 border-blue"
+        class="max-w-3xl p-4 w-full rounded-md border-l-4 border-blue border-r-2 border-blue border-t-8 border-blue border-b-8 border-blue"
       >
         <!-- class="p-12 shadow-md rounded-2xl bg-white mx-auto border-solid border-2 border-gray-100 mb-8" -->
         <img src="images\logo1.png" alt="img" class="mx-auto" />
@@ -58,20 +50,20 @@
           <form id="signUpForm" action="#!">
             <!-- start step indicators -->
             <div class="form-header flex gap-3 mb-4 text-xs text-center">
-              <span class="stepIndicator flex-1 pb-8 relative"
-                >Account Setup</span
-              >
-              <span class="stepIndicator flex-1 pb-8 relative"
-                >Social Profiles</span
-              >
-              <span class="stepIndicator flex-1 pb-8 relative"
-                >Personal Details</span
-              >
+              <span class="stepIndicator flex-1 pb-8 relative">
+                EMAIL ID & GST
+              </span>
+              <span class="stepIndicator flex-1 pb-8 relative">
+                PASSWORD CREATION
+              </span>
+              <span class="stepIndicator flex-1 pb-8 relative">
+                ONBOARDING DASHBOARD
+              </span>
             </div>
             <!-- end step indicators -->
 
             <!-- step one -->
-            <div class="step">
+            <div class="step md:w-[70%] w-[100%]">
               <div class="mb-6">
                 <label class="text-[13px] text-lighgrey font-semibold"
                   >Enter Mobile Number</label
@@ -82,7 +74,6 @@
                     type="email"
                     name="email"
                     class="w-full mt-2 px-4 py-1 rounded-md text-gray-700 font-medium border-solid border-[1px] border-blue focus:outline-none"
-                    oninput="this.className = 'w-full px-4 py-3 rounded-md text-gray-700 font-medium border-solid border-2 border-gray-200'"
                   />
                   <button
                     class="absolute top-[8px] text-[10px] bottom-[2px] right-[2px] bg-blue text-white px-3 rounded focus:outline-none"
@@ -100,7 +91,6 @@
                   type="email"
                   name="email"
                   class="w-full mt-2 px-4 py-1 rounded-md text-gray-700 font-medium border-solid border-[1px] border-blue focus:outline-none"
-                  oninput="this.className = 'w-full px-4 py-3 rounded-md text-gray-700 font-medium border-solid border-2 border-gray-200'"
                 />
               </div>
               <div class="">
@@ -135,7 +125,6 @@
                   type="email"
                   name="email"
                   class="w-full mt-2 px-4 py-1 rounded-md text-gray-700 font-medium border-solid border-[1px] border-blue focus:outline-none"
-                  oninput="this.className = 'w-full px-4 py-3 rounded-md text-gray-700 font-medium border-solid border-2 border-gray-200'"
                 />
                 <div class="mt-4">
                   <p class="text-lighgrey text-[13px] font-bold">
@@ -153,7 +142,7 @@
             </div>
 
             <!-- step two -->
-            <div class="step mt-3">
+            <div class="step mt-3 md:w-[70%] w-[100%]">
               <p class="text-lighgrey text-[13px] font-bold">
                 We’ve sent a verification link to your email
               </p>
@@ -165,36 +154,94 @@
                 choose to fill them in the next step.
               </p>
               <div class="mb-3 mt-4">
-                <label class="text-[13px] text-lighgrey font-semibold"
-                  >Create Password</label
-                >
-                <span class="text-clifford text-[12px] font-bold">*</span>
-                <div class="relative">
-                  <input
-                    type="email"
-                    name="email"
-                    class="w-full mt-2 px-4 py-1 rounded-md text-gray-700 font-medium border-solid border-[1px] border-blue focus:outline-none"
-                    oninput="this.className = 'w-full px-4 py-3 rounded-md text-gray-700 font-medium border-solid border-2 border-gray-200'"
-                  />
-                  <div class="absolute top-[12px] right-[10px] bottom-0">
-                    <i class="fa-solid fa-eye-slash"></i>
+                <div class="py-2" x-data="{ show: true }">
+                  <label class="text-[13px] text-lighgrey font-semibold"
+                    >Create Password</label
+                  >
+                  <span class="text-clifford text-[12px] font-bold">*</span>
+                  <div class="relative">
+                    <input
+                      placeholder=""
+                      :type="show ? 'password' : 'text'"
+                      class="focus:outline-none w-full mt-2 px-4 py-1 rounded-md text-gray-700 font-medium border-solid border-[1px] border-blue"
+                    />
+                    <div
+                      class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5"
+                    >
+                      <svg
+                        class="h-6 text-gray-700"
+                        fill="none"
+                        @click="show = !show"
+                        :class="{'hidden': !show, 'block':show }"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
+                        ></path>
+                      </svg>
+
+                      <svg
+                        class="h-6 text-gray-700"
+                        fill="none"
+                        @click="show = !show"
+                        :class="{'block': !show, 'hidden':show }"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 640 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z"
+                        ></path>
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="mb-6">
-                <label class="text-[13px] text-lighgrey font-semibold"
-                  >Confirm Password</label
-                >
-                <span class="text-clifford text-[12px] font-bold">*</span>
-                <div class="relative">
-                  <input
-                    type="email"
-                    name="email"
-                    class="w-full mt-2 px-4 py-1 rounded-md text-gray-700 font-medium border-solid border-[1px] border-blue focus:outline-none"
-                    oninput="this.className = 'w-full px-4 py-3 rounded-md text-gray-700 font-medium border-solid border-2 border-gray-200'"
-                  />
-                  <div class="absolute top-[12px] right-[10px] bottom-0">
-                    <i class="fa-solid fa-eye-slash"></i>
+                <div class="py-2" x-data="{ show: true }">
+                  <label class="text-[13px] text-lighgrey font-semibold"
+                    >Confirm Password
+                  </label>
+                  <span class="text-clifford text-[12px] font-bold">*</span>
+                  <div class="relative">
+                    <input
+                      placeholder=""
+                      :type="show ? 'password' : 'text'"
+                      class="focus:outline-none w-full mt-2 px-4 py-1 rounded-md text-gray-700 font-medium border-solid border-[1px] border-blue"
+                    />
+                    <div
+                      class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5"
+                    >
+                      <svg
+                        class="h-6 text-gray-700"
+                        fill="none"
+                        @click="show = !show"
+                        :class="{'hidden': !show, 'block':show }"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
+                        ></path>
+                      </svg>
+
+                      <svg
+                        class="h-6 text-gray-700"
+                        fill="none"
+                        @click="show = !show"
+                        :class="{'block': !show, 'hidden':show }"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 640 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z"
+                        ></path>
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -208,7 +255,6 @@
                   type="email"
                   name="email"
                   class="w-full mt-2 px-4 py-1 rounded-md text-gray-700 font-medium border-solid border-[1px] border-blue focus:outline-none"
-                  oninput="this.className = 'w-full px-4 py-3 rounded-md text-gray-700 font-medium border-solid border-2 border-gray-200'"
                 />
               </div>
               <div class="mb-6">
@@ -220,64 +266,195 @@
                   type="email"
                   name="email"
                   class="w-full mt-2 px-4 py-1 rounded-md text-gray-700 font-medium border-solid border-[1px] border-blue focus:outline-none"
-                  oninput="this.className = 'w-full px-4 py-3 rounded-md text-gray-700 font-medium border-solid border-2 border-gray-200'"
                 />
               </div>
             </div>
 
             <!-- step three -->
             <div class="step">
-              <p
-                class="text-md text-gray-700 leading-tight text-center mt-8 mb-5"
-              >
-                We will never sell it
+              <p class="text-black text-md font-bold mt-3">Hello .....</p>
+              <p class="text-[13px] font-bold leading-tight mt-2 mb-5">
+                Mobile & Email Verification
               </p>
-              <div class="mb-6">
-                <input
-                  type="text"
-                  placeholder="Full name"
-                  name="fullname"
-                  class="w-full px-4 py-3 rounded-md text-gray-700 font-medium border-solid border-2 border-gray-200"
-                  oninput="this.className = 'w-full px-4 py-3 rounded-md text-gray-700 font-medium border-solid border-2 border-gray-200'"
-                />
+              <div class="flex flex-col justify-between mb-4">
+                <div class="flex justify-between md:flex-nowrap flex-wrap">
+                  <p class="font-bold mt-1">
+                    <i class="fa-solid fa-mobile-screen-button me-2"></i>
+                    *********
+                  </p>
+                  <button
+                    class="bg-green text-[12px] rounded p-1 mt-1 text-white"
+                  >
+                    verified
+                  </button>
+                </div>
+                <div class="flex justify-between md:flex-nowrap flex-wrap">
+                  <p class="font-bold mt-1">
+                    <i class="fa-solid fa-envelope me-2"></i>***********
+                  </p>
+                  <button class="text-blue font-bold text-[13px] mt-1">
+                    Reset email
+                  </button>
+                </div>
               </div>
-              <div class="mb-6">
-                <input
-                  type="text"
-                  placeholder="Mobile"
-                  name="mobile"
-                  class="w-full px-4 py-3 rounded-md text-gray-700 font-medium border-solid border-2 border-gray-200"
-                  oninput="this.className = 'w-full px-4 py-3 rounded-md text-gray-700 font-medium border-solid border-2 border-gray-200'"
-                />
+              <hr />
+              <div class="md:w-[70%] w-[100%]">
+                <p class="text-black text-[15px] font-semibold mt-3">
+                  ID & Signature Verification
+                </p>
+                <div class="">
+                  <p class="text-[13px] font-semibold mt-3">
+                    What are you looking to sell on Super Duper?
+                  </p>
+                  <div class="mt-3">
+                    <button
+                      class="bg-blue text-white p-3 rounded text-[14px] mt-2 focus:outline-none"
+                    >
+                      <i class="fa-solid fa-book me-2 text-xl"></i>All
+                      Categories
+                    </button>
+                    <button
+                      class="bg-white text-blue focus:outline-none p-2 rounded text-[14px] border-[1px] border-blue me-2 mt-2"
+                    >
+                      <div class="flex items-center">
+                        <i class="fa-solid fa-book me-2 text-xl"></i>
+                        <div>
+                          <small class="text-[14px] font-bold"
+                            >only books</small
+                          >
+                          <p class="text-[10px] m-0 p-0">(pan is manadatory)</p>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="mb-8 mt-4">
+                  <label class="text-[13px] text-lighgrey font-semibold"
+                    >Enter Gsint</label
+                  >
+
+                  <input
+                    type="email"
+                    name="email"
+                    class="w-full mt-2 px-4 py-1 rounded-md text-gray-700 font-medium border-solid border-[1px] border-blue focus:outline-none"
+                  />
+                  <p class="text-[12px] text-lighgrey font-semibold mt-3">
+                    GSTIN is required to sell products on Flipkart.
+                  </p>
+                  <p class="text-black text-[15px] font-semibold mt-3">
+                    Add Your e-Signature
+                  </p>
+                </div>
+                <hr />
+                <p class="text-black text-[15px] font-semibold mt-3">
+                  Store & Pickup Details
+                </p>
+                <div class="mb-3 mt-4">
+                  <label class="text-[13px] text-lighgrey font-semibold"
+                    >Enter Your Full Name</label
+                  >
+
+                  <input
+                    type="email"
+                    placeholder="Enter your fullname"
+                    name="email"
+                    class="w-full text-[12px] mt-2 px-4 py-1 rounded-md text-gray-700 font-medium border-solid border-[1px] border-blue focus:outline-none"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="text-[13px] text-lighgrey font-semibold"
+                    >Enter Display Name</label
+                  >
+
+                  <input
+                    placeholder="Enter Display Name"
+                    type="email"
+                    name="email"
+                    class="w-full text-[12px] mt-2 px-4 py-1 rounded-md text-gray-700 font-medium border-solid border-[1px] border-blue focus:outline-none"
+                  />
+
+                  <div class="h-full w-full flex place-items-center mt-3">
+                    <input
+                      type="checkbox"
+                      name="themeToggler"
+                      id="themeToggler"
+                      class="peer accent-[#50d71e] text-[12px]"
+                    />
+                    <label
+                      for="themeToggler"
+                      class="peer-checked:text-green text-[12px] text-bold ms-2"
+                      >Your display name is available</label
+                    >
+                  </div>
+                </div>
+                <div class="mb-3 mt-4">
+                  <label class="text-[13px] text-lighgrey font-semibold"
+                    >Enter Store Description</label
+                  >
+                  <textarea
+                    class="w-full mt-2 text-[12px] px-4 py-1 rounded-md text-gray-700 font-medium border-solid border-[1px] border-blue focus:outline-none"
+                    id="w3review"
+                    name="w3review"
+                    rows="4"
+                    cols="50"
+                  ></textarea>
+                </div>
+                <p class="text-black text-[15px] font-semibold mt-4">
+                  Pickup Pincode
+                </p>
+                <div class="mb-3 mt-4">
+                  <label class="text-[13px] text-lighgrey font-semibold"
+                    >Enter Pickup Pincode *</label
+                  >
+
+                  <input
+                    type="email"
+                    placeholder="Display Name"
+                    name="email"
+                    class="w-full text-[12px] mt-2 px-4 py-1 rounded-md text-gray-700 font-medium border-solid border-[1px] border-blue focus:outline-none"
+                  />
+                </div>
               </div>
-              <div class="mb-6">
-                <input
-                  type="text"
-                  placeholder="Address"
-                  name="address"
-                  class="w-full px-4 py-3 rounded-md text-gray-700 font-medium border-solid border-2 border-gray-200"
-                  oninput="this.className = 'w-full px-4 py-3 rounded-md text-gray-700 font-medium border-solid border-2 border-gray-200'"
-                />
+              <hr class="my-3" />
+              <!-- listing stock start -->
+              <div class="mt-3">
+                <p class="text-black text-[15px] font-semibold mt-4">
+                  Listing & Stock Availability
+                </p>
+                <div class="flex gap-4 mt-4 md:flex-nowrap flex-wrap">
+                  <p class="text-[13px] text-lighgrey font-semibold">
+                    List products which are already available on Flipkart
+                  </p>
+                  <input
+                    type="search"
+                    placeholder="search by brand and fsn"
+                    class="w-full text-[12px] mt-2 px-4 py-1 rounded-md text-gray-700 font-medium border-solid border-[1px] border-blue focus:outline-none"
+                  />
+                </div>
+                <p class="mt-3 text-[13px] text-lighgrey font-semibold">or</p>
+                <p class="mt-3 text-[13px] text-lighgrey font-semibold">
+                  Have a new product?
+                </p>
+                <p class="mt-3 text-[13px] text-lighgrey font-semibold">or</p>
+                <p class="mt-3 text-[13px] text-lighgrey font-semibold">
+                  Add products with high demand at Flipkart.
+                </p>
+                <div class="mt-4">
+                  <img src="images\multiim.png" alt="multiimg" />
+                </div>
               </div>
+              <!-- listing stock end -->
             </div>
 
             <!-- start previous / next buttons -->
-            <div class="form-footer flex gap-3">
-              <!-- <button
-                type="button"
-                id="prevBtn"
-                class="flex-1 focus:outline-none border border-gray-300 py-2 px-5 rounded-lg shadow-sm text-center text-gray-700 bg-white hover:bg-gray-100 text-lg"
-                onclick="nextPrev(-1)"
-              >
-                Previous
-              </button> -->
+            <div class="form-footer gap-3">
               <button
                 type="button"
                 id="nextBtn"
-                class="flex-1 border border-transparent focus:outline-none p-3 rounded-md text-center text-white bg-indigo-600 hover:bg-indigo-700 text-lg"
+                class="flex-1 border border-transparent focus:outline-none p-3 rounded-md text-center text-white bg-blue text-lg w-[50%]"
                 onclick="nextPrev(1)"
               >
-                continuing
+                continue
               </button>
             </div>
             <!-- end previous / next buttons -->
@@ -368,5 +545,9 @@
         x[n].className += " active";
       }
     </script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"
+    ></script>
   </body>
 </html>
