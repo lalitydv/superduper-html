@@ -53,7 +53,7 @@ body{
 #signUpForm .step {
   display: none;
 }
-/* admin csss */
+/* admin csss
 /* Googlefont Poppins CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
@@ -492,4 +492,23 @@ nav .profile-details i{
     left: 60px;
     width: calc(100% - 60px);
   }
+} 
+/* dropdown start */
+.dropdown {
+  position: absolute;
+  width: 130px;
+ 
+  height: fit-content;
+  z-index: 9999;
+  
+  /* background-color: lightblue; */
+  display: none;
 }
+.toggler:focus {
+  outline: none;
+}
+
+.toggler:focus + .dropdown {
+  display: block;
+}
+/* dropdown end */
