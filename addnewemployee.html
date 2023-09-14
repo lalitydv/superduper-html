@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tailwind Admin Starter Template : Tailwind Toolbox</title>
+    <meta name="author" content="name" />
+    <meta name="description" content="description here" />
+    <meta name="keywords" content="keywords,here" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
+    <!--Totally optional :) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"
+      integrity="sha256-xKeoJ50pzbUGkpQxDYHD7o7hxe0LaOGeguUidbq6vis="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              blue: "#073B74",
+              darkblue: "#073B74",
+              grey: "#858C8E",
+              lightw: "#D9D9D9",
+              whitel: "#FAFAFC",
+              green:"#3BB77E",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-sans leading-normal tracking-normal mt-12">
+    <header>
+      <!--Nav-->
+      <nav
+        aria-label="menu nav"
+        class="bg-white shadow pt-2 md:pt-1 pb-1 px-1 mt-0 h-auto fixed w-full z-20 top-0"
+      >
+        <div class="flex flex-wrap items-center">
+          <div
+            class="flex flex-shrink md:w-1/3 justify-center md:justify-start text-white"
+          >
+            <a href="#" aria-label="Home">
+              <span class="text-xl p-0">
+                <img src="./images/logo1.png" alt="adminlogo" />
+                <!-- <i class="em em-grinning"></i> -->
+              </span>
+            </a>
+          </div>
+
+          <div
+            class="flex flex-1 md:w-1/3 justify-center md:justify-start text-white px-2"
+          ></div>
+
+          <div
+            class="flex w-full pt-2 content-center justify-between md:w-1/3 md:justify-end"
+          >
+            <ul
+              class="list-reset flex justify-between flex-1 md:flex-none items-center"
+            >
+              <li class="flex-1 md:flex-none md:mr-3">
+                <a
+                  class="inline-block py-2 px-4 text-white no-underline"
+                  href="#"
+                  ><img src="./images/flag.png" alt="adminlogo"
+                /></a>
+              </li>
+              <li class="flex-1 md:flex-none md:mr-3">
+                <a href="#" aria-label="Home">
+                  <span class="text-xl p-0">
+                    <img src="./images/icon1.png" alt="adminlogo" />
+                    <!-- <i class="em em-grinning"></i> -->
+                  </span>
+                </a>
+              </li>
+
+              <li class="flex-1 md:flex-none md:mr-3">
+                <a href="#" aria-label="Home">
+                  <span class="text-xl p-0">
+                    <img src="./images/icon2.png" alt="adminlogo" />
+                    <!-- <i class="em em-grinning"></i> -->
+                  </span>
+                </a>
+              </li>
+              <li class="flex-1 md:flex-none md:mr-3">
+                <a href="#" aria-label="Home">
+                  <span class="text-xl p-0">
+                    <i class="fa-regular fa-bell"></i>
+                    <!-- <i class="em em-grinning"></i> -->
+                  </span>
+                </a>
+              </li>
+              <li class="flex-1 md:flex-none md:mr-3">
+                <a href="#" aria-label="Home">
+                  <span class="text-xl p-0">
+                    <img src="./images/profile.png" alt="adminlogo" />
+                    <!-- <i class="em em-grinning"></i> -->
+                  </span>
+                </a>
+              </li>
+              <li class="flex-1 md:flex-none md:mr-3">
+                <a href="#" aria-label="Home">
+                  <span class="text-xl p-0">
+                    <i class="fa-sharp fa-solid fa-gear"></i>
+                    <!-- <i class="em em-grinning"></i> -->
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="flex flex-col md:flex-row">
+        <nav aria-label="alternative nav">
+          <div
+            class="bg-white  h-20 fixed bottom-0 mt-12 md:relative md:h-screen z-10 w-full md:w-48 content-center"
+          >
+            <div
+              class="md:mt-12 md:w-48 md:fixed md:left-0 md:top-0 content-center md:content-start text-left justify-between"
+            >
+            <div class="md:mt-[400px] md:block hidden">
+                <div class="border-white md:mt-[400px] rounded-3xl flex flex-col top-10 left-0 w-14  md:w-56 h-screen bg-white shadow-2xl dark:bg-gray-900 text-blue transition-all duration-300 border-none z-10 sidebar ">
+                  <div class=" border-white rounded-r-3xl fixed flex flex-col top-14 left-0 w-14  md:w-56 h-screen bg-white shadow-2xl dark:bg-gray-900 text-blue transition-all duration-300 border-none z-10 sidebar">
+                    <div
+                   class="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow text-md
+        "
+                    >
+                      <ul class="flex flex-col py-14 px-  space-y-1">
+                        <li>
+                          <div class=" relative item-center justify-center  flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                            <img src="images\admlogo.png" alt="img" class="w-20 h-20" />
+                            <span>Store Name</span>
+                          </div>
+                        </li>
+                        <li>
+                          <Link
+                            to="/"
+                         class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                          >
+                            <span class="inline-flex justify-center items-center ml-4">
+                             
+                              <i class="fa-solid fa-house" class=" text-md"></i>
+                            </span>
+                            <span class="ml-2  tracking-wide truncate">
+                              Dashboard
+                            </span>
+                          </Link>
+                        </li>
+                        <li>
+                          <div class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                            <span class="inline-flex justify-center items-center ml-4">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </span>
+                            <span class="ml-2  tracking-wide truncate">Orders</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                            <span class="inline-flex justify-center items-center ml-4">
+                             
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </span>
+                            <span class="ml-2  tracking-wide truncate">
+                              Category
+                            </span>
+                          </div>
+                        </li>
+                        <li class="relative">
+                          <div class="relative flex flex-row active:text-black items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                            <span class="inline-flex justify-center items-center ml-4">
+                             
+                              <i class="fa-solid fa-shop"></i>
+                            </span>
+                            <span class="ml-2  tracking-wide truncate">
+                              Product
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                            <span class="inline-flex justify-center items-center ml-4">
+                                <i class="fa-thin fa-layer-group"></i>
+                            </span>
+                            <span class="ml-2  tracking-wide truncate">
+                              Store Profile
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                            <span class="inline-flex justify-center items-center ml-4">
+                                <i class="fa-regular fa-bell"></i>
+                            </span>
+                            <span class="ml-2  tracking-wide truncate">
+                              Notifications
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                            <span class="inline-flex justify-center items-center ml-4">
+                                <i class="fa-regular fa-credit-card"></i>
+                            </span>
+                            <span class="ml-2  tracking-wide truncate">Coupon</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                            <span class="inline-flex justify-center items-center ml-4">
+                                <i class="fa-regular fa-credit-card"></i>
+                            </span>
+                            <span class="ml-2 font-semibold  tracking-wide truncate">Payout</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <div class="relative inline-flex self-center">
+                                <svg class="text-white absolute top-0 right-0 m-2 pointer-events-none p-2 rounded" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 38 22" version="1.1">
+                                    <title>F09B337F-81F6-41AC-8924-EC55BA135736</title>
+                                    <g id="ZahnhelferDE—Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="ZahnhelferDE–Icon&amp;Asset-Download" transform="translate(-539.000000, -199.000000)" fill="#ffffff" fill-rule="nonzero">
+                                            <g id="Icon-/-ArrowRight-Copy-2" transform="translate(538.000000, 183.521208)">
+                                                <polygon id="Path-Copy" transform="translate(20.000000, 18.384776) rotate(135.000000) translate(-20.000000, -18.384776) " points="33 5.38477631 33 31.3847763 29 31.3847763 28.999 9.38379168 7 9.38477631 7 5.38477631"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <select class="text-md font-semibold rounded  text-white h-14 w-60 pl-5 pr-10 bg-darkblue hover:border-gray-400 focus:outline-none appearance-none">
+                                  <i class="fa-solid fa-user"></i>
+                                    <option>My Profile</option>
+                                    <option>Add New Employee</option>
+                                    <option>Employee List</option>
+                                    <option>Add Role</option>
+                                    <option>Role List </option>
+                                </select>
+                            </div>
+                        </div>
+                        </li>
+        
+                     
+                        <li class="mt-4">
+                          <div class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6 bg-blue rounded-md">
+                            <span class="inline-flex justify-center items-center  ml-4">
+                              <IoLogOutOutline
+                             class="bg-white  text-blue text-md
+        "
+                              />
+                            </span>
+                            <span class="ml-2  tracking-wide truncate">Logout</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <section class="md:w-75 w-full px-5">
+          <div
+            id="main"
+            class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5"
+          >
+            <!-- only for demo start -->
+            <div class="w-full">
+              <div class="flex flex-col md:mx-4 mx-2 gap-5">
+                <div class="bg-white rounded-3xl md:p-4 p-8">
+                  <div class="flex lg:flex-nowrap gap-4 flex-wrap box-border">
+                    <div class="lg:w-[100%] md:w-[100%]">
+                      <div class="mt-4">
+                        <div
+                          class="relative overflow-hidden md:text-md text-lg"
+                        >
+                         
+               
+                          <!-- addnew page start  -->
+                           <div className="w-screen  ">
+                            <div class="bg-white rounded-l-full  md:w-full  shadow-md">
+                              <div class="flex justify-between items-center ">
+                                <div class="md:pl-4 ">overview</div>
+                                <div class="">
+                                  show
+                                  <span class="md:ml-4">this month</span>
+                                </div>
+                                <div class=" ">
+                                  <form class=" border-2 border-black  md:rounded-2xl  md:my-2 md:px-20 md:py-2">
+                                   
+                  
+                                    <input
+                                      type="text"
+                                      value="name"
+                                      placeholder="Search "
+                                    class=" text-black"
+                                    />
+                  
+                                    <HiSearch class=" inline-block     text-gray" />
+                                  </form>
+                                </div>
+                                <button class="bg-blue text-white md:px-6 rounded-xl md:py-2">
+                                  add New Product
+                                </button>
+                              </div>
+                            </div>
+                            <div class="bg-white rounded-2xl py-10  md:w-full mt-10 p-4 overflow-hidden  shadow-md">
+                              <div class="flex gap-4 items-center ">
+                                <a href="Myprofile.html">
+                                <div class="border-gray border-2 px-10 py-3 rounded-xl text-sm text-black ">
+                                  My Profile
+                                </div></a>
+                                <a href="addnewemployee.html">
+                                <div class="  bg-blue px-2 py-3 rounded-xl text-white  text-sm ">
+                                  Add New Employee
+                                </div></a>
+                                <a href="employeelist.html">
+                                <div class=" border-gray border-2 px-10 py-3 rounded-xl text-sm text-black ">
+                                  Employee List
+                                </div></a>
+                                <a href="Addrole.html">
+                                <div class=" border-gray border-2 px-10 py-3 rounded-xl text-sm text-black ">
+                                  Add Role
+                                </div>
+                            </a>
+                                <div class=" border-gray border-2 px-10 py-3 rounded-xl text-sm text-black ">
+                                  Role List
+                                </div>
+                              </div>
+                            </div>
+                            <div clas="flex items-center py-4 gap-2 bg-[#F1F1F1]">
+                              <img src={infinity} alt="" />
+                              Add new employee. Enter following details to create new employee.{" "}
+                              <span class="text-blue"> Select user rights first .</span>
+                            </div>
+                  
+                            <div class="bg-white rounded-xl gap-x-64 py-10 flex  items-center md:w-full  p-4 overflow-hidden  shadow-md">
+                              <div class="">
+                                <div class="my-4">
+                                  <div class="flex   items-center ">
+                                    <div class="bg-yellow px-2 py-2 rounded-md text-white  text-sm  ">
+                                      Super Admin
+                                    </div>
+                                    <div class="  border-gray border-2 px-4 py-2 rounded-md text-sm text-black ">
+                                      Default-Emp
+                                    </div>
+                                    <div class=" border-gray border-2 px-4 py-2 rounded-md text-sm text-black ">
+                                      Super Emp
+                                    </div>
+                                    <div class=" border-gray border-2 px-4 py-2 rounded-md text-sm text-black ">
+                                      12345678
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="my-4">
+                                  <h1>
+                                    Employee Name <sup class="text-red">*</sup>
+                                  </h1>
+                                  <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="+1234567890"
+                                  class=" rounded-xl border-4 border-gray px-10 w-96 py-2"
+                                  />
+                                </div>
+                                <div className="my-4">
+                                  <h1>
+                                    Gender <sup class="text-red">*</sup>
+                                  </h1>
+                  
+                                  <div>
+                                    <div class="flex items-center mb-4">
+                                      <input
+                                        id="default-radio-1"
+                                        type="radio"
+                                        defaultValue
+                                        name="default-radio"
+                                      class="w-4 h-4 text-blue-600 border-gray-300"
+                                      />
+                                      <label
+                                        htmlFor="default-radio-1"
+                                      class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                                      >
+                                        Male
+                                      </label>
+                                    </div>
+                                    <div class="flex items-center">
+                                      <input
+                                        defaultChecked
+                                        id="default-radio-2"
+                                        type="radio"
+                                        defaultValue
+                                        name="default-radio"
+                                      class="w-4 h-4 text-blue-600 "
+                                      />
+                                      <label
+                                        htmlFor="default-radio-2"
+                                      class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                                      >
+                                        Female
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="my-4">
+                                  <h1>
+                                    First Mobile No. <sup class="text-red">*</sup>
+                                  </h1>
+                                  <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="Address"
+                                  class=" rounded-xl border-4 border-gray px-10 w-96 py-2"
+                                  />
+                                </div>
+                                <div class="my-4">
+                                  <h1>Second Mobile No</h1>
+                                  <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="Address"
+                                  class=" rounded-xl border-4 border-gray px-10 w-96 py-2"
+                                  />
+                                </div>
+                  
+                                <div class="flex gap-8 my-4 ">
+                                  <div>
+                                    <h1>
+                                      Country <sup class="text-red">*</sup>
+                                    </h1>
+                                    <input
+                                      type="text"
+                                      name=""
+                                      id=""
+                                      placeholder="123456"
+                                    class=" rounded-xl border-4 border-gray px-10 w-44 py-2"
+                                    />
+                                  </div>
+                  
+                                  <div>
+                                    <h1>
+                                      Province <sup class="text-red">*</sup>
+                                    </h1>
+                                    <input
+                                      type="text"
+                                      name=""
+                                      id=""
+                                      placeholder="123456"
+                                    class=" rounded-xl border-4 border-gray px-10 w-44 py-2"
+                                    />
+                                  </div>
+                                </div>
+                  
+                                <div class="flex gap-8 my-4 ">
+                                  <div>
+                                    <h1>
+                                      City <sup class="text-red">*</sup>
+                                    </h1>
+                                    <input
+                                      type="text"
+                                      name=""
+                                      id=""
+                                      placeholder="INDIA"
+                                    class=" rounded-xl border-4 border-gray px-10 w-44 py-2"
+                                    />
+                                  </div>
+                  
+                                  <div>
+                                    <h1>
+                                      Zip code <sup class="text-red">*</sup>
+                                    </h1>
+                                    <input
+                                      type="text"
+                                      name=""
+                                      id=""
+                                      placeholder="(GMT+11:00)"
+                                    class=" rounded-xl border-4 border-gray px-10 w-44 py-2"
+                                    />
+                                  </div>
+                                </div>
+                  
+                                <div class="my-4">
+                                  <h1>
+                                    Address <sup class="text-red">*</sup>
+                                  </h1>
+                                  <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="Address"
+                                  class=" rounded-xl border-4 border-gray px-10 w-96 py-2"
+                                  />
+                                </div>
+                                <div className="my-4">
+                                  <h1>Pan Card No.</h1>
+                                  <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="Address"
+                                  class=" rounded-xl border-4 border-gray px-10 w-96 py-2"
+                                  />
+                                </div>
+                  
+                                <div class="flex gap-8 py-4  ">
+                                  <div class="">
+                                    <button class="text-white bg-green px-6 rounded-lg py-2">
+                                      Submit
+                                    </button>
+                                  </div>
+                  
+                                  <div class="">
+                                    <button class="text-white bg-clifford px-6 rounded-lg py-2">
+                                      Cancel
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div>
+                                <div class="bg-white rounded-xl  py-6  text-center   px-10 overflow-hidden  shadow-xl">
+                                  <h1 class="font-bold">Upload Employee Image</h1>
+                                  <p class="text-xs">No File Choosen</p>
+                                  <div class="border-2 text-center px-4 py-6 mt-2 rounded-xl border-dotted">
+                                    <img src="images\addprofileim.png" alt="img" class="mx-auto" />
+                                  </div>
+                                </div>
+                  
+                                <div className="mt-4">
+                                  <h1>
+                                    Password <sup class="text-red">*</sup>
+                                  </h1>
+                                  <div class=" ">
+                                    <form class=" border-2 border-gray  md:rounded-xl  md:my-2 md:px-4 md:py-2">
+                                      
+                  
+                                      <input
+                                        type="text"
+                                        placeholder="Enter password "
+                                      class=" text-black"
+                                      />
+                  
+                                      <IoIosEye class=" inline-block   ml-10  text-black" />
+                                    </form>
+                                  </div>
+                                </div>
+                  
+                                <button class="bg-blue px-14 py-2 text-white rounded-xl">
+                                  Generate Password
+                                </button>
+                              </div>
+                            </div>
+                          </div> 
+                          <!-- add new page end -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      /*Toggle dropdown list*/
+      function toggleDD(myDropMenu) {
+        document.getElementById(myDropMenu).classList.toggle("invisible");
+      }
+      /*Filter dropdown options*/
+      function filterDD(myDropMenu, myDropMenuSearch) {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById(myDropMenuSearch);
+        filter = input.value.toUpperCase();
+        div = document.getElementById(myDropMenu);
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (
+          !event.target.matches(".drop-button") &&
+          !event.target.matches(".drop-search")
+        ) {
+          var dropdowns = document.getElementsByclass("dropdownlist");
+          for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (!openDropdown.classList.contains("invisible")) {
+              openDropdown.classList.add("invisible");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
