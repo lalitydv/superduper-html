@@ -47,7 +47,9 @@
             
               darkblak:"#3C3C3C",
               lightgreen:"#BCEFD8",
-              greylight:"#E4E4E4"
+              greylight:"#E4E4E4",
+              secondary:"#253D4E",
+              skylight:"#C2F1FE",
             },
           },
         },
@@ -342,208 +344,162 @@
                                       </div>
                     
                                    
-                                    <!--  section start -->
-                                     
-                                        <div class="py-5 mt-4 bg-white  w-full  rounded-xl  shadow-md p-2">
-                                           <p class="text-blue font-bold">Add New Coupon</p>
-                                           <div class="bg-white rounded-xl shadow-md p-2 w-full">
-                                           
-                                           
-                    
-                                              <div class="md:flex grid  md:gap-8 gap-4 my-4 ">
-                                                <div class=" md:w-[50%] w-[100%]">
-                                                  <label class="text-blue font-semibold">Type</label>
-                                                  <select name="cars" id="cars" 
-                                                  style="width:100%" class="w-[100%]  bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 w-full px-4 md:w-80 py-2">
-                                                      <option value="volvo">Discount on Purchase </option>
-                                                      <option value="saab">Saab</option>
-                                                      <option value="mercedes">Mercedes</option>
-                                                      <option value="audi">Audi</option>
-                                                    </select>
+                                    <!-- card section start -->
+                               
+                                      <div class="rounded-lg grow flex-wrap   md:flex gap-5 mt-8">
+                                             <!-- card 1 -->
+                                        <div class="shadow-md shadow-grey  rounded-lg grow p-2 md:w-[20%] w-[100%] h-24 flex mt-2">
+                                            <div class="flex gap-20 items-center ">
+                                                <div class="w-[40%]">
+                                                    <img src="./images/card1.png" alt="img" class="w-[80px]"/>
                                                 </div>
-                      
-                                                <div class=" md:w-[50%] w-[100%]">
-                                                  <label class="text-blue font-semibold">title</label>
-                                                  <input
-                                                    type="text"
-                                                    name=""
-                                                    id=""
-                                                    placeholder="title"
-                                                    class="w-[100%]  bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80  py-2"
-                                                    style="width:100%"
-                                                    />
-                                                </div>
-                                              </div>
-                      
-                                              <div class="md:flex grid  md:gap-8 gap-4 my-4">
-                                                <div class="grow  md:w-[50%] w-[100%]">
-                                                  <label class="text-blue font-semibold">Code</label>
-                                                  <input
-                                                    type="text"
-                                                    name=""
-                                                    id=""
-                                                    placeholder="Discount on Purchase "
-                                                    class="w-[100%]  bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                                    style="width:100%"
-                                                    />
-                                                </div>
-                      
-                                                <div class="grow  md:w-[50%] w-[100%]">
-                                                  <label class="text-blue font-semibold">Discount Type</label>
-                                                  <select name="cars" id="cars" 
-                                                  style="width:100%" class="w-[100%]  bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 w-full px-4 md:w-80 py-2">
-                                                      <option value="volvo">Amount </option>
-                                                      <option value="saab">Saab</option>
-                                                      <option value="mercedes">Mercedes</option>
-                                                      <option value="audi">Audi</option>
-                                                    </select>
-                                                </div>
-                                              </div>
-                                              <div class="md:flex grid  md:gap-8 gap-4 my-4 ">
-                                                <div class="grow  md:w-[50%] w-[100%]">
-                                                  <label class="text-blue font-semibold">Start Date</label>
-                                                  <input
-                                                    type="date"
-                                                    name=""
-                                                    id=""
-                                                    placeholder="address line 1* "
-                                                    style="width:100%"
-                                                    class="w-full  bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                                    style="width:100%"
-                                                    />
-                                                </div>
-                      
-                                                <div class="grow  md:w-[50%] w-[100%]">
-                                                  <label class="text-blue font-semibold">Expire date</label>
-                                                  <input
-                                                    type="date"
-                                                    name=""
-                                                    id=""
-                                                    placeholder="address line 2"
-                                                    class="w-[100%]  bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80  py-2"
-                                                    style="width:100%"
-                                                    />
-                                                </div>
-                                              </div>
-                                              <div class="md:flex grid  md:gap-8 gap-4 my-4 ">
-                                                <div class="grow  md:w-[50%] w-[100%]">
-                                                  <label class="text-blue font-semibold">limit for same user</label>
-                                                  <input
-                                                    type="text"
-                                                    name=""
-                                                    id=""
-                                                    placeholder="postcode/zipcode* "
-                                                  
-                                                    class="w-[100%]  bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                                    style="width:100%"
-                                                    />
-                                                </div>
-                      
-                                                <div class="grow  md:w-[50%] w-[100%]">
-                                                  <label class="text-blue font-semibold">minimum purchse</label>
-                                                
-                                                  <input
-                                                    type="text"
-                                                    name=""
-                                                    id=""
-                                                    placeholder="city*"
-                                                    class="w-[100%]   bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 px-4 md:w-80  py-2"
-                                                    style="width:100%"
-                                                    />
-                                                </div>
-                                              </div>
-                                              <div class="flex  items-end justify-between gap-4 my-4  ">
-                                                  <div class="grow  md:w-[50%] w-[100%]">
-                                                    <label class="text-blue font-semibold">discount</label>
-                                                    <input
-                                                      type="text"
-                                                      name=""
-                                                      id=""
-                                                      placeholder="postcode/zipcode* "
-                                                    
-                                                      class="w-[100%]  bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                                      style="width:100%"
-                                                      />
-                                                  </div>
-                        
-                                                  <div class="grow  md:w-[50%] w-[100%]">
-                                                    
-                                                  
-                                                    <input
-                                                      type="button"
-                                                      value="save details"
-                                                      name=""
-                                                      id=""
-                                                      placeholder="city*"
-                                                      class="w-[100%] text-white   bg-blue focus:outline-none rounded-xl border-4 border-gray md:px-4 px-4 md:w-80  py-2"
-                                                      style="width:100%"
-                                                      />
-                                                  </div>
-                                              </div>
+                                                <div class="w-[60%]">
+                                                    <p class="text-blue font-bold text-[12px]">total earning</p>
+                                                    <p class="text-blue font-bold text-[12px]">$16,789</p>
+                                                    </div>
+                                               
                                             </div>
-                                        </div> 
-                                        <hr>
-                                    <!--  section end -->
+                                            
+                                        </div>
+                                        <!-- card 2 -->
+                                        <div class="shadow-md shadow-grey  rounded-lg grow p-2 md:w-[20%] w-[100%] h-24 flex mt-2">
+                                            <div class="flex gap-20 items-center">
+                                                <div class="w-[40%]">
+                                                    <img src="./images/card2.png" alt="img" class="w-[80px]"/>
+                                                </div>
+                                                <div class="w-[60%]">
+                                                    <p class="text-blue font-bold text-[12px]" >Pending Clearance</p>
+                                                    <p class="text-blue font-bold text-[12px]">$16,789</p>
+                                                    </div>
+                                               
+                                            </div>
+                                        </div>
+                                        <!-- card 3 -->
+                                        <div class="shadow-md shadow-grey  rounded-lg grow p-2 md:w-[20%] w-[100%] h-24 flex mt-2">
+                                            <div class="flex gap-20 items-center">
+                                                <div class="w-[40%]">
+                                                    <img src="./images/card3.png" alt="img" class="w-[80px]"/>
+                                                </div>
+                                                <div class="w-[60%]">
+                                                    <p class="text-blue font-bold text-[12px]">Available for
+                                                        Withdrawal</p>
+                                                    <p class="text-blue font-bold text-[12px]" >$16,789</p>
+                                                    </div>
+                                               
+                                            </div>
+                                        </div>
+                                        <!-- card4 -->
+                                        <div class="shadow-md shadow-grey  rounded-lg grow p-2 md:w-[20%] w-[100%] h-24 flex mt-2">
+                                            <div class="flex gap-20 items-center">
+                                                <div class="w-[40%]">
+                                                    <img src="./images/card4.png" alt="img" class="w-[80px]"/>
+                                                </div>
+                                                <div class="w-[60%]">
+                                                    <p class="text-blue font-bold text-[12px]">Withdrawn</p>
+                                                    <p class="text-blue font-bold text-[12px]">$16,789</p>
+                                                    </div>
+                                               
+                                            </div>
+                                        </div>
+
+                                     </div>
+                                       
+                                        
+                                    <!-- card section end -->
+                                    <!-- center div start -->
+                                    <div class="bg-white mt-8 rounded-xl">
+                                        <div class="md:flex flex-wrap justify-around items-center p-12">
+                                            <div class="md:w-[40%] w-[100%] mt-2">
+                                               <p class="text-secondary text-md font-semibold">Bank Account details</p>
+                                               <div class="shadow-2xl shadow-grey rounded-md py-6 px-4 mt-6">
+                                                <div class="flex justify-between  font-semibold items-center">
+                                                    <div class="text-secondary"><p>name</p></div>
+                                                    <div class="flex text-grey"><span class="mr-3">:</span><p>deepika phool</p></div>
+                                                </div>
+                                                <div class="flex justify-between  font-semibold items-center mt-2">
+                                                    <div class="text-secondary"><p>Acc NO</p></div>
+                                                    <div class="flex text-grey"><span class="mr-3">:</span><p>deepika phool</p></div>
+                                                </div>
+                                                <div class=" flex justify-between font-semibold items-center mt-2">
+                                                    <div class="text-secondary"><p>Bank Name </p></div>
+                                                  
+                                                    <div class="flex text-grey"><span class="mr-3">:</span><p>deepika phool</p></div>
+                                                </div>
+                                                <div class=" flex  font-semibold justify-between items-center mt-2">
+                                                    <div class="text-secondary"><p>Branch Name</p></div>
+                                                    <div class="flex text-grey"><span class="mr-3">:</span><p>deepika phool</p></div>
+                                                </div>
+
+                                               </div>
+                                            </div>
+                                            <div class="md:w-[40%] w-[100%] mt-2">
+                                                 <p class="text-secondary text-md font-semibold">Other withdrawel methods</p>
+                                                 <div class="shadow-2xl shadow-grey rounded-md py-2 px-4 mt-6 w-[50%]">
+                                                    <div class="  font-semibold items-center">
+                                                      <img src="./images/pay1.png" alt="img" class="mx-auto">
+                                                      <p class="text-center">paypal</p>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="shadow-2xl shadow-grey rounded-md py-2 px-4 mt-4 w-[50%]">
+                                                    <div class="font-semibold items-center">
+                                                      <img src="./images/pay2.png" alt="img" class="mx-auto w-[40px]">
+                                                      <p class="text-center">payoneer</p>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- cneter div end -->
                                         
                                     </div>
                                   </div>
                                   <!-- tebel section start -->
-                                  <div class="mt-4">
+                                  <div class="mt-8">
                                     <div class="w-[90%] bg-white rounded-xl  py-10   items-center md:w-full  p-4  shadow-md">
                                         <div class="relative overflow-x-auto">
-                                            <p class="text-blue font-semibold">Coupon Table</p>
+                                            <p class="text-blue font-semibold">
+                                                Coupon Table
+                                            </p>
                                           <table class="w-[100%] mt-4 text-sm text-left  text-gray-500 ">
                                             <thead class="     ">
                                               <tr class=" text-xs">
                                                 <th scope="col" class="">
-                                                    COUPON TYPE
+                                                  withdrawn ID
                                                 </th>
                                                 <th
                                                   scope="col"
                                                   class="  "
                                                 >
-                                                TITLE
+                                                withdrawn date
                                                 </th>
                                                 <th scope="col" class=" ">
-                                                    USER LIMIT
+                                                  status
                                                 </th>
                                                 <th scope="col" class=" ">
-                                                    MINIMUM PURCHASE
+                                                  funds cleared date
                                                   </th>
                                                   <th scope="col" class="">
-                                                    DISCOUNT
+                                                    funds cleared method
                                                   </th>
                                                 <th scope="col" class=" ">
-                                                    EXPIRE DATE
+                                                  action
                                                 </th>
-                                                <th scope="col" class="">
-                                                    status
-                                                </th>
-                                                <th scope="col" class="">
-                                                    action
-                                                </th>
+                                                
                                               </tr>
                                             </thead>
                                             <tbody>
                                               <tr class="bg-white  border-b-4  border-gray ">
-                                                <td class="py-5 text-clifford">Discount On Purchase</td>
-                                                <td class="py-5 ">christmas</td>
-                                                <td class="py-5 text-center">10</td>
-                                                <td class="py-5 text-center">10</td>
-                                                <td class="py-5 ">10%</td>
+                                                <td class="py-5 text-clifford">	#3210</td>
                                                 <td class="py-5 ">May,03,2022</td>
-                                                <td class="py-5 ">
-                                                  <input
-                                                  class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
-                                                  type="checkbox"
-                                                  role="switch"
-                                                  id="flexSwitchCheckDefault" />
-                                                <label
-                                                  class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                  for="flexSwitchCheckDefault"
-                                                  >
-                                                  </label
-                                                ></td>
+                                                <td class="py-5 text-center">
+                                                  <button class="text-blue bg-skylight font-semibold px-3 py-1 rounded-md ">transfered</button>
+                                                </td>
+                                                <td class="py-5 text-center">May,03,2022</td>
+                                                <td class="py-5 ">bank account</td>
+                                             
+                                               
                                                 <td class="py-5 flex gap-2">
                                                 
                                                   <i class="fa-solid text-center fa-pen-to-square text-blue border-2  w-6 h-6 rounded-md"></i>
@@ -553,24 +509,15 @@
                                               </tr>
                       
                                               <tr class="bg-white  border-b-4  border-gray ">
-                                                <td class="py-5 text-clifford">Discount On Purchase</td>
-                                                <td class="py-5 ">christmas</td>
-                                                <td class="py-5 text-center">10</td>
-                                                <td class="py-5 text-center">10</td>
-                                                <td class="py-5 ">10%</td>
+                                                <td class="py-5 text-clifford">	#3210</td>
                                                 <td class="py-5 ">May,03,2022</td>
-                                                <td class="py-5 ">
-                                                  <input
-                                                  class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
-                                                  type="checkbox"
-                                                  role="switch"
-                                                  id="flexSwitchCheckDefault" />
-                                                <label
-                                                  class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                  for="flexSwitchCheckDefault"
-                                                  >
-                                                  </label
-                                                ></td>
+                                                <td class="py-5 text-center">
+                                                  <button class="text-blue bg-skylight font-semibold px-3 py-1 rounded-md ">transfered</button>
+                                                </td>
+                                                <td class="py-5 text-center">May,03,2022</td>
+                                                <td class="py-5 ">bank account</td>
+                                             
+                                               
                                                 <td class="py-5 flex gap-2">
                                                 
                                                   <i class="fa-solid text-center fa-pen-to-square text-blue border-2  w-6 h-6 rounded-md"></i>
@@ -579,24 +526,15 @@
                                                 </td>
                                               </tr>
                                               <tr class="bg-white  border-b-4  border-gray ">
-                                                <td class="py-5 text-clifford">Discount On Purchase</td>
-                                                <td class="py-5 ">christmas</td>
-                                                <td class="py-5 text-center">10</td>
-                                                <td class="py-5 text-center">10</td>
-                                                <td class="py-5 ">10%</td>
+                                                <td class="py-5 text-clifford">	#3210</td>
                                                 <td class="py-5 ">May,03,2022</td>
-                                                <td class="py-5 ">
-                                                  <input
-                                                  class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
-                                                  type="checkbox"
-                                                  role="switch"
-                                                  id="flexSwitchCheckDefault" />
-                                                <label
-                                                  class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                  for="flexSwitchCheckDefault"
-                                                  >
-                                                  </label
-                                                ></td>
+                                                <td class="py-5 text-center">
+                                                  <button class="text-green bg-lightgreen font-semibold px-3 py-1 rounded-md ">panding</button>
+                                                </td>
+                                                <td class="py-5 text-center">May,03,2022</td>
+                                                <td class="py-5 ">bank account</td>
+                                             
+                                               
                                                 <td class="py-5 flex gap-2">
                                                 
                                                   <i class="fa-solid text-center fa-pen-to-square text-blue border-2  w-6 h-6 rounded-md"></i>
@@ -605,24 +543,15 @@
                                                 </td>
                                               </tr>
                                               <tr class="bg-white  border-b-4  border-gray ">
-                                                <td class="py-5 text-clifford">Discount On Purchase</td>
-                                                <td class="py-5 ">christmas</td>
-                                                <td class="py-5 text-center">10</td>
-                                                <td class="py-5 text-center">10</td>
-                                                <td class="py-5 ">10%</td>
+                                                <td class="py-5 text-clifford">	#3210</td>
                                                 <td class="py-5 ">May,03,2022</td>
-                                                <td class="py-5 ">
-                                                  <input
-                                                  class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
-                                                  type="checkbox"
-                                                  role="switch"
-                                                  id="flexSwitchCheckDefault" />
-                                                <label
-                                                  class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                  for="flexSwitchCheckDefault"
-                                                  >
-                                                  </label
-                                                ></td>
+                                                <td class="py-5 text-center">
+                                                  <button class="text-blue bg-skylight font-semibold px-3 py-1 rounded-md ">transfered</button>
+                                                </td>
+                                                <td class="py-5 text-center">May,03,2022</td>
+                                                <td class="py-5 ">bank account</td>
+                                             
+                                               
                                                 <td class="py-5 flex gap-2">
                                                 
                                                   <i class="fa-solid text-center fa-pen-to-square text-blue border-2  w-6 h-6 rounded-md"></i>
