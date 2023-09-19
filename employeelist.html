@@ -29,6 +29,8 @@
       integrity="sha256-xKeoJ50pzbUGkpQxDYHD7o7hxe0LaOGeguUidbq6vis="
       crossorigin="anonymous"
     ></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -42,6 +44,7 @@
               lightw: "#D9D9D9",
               whitel: "#FAFAFC",
               green:"#3BB77E",
+              orange:"#F59758",
             },
           },
         },
@@ -366,7 +369,7 @@
                                         <div class="relative overflow-x-auto ">
                                           <table class=" w-full text-sm text-left text-gray-500 dark:text-gray-400 ">
                                             <thead class="text-xs    uppercase ">
-                                              <tr class="border-b-4  border-gray">
+                                              <tr class="border-b-4  border-gray ">
                                                 <th scope="col" class="   md:py-3">
                                                   Sr no
                                                 </th>
@@ -401,25 +404,26 @@
                                                   Status
                                                 </th>
                                               </tr>
+                                             
                                             </thead>
                                             <tbody>
                                               <tr
-                                                class="bg-white  border-b-4  border-gray  "
+                                                class="bg-white  border-b-4  border-gray  data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" 
                                                 onClick={togglePopup}
                                               >
-                                                <td class="py-5 px-5">1</td>
-                                                <td class="py-5 px-5">1234567</td>
-                                                <td class="py-5 px-5">Employee Name</td>
-                                                <td class="py-5 px-5">demo@gmail.com</td>
-                                                <td class="py-5 px-5">+1234567890</td>
-                                                <td class="py-5 px-5">city</td>
-                                                <td class="py-5 px-5">District</td>
+                                                <td class="py-2 px-2">1</td>
+                                                <td class="py-2 px-2">1234567</td>
+                                                <td class="py-2 px-2">Employee Name</td>
+                                                <td class="py-2 px-2">demo@gmail.com</td>
+                                                <td class="py-2 px-2">+1234567890</td>
+                                                <td class="py-2 px-2">city</td>
+                                                <td class="py-2 px-2">District</td>
                           
-                                                <td class="py-5 px-5">Pan no.</td>
+                                                <td class="py-2 px-2">Pan no.</td>
                           
-                                                <td class="py-5 px-5">Balance</td>
-                                                <td class="py-5 px-5 text-orange">Show</td>
-                                                <td class="py-5 px-5 ">
+                                                <td class="py-2 px-2">Balance</td>
+                                                <td class="py-2 px-2 text-orange">Show</td>
+                                                <td class="py-2 px-2 ">
                                                   <div class="md:px-4 rounded-md bg-light-green text-center text-green py-2">
                                                     Status
                                                   </div>
@@ -427,38 +431,38 @@
                                               </tr>
                                              
                                               <tr class="bg-white border-b-4  border-gray  ">
-                                                <td class="py-5 px-5">1</td>
-                                                <td class="py-5 px-5">1234567</td>
-                                                <td class="py-5 px-5">Employee Name</td>
-                                                <td class="py-5 px-5">demo@gmail.com</td>
-                                                <td class="py-5 px-5">+1234567890</td>
-                                                <td class="py-5 px-5">city</td>
-                                                <td class="py-5 px-5">District</td>
+                                                <td class="py-2 px-2">1</td>
+                                                <td class="py-2 px-2">1234567</td>
+                                                <td class="py-2 px-2">Employee Name</td>
+                                                <td class="py-2 px-2">demo@gmail.com</td>
+                                                <td class="py-2 px-2">+1234567890</td>
+                                                <td class="py-2 px-2">city</td>
+                                                <td class="py-2 px-2">District</td>
                           
-                                                <td class="py-5 px-5">Pan no.</td>
+                                                <td class="py-2 px-2">Pan no.</td>
                           
-                                                <td class="py-5 px-5">Balance</td>
-                                                <td class="py-5 px-5 text-orange">Show</td>
-                                                <td class="py-5 px-5 ">
+                                                <td class="py-2 px-2">Balance</td>
+                                                <td class="py-2 px-2 text-orange">Show</td>
+                                                <td class="py-2 px-2 ">
                                                   <div class=" md:px-4 rounded-md bg-light-orange text-center text-orange py-2">
                                                     Status
                                                   </div>
                                                 </td>
                                               </tr>
                                               <tr class="bg-white border-b ">
-                                                <td class="py-5 px-5">1</td>
-                                                <td class="py-5 px-5">1234567</td>
-                                                <td class="py-5 px-5">Employee Name</td>
-                                                <td class="py-5 px-5">demo@gmail.com</td>
-                                                <td class="py-5 px-5">+1234567890</td>
-                                                <td class="py-5 px-5">city</td>
-                                                <td class="py-5 px-5">District</td>
+                                                <td class="py-2 px-2">1</td>
+                                                <td class="py-2 px-2">1234567</td>
+                                                <td class="py-2 px-2">Employee Name</td>
+                                                <td class="py-2 px-2">demo@gmail.com</td>
+                                                <td class="py-2 px-2">+1234567890</td>
+                                                <td class="py-2 px-2">city</td>
+                                                <td class="py-2 px-2">District</td>
                           
-                                                <td class="py-5 px-5">Pan no.</td>
+                                                <td class="py-2 px-2">Pan no.</td>
                           
-                                                <td class="py-5 px-5">Balance</td>
-                                                <td class="py-5 px-5 text-orange">Show</td>
-                                                <td class="py-5 px-5 ">
+                                                <td class="py-2 px-2">Balance</td>
+                                                <td class="py-2 px-2 text-orange">Show</td>
+                                                <td class="py-2 px-2 ">
                                                   <div class=" md:px-4 rounded-md  bg-light-pink text-center text-pink py-2">
                                                     Status
                                                   </div>
@@ -466,6 +470,291 @@
                                               </tr>
                                             </tbody>
                                           </table>
+                                           <!-- popup start -->
+                                          <div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full ">
+                                              <div class=" relative w-full p-4 max-w-4xl max-h-full">
+                                                  <div
+                                                  class="bg-white rounded-xl gap-x-4 justify-between py-10  flex  md:flex w-72 items-center md:w-full p-4 overflow-hidden shadow-md"
+                                                >
+                                                  <div class="">
+                                                    <p class="text-2xl font-bold">Employee Details</p>
+                                                    
+                                                     <p class="my-3">uere Right</p>
+                                                     <button class="bg-orange border-none rounded-md text-white text-[13px] px-3 py-2">super admin</button>
+                                                     <button class="bg-grey border-none rounded-md text-white text-[13px] px-3 py-2">default emp</button>
+                                                     <button class="bg-grey border-none rounded-md text-white text-[13px] px-3 py-2">super emp</button>
+                                                     <button class="bg-grey border-none rounded-md text-white text-[13px] px-3 py-2">12365758</button>
+                                                   
+                                                    <div class="my-4">
+                                                      <label
+                                                        class="text-[15px] text-lighgrey font-semibold"
+                                                      >
+                                                        Employee Name</label
+                                                      >
+                                                      <br />
+                                                      <input
+                                                        type="text"
+                                                        name=""
+                                                        id=""
+                                                        placeholder="+1234567890"
+                                                        class="rounded-xl border-4 border-gray md:px-10 px-4 md:w-96 py-2"
+                                                      />
+                                                    </div>
+                                                    <div class="my-4">
+                                                      <label
+                                                        class="text-[15px] text-lighgrey font-semibold"
+                                                      >
+                                                        Gender</label
+                                                      >
+                                                      <span
+                                                        class="text-clifford text-[13px] font-bold"
+                                                        >*</span
+                                                      >
+                                                      <br />
+                                                      <label for="male">Male</label>
+                                                      <input type="radio" name="gender" id="male" value="male" checked>
+                                                      <label for="female" class="ml-4">Female</label>
+                                                      <input type="radio" name="gender" id="female" value="female" >
+                                                    </div>
+                                                    <div class="">
+                                                      <label
+                                                        class="text-[15px] text-lighgrey font-semibold"
+                                                      >
+                                                        Email id</label
+                                                      ><br />
+                    
+                                                      <input
+                                                        type="email"
+                                                        name=""
+                                                        id=""
+                                                        placeholder="gmail.com "
+                                                        class="rounded-xl py-2 border-4 border-gray md:px-10 px-4 md:w-96"
+                                                      />
+                                                    </div>
+                                                 <div class="my-4">
+                                                      <label
+                                                        class="text-[15px] text-lighgrey font-semibold"
+                                                      >
+                                                        First Mobile No.</label
+                                                      >
+                                                      <span
+                                                        class="text-clifford text-[13px] font-bold"
+                                                        >*</span
+                                                      >
+                                                      <br />
+                                                      <input
+                                                        type="text"
+                                                        name=""
+                                                        id=""
+                                                        placeholder="Address"
+                                                        class="rounded-xl border-4 border-gray md:px-10 px-4 md:w-96 py-2"
+                                                      />
+                                                    </div>
+                                                    <div class="my-4">
+                                                      <label
+                                                        class="text-[15px] text-lighgrey font-semibold"
+                                                      >
+                                                        Second Mobile No</label
+                                                      >
+                                                      <span
+                                                        class="text-clifford text-[13px] font-bold"
+                                                        >*</span
+                                                      >
+                                                      <br />
+                    
+                                                      <input
+                                                        type="text"
+                                                        name=""
+                                                        id=""
+                                                        placeholder="Address"
+                                                        class="rounded-xl border-4 border-gray md:px-10 px-4 md:w-96 py-2"
+                                                      />
+                                                    </div>
+                    
+                                                    <div class="flex gap-8 my-4">
+                                                      <div>
+                                                        <label
+                                                          class="text-[15px] text-lighgrey font-semibold"
+                                                        >
+                                                          Country</label
+                                                        >
+                                                        <span
+                                                          class="text-clifford text-[13px] font-bold"
+                                                          >*</span
+                                                        >
+                                                        <br />
+                                                        <input
+                                                          type="text"
+                                                          name=""
+                                                          id=""
+                                                          placeholder="123456"
+                                                          class="rounded-xl border-4 border-gray md:px-10 px-4 md:w-44 py-2"
+                                                        />
+                                                      </div>
+                    
+                                                      <div>
+                                                        <label
+                                                          class="text-[15px] text-lighgrey font-semibold"
+                                                        >
+                                                          Province</label
+                                                        >
+                                                        <span
+                                                          class="text-clifford text-[13px] font-bold"
+                                                          >*</span
+                                                        >
+                                                        <br />
+                                                        <input
+                                                          type="text"
+                                                          name=""
+                                                          id=""
+                                                          placeholder="123456"
+                                                          class="rounded-xl border-4 border-gray md:px-10 px-4 md:w-44 py-2"
+                                                        />
+                                                      </div>
+                                                    </div>
+                    
+                                                    <div class="md:flex gap-8 my-4">
+                                                      <div>
+                                                        <label
+                                                          class="text-[15px] text-lighgrey font-semibold"
+                                                        >
+                                                          City</label
+                                                        >
+                                                        <span
+                                                          class="text-clifford text-[13px] font-bold"
+                                                          >*</span
+                                                        >
+                                                        <br />
+                                                        <input
+                                                          type="text"
+                                                          name=""
+                                                          id=""
+                                                          placeholder="INDIA"
+                                                          class="rounded-xl border-4 border-gray md:px-10 px-4 md:w-44 py-2"
+                                                        />
+                                                      </div>
+                    
+                                                      <div>
+                                                        <label
+                                                          class="text-[15px] text-lighgrey font-semibold"
+                                                        >
+                                                          Zip code</label
+                                                        >
+                                                        <span
+                                                          class="text-clifford text-[13px] font-bold"
+                                                          >*</span
+                                                        >
+                                                        <br />
+                                                        <input
+                                                          type="text"
+                                                          name=""
+                                                          id=""
+                                                          placeholder="(GMT+11:00)"
+                                                          class="rounded-xl border-4 border-gray md:px-10 px-4 md:w-44 py-2"
+                                                        />
+                                                      </div>
+                                                    </div>
+                    
+                                                    <div class="my-4">
+                                                      <label
+                                                        class="text-[15px] text-lighgrey font-semibold"
+                                                      >
+                                                        Address</label
+                                                      >
+                                                      <span
+                                                        class="text-clifford text-[13px] font-bold"
+                                                        >*</span
+                                                      >
+                                                      <br />
+                                                      <input
+                                                        type="text"
+                                                        name=""
+                                                        id=""
+                                                        placeholder="Address"
+                                                        class="rounded-xl border-4 border-gray md:px-10 px-4 md:w-96 py-2"
+                                                      />
+                                                    </div>
+                                                    <div class="my-4">
+                                                      <label
+                                                        class="text-[15px] text-lighgrey font-semibold"
+                                                        >Pan Card No.</label
+                                                      >
+                                                      <span
+                                                        class="text-clifford text-[13px] font-bold"
+                                                        >*</span
+                                                      >
+                                                      <br />
+                                                      <input
+                                                        type="text"
+                                                        name=""
+                                                        id=""
+                                                        placeholder="Address"
+                                                        class="rounded-xl text-sm border-4 border-gray md:px-10 px-4 md:w-96 py-2"
+                                                      />
+                                                      <div class="flex mt-5 gap-3">
+                                                        <button class="bg-blue rounded-md text-white border-none px-5 py-2">Deactived </button>
+                                                      
+                                                       <button class="bg-blue rounded-md text-white border-none px-5 py-2">update </button>
+                                                       <button class="bg-clifford rounded-md text-white border-none px-5 py-2">cancel</button>
+                                                      </div>
+                                                     
+                                                    </div>
+                                                    <!-- </div> -->
+                                                  </div>
+                                                  <div>
+                                                    <div
+                                                      class="bg-white rounded-xl py-6 text-center px-10 overflow-hidden shadow-xl"
+                                                    >
+                                                      <h1 class="font-bold">Upload your files</h1>
+                                                      <p class="text-xs">No File Choosen</p>
+                                                      <div
+                                                        class="border-2 text-center px-2 py-2 mt-2 rounded-xl border-dotted"
+                                                      >
+                                                        <img
+                                                          src="images\profile1.png"
+                                                          alt="upload photo"
+                                                        />
+                                                      </div>
+                                                    </div>
+                                                    <div class="flex my-4 mt-4 py-3">
+                                                      
+                                                    </div>
+                                                    <div>
+                                                      <div class=" ">
+                                                        <form>
+                                                          <label
+                                                            class="text-[15px] text-lighgrey font-semibold"
+                                                            >password</label
+                                                          >
+                                                          <span
+                                                            class="text-clifford text-[13px] font-bold"
+                                                            >*</span
+                                                          >
+                                                          <input
+                                                            type="text"
+                                                            placeholder="Enter password "
+                                                            class="border-2 text-sm w-full border-gray flex md:rounded-xl px-2 my-2 md:px-4 md:py-2 focus:outline-none"
+                                                          />
+                    
+                                                          <IoIosEye
+                                                            class="inline-block ml-10 text-black"
+                                                          />
+                                                        </form>
+                                                      </div>
+                                                    </div>
+                    
+                                                    <!-- <button
+                                                      class="bg-blue px-10 py-2 text-white rounded-xl"
+                                                    >
+                                                      Update
+                                                    </button> -->
+                                                  </div> 
+                                                 
+                                                </div>
+                                               
+                                              </div>
+                                          </div>
+                                        <!-- popup end -->
                                         </div>
                                       </div>
                                     </div>
@@ -525,5 +814,6 @@
         }
       };
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
   </body>
 </html>

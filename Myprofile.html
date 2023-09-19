@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tailwind Admin Starter Template : Tailwind Toolbox</title>
+    <title>superduper admin</title>
     <meta name="author" content="name" />
     <meta name="description" content="description here" />
     <meta name="keywords" content="keywords,here" />
@@ -52,6 +52,10 @@
               lightw: "#D9D9D9",
               whitel: "#FAFAFC",
               green: "#3BB77E",
+              yellow: "#FFEC94",
+              pink: "#F74B81",
+              lightpink: "#FFC1D5",
+              lightgreen: "#BCEFD8",
             },
           },
         },
@@ -92,7 +96,7 @@
                 <a
                   class="inline-block py-2 px-4 text-white no-underline"
                   href="#"
-                  ><img src="../images/flag.png" alt="adminlogo" />
+                  ><img src="./images/flag.png" alt="adminlogo" />
                 </a>
               </li>
               <li class="flex-1 md:flex-none md:mr-3">
@@ -107,37 +111,338 @@
               <li class="flex-1 md:flex-none md:mr-3">
                 <a href="#" aria-label="Home">
                   <span class="text-xl p-0">
-                    <img src="../images/icon2.png" alt="adminlogo" />
-                    <!-- <i class="em em-grinning"></i> -->
+                    <img src="./images/icon2.png" alt="adminlogo" />
                   </span>
                 </a>
+                <!-- side popup color picker start -->
+                <!-- <h1>Popup/Modal Windows without JavaScript</h1>
+                <div class="box">
+                  <a class="button" href="#popup1">Let me Pop up</a>
+                </div>
+
+                <div id="popup1" class="overlay">
+                  <div class="popup">
+                    <h2>Here i am</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                      Thank to pop me out of that button, but now i'm done so
+                      you can close this window.
+                    </div>
+                  </div>
+                </div> -->
+                <!-- side popup color picker end -->
               </li>
               <li class="flex-1 md:flex-none md:mr-3">
                 <a href="#" aria-label="Home">
                   <span class="text-xl p-0">
                     <i class="fa-regular fa-bell"></i>
-                    <!-- <i class="em em-grinning"></i> -->
                   </span>
                 </a>
               </li>
               <li class="flex-1 md:flex-none md:mr-3">
                 <a href="#" aria-label="Home">
                   <span class="text-xl p-0">
-                    <img src="../images/profile.png" alt="adminlogo" />
-                    <!-- <i class="em em-grinning"></i> -->
+                    <img src="./images/profile.png" alt="adminlogo" />
                   </span>
                 </a>
               </li>
               <li class="flex-1 md:flex-none md:mr-3">
                 <a href="#" aria-label="Home">
-                  <span class="text-xl p-0">
+                  <span class="text-xl p-0 open-button" onclick="openForm()">
                     <i class="fa-sharp fa-solid fa-gear"></i>
                   </span>
                 </a>
+                <!-- popup content start -->
+                <div class="form-popup" id="myForm">
+                  <div
+                    class="relative bg-blue flex-auto form-container h-[100vh] overflow-scroll"
+                  >
+                    <i
+                      class="fa-solid fa-xmark btn cancel"
+                      onclick="closeForm()"
+                    ></i>
+                    <!-- select section start -->
+                    <form class="px-8 pt-2">
+                      <label
+                        for="countries"
+                        class="block text-white text-sm font-bold mb-1"
+                      >
+                        Background
+                      </label>
 
-                <!-- drawer init and show -->
+                      <select
+                        id="countries"
+                        class="text-gray-1 text-[13px] px-3 text-md w-full h-10 border rounded focus:outline-none"
+                      >
+                        <option selected>Dark</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                      </select>
+                      <label
+                        for="countries"
+                        class="block text-white text-sm font-bold mb-1 mt-4"
+                      >
+                        Layout
+                      </label>
 
-                <!-- drawer end -->
+                      <select
+                        id="countries"
+                        class="text-gray-1 text-[13px] px-3 text-md w-full h-10 border rounded focus:outline-none"
+                      >
+                        <option selected>Vertical</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                      </select>
+                      <label
+                        for="countries"
+                        class="block text-white text-sm font-bold mb-1 mt-4"
+                      >
+                        Sidebar
+                      </label>
+
+                      <select
+                        id="countries"
+                        class="text-gray-1 px-3 text-[13px] w-full h-10 border rounded focus:outline-none"
+                      >
+                        <option selected>Full</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                      </select>
+                      <label
+                        for="countries"
+                        class="block text-white text-sm font-bold mb-1 mt-4"
+                      >
+                        Sidebar Position
+                      </label>
+
+                      <select
+                        id="countries"
+                        class="text-gray-1 px-3 text-[13px] w-full h-10 border rounded focus:outline-none"
+                      >
+                        <option selected>Static</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                      </select>
+                      <label
+                        for="countries"
+                        class="block text-white text-sm font-bold mb-1 mt-4"
+                      >
+                        Header Position
+                      </label>
+
+                      <select
+                        id="countries"
+                        class="text-gray-1 px-3 text-[13px] w-full h-10 border rounded focus:outline-none"
+                      >
+                        <option selected>Static</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                      </select>
+                      <label
+                        for="countries"
+                        class="block text-white text-sm font-bold mb-1 mt-4"
+                      >
+                        Container
+                      </label>
+
+                      <select
+                        id="countries"
+                        class="text-gray-1 px-3 text-[13px] w-full h-10 border rounded focus:outline-none"
+                      >
+                        <option selected>Wide</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                      </select>
+                      <label
+                        for="countries"
+                        class="block text-white text-sm font-bold mb-1 mt-4"
+                      >
+                        Direction
+                      </label>
+
+                      <select
+                        id="countries"
+                        class="text-gray-1 px-3 text-[13px] w-full h-10 border rounded focus:outline-none"
+                      >
+                        <option selected>LTR</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                      </select>
+                      <label
+                        for="countries"
+                        class="block text-white text-sm font-bold mb-1 mt-4"
+                      >
+                        Body Font
+                      </label>
+
+                      <select
+                        id="countries"
+                        class="text-gray-1 px-3 text-[13px] w-full h-10 border rounded focus:outline-none"
+                      >
+                        <option selected>Roboto</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                      </select>
+                    </form>
+                    <!-- seclect sections end -->
+
+                    <!-- color picker section start -->
+                    <div class="px-8 pb-8 w-full">
+                      <h1 class="block text-white text-sm font-bold mb-1 mt-4">
+                        Navigation Header
+                      </h1>
+
+                      <div class="flex gap-4">
+                        <div class="w-6 h-6 bg-clifford rounded"></div>
+
+                        <div class="w-6 h-6 bg-green rounded"></div>
+
+                        <div class="w-6 h-6 bg-white rounded"></div>
+                        <div class="w-6 h-6 bg-lightpink rounded"></div>
+                        <div class="w-6 h-6 bg-yellow rounded"></div>
+                        <div class="w-6 h-6 bg-black rounded"></div>
+
+                        <div class="w-6 h-6 bg-grey rounded"></div>
+                      </div>
+                      <div class="flex gap-4 mt-2">
+                        <div class="w-6 h-6 bg-clifford rounded"></div>
+
+                        <div class="w-6 h-6 bg-green rounded"></div>
+
+                        <div class="w-6 h-6 bg-white rounded"></div>
+                        <div class="w-6 h-6 bg-lightpink rounded"></div>
+                        <div class="w-6 h-6 bg-yellow rounded"></div>
+                        <div class="w-6 h-6 bg-black rounded"></div>
+
+                        <div class="w-6 h-6 bg-grey rounded"></div>
+                      </div>
+                      <div class="flex gap-4 mt-2">
+                        <div class="w-6 h-6 bg-clifford rounded"></div>
+
+                        <div class="w-6 h-6 bg-green rounded"></div>
+
+                        <div class="w-6 h-6 bg-white rounded"></div>
+                        <div class="w-6 h-6 bg-lightpink rounded"></div>
+                        <div class="w-6 h-6 bg-yellow rounded"></div>
+                        <div class="w-6 h-6 bg-black rounded"></div>
+
+                        <div class="w-6 h-6 bg-grey rounded"></div>
+                      </div>
+                    </div>
+                    <div class="px-8 pb-8 w-full">
+                      <h1 class="block text-white text-sm font-bold mb-1 mt-4">
+                        Header
+                      </h1>
+
+                      <div class="flex gap-4">
+                        <div class="w-6 h-6 bg-clifford rounded"></div>
+
+                        <div class="w-6 h-6 bg-green rounded"></div>
+
+                        <div class="w-6 h-6 bg-white rounded"></div>
+                        <div class="w-6 h-6 bg-lightpink rounded"></div>
+                        <div class="w-6 h-6 bg-yellow rounded"></div>
+                        <div class="w-6 h-6 bg-black rounded"></div>
+
+                        <div class="w-6 h-6 bg-grey rounded"></div>
+                      </div>
+                      <div class="flex gap-4 mt-2">
+                        <div class="w-6 h-6 bg-clifford rounded"></div>
+
+                        <div class="w-6 h-6 bg-green rounded"></div>
+
+                        <div class="w-6 h-6 bg-white rounded"></div>
+                        <div class="w-6 h-6 bg-lightpink rounded"></div>
+                        <div class="w-6 h-6 bg-yellow rounded"></div>
+                        <div class="w-6 h-6 bg-black rounded"></div>
+
+                        <div class="w-6 h-6 bg-grey rounded"></div>
+                      </div>
+                      <div class="flex gap-4 mt-2">
+                        <div class="w-6 h-6 bg-clifford rounded"></div>
+
+                        <div class="w-6 h-6 bg-green rounded"></div>
+
+                        <div class="w-6 h-6 bg-white rounded"></div>
+                        <div class="w-6 h-6 bg-lightpink rounded"></div>
+                        <div class="w-6 h-6 bg-yellow rounded"></div>
+                        <div class="w-6 h-6 bg-black rounded"></div>
+
+                        <div class="w-6 h-6 bg-grey rounded"></div>
+                      </div>
+                    </div>
+
+                    <div class="px-8 pb-8 w-full">
+                      <h1 class="block text-white text-sm font-bold mb-1 mt-4">
+                        Sidebar
+                      </h1>
+
+                      <div class="flex gap-4">
+                        <div class="w-6 h-6 bg-clifford rounded"></div>
+
+                        <div class="w-6 h-6 bg-green rounded"></div>
+
+                        <div class="w-6 h-6 bg-white rounded"></div>
+                        <div class="w-6 h-6 bg-lightpink rounded"></div>
+                        <div class="w-6 h-6 bg-yellow rounded"></div>
+                        <div class="w-6 h-6 bg-black rounded"></div>
+
+                        <div class="w-6 h-6 bg-grey rounded"></div>
+                      </div>
+                      <div class="flex gap-4 mt-2">
+                        <div class="w-6 h-6 bg-clifford rounded"></div>
+
+                        <div class="w-6 h-6 bg-green rounded"></div>
+
+                        <div class="w-6 h-6 bg-white rounded"></div>
+                        <div class="w-6 h-6 bg-lightpink rounded"></div>
+                        <div class="w-6 h-6 bg-yellow rounded"></div>
+                        <div class="w-6 h-6 bg-black rounded"></div>
+
+                        <div class="w-6 h-6 bg-grey rounded"></div>
+                      </div>
+                      <div class="flex gap-4 mt-2">
+                        <div class="w-6 h-6 bg-clifford rounded"></div>
+
+                        <div class="w-6 h-6 bg-green rounded"></div>
+
+                        <div class="w-6 h-6 bg-white rounded"></div>
+                        <div class="w-6 h-6 bg-lightpink rounded"></div>
+                        <div class="w-6 h-6 bg-yellow rounded"></div>
+                        <div class="w-6 h-6 bg-black rounded"></div>
+
+                        <div class="w-6 h-6 bg-grey rounded"></div>
+                      </div>
+                    </div>
+                    <!-- color piker section end -->
+                    <div class="px-8 pb-8 w-full">
+                      <p class="text-white text-sm">
+                        <sup class="text-clifford">*</sup>
+                        <span class="text-clifford">Note :</span>
+                        This theme switcher is not part of product. It is only
+                        for demo. you will get all guideline in documentation.
+                        please check documentation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--  popup content end -->
               </li>
             </ul>
           </div>
@@ -169,14 +474,14 @@
                           class="relative item-center justify-center flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
                         >
                           <img
-                            src="../images/admlogo.png"
+                            src="./images/admlogo.png"
                             alt="img"
                             class="w-20 h-20"
                           />
                           <span>Store Name</span>
                         </div>
 
-                        <div class="sidenav">
+                        <div class="sidenav" style="margin-top: 20px">
                           <a href="#">
                             <span
                               class="inline-flex justify-center items-center"
@@ -267,7 +572,34 @@
                               Category
                             </span></a
                           >
-                          <a href="./admin/product/product.html">
+                          <button class="dropdown-btn">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-bag-shopping"></i>
+                            </span>
+                            <span class="tracking-wide truncate ml-2">
+                              product
+                            </span>
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-container">
+                            <a
+                              href="./admin/product/product.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Product</a
+                            >
+                            <a href="./order/pending.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Bluk imports</a
+                            >
+                          </div>
+                          <!-- <a href="./admin/product/product.html">
                             <div
                               class="relative flex flex-row active:text-black items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
                             >
@@ -280,7 +612,7 @@
                                 Product
                               </span>
                             </div>
-                          </a>
+                          </a> -->
                           <a href="./admin/Storepage.html">
                             <div
                               class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
@@ -514,7 +846,7 @@
                             <div
                               class="flex items-center py-4 gap-2 bg-[#F1F1F1]"
                             >
-                              <img src="{infinity}" alt="" />
+                              <img src="./images/up.png" alt="" />
                               Update your profile details here .
                             </div>
 
@@ -838,7 +1170,7 @@
     <!-- dropdown start -->
     <script>
       /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var dropdown = document.getElementsByclass("dropdown-btn");
       var i;
 
       for (i = 0; i < dropdown.length; i++) {
@@ -853,5 +1185,19 @@
         });
       }
     </script>
+    <!-- setting side  popup start -->
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+    <!-- setting side  popup end -->
+    <!-- color picker popup start-->
+
+    <!-- color picker popup end-->
   </body>
 </html>
