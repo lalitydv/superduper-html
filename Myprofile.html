@@ -8,8 +8,8 @@
     <meta name="author" content="name" />
     <meta name="description" content="description here" />
     <meta name="keywords" content="keywords,here" />
+
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- <link -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -39,6 +39,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <!-- again -->
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -56,6 +58,7 @@
               pink: "#F74B81",
               lightpink: "#FFC1D5",
               lightgreen: "#BCEFD8",
+              dark: "rgba(0, 0, 0, 0.7)",
             },
           },
         },
@@ -100,10 +103,566 @@
                 </a>
               </li>
               <li class="flex-1 md:flex-none md:mr-3">
-                <a href="#" aria-label="Home">
+                <a href="#popup1" aria-label="Home" class="box button">
                   <span class="text-xl p-0">
                     <img src="./images/icon1.png" alt="adminlogo" />
-                    <!-- <i class="em em-grinning"></i> -->
+
+                    <!-- side popup color picker start -->
+
+                    <div id="popup1" class="overlay">
+                      <div class="popup">
+                        <a class="close" href="#">&times;</a>
+                        <div
+                          class="mb-4 border-b border-gray-200 dark:border-gray-700"
+                        >
+                          <ul
+                            class="flex flex-wrap -mb-px text-sm font-medium text-center"
+                            id="myTab"
+                            data-tabs-toggle="#myTabContent"
+                            role="tablist"
+                          >
+                            <li class="mr-2" role="presentation">
+                              <button
+                                class="inline-block p-4 border-b-2 font-medium rounded-t-lg"
+                                id="profile-tab"
+                                data-tabs-target="#profile"
+                                type="button"
+                                role="tab"
+                                aria-controls="profile"
+                                aria-selected="false"
+                              >
+                                Notes
+                              </button>
+                            </li>
+                            <li class="mr-2" role="presentation">
+                              <button
+                                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                                id="dashboard-tab"
+                                data-tabs-target="#dashboard"
+                                type="button"
+                                role="tab"
+                                aria-controls="dashboard"
+                                aria-selected="false"
+                              >
+                                Alerts
+                              </button>
+                            </li>
+                            <li class="mr-2" role="presentation">
+                              <button
+                                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                                id="settings-tab"
+                                data-tabs-target="#settings"
+                                type="button"
+                                role="tab"
+                                aria-controls="settings"
+                                aria-selected="false"
+                              >
+                                Chats
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div id="myTabContent ">
+                          <!-- first tab content start -->
+                          <div
+                            class="hidden h-[100vh] overflow-y-scroll rounded-lg bg-black bg-opacity-90 z-50"
+                            id="profile"
+                            role="tabpanel"
+                            aria-labelledby="profile-tab"
+                          >
+                            <div
+                              class="p-2 flex justify-between items-center bg-white"
+                            >
+                              <div
+                                class="bg-blue w-8 h-8 rounded ml-6 flex text-center justify-center"
+                              >
+                                <i
+                                  class="fa-solid fa-ellipsis text-white flex justify-center items-center"
+                                ></i>
+                              </div>
+
+                              <div>
+                                <h1 class="text-lg">Notes</h1>
+                                <span
+                                  class="text-[11px] text-center flex justify-center"
+                                >
+                                  Add New Notes
+                                </span>
+                              </div>
+                              <div
+                                class="bg-blue w-8 h-8 rounded ml-6 flex text-center justify-center"
+                              >
+                                <i
+                                  class="fa-solid fa-magnifying-glass text-white flex justify-center items-center"
+                                ></i>
+                              </div>
+                              <div></div>
+                            </div>
+
+                            <div>
+                              <div
+                                class="bg-white flex justify-between items-center px-4 py-2 border-t-2 border-black"
+                              >
+                                <div class="  ">
+                                  <h1
+                                    class="font-semibold text-[14px] text-start"
+                                  >
+                                    New order placed..
+                                  </h1>
+                                  <p class="text-[11px]">10 Aug 2021</p>
+                                </div>
+                                <div class="py-5 flex gap-2">
+                                  <i
+                                    class="fa-solid fa-pen text-blue border-2 w-6 h-6 rounded-md"
+                                  ></i>
+
+                                  <i
+                                    class="fa-solid fa-trash-can text-clifford border-2 w-6 h-6 rounded-md"
+                                  ></i>
+                                </div>
+                              </div>
+                              <div
+                                class="bg-white flex justify-between items-center px-4 py-2 border-t-2 border-black"
+                              >
+                                <div class="  ">
+                                  <h1
+                                    class="font-semibold text-[14px] text-start"
+                                  >
+                                    Youtube, a video-sharing website..
+                                  </h1>
+                                  <p class="text-[12px]">10 Aug 2021</p>
+                                </div>
+                                <div class="py-5 flex gap-2">
+                                  <i
+                                    class="fa-solid fa-pen text-blue border-2 w-6 h-6 rounded-md"
+                                  ></i>
+
+                                  <i
+                                    class="fa-solid fa-trash-can text-clifford border-2 w-6 h-6 rounded-md"
+                                  ></i>
+                                </div>
+                              </div>
+                              <div
+                                class="bg-white flex justify-between items-center px-4 py-2 border-t-2 border-black"
+                              >
+                                <div class="  ">
+                                  <h1
+                                    class="font-semibold text-[14px] text-start"
+                                  >
+                                    john just buy your product..
+                                  </h1>
+                                  <p class="text-[12px]">10 Aug 2021</p>
+                                </div>
+                                <div class="py-5 flex gap-2">
+                                  <i
+                                    class="fa-solid fa-pen text-blue border-2 w-6 h-6 rounded-md"
+                                  ></i>
+
+                                  <i
+                                    class="fa-solid fa-trash-can text-clifford border-2 w-6 h-6 rounded-md"
+                                  ></i>
+                                </div>
+                              </div>
+                              <div
+                                class="bg-white flex justify-between items-center px-4 py-2 border-t-2 border-black"
+                              >
+                                <div class="  ">
+                                  <h1 class="font-semibold text-[14px]">
+                                    Athan Jacoby
+                                  </h1>
+                                  <p class="text-[12px]">10 Aug 2021</p>
+                                </div>
+                                <div class="py-5 flex gap-2">
+                                  <i
+                                    class="fa-solid fa-pen text-blue border-2 w-6 h-6 rounded-md"
+                                  ></i>
+
+                                  <i
+                                    class="fa-solid fa-trash-can text-clifford border-2 w-6 h-6 rounded-md"
+                                  ></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- first tab content end -->
+                          <!-- secont tab content start -->
+                          <div
+                            class="hidden h-[430px] bg-black bg-opacity-90 z-50 overflow-y-scroll rounded-lg"
+                            id="dashboard"
+                            role="tabpanel"
+                            aria-labelledby="dashboard-tab"
+                          >
+                            <div
+                              class="flex justify-between py-3 items-center bg-white"
+                            >
+                              <div
+                                class="bg-blue w-10 h-10 rounded ml-6 flex justify-center items-center"
+                              >
+                                <i
+                                  class="fa-solid fa-ellipsis text-white flex justify-center items-center"
+                                ></i>
+                              </div>
+
+                              <div>
+                                <h1 class="text-lg">NOTIFICATIONS</h1>
+                                <span
+                                  class="text-[11px] text-center flex justify-center"
+                                >
+                                  SHOW ALL
+                                </span>
+                              </div>
+                              <div
+                                class="bg-blue w-10 h-10 rounded flex justify-center items-center"
+                              >
+                                <i
+                                  class="fa-solid fa-magnifying-glass text-white flex justify-center items-center"
+                                ></i>
+                              </div>
+                              <div></div>
+                            </div>
+
+                            <div
+                              class="p-4 text-white font-semibold text-xl bg-opacity-25 opacit bg-dark"
+                            >
+                              SEVER STATUS
+                            </div>
+
+                            <div>
+                              <div
+                                class="bg-white px-4 py-2 border-t-2 border-black"
+                              >
+                                <div class="flex gap-6">
+                                  <img
+                                    src="./images/img.png"
+                                    alt=""
+                                    class="w-10"
+                                  />
+
+                                  <div>
+                                    <h1 class="font-bold text-[14px]">
+                                      Archie Parker
+                                    </h1>
+                                    <p class="text-[12px]">Today</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="p-4 text-white font-semibold text-xl bg-opacity-25 opacit bg-dark"
+                            >
+                              SOCAIL
+                            </div>
+
+                            <div>
+                              <div
+                                class="bg-white px-4 py-2 border-b-2 border-black"
+                              >
+                                <div class="flex gap-6">
+                                  <img
+                                    src="./images/img.png"
+                                    alt=""
+                                    class="w-10"
+                                  />
+
+                                  <div>
+                                    <h1 class="font-bold text-[14px]">
+                                      Perfection Simplified
+                                    </h1>
+                                    <p class="text-[12px]">
+                                      Jame Smith commented...
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="bg-white px-4 py-2">
+                                <div class="flex gap-6">
+                                  <img
+                                    src="./images/img.png"
+                                    alt=""
+                                    class="w-10"
+                                  />
+
+                                  <div>
+                                    <h1 class="font-bold text-[14px]">
+                                      Archie Parker
+                                    </h1>
+                                    <p class="text-[12px]">Kalid is online</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="p-4 text-white font-semibold text-xl bg-opacity-25 opacit bg-dark"
+                            >
+                              SAVER STATUS
+                            </div>
+
+                            <div>
+                              <div
+                                class="bg-white px-4 py-2 border-b-2 border-black"
+                              >
+                                <div class="flex gap-6">
+                                  <img
+                                    src="./images/img.png"
+                                    alt=""
+                                    class="w-10"
+                                  />
+
+                                  <div>
+                                    <h1 class="font-bold text-[14px]">
+                                      AharlieKane
+                                    </h1>
+                                    <p class="text-[12px]">Sami is online</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- second tab content end -->
+                          <!-- third tab content start -->
+                          <div
+                            class="hidden h-[430px] bg-black bg-opacity-90 z-50 overflow-y-scroll rounded-lg"
+                            id="settings"
+                            role="tabpanel"
+                            aria-labelledby="settings-tab"
+                          >
+                            <div
+                              class="flex py-3 justify-between items-center bg-white"
+                            >
+                              <div
+                                class="bg-blue w-10 h-10 rounded ml-6 flex justify-center items-center"
+                              >
+                                <i
+                                  class="fa-solid fa-circle-plus text-white text-2xl flex justify-center items-center"
+                                ></i>
+                              </div>
+
+                              <div>
+                                <h1 class="text-lg">CHAT LIST</h1>
+                                <span
+                                  class="text-[11px] text-center flex justify-center"
+                                >
+                                  SHOW ALL
+                                </span>
+                              </div>
+                              <div
+                                class="bg-blue w-10 h-10 rounded flex justify-center items-center"
+                              >
+                                <i
+                                  class="fa-solid fa-ellipsis text-white flex justify-center items-center"
+                                ></i>
+                              </div>
+                              <div></div>
+                            </div>
+
+                            <div
+                              class="p-4 text-white font-semibold text-xl bg-opacity-25 opacit bg-dark"
+                            >
+                              A
+                            </div>
+
+                            <div>
+                              <div
+                                class="bg-white px-4 py-2 flex w-full justify-between items-center border-t-2 border-black"
+                              >
+                                <div class="flex gap-6">
+                                  <img
+                                    src="./images/img.png"
+                                    alt=""
+                                    class="w-10"
+                                  />
+
+                                  <div>
+                                    <h1 class="font-bold text-[14px]">
+                                      Archie Parker
+                                    </h1>
+                                    <p class="text-[12px]">Kalid is online</p>
+                                  </div>
+                                </div>
+                                <div>
+                                  <p
+                                    class="text-white w-6 h-6 bg-black rounded-full flex justify-center items-center"
+                                  >
+                                    2
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="bg-white px-4 py-2 flex w-full justify-between items-center border-t-2 border-black"
+                              >
+                                <div class="flex gap-6">
+                                  <img
+                                    src="./images/img.png"
+                                    alt=""
+                                    class="w-10"
+                                  />
+
+                                  <div>
+                                    <h1 class="font-bold text-[14px]">
+                                      Archie Parker
+                                    </h1>
+                                    <p class="text-[12px]">Kalid is online</p>
+                                  </div>
+                                </div>
+                                <div>
+                                  <p
+                                    class="text-white w-6 h-6 bg-black rounded-full flex justify-center items-center"
+                                  >
+                                    2
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="bg-white px-4 py-2 flex w-full justify-between items-center border-t-2 border-black"
+                              >
+                                <div class="flex gap-6">
+                                  <img
+                                    src="./images/img.png"
+                                    alt=""
+                                    class="w-10"
+                                  />
+
+                                  <div>
+                                    <h1 class="font-bold text-[14px]">
+                                      Archie Parker
+                                    </h1>
+                                    <p class="text-[12px]">Kalid is online</p>
+                                  </div>
+                                </div>
+                                <div>
+                                  <p
+                                    class="text-white w-6 h-6 bg-black rounded-full flex justify-center items-center"
+                                  >
+                                    2
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="bg-white px-4 py-2 flex w-full justify-between items-center border-t-2 border-black"
+                              >
+                                <div class="flex gap-6">
+                                  <img
+                                    src="./images/img.png"
+                                    alt=""
+                                    class="w-10"
+                                  />
+
+                                  <div>
+                                    <h1 class="font-bold text-[14px]">
+                                      Archie Parker
+                                    </h1>
+                                    <p class="text-[12px]">Kalid is online</p>
+                                  </div>
+                                </div>
+                                <div>
+                                  <p
+                                    class="text-white w-6 h-6 bg-black rounded-full flex justify-center items-center"
+                                  >
+                                    2
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="p-4 text-white font-semibold text-xl bg-opacity-25 opacit bg-dark"
+                            >
+                              B
+                            </div>
+
+                            <div>
+                              <div
+                                class="bg-white px-4 py-2 flex w-full justify-between items-center border-t-2 border-black"
+                              >
+                                <div class="flex gap-6">
+                                  <img
+                                    src="./images/img.png"
+                                    alt=""
+                                    class="w-10"
+                                  />
+
+                                  <div>
+                                    <h1 class="font-bold text-[14px]">
+                                      Archie Parker
+                                    </h1>
+                                    <p class="text-[12px]">Kalid is online</p>
+                                  </div>
+                                </div>
+                                <div>
+                                  <p
+                                    class="text-white w-6 h-6 bg-black rounded-full flex justify-center items-center"
+                                  >
+                                    2
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="bg-white px-4 py-2 flex w-full justify-between items-center border-t-2 border-black"
+                              >
+                                <div class="flex gap-6">
+                                  <img
+                                    src="./images/img.png"
+                                    alt=""
+                                    class="w-10"
+                                  />
+
+                                  <div>
+                                    <h1 class="font-bold text-[14px]">
+                                      Archie Parker
+                                    </h1>
+                                    <p class="text-[12px]">Kalid is online</p>
+                                  </div>
+                                </div>
+                                <div>
+                                  <p
+                                    class="text-white w-6 h-6 bg-black rounded-full flex justify-center items-center"
+                                  >
+                                    2
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="p-4 text-white font-semibold text-xl bg-opacity-25 opacit bg-dark"
+                            >
+                              SAVER STATUS
+                            </div>
+
+                            <div>
+                              <div
+                                class="bg-white px-4 py-2 border-b-2 border-black"
+                              >
+                                <div class="flex gap-6">
+                                  <img
+                                    src="./images/img.png"
+                                    alt=""
+                                    class="w-10"
+                                  />
+
+                                  <div>
+                                    <h1 class="font-bold text-[14px]">
+                                      AharlieKane
+                                    </h1>
+                                    <p class="text-[12px]">Sami is online</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- third tab content end -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- side popup color picker end -->
                   </span>
                 </a>
               </li>
@@ -114,23 +673,6 @@
                     <img src="./images/icon2.png" alt="adminlogo" />
                   </span>
                 </a>
-                <!-- side popup color picker start -->
-                <!-- <h1>Popup/Modal Windows without JavaScript</h1>
-                <div class="box">
-                  <a class="button" href="#popup1">Let me Pop up</a>
-                </div>
-
-                <div id="popup1" class="overlay">
-                  <div class="popup">
-                    <h2>Here i am</h2>
-                    <a class="close" href="#">&times;</a>
-                    <div class="content">
-                      Thank to pop me out of that button, but now i'm done so
-                      you can close this window.
-                    </div>
-                  </div>
-                </div> -->
-                <!-- side popup color picker end -->
               </li>
               <li class="flex-1 md:flex-none md:mr-3">
                 <a href="#" aria-label="Home">
@@ -506,55 +1048,71 @@
                           </button>
 
                           <div class="dropdown-container">
-                            <a href="./order/total.html" class="text-grey"
+                            <a href="./admin/order/total.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Total</a
                             >
-                            <a href="./order/pending.html" class="text-grey"
+                            <a
+                              href="./admin/order/pending.html"
+                              class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Pending</a
                             >
-                            <a href="./order/confirm.html" class="text-grey"
+                            <a
+                              href="./admin/order/confirm.html"
+                              class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Confirmed</a
                             >
-                            <a href="./order/packageing.html" class="text-grey"
+                            <a
+                              href="./admin/order/packageing.html"
+                              class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Packaging</a
                             >
-                            <a href="./order/shipped.html" class="text-grey"
+                            <a
+                              href="./admin/order/shipped.html"
+                              class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Shipped</a
                             >
-                            <a href="./order/delivery.html" class="text-grey"
+                            <a
+                              href="./admin/order/delivery.html"
+                              class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Deliverd</a
                             >
-                            <a href="./order/return.html" class="text-grey"
+                            <a
+                              href="./admin/order/return.html"
+                              class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Returned</a
                             >
-                            <a href="./order/failed.html" class="text-grey"
+                            <a
+                              href="./admin/order/failed.html"
+                              class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Failed</a
                             >
-                            <a href="./order/cancel.html" class="text-grey"
+                            <a
+                              href="./admin/order/cancel.html"
+                              class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
@@ -592,27 +1150,16 @@
                               ></i
                               >Product</a
                             >
-                            <a href="./order/pending.html" class="text-grey"
+                            <a
+                              href="./admin/order/pending.html"
+                              class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Bluk imports</a
                             >
                           </div>
-                          <!-- <a href="./admin/product/product.html">
-                            <div
-                              class="relative flex flex-row active:text-black items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
-                            >
-                              <span
-                                class="inline-flex justify-center items-center"
-                              >
-                                <i class="fa-solid fa-shop"></i>
-                              </span>
-                              <span class="ml-2 tracking-wide truncate">
-                                Product
-                              </span>
-                            </div>
-                          </a> -->
+
                           <a href="./admin/Storepage.html">
                             <div
                               class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
@@ -670,74 +1217,72 @@
                               >
                             </div>
                           </a>
-                          <a href="#">
-                            <div>
-                              <div class="relative inline-flex self-center">
-                                <svg
-                                  class="text-white absolute top-0 right-0 m-2 pointer-events-none p-2 rounded"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                                  width="40px"
-                                  height="40px"
-                                  viewBox="0 0 38 22"
-                                  version="1.1"
-                                >
-                                  <title>
-                                    F09B337F-81F6-41AC-8924-EC55BA135736
-                                  </title>
-                                  <g
-                                    id="ZahnhelferDE—Design"
-                                    stroke="none"
-                                    stroke-width="1"
-                                    fill="none"
-                                    fill-rule="evenodd"
-                                  >
-                                    <g
-                                      id="ZahnhelferDE–Icon&amp;Asset-Download"
-                                      transform="translate(-539.000000, -199.000000)"
-                                      fill="#ffffff"
-                                      fill-rule="nonzero"
-                                    >
-                                      <g
-                                        id="Icon-/-ArrowRight-Copy-2"
-                                        transform="translate(538.000000, 183.521208)"
-                                      >
-                                        <polygon
-                                          id="Path-Copy"
-                                          transform="translate(20.000000, 18.384776) rotate(135.000000) translate(-20.000000, -18.384776) "
-                                          points="33 5.38477631 33 31.3847763 29 31.3847763 28.999 9.38379168 7 9.38477631 7 5.38477631"
-                                        />
-                                      </g>
-                                    </g>
-                                  </g>
-                                </svg>
-                                <select
-                                  class="text-md font-semibold rounded text-white h-14 w-60 pl-5 pr-10 bg-darkblue hover:border-gray-400 focus:outline-none appearance-none"
-                                >
-                                  <i class="fa-solid fa-user"></i>
-                                  <option>My Profile</option>
-                                  <option>Add New Employee</option>
-                                  <option>Employee List</option>
-                                  <option>Add Role</option>
-                                  <option>Role List</option>
-                                </select>
-                              </div>
-                            </div>
-                          </a>
-                          <a href="#">
+                          <button
+                            class="dropdown-btn h-11 rounded-md bg-blue text-white"
+                          >
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-bag-shopping"></i>
+                            </span>
+                            <span class="tracking-wide truncate ml-2">
+                              My Profile
+                            </span>
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-container">
+                            <a href="#" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >My Profile</a
+                            >
+                            <a
+                              href="./admin/myprofile/addnewemployee.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Add New Employee</a
+                            >
+                            <a
+                              href="./admin/myprofile/employeelist.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Employee List</a
+                            >
+                            <a
+                              href="./admin/myprofile/Addrole.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Add Role</a
+                            >
+                            <a
+                              href="./admin/myprofile//rolelist.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Role List</a
+                            >
+                          </div>
+                          <a href="#" style="padding: 0px">
                             <div
-                              class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6 bg-blue rounded-md"
+                              class="relative mt-2 px-4 flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 bg-blue rounded-md"
                             >
                               <span
                                 class="inline-flex justify-center items-center"
-                              >
-                                <IoLogOutOutline
-                                  class="bg-white text-blue text-md"
+                                ><img
+                                  src="./images/logout.png"
+                                  alt="img"
+                                  class="w-4 mr-2"
                                 />
                               </span>
-                              <span class="ml-2 tracking-wide truncate"
-                                >Logout</span
-                              >
+                              <span class="tracking-wide truncate">Logout</span>
                             </div>
                           </a>
                         </div>
@@ -810,7 +1355,7 @@
                               >
                                 My Profile
                               </div>
-                              <a href="./addnewemployee.html">
+                              <a href="./admin/myprofile/addnewemployee.html">
                                 <div
                                   class="border-gray border-2 px-2 py-3 rounded-xl text-sm text-black"
                                 >
@@ -866,7 +1411,7 @@
                                     name=""
                                     id=""
                                     placeholder="Super Duper "
-                                    class="rounded-xl py-2 border-4 border-gray md:px-10 px-4 md:w-96"
+                                    class="rounded-xl py-2 focus:outline-none border-blue md:px-10 px-4 md:w-96"
                                   />
                                 </div>
                                 <div class="my-4">
@@ -881,7 +1426,7 @@
                                     name=""
                                     id=""
                                     placeholder="+1234567890"
-                                    class="rounded-xl border-4 border-gray md:px-10 px-4 md:w-96 py-2"
+                                    class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-96 py-2"
                                   />
                                 </div>
                                 <div class="my-4">
@@ -900,7 +1445,7 @@
                                     name=""
                                     id=""
                                     placeholder="superduper@gmail.com"
-                                    class="rounded-xl border-4 border-gray md:px-10 px-4 md:w-96 py-2"
+                                    class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-96 py-2"
                                   />
                                 </div>
                                 <div class="my-4">
@@ -919,7 +1464,7 @@
                                     name=""
                                     id=""
                                     placeholder="Address"
-                                    class="rounded-xl border-4 border-gray md:px-10 px-4 md:w-96 py-2"
+                                    class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-96 py-2"
                                   />
                                 </div>
                                 <div class="my-4">
@@ -939,7 +1484,7 @@
                                     name=""
                                     id=""
                                     placeholder="Address"
-                                    class="rounded-xl border-4 border-gray md:px-10 px-4 md:w-96 py-2"
+                                    class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-96 py-2"
                                   />
                                 </div>
 
@@ -960,7 +1505,7 @@
                                       name=""
                                       id=""
                                       placeholder="123456"
-                                      class="rounded-xl border-4 border-gray md:px-10 px-4 md:w-44 py-2"
+                                      class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-44 py-2"
                                     />
                                   </div>
 
@@ -980,7 +1525,7 @@
                                       name=""
                                       id=""
                                       placeholder="123456"
-                                      class="rounded-xl border-4 border-gray md:px-10 px-4 md:w-44 py-2"
+                                      class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-44 py-2"
                                     />
                                   </div>
                                 </div>
@@ -1002,7 +1547,7 @@
                                       name=""
                                       id=""
                                       placeholder="INDIA"
-                                      class="rounded-xl border-4 border-gray md:px-10 px-4 md:w-44 py-2"
+                                      class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-44 py-2"
                                     />
                                   </div>
 
@@ -1022,7 +1567,7 @@
                                       name=""
                                       id=""
                                       placeholder="(GMT+11:00)"
-                                      class="rounded-xl border-4 border-gray md:px-10 px-4 md:w-44 py-2"
+                                      class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-44 py-2"
                                     />
                                   </div>
                                 </div>
@@ -1043,7 +1588,7 @@
                                     name=""
                                     id=""
                                     placeholder="Address"
-                                    class="rounded-xl border-4 border-gray md:px-10 px-4 md:w-96 py-2"
+                                    class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-96 py-2"
                                   />
                                 </div>
                                 <div class="my-4">
@@ -1061,7 +1606,7 @@
                                     name=""
                                     id=""
                                     placeholder="Address"
-                                    class="rounded-xl text-sm border-4 border-gray md:px-10 px-4 md:w-96 py-2"
+                                    class="rounded-xl text-sm focus:outline-none border-blue md:px-10 px-4 md:w-96 py-2"
                                   />
                                 </div>
                               </div>
@@ -1099,7 +1644,7 @@
                                       <input
                                         type="text"
                                         placeholder="Enter password "
-                                        class="border-2 text-sm w-full border-gray flex md:rounded-xl px-2 my-2 md:px-4 md:py-2 focus:outline-none"
+                                        class="border-1 text-sm w-full focus:outline-none border-blue flex md:rounded-xl px-2 my-2 md:px-4 md:py-2 focus:outline-none"
                                       />
 
                                       <IoIosEye
@@ -1131,6 +1676,56 @@
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+
+    <!-- dropdown start -->
+
+    <!-- setting side  popup start -->
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+    <!-- setting side  popup end -->
+    <script>
+      /*Toggle dropdown list*/
+      function toggleDD(myDropMenu) {
+        document.getElementById(myDropMenu).classList.toggle("invisible");
+      }
+      /*Filter dropdown options*/
+      function filterDD(myDropMenu, myDropMenuSearch) {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById(myDropMenuSearch);
+        filter = input.value.toUpperCase();
+        div = document.getElementById(myDropMenu);
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (
+          !event.target.matches(".drop-button") &&
+          !event.target.matches(".drop-search")
+        ) {
+          var dropdowns = document.getElementsByclass("dropdownlist");
+          for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (!openDropdown.classList.contains("invisible")) {
+              openDropdown.classList.add("invisible");
+            }
+          }
+        }
+      };
+    </script>
     <script>
       /*Toggle dropdown list*/
       function toggleDD(myDropMenu) {
@@ -1170,7 +1765,7 @@
     <!-- dropdown start -->
     <script>
       /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-      var dropdown = document.getElementsByclass("dropdown-btn");
+      var dropdown = document.getElementsByClassName("dropdown-btn");
       var i;
 
       for (i = 0; i < dropdown.length; i++) {
@@ -1185,19 +1780,5 @@
         });
       }
     </script>
-    <!-- setting side  popup start -->
-    <script>
-      function openForm() {
-        document.getElementById("myForm").style.display = "block";
-      }
-
-      function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-      }
-    </script>
-    <!-- setting side  popup end -->
-    <!-- color picker popup start-->
-
-    <!-- color picker popup end-->
   </body>
 </html>

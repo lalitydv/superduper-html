@@ -9,6 +9,7 @@
     <meta name="description" content="description here" />
     <meta name="keywords" content="keywords,here" />
 
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -23,14 +24,16 @@
     />
     <!--Replace with your tailwind.css once created-->
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!--Totally optional :) -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"
       integrity="sha256-xKeoJ50pzbUGkpQxDYHD7o7hxe0LaOGeguUidbq6vis="
       crossorigin="anonymous"
     ></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -65,7 +68,7 @@
           >
             <a href="#" aria-label="Home">
               <span class="text-xl p-0">
-                <img src="./images/logo1.png" alt="adminlogo" />
+                <img src="../../images/logo1.png" alt="adminlogo" />
                 <!-- <i class="em em-grinning"></i> -->
               </span>
             </a>
@@ -85,13 +88,13 @@
                 <a
                   class="inline-block py-2 px-4 text-white no-underline"
                   href="#"
-                  ><img src="./images/flag.png" alt="adminlogo"
+                  ><img src="../../images/flag.png" alt="adminlogo"
                 /></a>
               </li>
               <li class="flex-1 md:flex-none md:mr-3">
                 <a href="#" aria-label="Home">
                   <span class="text-xl p-0">
-                    <img src="./images/icon1.png" alt="adminlogo" />
+                    <img src="../../images/icon1.png" alt="adminlogo" />
                     <!-- <i class="em em-grinning"></i> -->
                   </span>
                 </a>
@@ -100,7 +103,7 @@
               <li class="flex-1 md:flex-none md:mr-3">
                 <a href="#" aria-label="Home">
                   <span class="text-xl p-0">
-                    <img src="./images/icon2.png" alt="adminlogo" />
+                    <img src="../../images/icon2.png" alt="adminlogo" />
                     <!-- <i class="em em-grinning"></i> -->
                   </span>
                 </a>
@@ -116,7 +119,7 @@
               <li class="flex-1 md:flex-none md:mr-3">
                 <a href="#" aria-label="Home">
                   <span class="text-xl p-0">
-                    <img src="./images/profile.png" alt="adminlogo" />
+                    <img src="../../images/profile.png" alt="adminlogo" />
                     <!-- <i class="em em-grinning"></i> -->
                   </span>
                 </a>
@@ -151,131 +154,265 @@
                    class="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow text-md
         "
                     >
-                      <ul class="flex flex-col py-14 px-  space-y-1">
-                        <li>
-                          <div class=" relative item-center justify-center  flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
-                            <img src="images\admlogo.png" alt="img" class="w-20 h-20" />
-                            <span>Store Name</span>
-                          </div>
-                        </li>
-                        <li>
-                          <Link
-                            to="/"
-                         class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                    <div class="sidenav flex flex-col py-14 px- space-y-1">
+                      <div
+                        class="relative item-center justify-center flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                      >
+                        <img
+                          src="../../images/admlogo.png"
+                          alt="img"
+                          class="w-20 h-20"
+                        />
+                        <span>Store Name</span>
+                      </div>
+
+                      <div class="sidenav">
+                        <a href="#">
+                          <span
+                            class="inline-flex justify-center items-center"
                           >
-                            <span class="inline-flex justify-center items-center ml-4">
-                             
-                              <i class="fa-solid fa-house" class=" text-md"></i>
+                            <i class="fa-solid fa-house" class="text-md"></i>
+                          </span>
+                          <span class="ml-2 tracking-wide truncate">
+                            Dashboard
+                          </span>
+                        </a>
+
+                        <button class="dropdown-btn">
+                          <span
+                            class="inline-flex justify-center items-center"
+                          >
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </span>
+                          <span class="tracking-wide truncate ml-2">
+                            orders
+                          </span>
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+
+                        <div class="dropdown-container">
+                          <a href="./order/total.html" class="text-grey"
+                            ><i
+                              class="fa-solid fa-circle-chevron-right mr-2"
+                            ></i
+                            >Total</a
+                          >
+                          <a href="#" class="text-grey"
+                            ><i
+                              class="fa-solid fa-circle-chevron-right mr-2"
+                            ></i
+                            >Pending</a
+                          >
+                          <a href="#" class="text-grey"
+                            ><i
+                              class="fa-solid fa-circle-chevron-right mr-2"
+                            ></i
+                            >Confirmed</a
+                          >
+                          <a href="#" class="text-grey"
+                            ><i
+                              class="fa-solid fa-circle-chevron-right mr-2"
+                            ></i
+                            >Packaging</a
+                          >
+                          <a href="#" class="text-grey"
+                            ><i
+                              class="fa-solid fa-circle-chevron-right mr-2"
+                            ></i
+                            >Shipped</a
+                          >
+                          <a href="#" class="text-grey"
+                            ><i
+                              class="fa-solid fa-circle-chevron-right mr-2"
+                            ></i
+                            >Deliverd</a
+                          >
+                          <a href="#" class="text-grey"
+                            ><i
+                              class="fa-solid fa-circle-chevron-right mr-2"
+                            ></i
+                            >Returned</a
+                          >
+                          <a href="#" class="text-grey"
+                            ><i
+                              class="fa-solid fa-circle-chevron-right mr-2"
+                            ></i
+                            >Failed</a
+                          >
+                          <a href="./cancel.html" class="text-grey"
+                            ><i
+                              class="fa-solid fa-circle-chevron-right mr-2"
+                            ></i
+                            >Canceled</a
+                          >
+                        </div>
+
+                        <a href="#contact">
+                          <span
+                            class="inline-flex justify-center items-center"
+                          >
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </span>
+                          <span class="ml-2 tracking-wide truncate">
+                            Category
+                          </span></a
+                        >
+                        <button class="dropdown-btn">
+                          <span
+                            class="inline-flex justify-center items-center"
+                          >
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </span>
+                          <span class="tracking-wide truncate ml-2">
+                            product
+                          </span>
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                          <a href="./product/product.html" class="text-grey"
+                            ><i
+                              class="fa-solid fa-circle-chevron-right mr-2"
+                            ></i
+                            >Product</a
+                          >
+                          <a href="./order/pending.html" class="text-grey"
+                            ><i
+                              class="fa-solid fa-circle-chevron-right mr-2"
+                            ></i
+                            >Bluk imports</a
+                          >
+                        </div>
+                        <a href="Storepage.html">
+                          <div
+                            class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                          >
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-thin fa-layer-group"></i>
                             </span>
-                            <span class="ml-2  tracking-wide truncate">
-                              Dashboard
-                            </span>
-                          </Link>
-                        </li>
-                        <li>
-                          <div class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
-                            <span class="inline-flex justify-center items-center ml-4">
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </span>
-                            <span class="ml-2  tracking-wide truncate">Orders</span>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
-                            <span class="inline-flex justify-center items-center ml-4">
-                             
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </span>
-                            <span class="ml-2  tracking-wide truncate">
-                              Category
-                            </span>
-                          </div>
-                        </li>
-                        <li class="relative">
-                          <div class="relative flex flex-row active:text-black items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
-                            <span class="inline-flex justify-center items-center ml-4">
-                             
-                              <i class="fa-solid fa-shop"></i>
-                            </span>
-                            <span class="ml-2  tracking-wide truncate">
-                              Product
-                            </span>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
-                            <span class="inline-flex justify-center items-center ml-4">
-                                <i class="fa-thin fa-layer-group"></i>
-                            </span>
-                            <span class="ml-2  tracking-wide truncate">
+                            <span class="ml-2 tracking-wide truncate">
                               Store Profile
                             </span>
                           </div>
-                        </li>
-                        <li>
-                          <div class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
-                            <span class="inline-flex justify-center items-center ml-4">
-                                <i class="fa-regular fa-bell"></i>
+                        </a>
+                        <a href="Notification.html">
+                          <div
+                            class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                          >
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-regular fa-bell"></i>
                             </span>
-                            <span class="ml-2  tracking-wide truncate">
+                            <span class="ml-2 tracking-wide truncate">
                               Notifications
                             </span>
                           </div>
-                        </li>
-                        <li>
-                          <div class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
-                            <span class="inline-flex justify-center items-center ml-4">
-                                <i class="fa-regular fa-credit-card"></i>
+                        </a>
+                        <a href="couponpage.html">
+                          <div
+                            class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                          >
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-regular fa-credit-card"></i>
                             </span>
-                            <span class="ml-2  tracking-wide truncate">Coupon</span>
+                            <span class="ml-2 tracking-wide truncate"
+                              >Coupon</span
+                            >
                           </div>
-                        </li>
-                        <li>
-                          <div class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
-                            <span class="inline-flex justify-center items-center ml-4">
-                                <i class="fa-regular fa-credit-card"></i>
+                        </a>
+                        <a href="payout.html">
+                          <div
+                            class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                          >
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-regular fa-credit-card"></i>
                             </span>
-                            <span class="ml-2 font-semibold  tracking-wide truncate">Payout</span>
+                            <span
+                              class="ml-2 font-semibold tracking-wide truncate"
+                              >Payout</span
+                            >
                           </div>
-                        </li>
-                        <li>
-                          <div>
-                            <div class="relative inline-flex self-center">
-                                <svg class="text-white absolute top-0 right-0 m-2 pointer-events-none p-2 rounded" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 38 22" version="1.1">
-                                    <title>F09B337F-81F6-41AC-8924-EC55BA135736</title>
-                                    <g id="ZahnhelferDE—Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <g id="ZahnhelferDE–Icon&amp;Asset-Download" transform="translate(-539.000000, -199.000000)" fill="#ffffff" fill-rule="nonzero">
-                                            <g id="Icon-/-ArrowRight-Copy-2" transform="translate(538.000000, 183.521208)">
-                                                <polygon id="Path-Copy" transform="translate(20.000000, 18.384776) rotate(135.000000) translate(-20.000000, -18.384776) " points="33 5.38477631 33 31.3847763 29 31.3847763 28.999 9.38379168 7 9.38477631 7 5.38477631"/>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                                <select class="text-md font-semibold rounded  text-white h-14 w-60 pl-5 pr-10 bg-darkblue hover:border-gray-400 focus:outline-none appearance-none">
-                                  <i class="fa-solid fa-user"></i>
-                                    <option>My Profile</option>
-                                    <option>Add New Employee</option>
-                                    <option>Employee List</option>
-                                    <option>Add Role</option>
-                                    <option>Role List </option>
-                                </select>
-                            </div>
-                        </div>
-                        </li>
-        
-                     
-                        <li class="mt-4">
-                          <div class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6 bg-blue rounded-md">
-                            <span class="inline-flex justify-center items-center  ml-4">
+                        </a>
+                        <button
+                        class="dropdown-btn h-11 rounded-md bg-blue text-white"
+                      >
+                        <span
+                          class="inline-flex justify-center items-center"
+                        >
+                          <i class="fa-solid fa-bag-shopping"></i>
+                        </span>
+                        <span class="tracking-wide truncate ml-2">
+                          My Profile
+                        </span>
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-container">
+                        <a
+                          href="./admin/product/product.html"
+                          class="text-grey"
+                          ><i
+                            class="fa-solid fa-circle-chevron-right mr-2"
+                          ></i
+                          >My Profile</a
+                        >
+                        <a
+                          href="./admin/order/pending.html"
+                          class="text-grey"
+                          ><i
+                            class="fa-solid fa-circle-chevron-right mr-2"
+                          ></i
+                          >Add New Employee</a
+                        >
+                        <a
+                          href="./admin/order/pending.html"
+                          class="text-grey"
+                          ><i
+                            class="fa-solid fa-circle-chevron-right mr-2"
+                          ></i
+                          >Employee List</a
+                        >
+                        <a
+                          href="./admin/order/pending.html"
+                          class="text-grey"
+                          ><i
+                            class="fa-solid fa-circle-chevron-right mr-2"
+                          ></i
+                          >Add Role</a
+                        >
+                        <a
+                          href="./admin/order/pending.html"
+                          class="text-grey"
+                          ><i
+                            class="fa-solid fa-circle-chevron-right mr-2"
+                          ></i
+                          >Role List</a
+                        >
+                      </div>
+                       <a href="" style="padding: 0px;">
+                          <div
+                            class="relative mt-2 flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6 bg-blue rounded-md"
+                          >
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
                               <IoLogOutOutline
-                             class="bg-white  text-blue text-md
-        "
+                                class="bg-white text-blue text-md"
                               />
                             </span>
-                            <span class="ml-2  tracking-wide truncate">Logout</span>
-                          </div>
-                        </li>
-                      </ul>
+                            <span class="ml-2 tracking-wide truncate"
+                              >Logout</span
+                            >
+                          </div></a>
+                        
+                      </div>
+                      <!-- end dropwdown -->
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -332,7 +469,7 @@
                       
                                       <div class="bg-white md:rounded-2xl text-center  md:py-10 w-72 md:w-full mt-10 p-4 md:overflow-hidden  shadow-md">
                                         <div class="md:flex grid  md:gap-3 gap-4 items-center  ">
-                                            <a href="Myprofile.html">
+                                            <a href="../../myprofile.html">
                                                 <div class="border-gray border-2 px-10 py-3 rounded-xl text-sm text-black ">
                                                     My Profile
                                                 </div>
@@ -361,7 +498,7 @@
                                       </div>
                       
                                       <div class="flex items-center py-4 gap-2 bg-[#F1F1F1]">
-                                        <img src={infinity} alt="" />
+                                        <img src="../../images/up.png" alt="" />
                                         Here you can manage Employee/User roles.
                                       </div>
                       
@@ -373,34 +510,34 @@
                                                 <th scope="col" class="   md:py-3">
                                                   Sr no
                                                 </th>
-                                                <th scope="col" class="  border-x-4 py-3 md:px-4 ">
+                                                <th scope="col" class="  border-x-4 py-3  ">
                                                   Emp. id
                                                 </th>
-                                                <th scope="col" class=" py-3 md:px-4">
+                                                <th scope="col" class=" py-3 ">
                                                   Name
                                                 </th>
-                                                <th scope="col" class=" py-3 md:px-4">
+                                                <th scope="col" class=" py-3 ">
                                                   Email
                                                 </th>
-                                                <th scope="col" class="py-3 md:px-4">
+                                                <th scope="col" class="py-3 ">
                                                   Contact
                                                 </th>
-                                                <th scope="col" class="py-3 md:px-4">
+                                                <th scope="col" class="py-3 ">
                                                   City
                                                 </th>
-                                                <th scope="col" class="py-3 md:px-4">
+                                                <th scope="col" class="py-3 ">
                                                   District
                                                 </th>
-                                                <th scope="col" class="py-3 md:px-4">
+                                                <th scope="col" class="py-3 ">
                                                   Pan no.
                                                 </th>
-                                                <th scope="col" class="py-3 md:px-4">
+                                                <th scope="col" class="py-3 ">
                                                   Balance
                                                 </th>
-                                                <th scope="col" class="py-3 md:px-4">
+                                                <th scope="col" class="py-3 ">
                                                   Roles
                                                 </th>
-                                                <th scope="col" class="py-3 md:px-4">
+                                                <th scope="col" class="py-3 ">
                                                   Status
                                                 </th>
                                               </tr>
@@ -424,7 +561,7 @@
                                                 <td class="py-2 px-2">Balance</td>
                                                 <td class="py-2 px-2 text-orange">Show</td>
                                                 <td class="py-2 px-2 ">
-                                                  <div class="md:px-4 rounded-md bg-light-green text-center text-green py-2">
+                                                  <div class=" rounded-md bg-light-green text-center text-green py-2">
                                                     Status
                                                   </div>
                                                 </td>
@@ -444,7 +581,7 @@
                                                 <td class="py-2 px-2">Balance</td>
                                                 <td class="py-2 px-2 text-orange">Show</td>
                                                 <td class="py-2 px-2 ">
-                                                  <div class=" md:px-4 rounded-md bg-light-orange text-center text-orange py-2">
+                                                  <div class="  rounded-md bg-light-orange text-center text-orange py-2">
                                                     Status
                                                   </div>
                                                 </td>
@@ -463,7 +600,7 @@
                                                 <td class="py-2 px-2">Balance</td>
                                                 <td class="py-2 px-2 text-orange">Show</td>
                                                 <td class="py-2 px-2 ">
-                                                  <div class=" md:px-4 rounded-md  bg-light-pink text-center text-pink py-2">
+                                                  <div class="  rounded-md  bg-light-pink text-center text-pink py-2">
                                                     Status
                                                   </div>
                                                 </td>
@@ -711,7 +848,7 @@
                                                         class="border-2 text-center px-2 py-2 mt-2 rounded-xl border-dotted"
                                                       >
                                                         <img
-                                                          src="images\profile1.png"
+                                                          src="../../images/profile1.png"
                                                           alt="upload photo"
                                                         />
                                                       </div>
@@ -733,7 +870,7 @@
                                                           <input
                                                             type="text"
                                                             placeholder="Enter password "
-                                                            class="border-2 text-sm w-full border-gray flex md:rounded-xl px-2 my-2 md:px-4 md:py-2 focus:outline-none"
+                                                            class="border-2 text-sm w-full border-gray flex md:rounded-xl px-2 my-2  md:py-2 focus:outline-none"
                                                           />
                     
                                                           <IoIosEye
@@ -813,6 +950,60 @@
           }
         }
       };
+    </script>
+    <script>
+      /*Toggle dropdown list*/
+      function toggleDD(myDropMenu) {
+        document.getElementById(myDropMenu).classList.toggle("invisible");
+      }
+      /*Filter dropdown options*/
+      function filterDD(myDropMenu, myDropMenuSearch) {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById(myDropMenuSearch);
+        filter = input.value.toUpperCase();
+        div = document.getElementById(myDropMenu);
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (
+          !event.target.matches(".drop-button") &&
+          !event.target.matches(".drop-search")
+        ) {
+          var dropdowns = document.getElementsByclass("dropdownlist");
+          for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (!openDropdown.classList.contains("invisible")) {
+              openDropdown.classList.add("invisible");
+            }
+          }
+        }
+      };
+    </script>
+    <!-- dropdown start -->
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
   </body>
