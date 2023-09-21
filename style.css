@@ -718,3 +718,10 @@ h1 {
     width: 70%;
   }
 }
+
+@media screen and (max-width: 1240px){
+  .respons{
+    flex-wrap: wrap;
+  }
+  
+}
