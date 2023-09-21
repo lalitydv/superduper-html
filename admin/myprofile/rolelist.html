@@ -61,7 +61,7 @@
         aria-label="menu nav"
         class="bg-white shadow pt-2 md:pt-1 pb-1 px-1 mt-0 h-auto fixed w-full z-20 top-0"
       >
-        <div class="flex flex-wrap items-center">
+        <div class="flex flex-wrap items-center py-2">
           <div
             class="flex flex-shrink md:w-1/3 justify-center md:justify-start text-white"
           >
@@ -83,10 +83,8 @@
             <ul
               class="list-reset flex justify-between flex-1 md:flex-none items-center"
             >
-              <li class="flex-1 md:flex-none md:mr-3">
-                <a
-                  class="inline-block py-2 px-4 text-white no-underline"
-                  href="#"
+              <li class="flex-1 md:flex-none md:mr-3 flex">
+                <a class="inline-block text-white no-underline" href="#"
                   ><img src="../../images/flag.png" alt="adminlogo"
                 /></a>
               </li>
@@ -118,7 +116,11 @@
               <li class="flex-1 md:flex-none md:mr-3">
                 <a href="#" aria-label="Home">
                   <span class="text-xl p-0">
-                    <img src="../../images/profile.png" alt="adminlogo" />
+                    <img
+                      src="../../images/profile.png"
+                      alt="adminlogo"
+                      class="w-[35px]"
+                    />
                     <!-- <i class="em em-grinning"></i> -->
                   </span>
                 </a>
@@ -168,7 +170,7 @@
                           <span>Store Name</span>
                         </div>
 
-                        <div class="sidenav">
+                        <div class="sidenav" style="margin-top: 25px">
                           <a href="#">
                             <span
                               class="inline-flex justify-center items-center"
@@ -193,55 +195,55 @@
                           </button>
 
                           <div class="dropdown-container">
-                            <a href="./order/total.html" class="text-grey"
+                            <a href="../order/total.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Total</a
                             >
-                            <a href="#" class="text-grey"
+                            <a href="../order/pending.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Pending</a
                             >
-                            <a href="#" class="text-grey"
+                            <a href="../order/confirm.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Confirmed</a
                             >
-                            <a href="#" class="text-grey"
+                            <a href="../order/packageing.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Packaging</a
                             >
-                            <a href="#" class="text-grey"
+                            <a href="../order/shipped.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Shipped</a
                             >
-                            <a href="#" class="text-grey"
+                            <a href="../order/delivery.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Deliverd</a
                             >
-                            <a href="#" class="text-grey"
+                            <a href="../order/return.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Returned</a
                             >
-                            <a href="#" class="text-grey"
+                            <a href="../order/failed.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Failed</a
                             >
-                            <a href="./cancel.html" class="text-grey"
+                            <a href="..order/cancel.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
@@ -253,7 +255,7 @@
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-bag-shopping"></i>
+                              <i class="fa-solid fa-table-columns"></i>
                             </span>
                             <span class="ml-2 tracking-wide truncate">
                               Category
@@ -263,7 +265,7 @@
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-bag-shopping"></i>
+                              <i class="fa-solid fa-sitemap"></i>
                             </span>
                             <span class="tracking-wide truncate ml-2">
                               product
@@ -277,72 +279,56 @@
                               ></i
                               >Product</a
                             >
-                            <a href="./order/pending.html" class="text-grey"
+                            <a href="../product/bluk.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Bluk imports</a
                             >
                           </div>
-                          <a href="Storepage.html">
-                            <div
-                              class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                          <a href="../Storepage.html">
+                            <span
+                              class="inline-flex justify-center items-center"
                             >
-                              <span
-                                class="inline-flex justify-center items-center"
-                              >
-                                <i class="fa-thin fa-layer-group"></i>
-                              </span>
-                              <span class="ml-2 tracking-wide truncate">
-                                Store Profile
-                              </span>
-                            </div>
+                              <i class="fa-solid fa-store"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Store Profile
+                            </span>
                           </a>
-                          <a href="Notification.html">
-                            <div
-                              class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                          <a href="../Notification.html">
+                            <span
+                              class="inline-flex justify-center items-center"
                             >
-                              <span
-                                class="inline-flex justify-center items-center"
-                              >
-                                <i class="fa-regular fa-bell"></i>
-                              </span>
-                              <span class="ml-2 tracking-wide truncate">
-                                Notifications
-                              </span>
-                            </div>
+                              <i class="fa-regular fa-bell"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Notifications
+                            </span>
                           </a>
-                          <a href="couponpage.html">
-                            <div
-                              class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                          <a href="../couponpage.html">
+                            <span
+                              class="inline-flex justify-center items-center"
                             >
-                              <span
-                                class="inline-flex justify-center items-center"
-                              >
-                                <i class="fa-regular fa-credit-card"></i>
-                              </span>
-                              <span class="ml-2 tracking-wide truncate"
-                                >Coupon</span
-                              >
-                            </div>
+                              <i class="fa-regular fa-credit-card"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate"
+                              >Coupon</span
+                            >
                           </a>
-                          <a href="payout.html">
-                            <div
-                              class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                          <a href="../payout.html">
+                            <span
+                              class="inline-flex justify-center items-center"
                             >
-                              <span
-                                class="inline-flex justify-center items-center"
-                              >
-                                <i class="fa-regular fa-credit-card"></i>
-                              </span>
-                              <span
-                                class="ml-2 font-semibold tracking-wide truncate"
-                                >Payout</span
-                              >
-                            </div>
+                              <i class="fa-regular fa-credit-card"></i>
+                            </span>
+                            <span
+                              class="ml-2 font-semibold tracking-wide truncate"
+                              >Payout</span
+                            >
                           </a>
                           <button
-                            class="dropdown-btn h-11 rounded-md bg-blue text-white"
+                            class="dropdown-btn h-11 mt-5 rounded-md bg-blue text-white"
                           >
                             <span
                               class="inline-flex justify-center items-center"
@@ -355,41 +341,31 @@
                             <i class="fa fa-caret-down"></i>
                           </button>
                           <div class="dropdown-container">
-                            <a
-                              href="./admin/product/product.html"
-                              class="text-grey"
+                            <a href="../../Myprofile.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >My Profile</a
                             >
-                            <a
-                              href="./admin/order/pending.html"
-                              class="text-grey"
+                            <a href="./addnewemployee.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Add New Employee</a
                             >
-                            <a
-                              href="./admin/order/pending.html"
-                              class="text-grey"
+                            <a href="./employeelist.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Employee List</a
                             >
-                            <a
-                              href="./admin/order/pending.html"
-                              class="text-grey"
+                            <a href="./Addrole.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Add Role</a
                             >
-                            <a
-                              href="./admin/order/pending.html"
-                              class="text-grey"
+                            <a href="./rolelist.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
@@ -398,18 +374,17 @@
                           </div>
                           <a href="#" style="padding: 0px">
                             <div
-                              class="relative mt-2 flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6 bg-blue rounded-md"
+                              class="relative mt-2 h-11 px-4 flex flex-row items-center focus:outline-none dark:hover:bg-gray-600 text-white hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 bg-blue rounded-md"
                             >
                               <span
                                 class="inline-flex justify-center items-center"
-                              >
-                                <IoLogOutOutline
-                                  class="bg-white text-blue text-md"
+                                ><img
+                                  src="../../images/logout.png"
+                                  alt="img"
+                                  class="w-4 mr-3"
                                 />
                               </span>
-                              <span class="ml-2 tracking-wide truncate"
-                                >Logout</span
-                              >
+                              <span class="tracking-wide truncate">Logout</span>
                             </div>
                           </a>
                         </div>
@@ -429,274 +404,212 @@
           >
             <!-- only for  start -->
             <div class="w-full">
+              <!-- addnew page start  -->
               <div class="flex flex-col md:mx-4 mx-2 gap-5">
-                <div class="bg-white rounded-3xl md:p-4 p-8">
+                <div class="bg-white rounded-3xl p-8">
                   <div class="flex lg:flex-nowrap gap-4 flex-wrap box-border">
-                    <div class="lg:w-[100%] md:w-[100%]">
+                    <div class="lg:w-[100%%] w-[100%]">
                       <div class="mt-4">
-                        <div
-                          class="relative overflow-hidden md:text-md text-lg"
-                        >
-                          <!-- addnew page start  -->
-                          <div class="flex flex-col md:mx-4 mx-2 gap-5">
-                            <div class="bg-white rounded-3xl md:p-2 p-8">
-                              <div
-                                class="flex lg:flex-nowrap gap-4 flex-wrap box-border"
-                              >
-                                <div class="lg:w-[100%] w-[100%]">
-                                  <div class="mt-4">
-                                    <div
-                                      class="relative overflow-hidden text-md"
-                                    >
-                                      <div
-                                        class="bg-white md:rounded-l-full w-72 md:w-full overflow-hidden shadow-md"
-                                      >
-                                        <div
-                                          class="md:flex md:justify-between grid md:gap-0 gap-4 items-center"
-                                        >
-                                          <div class="md:pl-4">overview</div>
-                                          <div class="">
-                                            show
-                                            <span class="md:ml-4"
-                                              >this month</span
-                                            >
-                                          </div>
-                                          <div class=" ">
-                                            <form
-                                              class="border-2 border-darkblue md:rounded-2xl px-2 md:my-2 md:px-20 md:py-2"
-                                            >
-                                              <input
-                                                type="text"
-                                                placeholder="Search "
-                                                class="text-black focus:outline-none"
-                                              />
-
-                                              <HiSearch
-                                                class="inline-block text-gray"
-                                              />
-                                            </form>
-                                          </div>
-                                          <button
-                                            class="bg-blue text-white md:px-6 rounded-xl py-2"
-                                          >
-                                            add New Product
-                                          </button>
-                                        </div>
-                                      </div>
-
-                                      <div
-                                        class="bg-white md:rounded-2xl text-center md:py-10 w-72 md:w-full mt-10 p-4 md:overflow-hidden shadow-md"
-                                      >
-                                        <div
-                                          class="md:flex grid md:gap-3 gap-4 items-center"
-                                        >
-                                          <a href="../../myprofile.html">
-                                            <div
-                                              class="border-gray border-2 px-10 py-3 rounded-xl text-sm text-black"
-                                            >
-                                              My Profile
-                                            </div>
-                                          </a>
-                                          <a href="./addnewemployee.html">
-                                            <div
-                                              class="border-gray border-2 px-2 py-3 rounded-xl text-sm text-black"
-                                            >
-                                              Add New Employee
-                                            </div>
-                                          </a>
-                                          <a href="employeelist.html">
-                                            <div
-                                              class="border-gray border-2 px-10 py-3 rounded-xl text-sm text-black"
-                                            >
-                                              Employee List
-                                            </div>
-                                          </a>
-                                          <a href="Addrole.html">
-                                            <div
-                                              class="border-gray border-2 px-10 py-3 rounded-xl text-sm text-black"
-                                            >
-                                              Add Role
-                                            </div>
-                                          </a>
-                                          <a href="rolelist.html">
-                                            <div
-                                              class="bg-blue text-white border-gray border-2 px-10 py-3 rounded-xl text-sm text-black"
-                                            >
-                                              Role List
-                                            </div>
-                                          </a>
-                                        </div>
-                                      </div>
-
-                                      <div
-                                        class="flex items-center py-4 gap-2 bg-[#F1F1F1]"
-                                      >
-                                        <img src="../../images/up.png" alt="" />
-                                        Here you can manage Employee/User roles.
-                                      </div>
-
-                                      <div
-                                        class="bg-white rounded-xl py-10 items-center md:w-full p-4 overflow-hidden shadow-md"
-                                      >
-                                        <div class="relative overflow-x-auto">
-                                          <table
-                                            class="w-full text-sm text-left border-gray border-4 text-gray-500"
-                                          >
-                                            <thead class="     ">
-                                              <tr
-                                                class="border-b-4 border-gray text-xs"
-                                              >
-                                                <th
-                                                  scope="col"
-                                                  class="px-4 py-3"
-                                                >
-                                                  Sr no
-                                                </th>
-                                                <th
-                                                  scope="col"
-                                                  class="border-x-4 py-3 md:px-14 px-4"
-                                                >
-                                                  Role Name
-                                                </th>
-                                                <th
-                                                  scope="col"
-                                                  class="py-3 md:px-32 px-10"
-                                                >
-                                                  Description
-                                                </th>
-                                                <th
-                                                  scope="col"
-                                                  class="py-3 md:px-20 px-6"
-                                                >
-                                                  Status
-                                                </th>
-                                                <th
-                                                  scope="col"
-                                                  class="py-3 md:px-20 px-6"
-                                                >
-                                                  Action
-                                                </th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                              <tr
-                                                class="bg-white border-b-4 border-gray"
-                                              >
-                                                <td class="py-5 px-6">1</td>
-                                                <td class="py-5 md:px-14 px-4">
-                                                  Super Admin
-                                                </td>
-                                                <td class="py-5 md:px-32 px-10">
-                                                  Super Admin
-                                                </td>
-                                                <td class="py-5 md:px-20 px-6">
-                                                  Active
-                                                </td>
-                                                <td
-                                                  class="py-5 md:px-20 px-6 flex gap-2"
-                                                >
-                                                  <i
-                                                    class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-
-                                                  <i
-                                                    class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-                                                </td>
-                                              </tr>
-
-                                              <tr
-                                                class="bg-white border-b-4 border-gray"
-                                              >
-                                                <td class="py-5 px-6">1</td>
-                                                <td class="py-5 md:px-14 px-4">
-                                                  Default-Emp
-                                                </td>
-                                                <td class="py-5 md:px-32 px-10">
-                                                  Employee Default Roles
-                                                </td>
-                                                <td class="py-5 md:px-20 px-6">
-                                                  Active
-                                                </td>
-                                                <td
-                                                  class="py-5 md:px-20 px-6 flex gap-2"
-                                                >
-                                                  <i
-                                                    class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-                                                  <!-- <MdModeEdit class="text-blue border-2  w-6 h-6 rounded-md " /> -->
-                                                  <i
-                                                    class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-                                                </td>
-                                              </tr>
-                                              <tr
-                                                class="bg-white border-b-4 border-gray"
-                                              >
-                                                <td class="py-5 px-6">1</td>
-                                                <td class="py-5 md:px-14 px-4">
-                                                  super Emp
-                                                </td>
-                                                <td class="py-5 md:px-32 px-10">
-                                                  super Emp
-                                                </td>
-                                                <td class="py-5 md:px-20 px-6">
-                                                  Active
-                                                </td>
-                                                <td
-                                                  class="py-5 md:px-20 px-6 flex gap-2"
-                                                >
-                                                  <i
-                                                    class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-                                                  <!-- <MdModeEdit class="text-blue border-2  w-6 h-6 rounded-md " /> -->
-                                                  <i
-                                                    class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-                                                </td>
-                                              </tr>
-                                              <tr
-                                                class="bg-white border-b-4 border-gray"
-                                              >
-                                                <td class="py-5 px-6">1</td>
-                                                <td class="py-5 md:px-14 px-4">
-                                                  600001
-                                                </td>
-                                                <td class="py-5 md:px-32 px-10">
-                                                  Super Admin
-                                                </td>
-                                                <td class="py-5 md:px-20 px-6">
-                                                  Active
-                                                </td>
-                                                <td
-                                                  class="py-5 md:px-20 px-6 flex gap-2"
-                                                >
-                                                  <i
-                                                    class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-                                                  <!-- <MdModeEdit class="text-blue border-2  w-6 h-6 rounded-md " /> -->
-                                                  <i
-                                                    class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
+                        <div class="relative overflow-hidden text-md">
+                          <div
+                            class="bg-white md:rounded-l-full w-72 md:w-full overflow-hidden shadow-md"
+                          >
+                            <div
+                              class="md:flex md:justify-between grid md:gap-0 gap-4 items-center"
+                            >
+                              <div class="md:pl-4">overview</div>
+                              <div class="flex items-center">
+                                <label
+                                  for="countries"
+                                  class="block text-sm font-medium text-gray-1"
+                                >
+                                  Show
+                                </label>
+                                <select
+                                  id="countries"
+                                  class="text-black text-sm"
+                                >
+                                  <option selected>this month</option>
+                                  <option value="US">United States</option>
+                                  <option value="CA">Canada</option>
+                                  <option value="FR">France</option>
+                                  <option value="DE">Germany</option>
+                                </select>
                               </div>
+                              <div class=" ">
+                                <form
+                                  class="border-2 border-darkblue md:rounded-2xl px-2 md:my-2 md:px-20 md:py-2"
+                                >
+                                  <input
+                                    type="text"
+                                    placeholder="Search "
+                                    class="text-black focus:outline-none"
+                                  />
+
+                                  <HiSearch class="inline-block text-gray" />
+                                </form>
+                              </div>
+                              <button
+                                class="bg-blue text-white md:px-6 rounded-xl py-2"
+                              >
+                                add New Product
+                              </button>
                             </div>
                           </div>
-                          <!-- add new page end -->
+
+                          <div
+                            class="bg-white md:rounded-2xl text-center md:py-10 w-72 md:w-full mt-10 p-4 md:overflow-hidden shadow-md"
+                          >
+                            <div
+                              class="md:flex grid md:gap-3 gap-4 items-center"
+                            >
+                              <a href="../../myprofile.html">
+                                <div
+                                  class="border-gray border-2 px-10 py-3 rounded-xl text-sm text-black"
+                                >
+                                  My Profile
+                                </div>
+                              </a>
+                              <a href="./addnewemployee.html">
+                                <div
+                                  class="border-gray border-2 px-2 py-3 rounded-xl text-sm text-black"
+                                >
+                                  Add New Employee
+                                </div>
+                              </a>
+                              <a href="employeelist.html">
+                                <div
+                                  class="border-gray border-2 px-10 py-3 rounded-xl text-sm text-black"
+                                >
+                                  Employee List
+                                </div>
+                              </a>
+                              <a href="Addrole.html">
+                                <div
+                                  class="border-gray border-2 px-10 py-3 rounded-xl text-sm text-black"
+                                >
+                                  Add Role
+                                </div>
+                              </a>
+                              <a href="rolelist.html">
+                                <div
+                                  class="bg-blue text-white border-gray border-2 px-10 py-3 rounded-xl text-sm text-black"
+                                >
+                                  Role List
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+
+                          <div
+                            class="flex items-center py-4 gap-2 bg-[#F1F1F1]"
+                          >
+                            <img src="../../images/up.png" alt="" />
+                            Here you can manage Employee/User roles.
+                          </div>
+
+                          <div
+                            class="bg-white rounded-xl py-10 items-center md:w-full p-4 overflow-hidden shadow-md"
+                          >
+                            <div class="relative overflow-x-auto">
+                              <table
+                                class="w-full text-sm text-left border-gray border-4 text-gray-500"
+                              >
+                                <thead class="     ">
+                                  <tr class="border-b-4 border-gray text-xs">
+                                    <th scope="col" class="px-4 py-3">Sr no</th>
+                                    <th
+                                      scope="col"
+                                      class="border-x-4 py-3 px-5"
+                                    >
+                                      Role Name
+                                    </th>
+                                    <th scope="col" class="py-3 px-5">
+                                      Description
+                                    </th>
+                                    <th scope="col" class="py-3 px-5">
+                                      Status
+                                    </th>
+                                    <th scope="col" class="py-3 px-5">
+                                      Action
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="bg-white border-b-4 border-gray">
+                                    <td class="py-5 px-6">1</td>
+                                    <td class="py-5 px-5">Super Admin</td>
+                                    <td class="py-5 px-5">Super Admin</td>
+                                    <td class="py-5 px-5">Active</td>
+                                    <td class="py-5 px-5 flex gap-2">
+                                      <i
+                                        class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                      ></i>
+
+                                      <i
+                                        class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                      ></i>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="bg-white border-b-4 border-gray">
+                                    <td class="py-5 px-5">1</td>
+                                    <td class="py-5 px-5">Default-Emp</td>
+                                    <td class="py-5 px-5">
+                                      Employee Default Roles
+                                    </td>
+                                    <td class="py-5 px-5">Active</td>
+                                    <td class="py-5 px-5 flex gap-2">
+                                      <i
+                                        class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                      ></i>
+                                      <!-- <MdModeEdit class="text-blue border-2  w-6 h-6 rounded-md " /> -->
+                                      <i
+                                        class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                      ></i>
+                                    </td>
+                                  </tr>
+                                  <tr class="bg-white border-b-4 border-gray">
+                                    <td class="py-5 px-5">1</td>
+                                    <td class="py-5 px-5">super Emp</td>
+                                    <td class="py-5 px-5">super Emp</td>
+                                    <td class="py-5 px-5">Active</td>
+                                    <td class="py-5 px-5 flex gap-2">
+                                      <i
+                                        class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                      ></i>
+                                      <!-- <MdModeEdit class="text-blue border-2  w-6 h-6 rounded-md " /> -->
+                                      <i
+                                        class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                      ></i>
+                                    </td>
+                                  </tr>
+                                  <tr class="bg-white border-b-4 border-gray">
+                                    <td class="py-5 px-5">1</td>
+                                    <td class="py-5 px-5">600001</td>
+                                    <td class="py-5 px-5">Super Admin</td>
+                                    <td class="py-5 px-5">Active</td>
+                                    <td class="py-5 px-5 flex gap-2">
+                                      <i
+                                        class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                      ></i>
+                                      <!-- <MdModeEdit class="text-blue border-2  w-6 h-6 rounded-md " /> -->
+                                      <i
+                                        class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                      ></i>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- add new page end -->
             </div>
           </div>
         </section>

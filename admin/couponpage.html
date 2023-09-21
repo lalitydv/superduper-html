@@ -67,7 +67,7 @@
         aria-label="menu nav"
         class="bg-white shadow pt-2 md:pt-1 pb-1 px-1 mt-0 h-auto fixed w-full z-20 top-0"
       >
-        <div class="flex flex-wrap items-center">
+        <div class="flex flex-wrap items-center py-2">
           <div
             class="flex flex-shrink md:w-1/3 justify-center md:justify-start text-white"
           >
@@ -89,10 +89,8 @@
             <ul
               class="list-reset flex justify-between flex-1 md:flex-none items-center"
             >
-              <li class="flex-1 md:flex-none md:mr-3">
-                <a
-                  class="inline-block py-2 px-4 text-white no-underline"
-                  href="#"
+              <li class="flex-1 md:flex-none md:mr-3 flex">
+                <a class="inline-block text-white no-underline" href="#"
                   ><img src="../images/flag.png" alt="adminlogo"
                 /></a>
               </li>
@@ -124,7 +122,11 @@
               <li class="flex-1 md:flex-none md:mr-3">
                 <a href="#" aria-label="Home">
                   <span class="text-xl p-0">
-                    <img src="../images/profile.png" alt="adminlogo" />
+                    <img
+                      src="../images/profile.png"
+                      alt="adminlogo"
+                      class="w-[35px]"
+                    />
                     <!-- <i class="em em-grinning"></i> -->
                   </span>
                 </a>
@@ -174,7 +176,7 @@
                           <span>Store Name</span>
                         </div>
 
-                        <div class="sidenav">
+                        <div class="sidenav" style="margin-top: 25px">
                           <a href="#">
                             <span
                               class="inline-flex justify-center items-center"
@@ -205,49 +207,49 @@
                               ></i
                               >Total</a
                             >
-                            <a href="#" class="text-grey"
+                            <a href="./order/pending.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Pending</a
                             >
-                            <a href="#" class="text-grey"
+                            <a href="./order/confirm.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Confirmed</a
                             >
-                            <a href="#" class="text-grey"
+                            <a href="./order/packageing.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Packaging</a
                             >
-                            <a href="#" class="text-grey"
+                            <a href="./order/shipped.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Shipped</a
                             >
-                            <a href="#" class="text-grey"
+                            <a href="./order/delivery.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Deliverd</a
                             >
-                            <a href="#" class="text-grey"
+                            <a href="./order/return.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Returned</a
                             >
-                            <a href="#" class="text-grey"
+                            <a href="./order/failed.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Failed</a
                             >
-                            <a href="./cancel.html" class="text-grey"
+                            <a href=".order/cancel.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
@@ -259,7 +261,7 @@
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-bag-shopping"></i>
+                              <i class="fa-solid fa-table-columns"></i>
                             </span>
                             <span class="ml-2 tracking-wide truncate">
                               Category
@@ -269,7 +271,7 @@
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-bag-shopping"></i>
+                              <i class="fa-solid fa-sitemap"></i>
                             </span>
                             <span class="tracking-wide truncate ml-2">
                               product
@@ -283,72 +285,56 @@
                               ></i
                               >Product</a
                             >
-                            <a href="./order/pending.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Bluk imports</a
-                            >
+                            <a href="../product/bluk.html" class="text-grey"
+                            ><i
+                              class="fa-solid fa-circle-chevron-right mr-2"
+                            ></i
+                            >Bluk imports</a
+                          >
                           </div>
                           <a href="Storepage.html">
-                            <div
-                              class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                            <span
+                              class="inline-flex justify-center items-center"
                             >
-                              <span
-                                class="inline-flex justify-center items-center"
-                              >
-                                <i class="fa-thin fa-layer-group"></i>
-                              </span>
-                              <span class="ml-2 tracking-wide truncate">
-                                Store Profile
-                              </span>
-                            </div>
+                              <i class="fa-solid fa-store"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Store Profile
+                            </span>
                           </a>
                           <a href="Notification.html">
-                            <div
-                              class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                            <span
+                              class="inline-flex justify-center items-center"
                             >
-                              <span
-                                class="inline-flex justify-center items-center"
-                              >
-                                <i class="fa-regular fa-bell"></i>
-                              </span>
-                              <span class="ml-2 tracking-wide truncate">
-                                Notifications
-                              </span>
-                            </div>
+                              <i class="fa-regular fa-bell"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Notifications
+                            </span>
                           </a>
                           <a href="couponpage.html">
-                            <div
-                              class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                            <span
+                              class="inline-flex justify-center items-center"
                             >
-                              <span
-                                class="inline-flex justify-center items-center"
-                              >
-                                <i class="fa-regular fa-credit-card"></i>
-                              </span>
-                              <span class="ml-2 tracking-wide truncate"
-                                >Coupon</span
-                              >
-                            </div>
+                              <i class="fa-regular fa-credit-card"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate"
+                              >Coupon</span
+                            >
                           </a>
                           <a href="payout.html">
-                            <div
-                              class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                            <span
+                              class="inline-flex justify-center items-center"
                             >
-                              <span
-                                class="inline-flex justify-center items-center"
-                              >
-                                <i class="fa-regular fa-credit-card"></i>
-                              </span>
-                              <span
-                                class="ml-2 font-semibold tracking-wide truncate"
-                                >Payout</span
-                              >
-                            </div>
+                              <i class="fa-regular fa-credit-card"></i>
+                            </span>
+                            <span
+                              class="ml-2 font-semibold tracking-wide truncate"
+                              >Payout</span
+                            >
                           </a>
                           <button
-                            class="dropdown-btn h-11 rounded-md bg-blue text-white"
+                            class="dropdown-btn h-11 mt-5 rounded-md bg-blue text-white"
                           >
                             <span
                               class="inline-flex justify-center items-center"
@@ -400,18 +386,17 @@
                           </div>
                           <a href="#" style="padding: 0px">
                             <div
-                              class="relative mt-2 flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6 bg-blue rounded-md"
+                              class="relative mt-2 h-11 px-4 flex flex-row items-center focus:outline-none dark:hover:bg-gray-600 text-white hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 bg-blue rounded-md"
                             >
                               <span
                                 class="inline-flex justify-center items-center"
-                              >
-                                <IoLogOutOutline
-                                  class="bg-white text-blue text-md"
+                                ><img
+                                  src="../images/logout.png"
+                                  alt="img"
+                                  class="w-4 mr-3"
                                 />
                               </span>
-                              <span class="ml-2 tracking-wide truncate"
-                                >Logout</span
-                              >
+                              <span class="tracking-wide truncate">Logout</span>
                             </div>
                           </a>
                         </div>
@@ -431,6 +416,7 @@
           >
             <!-- only for  start -->
             <div class="w-full">
+              <!-- coupon  page start  -->
               <div class="flex flex-col md:mx-4 mx-2 gap-5">
                 <div class="rounded-3xl md:p-4 p-8">
                   <div class="flex lg:flex-nowrap gap-4 flex-wrap box-border">
@@ -439,502 +425,388 @@
                         <div
                           class="relative overflow-hidden md:text-md text-lg"
                         >
-                          <!-- notification page start  -->
-                          <div class="flex flex-col md:mx-4 mx-2 gap-5">
-                            <div class="rounded-3xl md:p-4 p-8">
-                              <div
-                                class="flex lg:flex-nowrap gap-4 flex-wrap box-border"
+                          <div
+                            class="bg-white md:rounded-l-full w-72 md:w-full overflow-hidden shadow-md"
+                          >
+                            <div
+                              class="md:flex flex-wrap md:justify-between grid gap-2 items-center"
+                            >
+                              <div class="md:pl-4">overview</div>
+                              <div class="flex items-center">
+                                <label
+                                  for="countries"
+                                  class="block text-sm font-medium text-gray-1"
+                                >
+                                  Show
+                                </label>
+                                <select
+                                  id="countries"
+                                  class="text-blue text-sm font-bold mx-2"
+                                >
+                                  <option selected>this month</option>
+                                  <option value="US">United States</option>
+                                  <option value="CA">Canada</option>
+                                  <option value="FR">France</option>
+                                  <option value="DE">Germany</option>
+                                </select>
+                              </div>
+                              <div class=" ">
+                                <form
+                                  class="border-2 border-black md:rounded-2xl px-2 md:my-2 md:px-20 md:py-2"
+                                >
+                                  <input
+                                    type="text"
+                                    placeholder="Search "
+                                    class="text-black focus:outline-none"
+                                  />
+                                  <HiSearch class="inline-block text-gray" />
+                                </form>
+                              </div>
+                              <button
+                                class="bg-blue text-white md:px-6 rounded-xl py-2"
+                                onClick="{handleClick}"
                               >
-                                <div class="lg:w-[100%] md:w-[100%]">
-                                  <div class="mt-4">
-                                    <div
-                                      class="relative overflow-hidden md:text-md text-lg"
-                                    >
-                                      <div
-                                        class="bg-white md:rounded-l-full w-72 md:w-full overflow-hidden shadow-md"
-                                      >
-                                        <div
-                                          class="md:flex md:justify-between grid md:gap-0 gap-4 items-center"
-                                        >
-                                          <div class="md:pl-4">overview</div>
-                                          <div class="flex items-center">
-                                            <label
-                                              for="countries"
-                                              class="block text-sm font-medium text-gray-1"
-                                            >
-                                              Show
-                                            </label>
-                                            <select
-                                              id="countries"
-                                              class="text-black text-sm"
-                                            >
-                                              <option selected>
-                                                this month
-                                              </option>
-                                              <option value="US">
-                                                United States
-                                              </option>
-                                              <option value="CA">Canada</option>
-                                              <option value="FR">France</option>
-                                              <option value="DE">
-                                                Germany
-                                              </option>
-                                            </select>
-                                          </div>
-                                          <div class=" ">
-                                            <form
-                                              class="border-2 border-black md:rounded-2xl px-2 md:my-2 md:px-20 md:py-2"
-                                            >
-                                              <!-- {/* <HiSearch  class="absolute  text-green  w-6 h-14" /> */} -->
+                                add New Product
+                              </button>
+                            </div>
+                          </div>
 
-                                              <input
-                                                type="text"
-                                                placeholder="Search "
-                                                class="text-black text-blue focus:outline-none"
-                                              />
+                          <!--  section start -->
 
-                                              <!-- <HiSearch class=" inline-block     text-gray" /> -->
-                                            </form>
-                                          </div>
-                                          <button
-                                            class="bg-blue text-white md:px-6 rounded-xl py-2"
-                                          >
-                                            add New Product
-                                          </button>
-                                        </div>
-                                      </div>
+                          <div
+                            class="py-5 mt-4 bg-white w-full rounded-xl shadow-md p-2"
+                          >
+                            <p class="text-blue font-bold">Add New Coupon</p>
+                            <div
+                              class="bg-white rounded-xl shadow-md p-2 w-full"
+                            >
+                              <div class="md:flex grid md:gap-8 gap-4 my-4">
+                                <div class="md:w-[50%] w-[100%]">
+                                  <label class="text-blue font-semibold"
+                                    >Type</label
+                                  >
+                                  <select
+                                    name="cars"
+                                    id="cars"
+                                    style="width: 100%"
+                                    class="w-[100%] bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 w-full px-4 md:w-80 py-2"
+                                  >
+                                    <option value="volvo">
+                                      Discount on Purchase
+                                    </option>
+                                    <option value="saab">Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                  </select>
+                                </div>
 
-                                      <!--  section start -->
+                                <div class="md:w-[50%] w-[100%]">
+                                  <label class="text-blue font-semibold"
+                                    >title</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="title"
+                                    class="w-[100%] bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
+                                    style="width: 100%"
+                                  />
+                                </div>
+                              </div>
 
-                                      <div
-                                        class="py-5 mt-4 bg-white w-full rounded-xl shadow-md p-2"
-                                      >
-                                        <p class="text-blue font-bold">
-                                          Add New Coupon
-                                        </p>
-                                        <div
-                                          class="bg-white rounded-xl shadow-md p-2 w-full"
-                                        >
-                                          <div
-                                            class="md:flex grid md:gap-8 gap-4 my-4"
-                                          >
-                                            <div class="md:w-[50%] w-[100%]">
-                                              <label
-                                                class="text-blue font-semibold"
-                                                >Type</label
-                                              >
-                                              <select
-                                                name="cars"
-                                                id="cars"
-                                                style="width: 100%"
-                                                class="w-[100%] bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 w-full px-4 md:w-80 py-2"
-                                              >
-                                                <option value="volvo">
-                                                  Discount on Purchase
-                                                </option>
-                                                <option value="saab">
-                                                  Saab
-                                                </option>
-                                                <option value="mercedes">
-                                                  Mercedes
-                                                </option>
-                                                <option value="audi">
-                                                  Audi
-                                                </option>
-                                              </select>
-                                            </div>
+                              <div class="md:flex grid md:gap-8 gap-4 my-4">
+                                <div class="grow md:w-[50%] w-[100%]">
+                                  <label class="text-blue font-semibold"
+                                    >Code</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="Discount on Purchase "
+                                    class="w-[100%] bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
+                                    style="width: 100%"
+                                  />
+                                </div>
 
-                                            <div class="md:w-[50%] w-[100%]">
-                                              <label
-                                                class="text-blue font-semibold"
-                                                >title</label
-                                              >
-                                              <input
-                                                type="text"
-                                                name=""
-                                                id=""
-                                                placeholder="title"
-                                                class="w-[100%] bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                                style="width: 100%"
-                                              />
-                                            </div>
-                                          </div>
+                                <div class="grow md:w-[50%] w-[100%]">
+                                  <label class="text-blue font-semibold"
+                                    >Discount Type</label
+                                  >
+                                  <select
+                                    name="cars"
+                                    id="cars"
+                                    style="width: 100%"
+                                    class="w-[100%] bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 w-full px-4 md:w-80 py-2"
+                                  >
+                                    <option value="volvo">Amount</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="md:flex grid md:gap-8 gap-4 my-4">
+                                <div class="grow md:w-[50%] w-[100%]">
+                                  <label class="text-blue font-semibold"
+                                    >Start Date</label
+                                  >
+                                  <input
+                                    type="date"
+                                    name=""
+                                    id=""
+                                    placeholder="address line 1* "
+                                    style="width: 100%"
+                                    class="w-full bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
+                                    style="width: 100%"
+                                  />
+                                </div>
 
-                                          <div
-                                            class="md:flex grid md:gap-8 gap-4 my-4"
-                                          >
-                                            <div
-                                              class="grow md:w-[50%] w-[100%]"
-                                            >
-                                              <label
-                                                class="text-blue font-semibold"
-                                                >Code</label
-                                              >
-                                              <input
-                                                type="text"
-                                                name=""
-                                                id=""
-                                                placeholder="Discount on Purchase "
-                                                class="w-[100%] bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                                style="width: 100%"
-                                              />
-                                            </div>
+                                <div class="grow md:w-[50%] w-[100%]">
+                                  <label class="text-blue font-semibold"
+                                    >Expire date</label
+                                  >
+                                  <input
+                                    type="date"
+                                    name=""
+                                    id=""
+                                    placeholder="address line 2"
+                                    class="w-[100%] bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
+                                    style="width: 100%"
+                                  />
+                                </div>
+                              </div>
+                              <div class="md:flex grid md:gap-8 gap-4 my-4">
+                                <div class="grow md:w-[50%] w-[100%]">
+                                  <label class="text-blue font-semibold"
+                                    >limit for same user</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="postcode/zipcode* "
+                                    class="w-[100%] bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
+                                    style="width: 100%"
+                                  />
+                                </div>
 
-                                            <div
-                                              class="grow md:w-[50%] w-[100%]"
-                                            >
-                                              <label
-                                                class="text-blue font-semibold"
-                                                >Discount Type</label
-                                              >
-                                              <select
-                                                name="cars"
-                                                id="cars"
-                                                style="width: 100%"
-                                                class="w-[100%] bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 w-full px-4 md:w-80 py-2"
-                                              >
-                                                <option value="volvo">
-                                                  Amount
-                                                </option>
-                                                <option value="saab">
-                                                  Saab
-                                                </option>
-                                                <option value="mercedes">
-                                                  Mercedes
-                                                </option>
-                                                <option value="audi">
-                                                  Audi
-                                                </option>
-                                              </select>
-                                            </div>
-                                          </div>
-                                          <div
-                                            class="md:flex grid md:gap-8 gap-4 my-4"
-                                          >
-                                            <div
-                                              class="grow md:w-[50%] w-[100%]"
-                                            >
-                                              <label
-                                                class="text-blue font-semibold"
-                                                >Start Date</label
-                                              >
-                                              <input
-                                                type="date"
-                                                name=""
-                                                id=""
-                                                placeholder="address line 1* "
-                                                style="width: 100%"
-                                                class="w-full bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                                style="width: 100%"
-                                              />
-                                            </div>
+                                <div class="grow md:w-[50%] w-[100%]">
+                                  <label class="text-blue font-semibold"
+                                    >minimum purchse</label
+                                  >
 
-                                            <div
-                                              class="grow md:w-[50%] w-[100%]"
-                                            >
-                                              <label
-                                                class="text-blue font-semibold"
-                                                >Expire date</label
-                                              >
-                                              <input
-                                                type="date"
-                                                name=""
-                                                id=""
-                                                placeholder="address line 2"
-                                                class="w-[100%] bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                                style="width: 100%"
-                                              />
-                                            </div>
-                                          </div>
-                                          <div
-                                            class="md:flex grid md:gap-8 gap-4 my-4"
-                                          >
-                                            <div
-                                              class="grow md:w-[50%] w-[100%]"
-                                            >
-                                              <label
-                                                class="text-blue font-semibold"
-                                                >limit for same user</label
-                                              >
-                                              <input
-                                                type="text"
-                                                name=""
-                                                id=""
-                                                placeholder="postcode/zipcode* "
-                                                class="w-[100%] bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                                style="width: 100%"
-                                              />
-                                            </div>
+                                  <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="city*"
+                                    class="w-[100%] bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
+                                    style="width: 100%"
+                                  />
+                                </div>
+                              </div>
+                              <div
+                                class="flex items-end justify-between gap-4 my-4"
+                              >
+                                <div class="grow md:w-[50%] w-[100%]">
+                                  <label class="text-blue font-semibold"
+                                    >discount</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="postcode/zipcode* "
+                                    class="w-[100%] bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
+                                    style="width: 100%"
+                                  />
+                                </div>
 
-                                            <div
-                                              class="grow md:w-[50%] w-[100%]"
-                                            >
-                                              <label
-                                                class="text-blue font-semibold"
-                                                >minimum purchse</label
-                                              >
-
-                                              <input
-                                                type="text"
-                                                name=""
-                                                id=""
-                                                placeholder="city*"
-                                                class="w-[100%] bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                                style="width: 100%"
-                                              />
-                                            </div>
-                                          </div>
-                                          <div
-                                            class="flex items-end justify-between gap-4 my-4"
-                                          >
-                                            <div
-                                              class="grow md:w-[50%] w-[100%]"
-                                            >
-                                              <label
-                                                class="text-blue font-semibold"
-                                                >discount</label
-                                              >
-                                              <input
-                                                type="text"
-                                                name=""
-                                                id=""
-                                                placeholder="postcode/zipcode* "
-                                                class="w-[100%] bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                                style="width: 100%"
-                                              />
-                                            </div>
-
-                                            <div
-                                              class="grow md:w-[50%] w-[100%]"
-                                            >
-                                              <input
-                                                type="button"
-                                                value="save details"
-                                                name=""
-                                                id=""
-                                                placeholder="city*"
-                                                class="w-[100%] text-white bg-blue focus:outline-none rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                                style="width: 100%"
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <hr />
-                                      <!--  section end -->
-                                    </div>
-                                  </div>
-                                  <!-- tebel section start -->
-                                  <div class="mt-4">
-                                    <div
-                                      class="w-[90%] bg-white rounded-xl py-10 items-center md:w-full p-4 shadow-md"
-                                    >
-                                      <div class="relative overflow-x-auto">
-                                        <p class="text-blue font-semibold">
-                                          Coupon Table
-                                        </p>
-                                        <table
-                                          class="w-[100%] mt-4 text-sm text-left text-gray-500"
-                                        >
-                                          <thead class="     ">
-                                            <tr class="text-xs">
-                                              <th scope="col" class="">
-                                                COUPON TYPE
-                                              </th>
-                                              <th scope="col" class="  ">
-                                                TITLE
-                                              </th>
-                                              <th scope="col" class=" ">
-                                                USER LIMIT
-                                              </th>
-                                              <th scope="col" class=" ">
-                                                MINIMUM PURCHASE
-                                              </th>
-                                              <th scope="col" class="">
-                                                DISCOUNT
-                                              </th>
-                                              <th scope="col" class=" ">
-                                                EXPIRE DATE
-                                              </th>
-                                              <th scope="col" class="">
-                                                status
-                                              </th>
-                                              <th scope="col" class="">
-                                                action
-                                              </th>
-                                            </tr>
-                                          </thead>
-                                          <tbody>
-                                            <tr
-                                              class="bg-white border-b-4 border-gray"
-                                            >
-                                              <td class="py-5 text-clifford">
-                                                Discount On Purchase
-                                              </td>
-                                              <td class="py-5">christmas</td>
-                                              <td class="py-5 text-center">
-                                                10
-                                              </td>
-                                              <td class="py-5 text-center">
-                                                10
-                                              </td>
-                                              <td class="py-5">10%</td>
-                                              <td class="py-5">May,03,2022</td>
-                                              <td class="py-5">
-                                                <input
-                                                  class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
-                                                  type="checkbox"
-                                                  role="switch"
-                                                  id="flexSwitchCheckDefault"
-                                                />
-                                                <label
-                                                  class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                  for="flexSwitchCheckDefault"
-                                                >
-                                                </label>
-                                              </td>
-                                              <td class="py-5 flex gap-2">
-                                                <i
-                                                  class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
-                                                ></i>
-
-                                                <i
-                                                  class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
-                                                ></i>
-                                              </td>
-                                            </tr>
-
-                                            <tr
-                                              class="bg-white border-b-4 border-gray"
-                                            >
-                                              <td class="py-5 text-clifford">
-                                                Discount On Purchase
-                                              </td>
-                                              <td class="py-5">christmas</td>
-                                              <td class="py-5 text-center">
-                                                10
-                                              </td>
-                                              <td class="py-5 text-center">
-                                                10
-                                              </td>
-                                              <td class="py-5">10%</td>
-                                              <td class="py-5">May,03,2022</td>
-                                              <td class="py-5">
-                                                <input
-                                                  class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
-                                                  type="checkbox"
-                                                  role="switch"
-                                                  id="flexSwitchCheckDefault"
-                                                />
-                                                <label
-                                                  class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                  for="flexSwitchCheckDefault"
-                                                >
-                                                </label>
-                                              </td>
-                                              <td class="py-5 flex gap-2">
-                                                <i
-                                                  class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
-                                                ></i>
-
-                                                <i
-                                                  class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
-                                                ></i>
-                                              </td>
-                                            </tr>
-                                            <tr
-                                              class="bg-white border-b-4 border-gray"
-                                            >
-                                              <td class="py-5 text-clifford">
-                                                Discount On Purchase
-                                              </td>
-                                              <td class="py-5">christmas</td>
-                                              <td class="py-5 text-center">
-                                                10
-                                              </td>
-                                              <td class="py-5 text-center">
-                                                10
-                                              </td>
-                                              <td class="py-5">10%</td>
-                                              <td class="py-5">May,03,2022</td>
-                                              <td class="py-5">
-                                                <input
-                                                  class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
-                                                  type="checkbox"
-                                                  role="switch"
-                                                  id="flexSwitchCheckDefault"
-                                                />
-                                                <label
-                                                  class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                  for="flexSwitchCheckDefault"
-                                                >
-                                                </label>
-                                              </td>
-                                              <td class="py-5 flex gap-2">
-                                                <i
-                                                  class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
-                                                ></i>
-
-                                                <i
-                                                  class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
-                                                ></i>
-                                              </td>
-                                            </tr>
-                                            <tr
-                                              class="bg-white border-b-4 border-gray"
-                                            >
-                                              <td class="py-5 text-clifford">
-                                                Discount On Purchase
-                                              </td>
-                                              <td class="py-5">christmas</td>
-                                              <td class="py-5 text-center">
-                                                10
-                                              </td>
-                                              <td class="py-5 text-center">
-                                                10
-                                              </td>
-                                              <td class="py-5">10%</td>
-                                              <td class="py-5">May,03,2022</td>
-                                              <td class="py-5">
-                                                <input
-                                                  class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
-                                                  type="checkbox"
-                                                  role="switch"
-                                                  id="flexSwitchCheckDefault"
-                                                />
-                                                <label
-                                                  class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                  for="flexSwitchCheckDefault"
-                                                >
-                                                </label>
-                                              </td>
-                                              <td class="py-5 flex gap-2">
-                                                <i
-                                                  class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
-                                                ></i>
-
-                                                <i
-                                                  class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
-                                                ></i>
-                                              </td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!-- tebel section end -->
+                                <div class="grow md:w-[50%] w-[100%]">
+                                  <input
+                                    type="button"
+                                    value="save details"
+                                    name=""
+                                    id=""
+                                    placeholder="city*"
+                                    class="w-[100%] text-white bg-blue focus:outline-none rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
+                                    style="width: 100%"
+                                  />
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <!--  page end -->
+                          <hr />
+                          <!--  section end -->
                         </div>
                       </div>
+                      <!-- tebel section start -->
+                      <div class="mt-4">
+                        <div
+                          class="w-[80%] bg-white rounded-xl py-10 items-center md:w-full p-4 shadow-md"
+                        >
+                          <div class="relative overflow-x-auto">
+                            <p class="text-blue font-semibold">Coupon Table</p>
+                            <table
+                              class="w-[100%] mt-4 text-sm text-left text-gray-500"
+                            >
+                              <thead class="     ">
+                                <tr class="text-xs">
+                                  <th scope="col" class="">COUPON TYPE</th>
+                                  <th scope="col" class="  ">TITLE</th>
+                                  <th scope="col" class=" ">USER LIMIT</th>
+                                  <th scope="col" class=" ">
+                                    MINIMUM PURCHASE
+                                  </th>
+                                  <th scope="col" class="">DISCOUNT</th>
+                                  <th scope="col" class=" ">EXPIRE DATE</th>
+                                  <th scope="col" class="">status</th>
+                                  <th scope="col" class="">action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="bg-white border-b-4 border-gray">
+                                  <td class="py-5 text-clifford">
+                                    Discount On Purchase
+                                  </td>
+                                  <td class="py-5">christmas</td>
+                                  <td class="py-5 text-center">10</td>
+                                  <td class="py-5 text-center">10</td>
+                                  <td class="py-5">10%</td>
+                                  <td class="py-5">May,03,2022</td>
+                                  <td class="py-5">
+                                    <input
+                                      class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
+                                      type="checkbox"
+                                      role="switch"
+                                      id="flexSwitchCheckDefault"
+                                    />
+                                    <label
+                                      class="inline-block pl-[0.15rem] hover:cursor-pointer"
+                                      for="flexSwitchCheckDefault"
+                                    >
+                                    </label>
+                                  </td>
+                                  <td class="py-5 flex gap-2">
+                                    <i
+                                      class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                    ></i>
+
+                                    <i
+                                      class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                    ></i>
+                                  </td>
+                                </tr>
+
+                                <tr class="bg-white border-b-4 border-gray">
+                                  <td class="py-5 text-clifford">
+                                    Discount On Purchase
+                                  </td>
+                                  <td class="py-5">christmas</td>
+                                  <td class="py-5 text-center">10</td>
+                                  <td class="py-5 text-center">10</td>
+                                  <td class="py-5">10%</td>
+                                  <td class="py-5">May,03,2022</td>
+                                  <td class="py-5">
+                                    <input
+                                      class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
+                                      type="checkbox"
+                                      role="switch"
+                                      id="flexSwitchCheckDefault"
+                                    />
+                                    <label
+                                      class="inline-block pl-[0.15rem] hover:cursor-pointer"
+                                      for="flexSwitchCheckDefault"
+                                    >
+                                    </label>
+                                  </td>
+                                  <td class="py-5 flex gap-2">
+                                    <i
+                                      class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                    ></i>
+
+                                    <i
+                                      class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                    ></i>
+                                  </td>
+                                </tr>
+                                <tr class="bg-white border-b-4 border-gray">
+                                  <td class="py-5 text-clifford">
+                                    Discount On Purchase
+                                  </td>
+                                  <td class="py-5">christmas</td>
+                                  <td class="py-5 text-center">10</td>
+                                  <td class="py-5 text-center">10</td>
+                                  <td class="py-5">10%</td>
+                                  <td class="py-5">May,03,2022</td>
+                                  <td class="py-5">
+                                    <input
+                                      class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
+                                      type="checkbox"
+                                      role="switch"
+                                      id="flexSwitchCheckDefault"
+                                    />
+                                    <label
+                                      class="inline-block pl-[0.15rem] hover:cursor-pointer"
+                                      for="flexSwitchCheckDefault"
+                                    >
+                                    </label>
+                                  </td>
+                                  <td class="py-5 flex gap-2">
+                                    <i
+                                      class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                    ></i>
+
+                                    <i
+                                      class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                    ></i>
+                                  </td>
+                                </tr>
+                                <tr class="bg-white border-b-4 border-gray">
+                                  <td class="py-5 text-clifford">
+                                    Discount On Purchase
+                                  </td>
+                                  <td class="py-5">christmas</td>
+                                  <td class="py-5 text-center">10</td>
+                                  <td class="py-5 text-center">10</td>
+                                  <td class="py-5">10%</td>
+                                  <td class="py-5">May,03,2022</td>
+                                  <td class="py-5">
+                                    <input
+                                      class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
+                                      type="checkbox"
+                                      role="switch"
+                                      id="flexSwitchCheckDefault"
+                                    />
+                                    <label
+                                      class="inline-block pl-[0.15rem] hover:cursor-pointer"
+                                      for="flexSwitchCheckDefault"
+                                    >
+                                    </label>
+                                  </td>
+                                  <td class="py-5 flex gap-2">
+                                    <i
+                                      class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                    ></i>
+
+                                    <i
+                                      class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                    ></i>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- tebel section end -->
                     </div>
                   </div>
                 </div>
               </div>
+              <!--  page end -->
             </div>
           </div>
         </section>

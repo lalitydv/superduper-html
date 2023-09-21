@@ -65,7 +65,7 @@
         aria-label="menu nav"
         class="bg-white shadow pt-2 md:pt-1 pb-1 px-1 mt-0 h-auto fixed w-full z-20 top-0"
       >
-        <div class="flex flex-wrap items-center">
+        <div class="flex flex-wrap items-center py-2">
           <div
             class="flex flex-shrink md:w-1/3 justify-center md:justify-start text-white"
           >
@@ -87,10 +87,8 @@
             <ul
               class="list-reset flex justify-between flex-1 md:flex-none items-center"
             >
-              <li class="flex-1 md:flex-none md:mr-3">
-                <a
-                  class="inline-block py-2 px-4 text-white no-underline"
-                  href="#"
+              <li class="flex-1 md:flex-none md:mr-3 flex">
+                <a class="inline-block text-white no-underline" href="#"
                   ><img src="../../images/flag.png" alt="adminlogo"
                 /></a>
               </li>
@@ -122,7 +120,11 @@
               <li class="flex-1 md:flex-none md:mr-3">
                 <a href="#" aria-label="Home">
                   <span class="text-xl p-0">
-                    <img src="../../images/profile.png" alt="adminlogo" />
+                    <img
+                      src="../../images/profile.png"
+                      alt="adminlogo"
+                      class="w-[35px]"
+                    />
                     <!-- <i class="em em-grinning"></i> -->
                   </span>
                 </a>
@@ -172,7 +174,7 @@
                           <span>Store Name</span>
                         </div>
 
-                        <div class="sidenav">
+                        <div class="sidenav" style="margin-top: 25px">
                           <a href="#">
                             <span
                               class="inline-flex justify-center items-center"
@@ -257,7 +259,7 @@
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-bag-shopping"></i>
+                              <i class="fa-solid fa-table-columns"></i>
                             </span>
                             <span class="ml-2 tracking-wide truncate">
                               Category
@@ -267,7 +269,7 @@
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-bag-shopping"></i>
+                              <i class="fa-solid fa-sitemap"></i>
                             </span>
                             <span class="tracking-wide truncate ml-2">
                               product
@@ -289,64 +291,48 @@
                             >
                           </div>
                           <a href="Storepage.html">
-                            <div
-                              class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                            <span
+                              class="inline-flex justify-center items-center"
                             >
-                              <span
-                                class="inline-flex justify-center items-center"
-                              >
-                                <i class="fa-thin fa-layer-group"></i>
-                              </span>
-                              <span class="ml-2 tracking-wide truncate">
-                                Store Profile
-                              </span>
-                            </div>
+                              <i class="fa-solid fa-store"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Store Profile
+                            </span>
                           </a>
                           <a href="Notification.html">
-                            <div
-                              class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                            <span
+                              class="inline-flex justify-center items-center"
                             >
-                              <span
-                                class="inline-flex justify-center items-center"
-                              >
-                                <i class="fa-regular fa-bell"></i>
-                              </span>
-                              <span class="ml-2 tracking-wide truncate">
-                                Notifications
-                              </span>
-                            </div>
+                              <i class="fa-regular fa-bell"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Notifications
+                            </span>
                           </a>
                           <a href="couponpage.html">
-                            <div
-                              class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                            <span
+                              class="inline-flex justify-center items-center"
                             >
-                              <span
-                                class="inline-flex justify-center items-center"
-                              >
-                                <i class="fa-regular fa-credit-card"></i>
-                              </span>
-                              <span class="ml-2 tracking-wide truncate"
-                                >Coupon</span
-                              >
-                            </div>
+                              <i class="fa-regular fa-credit-card"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate"
+                              >Coupon</span
+                            >
                           </a>
                           <a href="payout.html">
-                            <div
-                              class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                            <span
+                              class="inline-flex justify-center items-center"
                             >
-                              <span
-                                class="inline-flex justify-center items-center"
-                              >
-                                <i class="fa-regular fa-credit-card"></i>
-                              </span>
-                              <span
-                                class="ml-2 font-semibold tracking-wide truncate"
-                                >Payout</span
-                              >
-                            </div>
+                              <i class="fa-regular fa-credit-card"></i>
+                            </span>
+                            <span
+                              class="ml-2 font-semibold tracking-wide truncate"
+                              >Payout</span
+                            >
                           </a>
                           <button
-                            class="dropdown-btn h-11 rounded-md bg-blue text-white"
+                            class="dropdown-btn h-11 mt-5 rounded-md bg-blue text-white"
                           >
                             <span
                               class="inline-flex justify-center items-center"
@@ -400,18 +386,17 @@
                           </div>
                           <a href="#" style="padding: 0px">
                             <div
-                              class="relative mt-2 flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6 bg-blue rounded-md"
+                              class="relative mt-2 h-11 px-4 flex flex-row items-center focus:outline-none dark:hover:bg-gray-600 text-white hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 bg-blue rounded-md"
                             >
                               <span
                                 class="inline-flex justify-center items-center"
-                              >
-                                <IoLogOutOutline
-                                  class="bg-white text-blue text-md"
+                                ><img
+                                  src="../../images/logout.png"
+                                  alt="img"
+                                  class="w-4 mr-3"
                                 />
                               </span>
-                              <span class="ml-2 tracking-wide truncate"
-                                >Logout</span
-                              >
+                              <span class="tracking-wide truncate">Logout</span>
                             </div>
                           </a>
                         </div>
@@ -431,6 +416,7 @@
           >
             <!-- only for  start -->
             <div class="w-full">
+              <!--  page start  -->
               <div class="flex flex-col md:mx-4 mx-2 gap-5">
                 <div class="rounded-3xl md:p-4 p-8">
                   <div class="flex lg:flex-nowrap gap-4 flex-wrap box-border">
@@ -439,621 +425,497 @@
                         <div
                           class="relative overflow-hidden md:text-md text-lg"
                         >
-                          <!--  page start  -->
-                          <div class="flex flex-col md:mx-4 mx-2 gap-5">
-                            <div class="rounded-3xl md:p-4 p-8">
-                              <div
-                                class="flex lg:flex-nowrap gap-4 flex-wrap box-border"
+                          <div
+                            class="bg-white md:rounded-full w-72 md:w-full overflow-hidden shadow-md my-2 px-5"
+                          >
+                            <div
+                              class="md:flex md:justify-between grid md:gap-10 gap-4 items-center"
+                            >
+                              <div class="md:pl-4">overview</div>
+                              <div class="">
+                                show
+                                <span class="md:ml-4">this month</span>
+                              </div>
+                              <div class=" ">
+                                <form
+                                  class="border-2 border-black md:rounded-2xl px-2 md:my-2 md:px-20 md:py-2"
+                                >
+                                  <!-- {/* <HiSearch  class="absolute  text-green  w-6 h-14" /> */} -->
+
+                                  <input
+                                    type="text"
+                                    placeholder="Search "
+                                    class="text-black focus:outline-none"
+                                  />
+                                  <HiSearch class="inline-block text-gray" />
+                                </form>
+                              </div>
+                              <a href="./addproduct.html">
+                                <button
+                                  class="bg-blue text-white md:px-6 rounded-xl py-2"
+                                >
+                                  add New Product
+                                </button></a
                               >
-                                <div class="lg:w-[100%] md:w-[100%]">
-                                  <div class="mt-4">
-                                    <div
-                                      class="relative overflow-hidden md:text-md text-lg"
-                                    >
-                                      <div
-                                        class="bg-white md:rounded-full w-72 md:w-full overflow-hidden shadow-md my-2 px-5"
-                                      >
-                                        <div
-                                          class="md:flex md:justify-between grid md:gap-10 gap-4 items-center"
-                                        >
-                                          <div class="md:pl-4">overview</div>
-                                          <div class="">
-                                            show
-                                            <span class="md:ml-4"
-                                              >this month</span
-                                            >
-                                          </div>
-                                          <div class=" ">
-                                            <form
-                                              class="border-2 border-black md:rounded-2xl px-2 md:my-2 md:px-20 md:py-2"
-                                            >
-                                              <!-- {/* <HiSearch  class="absolute  text-green  w-6 h-14" /> */} -->
+                            </div>
+                          </div>
 
-                                              <input
-                                                type="text"
-                                                placeholder="Search "
-                                                class="text-black focus:outline-none"
-                                              />
-                                              <HiSearch
-                                                class="inline-block text-gray"
-                                              />
-                                            </form>
-                                          </div>
-                                          <a href="./addproduct.html">
-                                            <button
-                                              class="bg-blue text-white md:px-6 rounded-xl py-2"
-                                            >
-                                              add New Product
-                                            </button></a
-                                          >
-                                        </div>
-                                      </div>
+                          <!-- {/* PRODUCTS start  */} -->
+                          <div class="bg-white rounded-3xl p-4 w-full">
+                            <div>
+                              <p class="font-semibold">PRODUCTS</p>
+                            </div>
+                            <div class="bg-white rounded-md shadow-md">
+                              <div
+                                class="flex justify-between gap-8 items-center md:flex-row flex-col my-2 p-2"
+                              >
+                                <div
+                                  class="relative border-2 grow h-12 items-center rounded-md pl-2"
+                                >
+                                  <input
+                                    type="text"
+                                    placeholder="Search by Product Name"
+                                    class="text-sm border-0 focus:border-opacity-0 focus:outline-none"
+                                  />
+                                  <button
+                                    class="bg-blue absolute right-1 top-[2px] justify-end rounded-md text-white h-10 px-2"
+                                  >
+                                    Search
+                                  </button>
+                                </div>
 
-                                      <!-- {/* PRODUCTS start  */} -->
-                                      <div
-                                        class="bg-white rounded-3xl p-4 w-full"
-                                      >
-                                        <div>
-                                          <p class="font-semibold">PRODUCTS</p>
-                                        </div>
-                                        <div
-                                          class="bg-white rounded-md shadow-md"
-                                        >
-                                          <div
-                                            class="flex justify-between gap-8 items-center md:flex-row flex-col my-2 p-2"
-                                          >
-                                            <div
-                                              class="relative border-2 grow h-12 items-center rounded-md pl-2"
-                                            >
-                                              <input
-                                                type="text"
-                                                placeholder="Search by Product Name"
-                                                class="text-sm border-0 focus:border-opacity-0 focus:outline-none"
-                                              />
-                                              <button
-                                                class="bg-blue absolute right-1 top-[2px] justify-end rounded-md text-white h-10 px-2"
-                                              >
-                                                Search
-                                              </button>
-                                            </div>
-
-                                            <div
-                                              class="flex border-2 items-center border-blue text-blue font-bold px-3 rounded-md"
-                                            >
-                                              <i
-                                                class="fa-solid fa-download text-[14px] font-semibold mr-2"
-                                              ></i>
-                                              <select
-                                                name="cars"
-                                                id="cars"
-                                                class="focus:outline-none text-[14px] py-[7px]"
-                                              >
-                                                <option value="volvo">
-                                                  Export
-                                                </option>
-                                                <option value="saab">
-                                                  Saab
-                                                </option>
-                                                <option value="mercedes">
-                                                  Mercedes
-                                                </option>
-                                                <option value="audi">
-                                                  Audi
-                                                </option>
-                                              </select>
-                                            </div>
-                                            <a href="./limitedlist.html">
-                                              <div
-                                                class="flex border-2 text-[14px] items-center border-blue text-blue font-bold px-3 py-1 rounded-md"
-                                              >
-                                                <i
-                                                  class="fa-solid fa-circle-plus text-[14px] font-semibold mr-2"
-                                                ></i>
-                                                Limited Stocks
-                                              </div></a
-                                            >
-                                            <div
-                                              class="flex border-2 text-[14px] items-center border-blue py-1 text-blue font-bold px-3 rounded-md"
-                                            >
-                                              <i
-                                                class="fa-sharp fa-solid fa-plus text-[12px] font-semibold mr-2"
-                                              ></i>
-                                              Add new products
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <!-- {/* tabls start  */} -->
-
-                                        <div
-                                          class="relative overflow-x-auto shadow-md sm:rounded-lg"
-                                        >
-                                          <table
-                                            class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
-                                          >
-                                            <thead
-                                              class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 bg-gray"
-                                            >
-                                              <tr>
-                                                <th scope="col" class="p-4">
-                                                  sl
-                                                </th>
-                                                <th
-                                                  scope="col"
-                                                  class="px-6 py-3"
-                                                >
-                                                  Product Name
-                                                </th>
-                                                <th
-                                                  scope="col"
-                                                  class="px-6 py-3"
-                                                >
-                                                  Product Type
-                                                </th>
-                                                <th
-                                                  scope="col"
-                                                  class="px-6 py-3"
-                                                >
-                                                  Purchase Price
-                                                </th>
-                                                <th
-                                                  scope="col"
-                                                  class="px-6 py-3"
-                                                >
-                                                  Selling Price
-                                                </th>
-                                                <th
-                                                  scope="col"
-                                                  class="px-6 py-3"
-                                                >
-                                                  Verify Status
-                                                </th>
-                                                <th
-                                                  scope="col"
-                                                  class="px-6 py-3"
-                                                >
-                                                  Active Status
-                                                </th>
-                                                <th
-                                                  scope="col"
-                                                  class="px-6 py-3"
-                                                >
-                                                  Action
-                                                </th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                              <tr
-                                                class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
-                                              >
-                                                <td class="w-4 p-4">
-                                                  <div
-                                                    class="flex items-center"
-                                                  >
-                                                    1.
-                                                  </div>
-                                                </td>
-                                                <th
-                                                  scope="row"
-                                                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center"
-                                                >
-                                                  <img
-                                                    src="../../images/pimg1.png"
-                                                    alt=""
-                                                    class="w-10 h-10 mr-2"
-                                                  />
-                                                  Apple MacBook
-                                                </th>
-                                                <td class="px-6 py-4">
-                                                  Digital
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  $450.00
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  $500.00
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  <span
-                                                    class="bg-lightgreen text-green font-bold p-2 rounded-sm"
-                                                    >Status</span
-                                                  >
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  <input
-                                                    class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
-                                                    type="checkbox"
-                                                    role="switch"
-                                                    id="flexSwitchCheckDefault"
-                                                  />
-                                                  <label
-                                                    class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                    for="flexSwitchCheckDefault"
-                                                  >
-                                                  </label>
-                                                </td>
-                                                <td
-                                                  class="px-6 py-4 flex items-center gap-2"
-                                                >
-                                                  <img
-                                                    src="../../images//baricon.png"
-                                                    alt=""
-                                                    class="w-5 h-5"
-                                                  />
-
-                                                  <i
-                                                    class="fa-regular fa-eye text-blue border-2 w-6 h-6 rounded-md text-center"
-                                                  ></i>
-                                                  <i
-                                                    class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-
-                                                  <i
-                                                    class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-                                                </td>
-                                              </tr>
-                                              <tr
-                                                class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
-                                              >
-                                                <td class="w-4 p-4">
-                                                  <div
-                                                    class="flex items-center"
-                                                  >
-                                                    1.
-                                                  </div>
-                                                </td>
-                                                <th
-                                                  scope="row"
-                                                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center"
-                                                >
-                                                  <img
-                                                    src="../../images/pimg2.png"
-                                                    alt=""
-                                                    class="w-10 h-10 mr-2"
-                                                  />
-                                                  Apple MacBook
-                                                </th>
-                                                <td class="px-6 py-4">
-                                                  Digital
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  $450.00
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  $500.00
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  Status
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  <input
-                                                    class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
-                                                    type="checkbox"
-                                                    role="switch"
-                                                    id="flexSwitchCheckDefault"
-                                                  />
-                                                  <label
-                                                    class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                    for="flexSwitchCheckDefault"
-                                                  >
-                                                  </label>
-                                                </td>
-                                                <td
-                                                  class="px-6 py-4 flex items-center gap-2"
-                                                >
-                                                  <img
-                                                    src="../../images//baricon.png"
-                                                    alt=""
-                                                    class="w-5 h-5"
-                                                  />
-
-                                                  <i
-                                                    class="fa-regular fa-eye text-blue border-2 w-6 h-6 rounded-md text-center"
-                                                  ></i>
-                                                  <i
-                                                    class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-
-                                                  <i
-                                                    class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-                                                </td>
-                                              </tr>
-                                              <tr
-                                                class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
-                                              >
-                                                <td class="w-4 p-4">
-                                                  <div
-                                                    class="flex items-center"
-                                                  >
-                                                    1.
-                                                  </div>
-                                                </td>
-                                                <th
-                                                  scope="row"
-                                                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center"
-                                                >
-                                                  <img
-                                                    src="../../images/pimg3.png"
-                                                    alt=""
-                                                    class="w-10 h-10 mr-2"
-                                                  />
-                                                  Apple MacBook
-                                                </th>
-                                                <td class="px-6 py-4">
-                                                  Digital
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  $450.00
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  $500.00
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  Status
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  <input
-                                                    class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
-                                                    type="checkbox"
-                                                    role="switch"
-                                                    id="flexSwitchCheckDefault"
-                                                  />
-                                                  <label
-                                                    class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                    for="flexSwitchCheckDefault"
-                                                  >
-                                                  </label>
-                                                </td>
-                                                <td
-                                                  class="px-6 py-4 flex items-center gap-2"
-                                                >
-                                                  <img
-                                                    src="../../images//baricon.png"
-                                                    alt=""
-                                                    class="w-5 h-5"
-                                                  />
-
-                                                  <i
-                                                    class="fa-regular fa-eye text-blue border-2 w-6 h-6 rounded-md text-center"
-                                                  ></i>
-                                                  <i
-                                                    class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-
-                                                  <i
-                                                    class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-                                                </td>
-                                              </tr>
-                                              <tr
-                                                class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
-                                              >
-                                                <td class="w-4 p-4">
-                                                  <div
-                                                    class="flex items-center"
-                                                  >
-                                                    1.
-                                                  </div>
-                                                </td>
-                                                <th
-                                                  scope="row"
-                                                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center"
-                                                >
-                                                  <img
-                                                    src="../../images/pimg1.png"
-                                                    alt=""
-                                                    class="w-10 h-10 mr-2"
-                                                  />
-                                                  Apple MacBook
-                                                </th>
-                                                <td class="px-6 py-4">
-                                                  Digital
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  $450.00
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  $500.00
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  <span
-                                                    class="bg-lightgreen text-green font-bold p-2 rounded-sm"
-                                                    >Status</span
-                                                  >
-                                                </td>
-
-                                                <td class="px-6 py-4">
-                                                  <input
-                                                    class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
-                                                    type="checkbox"
-                                                    role="switch"
-                                                    id="flexSwitchCheckDefault"
-                                                  />
-                                                  <label
-                                                    class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                    for="flexSwitchCheckDefault"
-                                                  >
-                                                  </label>
-                                                </td>
-                                                <td
-                                                  class="px-6 py-4 flex items-center gap-2"
-                                                >
-                                                  <img
-                                                    src="../../images//baricon.png"
-                                                    alt=""
-                                                    class="w-5 h-5"
-                                                  />
-
-                                                  <i
-                                                    class="fa-regular fa-eye text-blue border-2 w-6 h-6 rounded-md text-center"
-                                                  ></i>
-                                                  <i
-                                                    class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-
-                                                  <i
-                                                    class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-                                                </td>
-                                              </tr>
-                                              <tr
-                                                class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
-                                              >
-                                                <td class="w-4 p-4">
-                                                  <div
-                                                    class="flex items-center"
-                                                  >
-                                                    1.
-                                                  </div>
-                                                </td>
-                                                <th
-                                                  scope="row"
-                                                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center"
-                                                >
-                                                  <img
-                                                    src="../../images/pimg2.png"
-                                                    alt=""
-                                                    class="w-10 h-10 mr-2"
-                                                  />
-                                                  Apple MacBook
-                                                </th>
-                                                <td class="px-6 py-4">
-                                                  Digital
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  $450.00
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  $500.00
-                                                </td>
-                                                <td
-                                                  class="px-6 py-4 font-bold p-2 rounded-sm"
-                                                >
-                                                  Status
-                                                </td>
-
-                                                <td class="px-6 py-4">
-                                                  <input
-                                                    class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
-                                                    type="checkbox"
-                                                    role="switch"
-                                                    id="flexSwitchCheckDefault"
-                                                  />
-                                                  <label
-                                                    class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                    for="flexSwitchCheckDefault"
-                                                  >
-                                                  </label>
-                                                </td>
-                                                <td
-                                                  class="px-6 flex items-center gap-2"
-                                                >
-                                                  <img
-                                                    src="../../images//baricon.png"
-                                                    alt=""
-                                                    class="w-5 h-5"
-                                                  />
-
-                                                  <i
-                                                    class="fa-regular fa-eye text-blue border-2 w-6 h-6 rounded-md text-center"
-                                                  ></i>
-                                                  <i
-                                                    class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-
-                                                  <i
-                                                    class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-                                                </td>
-                                              </tr>
-                                              <tr
-                                                class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
-                                              >
-                                                <td class="w-4 p-4">
-                                                  <div
-                                                    class="flex items-center"
-                                                  >
-                                                    1.
-                                                  </div>
-                                                </td>
-                                                <th
-                                                  scope="row"
-                                                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center"
-                                                >
-                                                  <img
-                                                    src="../../images/pimg3.png"
-                                                    alt=""
-                                                    class="w-10 h-10 mr-2"
-                                                  />
-                                                  Apple MacBook
-                                                </th>
-                                                <td class="px-6 py-4">
-                                                  Digital
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  $450.00
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  $500.00
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  Status
-                                                </td>
-                                                <td class="px-6 py-4">
-                                                  <input
-                                                    class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
-                                                    type="checkbox"
-                                                    role="switch"
-                                                    id="flexSwitchCheckDefault"
-                                                  />
-                                                  <label
-                                                    class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                                    for="flexSwitchCheckDefault"
-                                                  >
-                                                  </label>
-                                                </td>
-                                                <td
-                                                  class="px-6 py-4 flex items-center gap-2"
-                                                >
-                                                  <img
-                                                    src="../../images//baricon.png"
-                                                    alt=""
-                                                    class="w-5 h-5"
-                                                  />
-
-                                                  <i
-                                                    class="fa-regular fa-eye text-blue border-2 w-6 h-6 rounded-md text-center"
-                                                  ></i>
-                                                  <i
-                                                    class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-
-                                                  <i
-                                                    class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
-                                                  ></i>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </div>
-
-                                        <!-- {/* tabls End  */} -->
-                                      </div>
-                                    </div>
-                                  </div>
+                                <div
+                                  class="flex border-2 items-center border-blue text-blue font-bold px-3 rounded-md"
+                                >
+                                  <i
+                                    class="fa-solid fa-download text-[14px] font-semibold mr-2"
+                                  ></i>
+                                  <select
+                                    name="cars"
+                                    id="cars"
+                                    class="focus:outline-none text-[14px] py-[7px]"
+                                  >
+                                    <option value="volvo">Export</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                  </select>
+                                </div>
+                                <a href="./limitedlist.html">
+                                  <div
+                                    class="flex border-2 text-[14px] items-center border-blue text-blue font-bold px-3 py-1 rounded-md"
+                                  >
+                                    <i
+                                      class="fa-solid fa-circle-plus text-[14px] font-semibold mr-2"
+                                    ></i>
+                                    Limited Stocks
+                                  </div></a
+                                >
+                                <div
+                                  class="flex border-2 text-[14px] items-center border-blue py-1 text-blue font-bold px-3 rounded-md"
+                                >
+                                  <i
+                                    class="fa-sharp fa-solid fa-plus text-[12px] font-semibold mr-2"
+                                  ></i>
+                                  Add new products
                                 </div>
                               </div>
                             </div>
+
+                            <!-- {/* tabls start  */} -->
+
+                            <div
+                              class="relative w-[90%] overflow-x-auto shadow-md sm:rounded-lg"
+                            >
+                              <table
+                                class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
+                              >
+                                <thead
+                                  class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 bg-gray"
+                                >
+                                  <tr>
+                                    <th scope="col" class="p-2">sl</th>
+                                    <th scope="col" class="px-2 py-3">
+                                      Product Name
+                                    </th>
+                                    <th scope="col" class="px-2 py-3">
+                                      Product Type
+                                    </th>
+                                    <th scope="col" class="px-2 py-3">
+                                      Purchase Price
+                                    </th>
+                                    <th scope="col" class="px-2 py-3">
+                                      Selling Price
+                                    </th>
+                                    <th scope="col" class="px-2 py-3">
+                                      Verify Status
+                                    </th>
+                                    <th scope="col" class="px-2 py-3">
+                                      Active Status
+                                    </th>
+                                    <th scope="col" class="px-2 py-3">
+                                      Action
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                                  >
+                                    <td class="w-4 p-2">
+                                      <div class="flex items-center">1.</div>
+                                    </td>
+                                    <th
+                                      scope="row"
+                                      class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center"
+                                    >
+                                      <img
+                                        src="../../images/pimg1.png"
+                                        alt=""
+                                        class="w-10 h-10 mr-2"
+                                      />
+                                      Apple MacBook
+                                    </th>
+                                    <td class="px-2 py-4">Digital</td>
+                                    <td class="px-2 py-4">$450.00</td>
+                                    <td class="px-2 py-4">$500.00</td>
+                                    <td class="px-2 py-4">
+                                      <span
+                                        class="bg-lightgreen text-green font-bold p-2 rounded-sm"
+                                        >Status</span
+                                      >
+                                    </td>
+                                    <td class="px-2 py-4">
+                                      <input
+                                        class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
+                                        type="checkbox"
+                                        role="switch"
+                                        id="flexSwitchCheckDefault"
+                                      />
+                                      <label
+                                        class="inline-block pl-[0.15rem] hover:cursor-pointer"
+                                        for="flexSwitchCheckDefault"
+                                      >
+                                      </label>
+                                    </td>
+                                    <td
+                                      class="px-2 py-4 flex items-center gap-2"
+                                    >
+                                      <img
+                                        src="../../images//baricon.png"
+                                        alt=""
+                                        class="w-5 h-5"
+                                      />
+
+                                      <i
+                                        class="fa-regular fa-eye text-blue border-2 w-6 h-6 rounded-md text-center"
+                                      ></i>
+                                      <i
+                                        class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                      ></i>
+
+                                      <i
+                                        class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                      ></i>
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                                  >
+                                    <td class="w-4 p-2">
+                                      <div class="flex items-center">1.</div>
+                                    </td>
+                                    <th
+                                      scope="row"
+                                      class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center"
+                                    >
+                                      <img
+                                        src="../../images/pimg2.png"
+                                        alt=""
+                                        class="w-10 h-10 mr-2"
+                                      />
+                                      Apple MacBook
+                                    </th>
+                                    <td class="px-2 py-4">Digital</td>
+                                    <td class="px-2 py-4">$450.00</td>
+                                    <td class="px-2 py-4">$500.00</td>
+                                    <td class="px-2 py-4">Status</td>
+                                    <td class="px-2 py-4">
+                                      <input
+                                        class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
+                                        type="checkbox"
+                                        role="switch"
+                                        id="flexSwitchCheckDefault"
+                                      />
+                                      <label
+                                        class="inline-block pl-[0.15rem] hover:cursor-pointer"
+                                        for="flexSwitchCheckDefault"
+                                      >
+                                      </label>
+                                    </td>
+                                    <td
+                                      class="px-2 py-4 flex items-center gap-2"
+                                    >
+                                      <img
+                                        src="../../images//baricon.png"
+                                        alt=""
+                                        class="w-5 h-5"
+                                      />
+
+                                      <i
+                                        class="fa-regular fa-eye text-blue border-2 w-6 h-6 rounded-md text-center"
+                                      ></i>
+                                      <i
+                                        class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                      ></i>
+
+                                      <i
+                                        class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                      ></i>
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                                  >
+                                    <td class="w-4 p-2">
+                                      <div class="flex items-center">1.</div>
+                                    </td>
+                                    <th
+                                      scope="row"
+                                      class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center"
+                                    >
+                                      <img
+                                        src="../../images/pimg3.png"
+                                        alt=""
+                                        class="w-10 h-10 mr-2"
+                                      />
+                                      Apple MacBook
+                                    </th>
+                                    <td class="px-2 py-4">Digital</td>
+                                    <td class="px-2 py-4">$450.00</td>
+                                    <td class="px-2 py-4">$500.00</td>
+                                    <td class="px-2 py-4">Status</td>
+                                    <td class="px-2 py-4">
+                                      <input
+                                        class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
+                                        type="checkbox"
+                                        role="switch"
+                                        id="flexSwitchCheckDefault"
+                                      />
+                                      <label
+                                        class="inline-block pl-[0.15rem] hover:cursor-pointer"
+                                        for="flexSwitchCheckDefault"
+                                      >
+                                      </label>
+                                    </td>
+                                    <td
+                                      class="px-2 py-4 flex items-center gap-2"
+                                    >
+                                      <img
+                                        src="../../images//baricon.png"
+                                        alt=""
+                                        class="w-5 h-5"
+                                      />
+
+                                      <i
+                                        class="fa-regular fa-eye text-blue border-2 w-6 h-6 rounded-md text-center"
+                                      ></i>
+                                      <i
+                                        class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                      ></i>
+
+                                      <i
+                                        class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                      ></i>
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                                  >
+                                    <td class="w-4 p-2">
+                                      <div class="flex items-center">1.</div>
+                                    </td>
+                                    <th
+                                      scope="row"
+                                      class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center"
+                                    >
+                                      <img
+                                        src="../../images/pimg1.png"
+                                        alt=""
+                                        class="w-10 h-10 mr-2"
+                                      />
+                                      Apple MacBook
+                                    </th>
+                                    <td class="px-2 py-4">Digital</td>
+                                    <td class="px-2 py-4">$450.00</td>
+                                    <td class="px-2 py-4">$500.00</td>
+                                    <td class="px-2 py-4">
+                                      <span
+                                        class="bg-lightgreen text-green font-bold p-2 rounded-sm"
+                                        >Status</span
+                                      >
+                                    </td>
+
+                                    <td class="px-2 py-4">
+                                      <input
+                                        class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
+                                        type="checkbox"
+                                        role="switch"
+                                        id="flexSwitchCheckDefault"
+                                      />
+                                      <label
+                                        class="inline-block pl-[0.15rem] hover:cursor-pointer"
+                                        for="flexSwitchCheckDefault"
+                                      >
+                                      </label>
+                                    </td>
+                                    <td
+                                      class="px-2 py-4 flex items-center gap-2"
+                                    >
+                                      <img
+                                        src="../../images//baricon.png"
+                                        alt=""
+                                        class="w-5 h-5"
+                                      />
+
+                                      <i
+                                        class="fa-regular fa-eye text-blue border-2 w-6 h-6 rounded-md text-center"
+                                      ></i>
+                                      <i
+                                        class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                      ></i>
+
+                                      <i
+                                        class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                      ></i>
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                                  >
+                                    <td class="w-4 p-2">
+                                      <div class="flex items-center">1.</div>
+                                    </td>
+                                    <th
+                                      scope="row"
+                                      class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center"
+                                    >
+                                      <img
+                                        src="../../images/pimg2.png"
+                                        alt=""
+                                        class="w-10 h-10 mr-2"
+                                      />
+                                      Apple MacBook
+                                    </th>
+                                    <td class="px-2 py-4">Digital</td>
+                                    <td class="px-2 py-4">$450.00</td>
+                                    <td class="px-2 py-4">$500.00</td>
+                                    <td
+                                      class="px-2 py-4 font-bold p-2 rounded-sm"
+                                    >
+                                      Status
+                                    </td>
+
+                                    <td class="px-2 py-4">
+                                      <input
+                                        class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
+                                        type="checkbox"
+                                        role="switch"
+                                        id="flexSwitchCheckDefault"
+                                      />
+                                      <label
+                                        class="inline-block pl-[0.15rem] hover:cursor-pointer"
+                                        for="flexSwitchCheckDefault"
+                                      >
+                                      </label>
+                                    </td>
+                                    <td class="px-2 flex items-center gap-2">
+                                      <img
+                                        src="../../images//baricon.png"
+                                        alt=""
+                                        class="w-5 h-5"
+                                      />
+
+                                      <i
+                                        class="fa-regular fa-eye text-blue border-2 w-6 h-6 rounded-md text-center"
+                                      ></i>
+                                      <i
+                                        class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                      ></i>
+
+                                      <i
+                                        class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                      ></i>
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                                  >
+                                    <td class="w-4 p-2">
+                                      <div class="flex items-center">1.</div>
+                                    </td>
+                                    <th
+                                      scope="row"
+                                      class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center"
+                                    >
+                                      <img
+                                        src="../../images/pimg3.png"
+                                        alt=""
+                                        class="w-10 h-10 mr-2"
+                                      />
+                                      Apple MacBook
+                                    </th>
+                                    <td class="px-2 py-4">Digital</td>
+                                    <td class="px-2 py-4">$450.00</td>
+                                    <td class="px-2 py-4">$500.00</td>
+                                    <td class="px-2 py-4">Status</td>
+                                    <td class="px-2 py-4">
+                                      <input
+                                        class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
+                                        type="checkbox"
+                                        role="switch"
+                                        id="flexSwitchCheckDefault"
+                                      />
+                                      <label
+                                        class="inline-block pl-[0.15rem] hover:cursor-pointer"
+                                        for="flexSwitchCheckDefault"
+                                      >
+                                      </label>
+                                    </td>
+                                    <td
+                                      class="px-2 py-4 flex items-center gap-2"
+                                    >
+                                      <img
+                                        src="../../images//baricon.png"
+                                        alt=""
+                                        class="w-5 h-5"
+                                      />
+
+                                      <i
+                                        class="fa-regular fa-eye text-blue border-2 w-6 h-6 rounded-md text-center"
+                                      ></i>
+                                      <i
+                                        class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                      ></i>
+
+                                      <i
+                                        class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                      ></i>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+
+                            <!-- {/* tabls End  */} -->
                           </div>
-                          <!--  page end -->
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <!--  page end -->
             </div>
           </div>
         </section>
