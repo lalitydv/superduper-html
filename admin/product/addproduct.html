@@ -9,6 +9,29 @@
     <meta name="description" content="description here" />
     <meta name="keywords" content="keywords,here" />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <!-- editor link -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script>
+    <!-- <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/jodit/4.0.0-beta.86/jodit.min.css"
+    />
+    
+    <link rel="stylesheet" href="build/jodit.min.css" /> -->
+    <!-- editore link -->
+    <link
+      href="node_modules/froala-editor/css/froala_editor.pkgd.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="node_modules/froala-editor/js/froala_editor.pkgd.min.js"
+    ></script>
+    <link href="../css/froala_style.min.css" rel="stylesheet" type="text/css" />
+    <!-- ck editores -->
+    <!-- <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script>
+    <script type="text/javascript" src="ckeditor/ckeditor.js"></script> -->
+    <!--  -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -427,47 +450,47 @@
                           <div
                             class="bg-white md:rounded-full w-72 md:w-full overflow-hidden shadow-md my-2 px-5"
                           >
-                          <div
-                          class="md:flex flex-wrap md:justify-between grid gap-2 items-center"
-                        >
-                          <div class="md:pl-4">overview</div>
-                          <div class="flex items-center">
-                            <label
-                              for="countries"
-                              class="block text-sm font-medium text-gray-1"
+                            <div
+                              class="md:flex flex-wrap md:justify-between grid gap-2 items-center"
                             >
-                              Show
-                            </label>
-                            <select
-                              id="countries"
-                              class="text-blue text-sm font-bold mx-2"
-                            >
-                              <option selected>this month</option>
-                              <option value="US">United States</option>
-                              <option value="CA">Canada</option>
-                              <option value="FR">France</option>
-                              <option value="DE">Germany</option>
-                            </select>
-                          </div>
-                          <div class=" ">
-                            <form
-                              class="border-2 border-black md:rounded-2xl px-2 md:my-2 md:px-20 md:py-2"
-                            >
-                              <input
-                                type="text"
-                                placeholder="Search "
-                                class="text-black focus:outline-none"
-                              />
-                              <HiSearch class="inline-block text-gray" />
-                            </form>
-                          </div>
-                          <button
-                            class="bg-blue text-white md:px-6 rounded-xl py-2"
-                            onClick="{handleClick}"
-                          >
-                            add New Product
-                          </button>
-                        </div>
+                              <div class="md:pl-4">overview</div>
+                              <div class="flex items-center">
+                                <label
+                                  for="countries"
+                                  class="block text-sm font-medium text-gray-1"
+                                >
+                                  Show
+                                </label>
+                                <select
+                                  id="countries"
+                                  class="text-blue text-sm font-bold mx-2"
+                                >
+                                  <option selected>this month</option>
+                                  <option value="US">United States</option>
+                                  <option value="CA">Canada</option>
+                                  <option value="FR">France</option>
+                                  <option value="DE">Germany</option>
+                                </select>
+                              </div>
+                              <div class=" ">
+                                <form
+                                  class="border-2 border-black md:rounded-2xl px-2 md:my-2 md:px-20 md:py-2"
+                                >
+                                  <input
+                                    type="text"
+                                    placeholder="Search "
+                                    class="text-black focus:outline-none"
+                                  />
+                                  <HiSearch class="inline-block text-gray" />
+                                </form>
+                              </div>
+                              <button
+                                class="bg-blue text-white md:px-6 rounded-xl py-2"
+                                onClick="{handleClick}"
+                              >
+                                add New Product
+                              </button>
+                            </div>
                           </div>
 
                           <!-- {/* add product start  */} -->
@@ -475,7 +498,7 @@
                             class="bg-white rounded-md w-72 md:w-full overflow-hidden shadow-md my-10 px-5"
                           >
                             <div
-                              class="flex justify-center items-center gap-10"
+                              class="flex justify-center items-center gap-10 py-10"
                             >
                               <div class="shadow-md p-10">
                                 <p class="bg-blue text-white px-5">English</p>
@@ -494,13 +517,15 @@
                                     class="border-2 border-blue w-full focus:border-none"
                                   />
                                 </div>
-                                <div>
+                                <div class="mt-2">
                                   <label htmlFor="">Description (EN)</label>
                                   <br />
-                                  <JoditEditor
-                                    ref="{editor}"
-                                    style="width: 600; height: 400"
-                                  />
+                                  <textarea id="editor"></textarea>
+                                  <!-- <form action="/action_page.php"> -->
+
+                                  <!-- </form> -->
+
+                                  <!-- <textarea name="content"></textarea> -->
                                 </div>
                               </div>
                             </div>
@@ -955,6 +980,12 @@
                                         src="../../images/addprofileim.png"
                                         alt="img"
                                       />
+                                      <input
+                                        type="file"
+                                        id="myFile"
+                                        name="filename"
+                                        style="display: none"
+                                      />
                                     </label>
                                   </div>
                                 </div>
@@ -1004,13 +1035,6 @@
                                 </label>
                                 <div class="max-w-screen-md mx-auto">
                                   <div class="mt-10 mb-4">
-                                    <input
-                                      type="file"
-                                      accept="image/*"
-                                      class="hidden"
-                                      id="imageInput"
-                                      onChange="{handleImageChange}"
-                                    />
                                     <label
                                       htmlFor="imageInput"
                                       class="cursor-pointer inline-block w-full h-96 bg-gray-200 border-gray-300 flex items-center justify-center border-4 border-dotted border-violet-100 hover:border-violet-500 rounded-lg"
@@ -1018,6 +1042,12 @@
                                       <img
                                         src="../../images/addprofileim.png"
                                         alt="img"
+                                      />
+                                      <input
+                                        type="file"
+                                        id="myFile"
+                                        name="filename"
+                                        style="display: none"
                                       />
                                     </label>
                                   </div>
@@ -1037,13 +1067,6 @@
 
                                 <div class="max-w-screen-md mx-auto">
                                   <div class="mt-10 mb-4">
-                                    <input
-                                      type="file"
-                                      accept="image/*"
-                                      class="hidden"
-                                      id="imageInput"
-                                      onChange="{handleImageChange}"
-                                    />
                                     <label
                                       htmlFor="imageInput"
                                       class="cursor-pointer inline-block w-full h-96 bg-gray-200 border-gray-300 flex items-center justify-center border-4 border-dotted border-violet-100 hover:border-violet-500 rounded-lg"
@@ -1051,6 +1074,12 @@
                                       <img
                                         src="../../images/addprofileim.png"
                                         alt="img"
+                                      />
+                                      <input
+                                        type="file"
+                                        id="myFile"
+                                        name="filename"
+                                        style="display: none"
                                       />
                                     </label>
                                   </div>
@@ -1068,6 +1097,8 @@
               </div>
             </div>
           </div>
+
+          <textarea name="content"></textarea>
         </section>
       </div>
     </main>
@@ -1160,6 +1191,34 @@
           }
         });
       }
+    </script>
+    <!-- Jodit editore start -->
+    <!-- <script>
+      const editor = Jodit.make("#editor");
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jodit/4.0.0-beta.86/jodit.min.js"></script>
+    <script src="build/jodit.min.js"></script> -->
+
+    <!-- jodit editore end -->
+    <!-- ckeditore start -->
+    <!-- <script src="../../ckeditor/ckeditor.js"></script>
+    <script>
+      CKEDITOR.replace("content");
+    </script> -->
+    <!-- rich editore start -->
+    <script
+      type="text/javascript"
+      src="node_modules/froala-editor/js/froala_editor.pkgd.min.js"
+    ></script>
+    <script>
+      var editor = new FroalaEditor("#example");
+    </script>
+    <!--  -->
+    <script>
+      // Initialize CKEditor
+      ClassicEditor.create(document.querySelector("#editor")).catch((error) => {
+        console.error(error);
+      });
     </script>
   </body>
 </html>
