@@ -416,7 +416,7 @@
                           <!-- addnew page start  -->
                           <div className="w-screen  ">
                             <div
-                              class="bg-white rounded-l-full md:w-full shadow-md"
+                              class="bg-white p-2 rounded-l-full md:w-full shadow-md"
                             >
                               <div
                                 class="md:flex flex-wrap md:justify-between grid gap-2 items-center"
@@ -441,16 +441,18 @@
                                   </select>
                                 </div>
                                 <div class=" ">
-                                  <form
-                                    class="border-2 border-black md:rounded-2xl px-2 md:my-2 md:px-20 md:py-2"
-                                  >
-                                    <input
-                                      type="text"
-                                      placeholder="Search "
-                                      class="text-black focus:outline-none"
-                                    />
-                                    <HiSearch class="inline-block text-gray" />
-                                  </form>
+                                  <div class="">
+                                    <form
+                                      class="border-2 border-black md:rounded-2xl px-10 py-2"
+                                    >
+                                      <input
+                                        type="text"
+                                        placeholder="Search "
+                                        class="text-black w-full border-none inputfoc p-0"
+                                      />
+                                      <!-- <HiSearch class="inline-block text-gray" /> -->
+                                    </form>
+                                  </div>
                                 </div>
                                 <button
                                   class="bg-blue text-white md:px-6 rounded-xl py-2"

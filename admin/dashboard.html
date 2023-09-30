@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tailwind Admin Starter Template : Tailwind Toolbox</title>
+    <meta name="author" content="name" />
+    <meta name="description" content="description here" />
+    <meta name="keywords" content="keywords,here" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--Totally optional :) -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"
+      integrity="sha256-xKeoJ50pzbUGkpQxDYHD7o7hxe0LaOGeguUidbq6vis="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              blue: "#073B74",
+              darkblue: "#073B74",
+              grey: "#858C8E",
+              lightw: "#D9D9D9",
+              whitel: "#FAFAFC",
+              green: "#3BB77E",
+              yellow: "#FFE144",
+              darkblak: "#3C3C3C",
+              lightgreen: "#BCEFD8",
+              greylight: "#E4E4E4",
+              pink: "#F3E8E8",
+              textcoo: "#253D4E",
+              lightwh: "#ACACAC",
+              blackligh: "#3C3C3C",
+              pinkd: "#F74B81",
+              purpel: "#906ED1",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-sans leading-normal tracking-normal mt-12">
+    <header>
+      <!--Nav-->
+      <nav
+        aria-label="menu nav"
+        class="bg-white shadow pt-2 md:pt-1 pb-1 px-1 mt-0 h-auto fixed w-full z-20 top-0"
+      >
+        <div class="flex flex-wrap items-center py-2">
+          <div
+            class="flex flex-shrink md:w-1/3 justify-center md:justify-start text-white"
+          >
+            <a href="#" aria-label="Home">
+              <span class="text-xl p-0">
+                <img src="../images/logo1.png" alt="adminlogo" />
+                <!-- <i class="em em-grinning"></i> -->
+              </span>
+            </a>
+          </div>
+
+          <div
+            class="flex flex-1 md:w-1/3 justify-center md:justify-start text-white px-2"
+          ></div>
+
+          <div
+            class="flex w-full pt-2 content-center justify-between md:w-1/3 md:justify-end"
+          >
+            <ul
+              class="list-reset flex justify-between flex-1 md:flex-none items-center"
+            >
+              <li class="flex-1 md:flex-none md:mr-3 flex">
+                <a class="inline-block text-white no-underline" href="#"
+                  ><img src="../images/flag.png" alt="adminlogo"
+                /></a>
+              </li>
+              <li class="flex-1 md:flex-none md:mr-3">
+                <a href="#" aria-label="Home">
+                  <span class="text-xl p-0">
+                    <img src="../images/icon1.png" alt="adminlogo" />
+                    <!-- <i class="em em-grinning"></i> -->
+                  </span>
+                </a>
+              </li>
+
+              <li class="flex-1 md:flex-none md:mr-3">
+                <a href="#" aria-label="Home">
+                  <span class="text-xl p-0">
+                    <img src="../images/icon2.png" alt="adminlogo" />
+                    <!-- <i class="em em-grinning"></i> -->
+                  </span>
+                </a>
+              </li>
+              <li class="flex-1 md:flex-none md:mr-3">
+                <a href="#" aria-label="Home">
+                  <span class="text-xl p-0">
+                    <i class="fa-regular fa-bell"></i>
+                    <!-- <i class="em em-grinning"></i> -->
+                  </span>
+                </a>
+              </li>
+              <li class="flex-1 md:flex-none md:mr-3">
+                <a href="#" aria-label="Home">
+                  <span class="text-xl p-0">
+                    <img
+                      src="../images/profile.png"
+                      alt="adminlogo"
+                      class="w-[35px]"
+                    />
+                    <!-- <i class="em em-grinning"></i> -->
+                  </span>
+                </a>
+              </li>
+              <li class="flex-1 md:flex-none md:mr-3">
+                <a href="#" aria-label="Home">
+                  <span class="text-xl p-0">
+                    <i class="fa-sharp fa-solid fa-gear"></i>
+                    <!-- <i class="em em-grinning"></i> -->
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="flex flex-col md:flex-row">
+        <nav aria-label="alternative nav">
+          <div
+            class="bg-white h-20 fixed bottom-0 mt-12 md:relative md:h-screen z-10 w-full md:w-48 content-center"
+          >
+            <div
+              class="md:mt-12 md:w-48 md:fixed md:left-0 md:top-0 content-center md:content-start text-left justify-between"
+            >
+              <div class="md:mt-[400px] md:block hidden">
+                <div
+                  class="border-white md:mt-[400px] rounded-3xl flex flex-col top-10 left-0 w-14 md:w-56 h-screen bg-white shadow-2xl dark:bg-gray-900 text-blue transition-all duration-300 border-none z-10 sidebar"
+                >
+                  <div
+                    class="border-white rounded-r-3xl fixed flex flex-col top-14 left-0 w-14 md:w-56 h-screen bg-white shadow-2xl dark:bg-gray-900 text-blue transition-all duration-300 border-none z-10 sidebar"
+                  >
+                    <div
+                      class="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow text-md"
+                    >
+                      <div class="sidenav flex flex-col py-14 px- space-y-1">
+                        <div
+                          class="relative item-center justify-center flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                        >
+                          <img
+                            src="../images/admlogo.png"
+                            alt="img"
+                            class="w-20 h-20"
+                          />
+                          <span>Store Name</span>
+                        </div>
+
+                        <div class="sidenav" style="margin-top: 25px">
+                          <a href="#">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-house" class="text-md"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Dashboard
+                            </span>
+                          </a>
+
+                          <button class="dropdown-btn">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-bag-shopping"></i>
+                            </span>
+                            <span class="tracking-wide truncate ml-2">
+                              orders
+                            </span>
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+
+                          <div class="dropdown-container">
+                            <a href="./order/total.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Total</a
+                            >
+                            <a href="./order/pending.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Pending</a
+                            >
+                            <a href="./order/confirm.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Confirmed</a
+                            >
+                            <a href="./order/packageing.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Packaging</a
+                            >
+                            <a href="./order/shipped.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Shipped</a
+                            >
+                            <a href="./order/delivery.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Deliverd</a
+                            >
+                            <a href="./order/return.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Returned</a
+                            >
+                            <a href="./order/failed.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Failed</a
+                            >
+                            <a href=".order/cancel.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Canceled</a
+                            >
+                          </div>
+
+                          <a href="#contact">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-table-columns"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Category
+                            </span></a
+                          >
+                          <button class="dropdown-btn">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-sitemap"></i>
+                            </span>
+                            <span class="tracking-wide truncate ml-2">
+                              product
+                            </span>
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-container">
+                            <a href="./product/product.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Product</a
+                            >
+                            <a href="../product/bluk.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Bluk imports</a
+                            >
+                          </div>
+                          <a href="Storepage.html">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-store"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Store Profile
+                            </span>
+                          </a>
+                          <a href="Notification.html">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-regular fa-bell"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Notifications
+                            </span>
+                          </a>
+                          <a href="couponpage.html">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-regular fa-credit-card"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate"
+                              >Coupon</span
+                            >
+                          </a>
+                          <a href="payout.html">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-regular fa-credit-card"></i>
+                            </span>
+                            <span
+                              class="ml-2 font-semibold tracking-wide truncate"
+                              >Payout</span
+                            >
+                          </a>
+                          <button
+                            class="dropdown-btn h-11 mt-5 rounded-md bg-blue text-white"
+                          >
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-bag-shopping"></i>
+                            </span>
+                            <span class="tracking-wide truncate ml-2">
+                              My Profile
+                            </span>
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-container">
+                            <a href="../myprofile.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >My Profile</a
+                            >
+                            <a
+                              href="./myprofile/addnewemployee.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Add New Employee</a
+                            >
+                            <a
+                              href="./myprofile/employeelist.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Employee List</a
+                            >
+                            <a href="./myprofile/Addrole.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Add Role</a
+                            >
+                            <a
+                              href="./myprofile/rolelist.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Role List</a
+                            >
+                          </div>
+                          <a href="#" style="padding: 0px">
+                            <div
+                              class="relative mt-2 h-11 px-4 flex flex-row items-center focus:outline-none dark:hover:bg-gray-600 text-white hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 bg-blue rounded-md"
+                            >
+                              <span
+                                class="inline-flex justify-center items-center"
+                                ><img
+                                  src="../images/logout.png"
+                                  alt="img"
+                                  class="w-4 mr-3"
+                                />
+                              </span>
+                              <span class="tracking-wide truncate">Logout</span>
+                            </div>
+                          </a>
+                        </div>
+                        <!-- end dropwdown -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <section class="md:w-75 w-full px-5">
+          <div
+            id="main"
+            class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5"
+          >
+            <!-- only for  start -->
+            <div class="w-full">
+              <!-- notification page start  -->
+              <div class="flex flex-col md:mx-4 mx-2 gap-5">
+                <div class="rounded-3xl md:p-4 p-8">
+                  <div class="flex lg:flex-nowrap gap-4 flex-wrap box-border">
+                    <div class="lg:w-[100%] md:w-[100%]">
+                      <div class="mt-4">
+                        <div
+                          class="relative overflow-hidden md:text-md text-lg"
+                        >
+                          <div
+                            class="bg-white p-2 md:rounded-l-full w-72 md:w-full overflow-hidden shadow-md"
+                          >
+                            <div
+                              class="md:flex flex-wrap md:justify-between grid gap-2 items-center"
+                            >
+                              <div class="md:pl-4">overview</div>
+                              <div class="flex items-center">
+                                <label
+                                  for="countries"
+                                  class="block text-sm font-medium text-gray-1"
+                                >
+                                  Show
+                                </label>
+                                <select
+                                  id="countries"
+                                  class="text-blue text-sm font-bold mx-2"
+                                >
+                                  <option selected>this month</option>
+                                  <option value="US">United States</option>
+                                  <option value="CA">Canada</option>
+                                  <option value="FR">France</option>
+                                  <option value="DE">Germany</option>
+                                </select>
+                              </div>
+                              <div class=" ">
+                                <div class="">
+                                  <form
+                                    class="border-2 border-black md:rounded-2xl px-10 py-2"
+                                  >
+                                    <input
+                                      type="text"
+                                      placeholder="Search "
+                                      class="text-black w-full border-none inputfoc p-0"
+                                    />
+                                  </form>
+                                </div>
+                              </div>
+                              <button
+                                class="bg-blue text-white md:px-6 rounded-xl py-2"
+                                onClick="{handleClick}"
+                              >
+                                add New Product
+                              </button>
+                            </div>
+                          </div>
+                          <!-- card section start -->
+
+                          <div
+                            class="rounded-lg grow flex-wrap md:flex gap-5 mt-8"
+                          >
+                            <!-- card 1 -->
+                            <div
+                              class="shadow-md shadow-grey rounded-lg grow p-2 md:w-[20%] w-[100%] h-24 flex mt-2"
+                            >
+                              <div class="flex gap-20 items-center">
+                                <div class="w-[40%]">
+                                  <img
+                                    src="../images/d1.png"
+                                    alt="img"
+                                    class="w-[100px]"
+                                  />
+                                </div>
+                                <div class="w-[60%]">
+                                  <p class="text-blue font-bold text-[15px]">
+                                    Pending
+                                  </p>
+                                  <p class="text-blue font-bold text-[12px]">
+                                    20
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- card 2 -->
+                            <div
+                              class="shadow-md shadow-grey rounded-lg grow p-2 md:w-[20%] w-[100%] h-24 flex mt-2"
+                            >
+                              <div class="flex gap-20 items-center">
+                                <div class="w-[40%]">
+                                  <img
+                                    src="../images/d2.png"
+                                    alt="img"
+                                    class="w-[100px]"
+                                  />
+                                </div>
+                                <div class="w-[60%]">
+                                  <p class="text-blue font-bold text-[15px]">
+                                    Confirmed
+                                  </p>
+                                  <p class="text-blue font-bold text-[12px]">
+                                    20
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- card 3 -->
+                            <div
+                              class="shadow-md shadow-grey rounded-lg grow p-2 md:w-[20%] w-[100%] h-24 flex mt-2"
+                            >
+                              <div class="flex gap-20 items-center">
+                                <div class="w-[40%]">
+                                  <img
+                                    src="../images/d3.png"
+                                    alt="img"
+                                    class="w-[100px]"
+                                  />
+                                </div>
+                                <div class="w-[60%]">
+                                  <p class="text-blue font-bold text-[15px]">
+                                    Packaging
+                                  </p>
+                                  <p class="text-blue font-bold text-[12px]">
+                                    20
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- card4 -->
+                            <div
+                              class="shadow-md shadow-grey rounded-lg grow p-2 md:w-[20%] w-[100%] h-24 flex mt-2"
+                            >
+                              <div class="flex gap-20 items-center">
+                                <div class="w-[40%]">
+                                  <img
+                                    src="../images/d4.png"
+                                    alt="img"
+                                    class="w-[100px]"
+                                  />
+                                </div>
+                                <div class="w-[60%]">
+                                  <p class="text-blue font-bold text-[15px]">
+                                    Shipped
+                                  </p>
+                                  <p class="text-blue font-bold text-[12px]">
+                                    20
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- card section end -->
+                          <!-- graph section start -->
+                          <div
+                            class="flex responerr justify-between gap-5 items-center mt-8"
+                          >
+                            <div
+                              class="w-[60%] md:w-[100%] bg-white rounded-md px-8 py-4"
+                            >
+                              <div class="mt-5 w-[100%]">
+                                <div
+                                  class="max-w-sm w-full bg-white rounded-lg shadow dark:bg-gray-800"
+                                >
+                                  <div class="flex justify-between">
+                                    <div>
+                                      <p
+                                        class="text-base font-[15px] text-black dark:text-gray-400"
+                                      >
+                                        revenue Stats
+                                      </p>
+                                    </div>
+                                    <div
+                                      class="flex items-center px-2.5 py-0.5 text-base font-semibold text-[12px] text-green-500 dark:text-green-500 text-center"
+                                    >
+                                      <svg
+                                        class="w-3 h-3 ml-1"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 10 14"
+                                      >
+                                        <path
+                                          stroke="currentColor"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          stroke-width="2"
+                                          d="M5 13V1m0 0L1 5m4-4 4 4"
+                                        />
+                                      </svg>
+                                      8.30%
+
+                                      <span class="text-black"> $6,789.00</span>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="flex justify-between pb-0 md:pb-0"
+                                  ></div>
+                                  <div id="labels-chart" class="px-2.5"></div>
+                                  <div
+                                    class="grid grid-cols-1 items-center border-gray-200 border-t dark:border-gray-700 justify-between mt-5 p-4 md:p-6 pt-0 md:pt-0"
+                                  ></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="w-[40%] md:w-[100%] bg-white rounded-md px-8 py-4"
+                            >
+                              <div>
+                                <p>sales by category</p>
+                                <div
+                                  id="myChart"
+                                  style="
+                                    width: 100%;
+                                    max-width: 600px;
+                                    height: 300px;
+                                  "
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- graph section end -->
+                          <!--  rating section start -->
+                          <div
+                            class="flex prespons justify-between gap-2 items-center mt-4"
+                          >
+                            <!-- first customer rating -->
+                            <div
+                              class="bg-white rounded-md p-4 md:w-[33%] w-[100%]"
+                            >
+                              <div>
+                                <h4 class="font-semibold text-textcoo">
+                                  customer rating
+                                </h4>
+                                <div
+                                  class="w-[140px] mt-4 text-center h-[80px] rounded-md bg-blue p-4 mx-auto"
+                                >
+                                  <h2 class="text-white font-bold text-md">
+                                    4.7
+                                  </h2>
+                                  <p>
+                                    <i
+                                      class="fa-solid fa-star text-[14px] text-yellow"
+                                    ></i>
+                                    <i
+                                      class="fa-solid fa-star text-[14px] text-yellow"
+                                    ></i>
+                                    <i
+                                      class="fa-solid fa-star text-[14px] text-yellow"
+                                    ></i>
+                                    <i
+                                      class="fa-solid fa-star text-[14px] text-yellow"
+                                    ></i>
+                                    <i
+                                      class="fa-solid fa-star-half-stroke text-[14px] text-yellow"
+                                    ></i>
+                                  </p>
+                                </div>
+                                <div
+                                  class="flex justify-between items-center mt-5"
+                                >
+                                  <div>
+                                    <p class="text-lightwh text-[15px]">
+                                      communication
+                                    </p>
+                                  </div>
+                                  <div>
+                                    <p>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                  <div>
+                                    <p class="text-lightwh text-[15px]">
+                                      product quality
+                                    </p>
+                                  </div>
+                                  <div>
+                                    <p>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                  <div>
+                                    <p class="text-lightwh text-[15px]">
+                                      delivery
+                                    </p>
+                                  </div>
+                                  <div>
+                                    <p>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-lightwh"
+                                      ></i>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- selling product start -->
+                            <div
+                              class="bg-pink rounded-md p-4 md:w-[33%] w-[100%]"
+                            >
+                              <div>
+                                <h4 class="font-semibold text-textcoo">
+                                  best selling products
+                                </h4>
+                                <div class="mt-3">
+                                  <div
+                                    class="flex gap-3 items-center bg-white rounded-md p-1"
+                                  >
+                                    <div class="bg-lightw p-2 rounded-md">
+                                      <img
+                                        src="../images/dashim1.png"
+                                        alt="dashimg"
+                                      />
+                                    </div>
+                                    <div class="leading-normal">
+                                      <p
+                                        class="font-semibold text-blackligh text-[12px]"
+                                      >
+                                        Chobani Complete Vanilla Greek Yogurt
+                                      </p>
+                                      <div
+                                        class="flex justify-between items-center"
+                                      >
+                                        <div>
+                                          <p class="p-0 m-0">
+                                            <i
+                                              class="fa-solid fa-star text-[10px] text-yellow"
+                                            ></i>
+                                            <i
+                                              class="fa-solid fa-star text-[10px] text-yellow"
+                                            ></i>
+                                            <i
+                                              class="fa-solid fa-star text-[10px] text-yellow"
+                                            ></i>
+                                            <i
+                                              class="fa-solid fa-star text-[10px] text-yellow"
+                                            ></i>
+                                            <i
+                                              class="fa-solid fa-star text-[10px] text-yellow"
+                                            ></i>
+                                            <span
+                                              class="text-lightwh inline ml-2 text-[12px]"
+                                              >5.0</span
+                                            >
+                                          </p>
+                                        </div>
+                                        <div>
+                                          <p class="text-blue text-[12px]">
+                                            $152.58
+                                            <span
+                                              class="ml-2 text-[12px] text-lightwh"
+                                            >
+                                              <del>$120.58</del></span
+                                            >
+                                          </p>
+                                        </div>
+                                      </div>
+                                      <p
+                                        class="font-semibold text-blackligh text-[13px]"
+                                      >
+                                        164
+                                        <span
+                                          class="text-lightwh font-normal text-[12px]"
+                                          >itmes sold</span
+                                        >
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="flex gap-3 mt-2 items-center bg-white rounded-md p-1"
+                                  >
+                                    <div class="bg-lightw p-2 rounded-md">
+                                      <img
+                                        src="../images/dashim2.png"
+                                        alt="dashimg"
+                                      />
+                                    </div>
+                                    <div class="leading-normal">
+                                      <p
+                                        class="font-semibold text-blackligh text-[12px]"
+                                      >
+                                        Chobani Complete Vanilla Greek Yogurt
+                                      </p>
+                                      <div
+                                        class="flex justify-between items-center"
+                                      >
+                                        <div>
+                                          <p>
+                                            <i
+                                              class="fa-solid fa-star text-[10px] text-yellow"
+                                            ></i>
+                                            <i
+                                              class="fa-solid fa-star text-[10px] text-yellow"
+                                            ></i>
+                                            <i
+                                              class="fa-solid fa-star text-[10px] text-yellow"
+                                            ></i>
+                                            <i
+                                              class="fa-solid fa-star text-[10px] text-yellow"
+                                            ></i>
+                                            <i
+                                              class="fa-solid fa-star text-[10px] text-yellow"
+                                            ></i>
+                                            <span
+                                              class="text-lightwh inline ml-2 text-[12px]"
+                                              >5.0</span
+                                            >
+                                          </p>
+                                        </div>
+                                        <div>
+                                          <p class="text-blue text-[12px]">
+                                            $152.58
+                                            <span
+                                              class="ml-2 text-[12px] text-lightwh"
+                                            >
+                                              <del>$120.58</del></span
+                                            >
+                                          </p>
+                                        </div>
+                                      </div>
+                                      <p
+                                        class="font-semibold text-blackligh text-[13px]"
+                                      >
+                                        164
+                                        <span
+                                          class="text-lightwh font-normal text-[12px]"
+                                          >itmes sold</span
+                                        >
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- selling product end -->
+                            <!-- geo section start -->
+                            <div
+                              class="bg-white rounded-md p-4 md:w-[33%] w-[100%]"
+                            >
+                              <div class="flex justify-between items-center">
+                                <h4 class="font-semibold text-textcoo">
+                                  geogrophical analysis
+                                </h4>
+                                <button
+                                  class="border-none text-blue text-[13px]"
+                                >
+                                  see all
+                                </button>
+                              </div>
+                              <div
+                                class="flex justify-between items-center mt-5"
+                              >
+                                <div>
+                                  <img src="../images/uniflag.png" alt="img" />
+                                </div>
+                                <div>
+                                  <p
+                                    class="text-lightwh font-normal text-[15px]"
+                                  >
+                                    United States
+                                  </p>
+                                </div>
+                                <div>
+                                  <p
+                                    class="text-lightwh font-normal text-[15px]"
+                                  >
+                                    $1,671.10
+                                  </p>
+                                </div>
+                              </div>
+                              <div
+                                class="flex justify-between items-center mt-5"
+                              >
+                                <div>
+                                  <img src="../images/venflag.png" alt="img" />
+                                </div>
+                                <div>
+                                  <p
+                                    class="text-lightwh font-normal text-[15px]"
+                                  >
+                                    United States
+                                  </p>
+                                </div>
+                                <div>
+                                  <p
+                                    class="text-lightwh font-normal text-[15px]"
+                                  >
+                                    $1,671.10
+                                  </p>
+                                </div>
+                              </div>
+                              <div
+                                class="flex justify-between items-center mt-5"
+                              >
+                                <div>
+                                  <img
+                                    src="../images/russifalg.png"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div>
+                                  <p
+                                    class="text-lightwh font-normal text-[15px]"
+                                  >
+                                    United States
+                                  </p>
+                                </div>
+                                <div>
+                                  <p
+                                    class="text-lightwh font-normal text-[15px]"
+                                  >
+                                    $1,671.10
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- ego section end -->
+                          </div>
+                          <!--  rating section end -->
+                          <!-- last new added section start -->
+                          <div>
+                            <div class="flex gap-4 mt-8 box-border">
+                              <div class="flex-col">
+                                <div class="col-span-2">
+                                  <div class="bg-white rounded-2xl p-3">
+                                    <div
+                                      class="flex justify-between gap-3 items-center"
+                                    >
+                                      <div class="w-[30%]">
+                                        <img
+                                          src="../images/dasl1.png"
+                                          alt="img"
+                                        />
+                                      </div>
+                                      <div class="w-[70%]">
+                                        <p class="font-semibold text-textcoo">
+                                          new oredrs
+                                        </p>
+                                        <hr class="mt-2 h-[2px]" />
+                                        <div class="leading-none">
+                                          <input
+                                            type="range"
+                                            id="vol"
+                                            name="vol"
+                                            min="0"
+                                            max="50"
+                                            class="accent-green mt-2 w-[100%]"
+                                          />
+                                          <p
+                                            class="text-lightwh font-normal text-[12px]"
+                                          >
+                                            60 items delivered
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-span-2 mt-3">
+                                  <div class="bg-white rounded-2xl p-3">
+                                    <div
+                                      class="flex justify-between gap-3 items-center"
+                                    >
+                                      <div class="w-[30%]">
+                                        <img
+                                          src="../images/dash2.png"
+                                          alt="img"
+                                        />
+                                      </div>
+                                      <div class="w-[70%]">
+                                        <p class="font-semibold text-textcoo">
+                                          delivered
+                                        </p>
+                                        <hr class="mt-2 h-[2px]" />
+                                        <div class="leading-none">
+                                          <input
+                                            type="range"
+                                            id="vol"
+                                            name="vol"
+                                            min="0"
+                                            max="50"
+                                            class="accent-pinkd mt-2 w-[100%]"
+                                          />
+                                          <p
+                                            class="text-lightwh font-normal text-[12px]"
+                                          >
+                                            60 items delivered
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-span-2 mt-3">
+                                  <div class="bg-white rounded-2xl p-3">
+                                    <div
+                                      class="flex justify-between gap-3 items-center"
+                                    >
+                                      <div class="w-[30%]">
+                                        <img
+                                          src="../images/dash3.png"
+                                          alt="img"
+                                        />
+                                      </div>
+                                      <div class="w-[70%]">
+                                        <p class="font-semibold text-textcoo">
+                                          returned
+                                        </p>
+                                        <hr class="mt-2 h-[2px]" />
+                                        <div class="leading-none">
+                                          <input
+                                            type="range"
+                                            id="vol"
+                                            name="vol"
+                                            min="0"
+                                            max="50"
+                                            class="accent-purpel mt-2 w-[100%]"
+                                          />
+                                          <p
+                                            class="text-lightwh font-normal text-[12px]"
+                                          >
+                                            60 items delivered
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="grow">
+                                <p class="font-semibold text-textcoo">
+                                  newely added products
+                                </p>
+                                <div
+                                  class="flex divresop gap-4 w-full box-border"
+                                >
+                                  <!-- add product first section -->
+                                  <div class="w-[25%] md:w-[50%] pt-5">
+                                    <div
+                                      class="bg-white rounded-md w-full p-4 relative"
+                                    >
+                                      <div>
+                                        <img
+                                          src="../images/mob.png"
+                                          alt="img"
+                                          class="mx-auto"
+                                        />
+                                      </div>
+                                      <div class="leading-tight mt-2">
+                                        <p
+                                          class="font-semibold text-textcoo text-[14px]"
+                                        >
+                                          Iphone 11 pro max-256GB 5000mhz
+                                        </p>
+                                        <p>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <span
+                                            class="text-lightwh inline ml-2 text-[12px]"
+                                            >5.0</span
+                                          >
+                                        </p>
+                                        <p class="text-[15px]">
+                                          by<span class="text-blue">
+                                            Davinci</span
+                                          >
+                                        </p>
+                                      </div>
+                                      <p
+                                        class="text-blue font-semibold text-[14px] mt-2"
+                                      >
+                                        $152.58
+                                        <span
+                                          class="ml-2 text-[12px] text-lightwh"
+                                        >
+                                          <del>$120.58</del></span
+                                        >
+                                      </p>
+                                      <button
+                                        class="bg-blue text-white text-[14px] block mx-auto rounded-md px-5 py-1 mt-2"
+                                      >
+                                        <i
+                                          class="fa-solid fa-cart-shopping mr-2"
+                                        ></i
+                                        >Add to Card
+                                      </button>
+
+                                      <div class="absolute left-0 top-0">
+                                        <button
+                                          class="bg-green rounded-br-lg rounded-tl-lg text-white px-3 text-[13px]"
+                                        >
+                                          new
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- add product first section -->
+                                  <!-- add product second section -->
+                                  <div class="w-[25%] md:w-[50%] pt-5">
+                                    <div
+                                      class="bg-white rounded-md w-full p-4 relative"
+                                    >
+                                      <div>
+                                        <img
+                                          src="../images/jbs.png"
+                                          alt="img"
+                                          class="mx-auto"
+                                        />
+                                      </div>
+                                      <div class="leading-tight mt-2">
+                                        <p
+                                          class="font-semibold text-textcoo text-[14px]"
+                                        >
+                                          Iphone 11 pro max-256GB 5000mhz
+                                        </p>
+                                        <p>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <span
+                                            class="text-lightwh inline ml-2 text-[12px]"
+                                            >5.0</span
+                                          >
+                                        </p>
+                                        <p class="text-[15px]">
+                                          by<span class="text-blue">
+                                            Davinci</span
+                                          >
+                                        </p>
+                                      </div>
+                                      <p
+                                        class="text-blue font-semibold text-[14px] mt-2"
+                                      >
+                                        $152.58
+                                        <span
+                                          class="ml-2 text-[12px] text-lightwh"
+                                        >
+                                          <del>$120.58</del></span
+                                        >
+                                      </p>
+                                      <button
+                                        class="bg-blue text-white text-[14px] block mx-auto rounded-md px-5 py-1 mt-2"
+                                      >
+                                        <i
+                                          class="fa-solid fa-cart-shopping mr-2"
+                                        ></i
+                                        >Add to Card
+                                      </button>
+
+                                      <div class="absolute left-0 top-0">
+                                        <button
+                                          class="bg-green rounded-br-lg rounded-tl-lg text-white px-3 text-[13px]"
+                                        >
+                                          new
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- add product second section -->
+                                  <!-- add product third section -->
+                                  <div class="w-[25%] md:w-[50%] pt-5">
+                                    <div
+                                      class="bg-white rounded-md w-full p-4 relative"
+                                    >
+                                      <div>
+                                        <img
+                                          src="../images/bag.png"
+                                          alt="img"
+                                          class="mx-auto"
+                                        />
+                                      </div>
+                                      <div class="leading-tight mt-2">
+                                        <p
+                                          class="font-semibold text-textcoo text-[14px]"
+                                        >
+                                          Iphone 11 pro max-256GB 5000mhz
+                                        </p>
+                                        <p>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <span
+                                            class="text-lightwh inline ml-2 text-[12px]"
+                                            >5.0</span
+                                          >
+                                        </p>
+                                        <p class="text-[15px]">
+                                          by<span class="text-blue">
+                                            Davinci</span
+                                          >
+                                        </p>
+                                      </div>
+                                      <p
+                                        class="text-blue font-semibold text-[14px] mt-2"
+                                      >
+                                        $152.58
+                                        <span
+                                          class="ml-2 text-[12px] text-lightwh"
+                                        >
+                                          <del>$120.58</del></span
+                                        >
+                                      </p>
+                                      <button
+                                        class="bg-blue text-white text-[14px] block mx-auto rounded-md px-5 py-1 mt-2"
+                                      >
+                                        <i
+                                          class="fa-solid fa-cart-shopping mr-2"
+                                        ></i
+                                        >Add to Card
+                                      </button>
+
+                                      <div class="absolute left-0 top-0">
+                                        <button
+                                          class="bg-green rounded-br-lg rounded-tl-lg text-white px-3 text-[13px]"
+                                        >
+                                          new
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- add product third section -->
+                                  <!-- add product four section -->
+                                  <div class="w-[25%] md:w-[50%] pt-5">
+                                    <div
+                                      class="bg-white rounded-md w-full p-4 relative"
+                                    >
+                                      <div>
+                                        <img
+                                          src="../images/dress.png"
+                                          alt="img"
+                                          class="mx-auto"
+                                        />
+                                      </div>
+                                      <div class="leading-tight mt-2">
+                                        <p
+                                          class="font-semibold text-textcoo text-[14px]"
+                                        >
+                                          Iphone 11 pro max-256GB 5000mhz
+                                        </p>
+                                        <p>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-[11px] text-yellow"
+                                          ></i>
+                                          <span
+                                            class="text-lightwh inline ml-2 text-[12px]"
+                                            >5.0</span
+                                          >
+                                        </p>
+                                        <p class="text-[15px]">
+                                          by<span class="text-blue">
+                                            Davinci</span
+                                          >
+                                        </p>
+                                      </div>
+                                      <p
+                                        class="text-blue font-semibold text-[14px] mt-2"
+                                      >
+                                        $152.58
+                                        <span
+                                          class="ml-2 text-[12px] text-lightwh"
+                                        >
+                                          <del>$120.58</del></span
+                                        >
+                                      </p>
+                                      <button
+                                        class="bg-blue text-white text-[14px] block mx-auto rounded-md px-5 py-1 mt-2"
+                                      >
+                                        <i
+                                          class="fa-solid fa-cart-shopping mr-2"
+                                        ></i
+                                        >Add to Card
+                                      </button>
+
+                                      <div class="absolute left-0 top-0">
+                                        <button
+                                          class="bg-green rounded-br-lg rounded-tl-lg text-white px-3 text-[13px]"
+                                        >
+                                          new
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- add product four section -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- last new added section end -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  page end -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script>
+      /*Toggle dropdown list*/
+      function toggleDD(myDropMenu) {
+        document.getElementById(myDropMenu).classList.toggle("invisible");
+      }
+      /*Filter dropdown options*/
+      function filterDD(myDropMenu, myDropMenuSearch) {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById(myDropMenuSearch);
+        filter = input.value.toUpperCase();
+        div = document.getElementById(myDropMenu);
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (
+          !event.target.matches(".drop-button") &&
+          !event.target.matches(".drop-search")
+        ) {
+          var dropdowns = document.getElementsByclass("dropdownlist");
+          for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (!openDropdown.classList.contains("invisible")) {
+              openDropdown.classList.add("invisible");
+            }
+          }
+        }
+      };
+    </script>
+    <script>
+      /*Toggle dropdown list*/
+      function toggleDD(myDropMenu) {
+        document.getElementById(myDropMenu).classList.toggle("invisible");
+      }
+      /*Filter dropdown options*/
+      function filterDD(myDropMenu, myDropMenuSearch) {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById(myDropMenuSearch);
+        filter = input.value.toUpperCase();
+        div = document.getElementById(myDropMenu);
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (
+          !event.target.matches(".drop-button") &&
+          !event.target.matches(".drop-search")
+        ) {
+          var dropdowns = document.getElementsByclass("dropdownlist");
+          for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (!openDropdown.classList.contains("invisible")) {
+              openDropdown.classList.add("invisible");
+            }
+          }
+        }
+      };
+    </script>
+    <!-- dropdown start -->
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <!-- pei chat  -->
+    <script>
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        const data = google.visualization.arrayToDataTable([
+          ["Contry", "Mhl"],
+          ["Electronic  43%", 54.8],
+          // ["France", 48.6],
+          ["other  21%s", 44.4],
+          ["mobile phones  32%", 23.9],
+          ["headsets  4%", 14.5],
+        ]);
+
+        const options = {
+          title: "",
+          is3D: true,
+        };
+
+        const chart = new google.visualization.PieChart(
+          document.getElementById("myChart")
+        );
+        chart.draw(data, options);
+      }
+    </script>
+    <!-- pei chat -->
+    <!-- wave chat start -->
+    <script>
+      // ApexCharts options and config
+      window.addEventListener("load", function () {
+        let options = {
+          // set the labels option to true to show the labels on the X and Y axis
+          xaxis: {
+            show: true,
+            categories: [
+              "01 may",
+              "02 may",
+              "03 may",
+              "04 may",
+              "05 may",
+              "06 may",
+              "07 may",
+              "08 may",
+              "09 may",
+              "10 may",
+              "11 may",
+              "12 may",
+              "13 may",
+              "14 may",
+            ],
+            labels: {
+              show: true,
+              style: {
+                fontFamily: "Inter, sans-serif",
+                cssClass:
+                  "text-xs font-normal fill-gray-500 dark:fill-gray-400",
+              },
+            },
+            axisBorder: {
+              show: false,
+            },
+            axisTicks: {
+              show: false,
+            },
+          },
+          yaxis: {
+            show: true,
+            labels: {
+              show: true,
+              style: {
+                fontFamily: "Inter, sans-serif",
+                cssClass:
+                  "text-xs font-normal fill-gray-500 dark:fill-gray-400",
+              },
+              formatter: function (value) {
+                return "$" + value;
+              },
+            },
+          },
+          series: [
+            {
+              name: "Developer Edition",
+              data: [120, 160, 150, 100, 160, 105, 100],
+              color: "blue",
+            },
+            {
+              name: "Designer Edition",
+              data: [43, 13, 65, 12, 42, 73, 100, 10],
+              color: "pink",
+            },
+          ],
+          chart: {
+            sparkline: {
+              enabled: false,
+            },
+            height: "100%",
+            width: "100%",
+            type: "area",
+            fontFamily: "Inter, sans-serif",
+            dropShadow: {
+              enabled: false,
+            },
+            toolbar: {
+              show: false,
+            },
+          },
+          tooltip: {
+            enabled: true,
+            x: {
+              show: false,
+            },
+          },
+          fill: {
+            type: "gradient",
+            gradient: {
+              opacityFrom: 0.55,
+              opacityTo: 0,
+              shade: "#1C64F2",
+              gradientToColors: ["#1C64F2"],
+            },
+          },
+          dataLabels: {
+            enabled: false,
+          },
+          stroke: {
+            width: 6,
+          },
+          legend: {
+            show: false,
+          },
+          grid: {
+            show: false,
+          },
+        };
+
+        if (
+          document.getElementById("labels-chart") &&
+          typeof ApexCharts !== "undefined"
+        ) {
+          const chart = new ApexCharts(
+            document.getElementById("labels-chart"),
+            options
+          );
+          chart.render();
+        }
+      });
+    </script>
+    <!-- wave chat end -->
+  </body>
+</html>
