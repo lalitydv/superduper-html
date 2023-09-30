@@ -751,3 +751,7 @@ box-shadow: none !important;
   }
   
 }
+.active{
+  background-color: #073B74;
+  color: white;
+}
