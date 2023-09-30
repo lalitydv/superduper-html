@@ -725,3 +725,29 @@ h1 {
   }
   
 }
+/* myprofile css */
+
+.inputfoc:focus{
+border:none !important;
+outline:none !important;
+box-shadow: none !important;
+}
+@media screen and (max-width: 1240px){
+  .prespons {
+    flex-wrap: wrap;
+  }
+  
+}
+/* dashboard css responerr*/
+@media screen and (max-width: 1240px){
+  .divresop {
+    flex-wrap: wrap;
+  }
+  
+}
+@media screen and (max-width: 1240px){
+  .responerr {
+    flex-wrap: wrap;
+  }
+  
+}
