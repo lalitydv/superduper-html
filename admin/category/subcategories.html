@@ -23,6 +23,10 @@
     />
     <!--Replace with your tailwind.css once created-->
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!--Totally optional :) -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"
@@ -50,7 +54,7 @@
               greylight: "#E4E4E4",
               secondary: "#253D4E",
               skylight: "#C2F1FE",
-              orange: "#F59758",
+              pink: "#FF2E63",
             },
           },
         },
@@ -175,7 +179,7 @@
                         </div>
 
                         <div class="sidenav" style="margin-top: 25px">
-                          <a href="../dashboard.html">
+                          <a href="./dashboard.html">
                             <span
                               class="inline-flex justify-center items-center"
                             >
@@ -199,55 +203,55 @@
                           </button>
 
                           <div class="dropdown-container">
-                            <a href="../order/total.html" class="text-grey"
+                            <a href="./order/total.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Total</a
                             >
-                            <a href="../order/pending.html" class="text-grey"
+                            <a href="./order/pending.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Pending</a
                             >
-                            <a href="../order/confirm.html" class="text-grey"
+                            <a href="./order/confirm.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Confirmed</a
                             >
-                            <a href="../order/packageing.html" class="text-grey"
+                            <a href="./order/packageing.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Packaging</a
                             >
-                            <a href="../order/shipped.html" class="text-grey"
+                            <a href="./order/shipped.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Shipped</a
                             >
-                            <a href="../order/delivery.html" class="text-grey"
+                            <a href="./order/delivery.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Deliverd</a
                             >
-                            <a href="../order/return.html" class="text-grey"
+                            <a href="./order/return.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Returned</a
                             >
-                            <a href="../order/failed.html" class="text-grey"
+                            <a href="./order/failed.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Failed</a
                             >
-                            <a href="../order/cancel.html" class="text-grey"
+                            <a href=".order/cancel.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
@@ -259,7 +263,7 @@
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-table-columns"></i>
+                              <i class="fa-solid fa-sitemap"></i>
                             </span>
                             <span class="tracking-wide truncate ml-2">
                               category
@@ -267,29 +271,17 @@
                             <i class="fa fa-caret-down"></i>
                           </button>
                           <div class="dropdown-container">
-                            <a
-                              href="./admin//category/categories.html"
-                              class="text-grey"
+                            <a href="./product/product.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
-                              >categories</a
+                              >Product</a
                             >
-                            <a
-                              href="./admin/category/subcategories.html"
-                              class="text-grey"
+                            <a href="../product/bluk.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
-                              >sub categories</a
-                            >
-                            <a
-                              href="./admin/category/subsubcategories.html"
-                              class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >sub sub categories</a
+                              >Bluk imports</a
                             >
                           </div>
                           <button class="dropdown-btn">
@@ -304,13 +296,13 @@
                             <i class="fa fa-caret-down"></i>
                           </button>
                           <div class="dropdown-container">
-                            <a href="#" class="text-grey"
+                            <a href="./product/product.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Product</a
                             >
-                            <a href="./bluk.html" class="text-grey"
+                            <a href="../product/bluk.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
@@ -318,6 +310,9 @@
                             >
                           </div>
                           <a href="Storepage.html">
+                            <!-- <div
+                              class="relative flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                            > -->
                             <span
                               class="inline-flex justify-center items-center"
                             >
@@ -326,6 +321,7 @@
                             <span class="ml-2 tracking-wide truncate">
                               Store Profile
                             </span>
+                            <!-- </div> -->
                           </a>
                           <a href="Notification.html">
                             <span
@@ -358,9 +354,7 @@
                               >Payout</span
                             >
                           </a>
-                          <button
-                            class="dropdown-btn h-11 rounded-md"
-                          >
+                          <button class="dropdown-btn h-11 rounded-md">
                             <span
                               class="inline-flex justify-center items-center"
                             >
@@ -372,14 +366,14 @@
                             <i class="fa fa-caret-down"></i>
                           </button>
                           <div class="dropdown-container">
-                            <a href="../../myprofile.html" class="text-grey"
+                            <a href="../myprofile.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >My Profile</a
                             >
                             <a
-                              href="../myprofile/addnewemployee.html"
+                              href="./myprofile/addnewemployee.html"
                               class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
@@ -387,23 +381,21 @@
                               >Add New Employee</a
                             >
                             <a
-                              href="../myprofile//employeelist.html"
+                              href="./myprofile/employeelist.html"
                               class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Employee List</a
                             >
-                            <a
-                              href="../myprofile/Addrole.html"
-                              class="text-grey"
+                            <a href="./myprofile/Addrole.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Add Role</a
                             >
                             <a
-                              href="../myprofile/rolelist.html"
+                              href="./myprofile/rolelist.html"
                               class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
@@ -443,7 +435,7 @@
           >
             <!-- only for  start -->
             <div class="w-full">
-              <!--  page start  -->
+              <!-- notification page start  -->
               <div class="flex flex-col md:mx-4 mx-2 gap-5">
                 <div class="rounded-3xl md:p-4 p-8">
                   <div class="flex lg:flex-nowrap gap-4 flex-wrap box-border">
@@ -453,32 +445,33 @@
                           class="relative overflow-hidden md:text-md text-lg"
                         >
                           <div
-                            class="bg-white p-2 md:rounded-full w-72 md:w-full overflow-hidden shadow-md my-2 px-5"
+                            class="bg-white md:rounded-l-full p-2 w-72 md:w-full overflow-hidden shadow-md"
                           >
-                          <div
-                          class="md:flex flex-wrap md:justify-between grid gap-2 items-center"
-                        >
-                          <div class="md:pl-4">overview</div>
-                          <div class="flex items-center">
-                            <label
-                              for="countries"
-                              class="block text-sm font-medium text-gray-1"
+                            <div
+                              class="md:flex flex-wrap md:justify-between grid gap-2 items-center"
                             >
-                              Show
-                            </label>
-                            <select
-                              id="countries"
-                              class="text-blue text-sm font-bold mx-2"
-                            >
-                              <option selected>this month</option>
-                              <option value="US">United States</option>
-                              <option value="CA">Canada</option>
-                              <option value="FR">France</option>
-                              <option value="DE">Germany</option>
-                            </select>
-                          </div>
-                          <div class=" ">
-                            <form
+                              <div class="md:pl-4">overview</div>
+                              <div class="flex items-center">
+                                <label
+                                  for="countries"
+                                  class="block text-sm font-medium text-gray-1"
+                                >
+                                  Show
+                                </label>
+                                <select
+                                  id="countries"
+                                  class="text-blue text-sm font-bold mx-2"
+                                >
+                                  <option selected>this month</option>
+                                  <option value="US">United States</option>
+                                  <option value="CA">Canada</option>
+                                  <option value="FR">France</option>
+                                  <option value="DE">Germany</option>
+                                </select>
+                              </div>
+                              <div class=" ">
+                                <div class="">
+                                  <form
                                     class="border-2 border-black md:rounded-2xl px-10 py-2"
                                   >
                                     <input
@@ -488,220 +481,243 @@
                                     />
                                     <!-- <HiSearch class="inline-block text-gray" /> -->
                                   </form>
-                          </div>
-                          <button
-                            class="bg-blue text-white md:px-6 rounded-xl py-2"
-                            onClick="{handleClick}"
-                          >
-                            add New Product
-                          </button>
-                        </div>
+                                </div>
+                              </div>
+                              <button
+                                class="bg-blue text-white md:px-6 rounded-xl py-2"
+                                onClick="{handleClick}"
+                              >
+                                add New Product
+                              </button>
+                            </div>
                           </div>
 
-                          <!-- {/* PRODUCTS start  */} -->
-                          <div class="bg-white rounded-3xl p-4 mt-4 w-full">
-                            <div class="w-[60%]">
-                              <p class="font-semibold w-fit">
-                                The products are shown in this list which
-                              </p>
-                              <p class="font-normal text-sm w-fit">
-                                The products are shown in this list which
-                                quantity is below 10
-                              </p>
-                            </div>
-                            <div class="bg-white rounded-md shadow-md mt-5">
-                              <div
-                                class="flex justify-between gap-8 items-center md:flex-row flex-col my-2 p-2"
-                              >
-                                <div
-                                  class="relative border-2 w-[40%] h-12 items-center rounded-md pl-2"
-                                >
+                          <!-- center div start -->
+                          <div class="bg-white mt-8 rounded-xl px-10 py-5">
+                            <h4 class="font-semibold text-textcoo text-xl">
+                              category Setup
+                            </h4>
+                            <div
+                              class="md:flex items-center w-full justify-between grid md:gap-8 gap-4 my-6"
+                            >
+                              <div class="md:w-[50%] w-[100%]">
+                                <div>
+                                  <label class="text-secondary font-normal"
+                                    >Sub Category Name* (EN)</label
+                                  >
                                   <input
                                     type="text"
-                                    placeholder="Search by Product Name"
-                                    class="text-sm border-0 focus:border-opacity-0 focus:outline-none"
+                                    name=""
+                                    id=""
+                                    placeholder="Sub Category Name* (EN)"
+                                    class="w-[100%] bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
+                                    style="width: 100%"
                                   />
-                                  <button
-                                    class="bg-blue absolute right-1 top-[2px] justify-end rounded-md text-white h-10 px-2"
-                                  >
-                                    Search
-                                  </button>
                                 </div>
-
-                                <div
-                                  class="flex border-2 items-center border-blue text-blue font-bold px-3 rounded-md"
-                                >
-                                  <i
-                                    class="fa-solid fa-download text-[14px] font-semibold mr-2"
-                                  ></i>
+                                <div class="mt-3">
+                                  <label class="text-secondary font-normal"
+                                    >Main Category</label
+                                  >
                                   <select
                                     name="cars"
                                     id="cars"
-                                    class="focus:outline-none text-[14px] py-[7px]"
+                                    style="width: 100%"
+                                    class="w-[100%] bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 w-full px-4 md:w-80 py-2"
                                   >
-                                    <option value="volvo">default</option>
+                                    <option value="volvo">
+                                      Discount on Purchase
+                                    </option>
                                     <option value="saab">Saab</option>
                                     <option value="mercedes">Mercedes</option>
                                     <option value="audi">Audi</option>
                                   </select>
                                 </div>
+                                <div class="mt-3">
+                                  <label class="text-secondary font-normal"
+                                    >Priority</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="Set Priority"
+                                    class="w-[100%] bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
+                                    style="width: 100%"
+                                  />
+                                </div>
+                                <div class="mt-5">
+                                  <button
+                                    class="bg-blue rounded-md text-white px-10 py-2"
+                                  >
+                                    Resent
+                                  </button>
+                                  <button
+                                    class="border-[1px] border-green rounded-md text-green px-10 py-2"
+                                  >
+                                    Submit
+                                  </button>
+                                </div>
+                              </div>
+
+                              <div class="md:w-[50%] w-[100%] flex justify-end">
+                                <div class="mt-10 mb-4 py-7 px-4">
+                                  <p class="text-secondary">
+                                    Choose icon image
+                                  </p>
+                                  <input
+                                    type="file"
+                                    accept="image/*"
+                                    class="hidden"
+                                    id="imageInput"
+                                    onChange="{handleImageChange}"
+                                  />
+                                  <label
+                                    htmlFor="imageInput"
+                                    class="cursor-pointer flex py-7 px-4 rounded-md flex-col w-[300px] bg-gray-200 border-gray-300 flex items-center justify-center border-4 border-dotted border-violet-100 hover:border-violet-500"
+                                  >
+                                    <img
+                                      src="../../images/cateimg.png"
+                                      alt="img"
+                                    />
+                                    <input
+                                      type="file"
+                                      id="myFile"
+                                      name="filename"
+                                      style="display: none"
+                                    />
+                                    <button
+                                      class="border-[1px] border-pink rounded-md text-pink px-10 py-2"
+                                    >
+                                      browse image
+                                    </button>
+                                  </label>
+                                </div>
                               </div>
                             </div>
-
-                            <!-- {/* tabls start  */} -->
-
-                            <div
-                              class="w-[90%] relative overflow-x-auto shadow-md sm:rounded-lg"
+                          </div>
+                          <!-- cneter div end -->
+                        </div>
+                      </div>
+                      <!-- tebel section start -->
+                      <div class="mt-8">
+                        <div
+                          class="w-[90%] bg-white rounded-xl py-10 items-center md:w-full p-4 shadow-md"
+                        >
+                          <div class="relative overflow-x-auto">
+                            <p class="text-blue font-semibold">Coupon Table</p>
+                            <table
+                              class="w-[100%] mt-4 text-sm text-left text-gray-500"
                             >
-                              <table
-                                class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
-                              >
-                                <thead
-                                  class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 bg-gray"
-                                >
-                                  <tr>
-                                    <th scope="col" class="p-2">sl</th>
-                                    <th scope="col" class="py-3">
-                                      Product Name
-                                    </th>
-                                    <th scope="col" class="py-3">
-                                      Product Type
-                                    </th>
-                                    <th scope="col" class="py-3">
-                                      Purchase Price
-                                    </th>
-                                    <th scope="col" class="py-3">
-                                      Selling Price
-                                    </th>
-                                    <th scope="col" class="py-3">
-                                      Verify Status
-                                    </th>
-                                    <th scope="col" class="py-3">
-                                      Active Status
-                                    </th>
-                                    <th scope="col" class="py-3">Action</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr
-                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
-                                  >
-                                    <td class="w-4 p-2">
-                                      <div class="flex items-center">1.</div>
-                                    </td>
-                                    <th
-                                      scope="row"
-                                      class="py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center"
+                              <thead class="     ">
+                                <tr class="text-xs">
+                                  <th scope="col" class="">ID</th>
+                                  <th scope="col" class="  ">Images</th>
+                                  <th scope="col" class=" ">Name</th>
+                                  <th scope="col" class=" ">Priority</th>
+
+                                  <th scope="col" class=" ">action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="bg-white border-b-4 border-gray">
+                                  <td class="py-5 text-clifford">0</td>
+                                  <td class="py-5">May,03,2022</td>
+                                  <td class="py-5">
+                                    <button
+                                      class="text-blue bg-skylight font-semibold px-1 py-1 rounded-md"
                                     >
-                                      <img
-                                        src="../../images/pimg1.png"
-                                        alt=""
-                                        class="w-10 h-10 mr-2"
-                                      />
-                                      Apple MacBook
-                                    </th>
-                                    <td class="py-4">Digital</td>
-                                    <td class="py-4">$450.00</td>
-                                    <td class="py-4">$500.00</td>
-                                    <td class="py-4">
-                                      <span
-                                        class="bg-lightgreen text-green font-bold p-2 rounded-sm"
-                                        >Status</span
-                                      >
-                                    </td>
-                                    <td class="py-4">
-                                      <input
-                                        class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
-                                        type="checkbox"
-                                        role="switch"
-                                        id="flexSwitchCheckDefault"
-                                      />
-                                      <label
-                                        class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                        for="flexSwitchCheckDefault"
-                                      >
-                                      </label>
-                                    </td>
-                                    <td class="py-4 flex items-center gap-2">
-                                      <img
-                                        src="../../images//baricon.png"
-                                        alt=""
-                                        class="w-5 h-5"
-                                      />
+                                      transfered
+                                    </button>
+                                  </td>
+                                  <td class="py-5">May,03,2022</td>
+                                  <!-- <td class="py-5">bank account</td> -->
 
-                                      <i
-                                        class="fa-regular fa-eye text-blue border-2 w-6 h-6 rounded-md text-center"
-                                      ></i>
-                                      <i
-                                        class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
-                                      ></i>
+                                  <td class="py-5 flex gap-2">
+                                    <i
+                                      class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                    ></i>
 
-                                      <i
-                                        class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
-                                      ></i>
-                                    </td>
-                                  </tr>
-                                  <tr
-                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
-                                  >
-                                    <td class="w-4 p-2">
-                                      <div class="flex items-center">1.</div>
-                                    </td>
-                                    <th
-                                      scope="row"
-                                      class="py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center"
+                                    <i
+                                      class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                    ></i>
+                                  </td>
+                                </tr>
+
+                                <tr class="bg-white border-b-4 border-gray">
+                                  <td class="py-5 text-clifford">1</td>
+                                  <td class="py-5">May,03,2022</td>
+                                  <td class="py-5">
+                                    <button
+                                      class="text-blue bg-skylight font-semibold px-1 py-1 rounded-md"
                                     >
-                                      <img
-                                        src="../../images/pimg2.png"
-                                        alt=""
-                                        class="w-10 h-10 mr-2"
-                                      />
-                                      Apple MacBook
-                                    </th>
-                                    <td class="py-4">Digital</td>
-                                    <td class="py-4">$450.00</td>
-                                    <td class="py-4">$500.00</td>
-                                    <td class="py-4">Status</td>
-                                    <td class="py-4">
-                                      <input
-                                        class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
-                                        type="checkbox"
-                                        role="switch"
-                                        id="flexSwitchCheckDefault"
-                                      />
-                                      <label
-                                        class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                        for="flexSwitchCheckDefault"
-                                      >
-                                      </label>
-                                    </td>
-                                    <td class="py-4 flex items-center gap-2">
-                                      <img
-                                        src="../../images//baricon.png"
-                                        alt=""
-                                        class="w-5 h-5"
-                                      />
+                                      transfered
+                                    </button>
+                                  </td>
+                                  <td class="py-5">May,03,2022</td>
+                                  <!-- <td class="py-5">bank account</td> -->
 
-                                      <i
-                                        class="fa-regular fa-eye text-blue border-2 w-6 h-6 rounded-md text-center"
-                                      ></i>
-                                      <i
-                                        class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
-                                      ></i>
+                                  <td class="py-5 flex gap-2">
+                                    <i
+                                      class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                    ></i>
 
-                                      <i
-                                        class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
-                                      ></i>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
+                                    <i
+                                      class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                    ></i>
+                                  </td>
+                                </tr>
+                                <tr class="bg-white border-b-4 border-gray">
+                                  <td class="py-5 text-clifford">3</td>
+                                  <td class="py-5">May,03,2022</td>
+                                  <td class="py-5">
+                                    <button
+                                      class="text-green bg-lightgreen font-semibold px-1 py-1 rounded-md"
+                                    >
+                                      panding
+                                    </button>
+                                  </td>
+                                  <td class="py-5">May,03,2022</td>
+                                  <!-- <td class="py-5">bank account</td> -->
 
-                            <!-- {/* tabls End  */} -->
+                                  <td class="py-5 flex gap-2">
+                                    <i
+                                      class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                    ></i>
+
+                                    <i
+                                      class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                    ></i>
+                                  </td>
+                                </tr>
+                                <tr class="bg-white border-b-4 border-gray">
+                                  <td class="py-5 text-clifford">4</td>
+                                  <td class="py-5">May,03,2022</td>
+                                  <td class="py-5">
+                                    <button
+                                      class="text-blue bg-skylight font-semibold px-1 py-1 rounded-md"
+                                    >
+                                      transfered
+                                    </button>
+                                  </td>
+                                  <td class="py-5">May,03,2022</td>
+                                  <!-- <td class="py-5">bank account</td> -->
+
+                                  <td class="py-5 flex gap-2">
+                                    <i
+                                      class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                    ></i>
+
+                                    <i
+                                      class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                    ></i>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
                           </div>
                         </div>
                       </div>
+                      <!-- tebel section end -->
                     </div>
                   </div>
                 </div>
@@ -712,42 +728,7 @@
         </section>
       </div>
     </main>
-    <script>
-      /*Toggle dropdown list*/
-      function toggleDD(myDropMenu) {
-        document.getElementById(myDropMenu).classList.toggle("invisible");
-      }
-      /*Filter dropdown options*/
-      function filterDD(myDropMenu, myDropMenuSearch) {
-        var input, filter, ul, li, a, i;
-        input = document.getElementById(myDropMenuSearch);
-        filter = input.value.toUpperCase();
-        div = document.getElementById(myDropMenu);
-        a = div.getElementsByTagName("a");
-        for (i = 0; i < a.length; i++) {
-          if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
-            a[i].style.display = "";
-          } else {
-            a[i].style.display = "none";
-          }
-        }
-      }
-      // Close the dropdown menu if the user clicks outside of it
-      window.onclick = function (event) {
-        if (
-          !event.target.matches(".drop-button") &&
-          !event.target.matches(".drop-search")
-        ) {
-          var dropdowns = document.getElementsByclass("dropdownlist");
-          for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (!openDropdown.classList.contains("invisible")) {
-              openDropdown.classList.add("invisible");
-            }
-          }
-        }
-      };
-    </script>
+
     <script>
       /*Toggle dropdown list*/
       function toggleDD(myDropMenu) {
