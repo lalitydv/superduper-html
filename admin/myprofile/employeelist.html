@@ -471,7 +471,7 @@
                                   </form>
                                 </div>
                               </div>
-                              <button class="bg-blue text-white md:px-6 rounded-xl py-2">
+                              <button onclick="toggleModal()" class="bg-blue text-white md:px-6 rounded-xl py-2">
                                 add New Product
                               </button>
                             </div>
@@ -618,10 +618,10 @@
                                 </tbody>
                               </table>
                                <!-- popup start -->
-                              <div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full ">
-                                  <div class=" relative w-full p-4 max-w-4xl max-h-full">
+                              <div id="modal" tabindex="-1" class="fixed   z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full ">
+                                  <div class="relative w-full p-4 max-w-4xl max-h-full">
                                       <div
-                                      class="bg-white rounded-xl gap-x-4 justify-between py-10  flex  md:flex w-72 items-center md:w-full p-4 overflow-hidden shadow-md"
+                                      class="bg-white rounded-xl left-[30%] right gap-x-4 justify-between py-10 flex md:flex w-72 items-center md:w-full p-4 overflow-hidden shadow-md"
                                     >
                                       <div class="">
                                         <p class="text-2xl font-bold">Employee Details</p>
@@ -842,7 +842,7 @@
                                             <button class="bg-blue rounded-md text-white border-none px-5 py-2">Deactived </button>
                                           
                                            <button class="bg-blue rounded-md text-white border-none px-5 py-2">update </button>
-                                           <button class="bg-clifford rounded-md text-white border-none px-5 py-2">cancel</button>
+                                           <button class="bg-clifford rounded-md text-white border-none px-5 py-2" onclick="toggleModal()">cancel</button>
                                           </div>
                                          
                                         </div>
@@ -878,7 +878,7 @@
                                                 >*</span
                                               >
                                               <input
-                                                type="text"
+                                                type="password"
                                                 placeholder="Enter password "
                                                 class="border-2 text-sm w-full border-gray flex md:rounded-xl px-2 my-2  md:py-2 focus:outline-none"
                                               />
@@ -912,6 +912,7 @@
                   </div>
                 </div>
                 <!-- add new page end -->
+               
               </div>
             
           </div>
@@ -1009,6 +1010,13 @@
         });
       }
     </script>
+    <!-- popup start -->
+  <script>
+    function toggleModal() { document.getElementById('modal').classList.toggle('hidden')
+}
+  </script>
+    
+   <!-- popup end -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
   </body>
 </html>
