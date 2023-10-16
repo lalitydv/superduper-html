@@ -79,9 +79,12 @@
             class="flex flex-shrink md:w-1/3 justify-center md:justify-start text-white"
           >
             <a href="#" aria-label="Home">
-              <span class="text-xl p-0">
-                <img src="./images/logo1.png" alt="adminlogo" />
+              <span class="text-xl p-0 flex justify-center items-center">
+                <img src="./images/logo1.png" alt="adminlogo inline" />
                 <!-- <i class="em em-grinning"></i> -->
+                <i
+                  class="fa-solid fa-bars-staggered text-blue inline ml-3 openbtn"
+                ></i>
               </span>
             </a>
           </div>
@@ -1334,7 +1337,7 @@
             </div>
           </div>
         </nav>
-        <section class="md:w-75 w-full px-5">
+        <section class="w-full px-5">
           <div
             id="main"
             class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5"
@@ -1342,15 +1345,15 @@
             <!-- only for demo start -->
             <div class="w-full">
               <div class="flex flex-col md:mx-4 mx-2 gap-5">
-                <div class="bg-white rounded-3xl md:p-4 p-8">
-                  <div class="flex lg:flex-nowrap gap-4 flex-wrap box-border">
+                <div class="bg-white rounded-3xl md:p-4">
+                  <div class="">
                     <div class="lg:w-[100%] md:w-[100%]">
                       <div class="mt-4">
                         <div
                           class="relative overflow-hidden md:text-md text-lg"
                         >
                           <div
-                            class="bg-white md:rounded-l-full w-72 p-2 md:w-full overflow-hidden shadow-md"
+                            class="bg-white md:rounded-l-full w-75 p-2 md:w-full overflow-hidden shadow-md"
                           >
                             <div
                               class="md:flex flex-wrap md:justify-between grid gap-2 items-center"
@@ -1387,7 +1390,7 @@
                                 </form>
                               </div>
                               <button
-                                class="bg-blue text-white md:px-6 rounded-xl py-2"
+                                class="bg-blue text-white md:px-3 rounded-xl py-2"
                                 onClick="{handleClick}"
                               >
                                 add New Product
@@ -1396,7 +1399,7 @@
                           </div>
                           <!-- head navbar start -->
                           <div
-                            class="bg-white md:rounded-2xl text-center md:py-10 w-72 md:w-full mt-10 p-4 md:overflow-hidden shadow-md"
+                            class="bg-white md:rounded-2xl text-center md:py-4 w-75 md:w-full p-4 md:overflow-hidden shadow-md"
                           >
                             <div
                               class="md:flex grid md:gap-3 gap-4 items-center"
@@ -1437,17 +1440,17 @@
                             </div>
                           </div>
                           <!-- head navbar end -->
-                          <!-- profile page start -->
-                          <div>
-                            <div
-                              class="flex items-center py-4 gap-2 bg-[#F1F1F1]"
-                            >
+                          <!-- profile page start w-72-->
+                          <div class="w-full">
+                            <div class="flex items-center py-4 bg-[#F1F1F1]">
                               <img src="./images/up.png" alt="" />
-                              Update your profile details here .
+                              <span class="w-fit">
+                                Update your profile details here .
+                              </span>
                             </div>
 
                             <div
-                              class="bg-white justify-between rounded-xl gap-x-10 py-10 md:flex w-72 items-center md:w-full p-4 overflow-hidden shadow-md"
+                              class="bg-white justify-between rounded-xl gap-x-10 py-10 md:flex items-center md:w-full w-full md:px-10 px-2 overflow-hidden shadow-md"
                             >
                               <div>
                                 <div class="my-4">
@@ -1461,8 +1464,8 @@
                                     type="text"
                                     name=""
                                     id=""
-                                    placeholder="+1234567890"
-                                    class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-96 py-2"
+                                    placeholder="name"
+                                    class="rounded-xl text-sm focus:outline-none border-blue md:px-10 px-4 md:w-96 py-2"
                                   />
                                 </div>
                                 <div class="my-4">
@@ -1481,7 +1484,7 @@
                                     name=""
                                     id=""
                                     placeholder="superduper@gmail.com"
-                                    class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-96 py-2"
+                                    class="rounded-xl text-sm focus:outline-none border-blue md:px-10 px-4 md:w-96 py-2"
                                   />
                                 </div>
                                 <div class="my-4">
@@ -1500,7 +1503,7 @@
                                     name=""
                                     id=""
                                     placeholder="Address"
-                                    class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-96 py-2"
+                                    class="rounded-xl text-sm focus:outline-none border-blue md:px-10 px-4 md:w-96 py-2"
                                   />
                                 </div>
                                 <div class="my-4">
@@ -1520,11 +1523,11 @@
                                     name=""
                                     id=""
                                     placeholder="Address"
-                                    class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-96 py-2"
+                                    class="rounded-xl text-sm focus:outline-none border-blue md:px-10 px-4 md:w-96 py-2"
                                   />
                                 </div>
 
-                                <div class="flex gap-8 my-4">
+                                <div class="md:flex gap-8 my-4">
                                   <div>
                                     <label
                                       class="text-[15px] text-lighgrey font-semibold"
@@ -1541,7 +1544,7 @@
                                       name=""
                                       id=""
                                       placeholder="123456"
-                                      class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-44 py-2"
+                                      class="rounded-xl text-sm focus:outline-none border-blue md:px-10 px-4 md:w-44 py-2"
                                     />
                                   </div>
 
@@ -1561,7 +1564,7 @@
                                       name=""
                                       id=""
                                       placeholder="123456"
-                                      class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-44 py-2"
+                                      class="rounded-xl text-sm focus:outline-none border-blue md:px-10 px-4 md:w-44 py-2"
                                     />
                                   </div>
                                 </div>
@@ -1583,7 +1586,7 @@
                                       name=""
                                       id=""
                                       placeholder="INDIA"
-                                      class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-44 py-2"
+                                      class="rounded-xl text-sm focus:outline-none border-blue md:px-10 px-4 md:w-44 py-2"
                                     />
                                   </div>
 
@@ -1603,7 +1606,7 @@
                                       name=""
                                       id=""
                                       placeholder="(GMT+11:00)"
-                                      class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-44 py-2"
+                                      class="rounded-xl text-sm focus:outline-none border-blue md:px-10 px-4 md:w-44 py-2"
                                     />
                                   </div>
                                 </div>
@@ -1624,7 +1627,7 @@
                                     name=""
                                     id=""
                                     placeholder="Address"
-                                    class="rounded-xl focus:outline-none border-blue md:px-10 px-4 md:w-96 py-2"
+                                    class="rounded-xl text-sm focus:outline-none border-blue md:px-10 px-4 md:w-96 py-2"
                                   />
                                 </div>
                                 <div class="my-4">
@@ -1650,8 +1653,10 @@
                                 <div
                                   class="bg-white rounded-xl py-6 text-center px-10 overflow-hidden shadow-xl"
                                 >
-                                  <h1 class="font-bold">Upload your files</h1>
-                                  <p class="text-xs">No File Choosen</p>
+                                  <h1 class="font-bold w-fit">
+                                    Upload your files
+                                  </h1>
+                                  <p class="text-xs w-fit">No File Choosen</p>
                                   <div
                                     class="border-2 text-center px-2 py-2 mt-2 rounded-xl border-dotted"
                                   >
@@ -1662,32 +1667,31 @@
                                   </div>
                                 </div>
                                 <div class="flex my-4 mt-4 py-3">
-                                  <h1 class="font-bold text-[12px]">
+                                  <h1 class="font-bold text-[12px] w-fit">
                                     Google Authenticator
                                   </h1>
                                 </div>
-                                <div>
-                                  <div class=" ">
-                                    <form>
-                                      <label
-                                        class="text-[15px] text-lighgrey font-semibold"
-                                        >password</label
-                                      >
-                                      <span
-                                        class="text-clifford text-[13px] font-bold"
-                                        >*</span
-                                      >
-                                      <input
-                                        type="password"
-                                        placeholder="Enter password "
-                                        class="border-1 text-sm w-full focus:outline-none border-blue flex md:rounded-xl px-2 my-2 md:px-4 md:py-2 focus:outline-none"
-                                      />
 
-                                      <IoIosEye
-                                        class="inline-block ml-10 text-black"
-                                      />
-                                    </form>
-                                  </div>
+                                <div class=" ">
+                                  <form>
+                                    <label
+                                      class="text-[15px] text-lighgrey font-semibold"
+                                      >password</label
+                                    >
+                                    <span
+                                      class="text-clifford text-[13px] font-bold"
+                                      >*</span
+                                    >
+                                    <input
+                                      type="password"
+                                      placeholder="Enter password "
+                                      class="border-1 text-sm w-full focus:outline-none border-blue flex md:rounded-xl px-2 my-2 md:px-4 md:py-2 focus:outline-none"
+                                    />
+
+                                    <IoIosEye
+                                      class="inline-block ml-10 text-black"
+                                    />
+                                  </form>
                                 </div>
 
                                 <button
