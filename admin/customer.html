@@ -21,6 +21,14 @@
       rel="stylesheet"
       href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
     />
+    <!-- graph -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <!--Replace with your tailwind.css once created-->
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
     <link
@@ -54,8 +62,8 @@
               greylight: "#E4E4E4",
               secondary: "#253D4E",
               skylight: "#C2F1FE",
-              pink: "#F74B81",
-              perpal: "#534EBE",
+              pink: "#FF2E63",
+              lightpink: "#FFC1D5",
             },
           },
         },
@@ -201,7 +209,7 @@
                             </span>
                           </a>
 
-                          <a href="./order/order.html" >
+                          <a href="./order/order.html">
                             <span
                               class="inline-flex justify-center items-center"
                             >
@@ -236,7 +244,7 @@
                             </span>
                             <!-- <i class="fa fa-caret-down"></i> -->
                           </a>
-                          <a href="./customer.html" class="my-2">
+                          <a href="#" class="my-2 active">
                             <span
                               class="inline-flex justify-center items-center"
                             >
@@ -248,7 +256,7 @@
                             <!-- <i class="fa fa-caret-down"></i> -->
                           </a>
 
-                          <a href="#" class="my-2">
+                          <a href="./storeprofile.html" class="my-2">
                             <span
                               class="inline-flex justify-center items-center"
                             >
@@ -278,7 +286,7 @@
                               >Coupon</span
                             >
                           </a>
-                          <a href="./payout.html" class="active"> 
+                          <a href="./payout.html">
                             <span
                               class="inline-flex justify-center items-center"
                             >
@@ -359,7 +367,7 @@
                               <div class=" ">
                                 <div class="">
                                   <form
-                                    class="border-2 border-black md:rounded-2xl px-10 py-2"
+                                    class="border-2 border-blue md:rounded-2xl px-10 py-2"
                                   >
                                     <input
                                       type="text"
@@ -378,295 +386,321 @@
                               </button>
                             </div>
                           </div>
-
-                          <!-- card section start -->
-
-                          <!-- card section start -->
-
-                          <div
-                            class="rounded-lg grow flex-wrap md:justify-between justify-center flex lg:flex-row flex-wrap mt-8 gap-5"
-                          >
-                            <!-- card 1 -->
-                            <div
-                              class="md:w-[20%] w-[100%] shadow-xl shadow-pink gradiant rounded-lg px-3 py-4 mt-2"
-                            >
-                              <div class="" style="text-align: -webkit-right">
-                                <p
-                                  class="text-white text-end font-bold text-[15px] w-fit"
-                                >
-                                  total earning
-                                </p>
-                                <p
-                                  class="text-white text-end font-bold text-2xl w-fit"
-                                >
-                                  $16,789
-                                </p>
-                              </div>
-                            </div>
-                            <!-- card 2 -->
-                            <div
-                              class="md:w-[20%] w-[100%] shadow-xl shadow-green gradiant2 rounded-lg px-3 py-4 mt-2"
-                            >
-                              <div class=" " style="text-align: -webkit-right">
-                                <p
-                                  class="text-white text-end font-bold text-[15px] w-fit"
-                                >
-                                  Pending Clearance
-                                </p>
-                                <p
-                                  class="text-white text-end font-bold text-2xl w-fit"
-                                >
-                                  $1,560
-                                </p>
-                              </div>
-                            </div>
-                            <!-- card 3 -->
-                            <div
-                              class="md:w-[20%] w-[100%] shadow-xl shadow-yellow gradiant3 rounded-lg px-3 py-4 mt-2"
-                            >
-                              <div class="" style="text-align: -webkit-right">
-                                <p
-                                  class="text-white text-end font-bold text-[15px] w-fit"
-                                >
-                                  Available for Withdrawal
-                                </p>
-                                <p
-                                  class="text-white text-end font-bold text-2xl w-fit"
-                                >
-                                  $4,650
-                                </p>
-                              </div>
-                            </div>
-                            <!-- card4 -->
-                            <div
-                              class="md:w-[20%] w-[100%] shadow-xl shadow-perpal gradiant4 rounded-lg px-3 py-4 mt-2"
-                            >
-                              <div class="" style="text-align: -webkit-right">
-                                <p
-                                  class="text-white text-end font-bold text-[15px] w-fit"
-                                >
-                                  Withdrawn
-                                </p>
-                                <p
-                                  class="text-white text-end font-bold text-2xl w-fit"
-                                >
-                                  $6,128
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-
-                          <!-- card section end -->
-
-                          <!-- card section end -->
-                          <!-- center div start -->
-                          <div class="bg-white mt-8 rounded-xl">
-                            <div
-                              class="md:flex flex-wrap justify-around items-center md:p-12 p-3"
-                            >
-                              <div class="md:w-[40%] w-[100%] mt-2">
-                                <p class="text-secondary text-md font-semibold">
-                                  Bank Account details
-                                </p>
-                                <div
-                                  class="shadow-2xl shadow-grey rounded-md py-6 px-4 mt-6"
-                                >
-                                  <div
-                                    class="flex justify-between font-semibold items-center"
-                                  >
-                                    <div class="text-secondary">
-                                      <p>name</p>
-                                    </div>
-                                    <div class="flex text-grey">
-                                      <span class="mr-3">:</span>
-                                      <p>deepika phool</p>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="flex justify-between font-semibold items-center mt-2"
-                                  >
-                                    <div class="text-secondary">
-                                      <p>Acc NO</p>
-                                    </div>
-                                    <div class="flex text-grey">
-                                      <span class="mr-3">:</span>
-                                      <p>deepika phool</p>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="flex justify-between font-semibold items-center mt-2"
-                                  >
-                                    <div class="text-secondary">
-                                      <p>Bank Name</p>
-                                    </div>
-
-                                    <div class="flex text-grey">
-                                      <span class="mr-3">:</span>
-                                      <p>deepika phool</p>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="flex font-semibold justify-between items-center mt-2"
-                                  >
-                                    <div class="text-secondary">
-                                      <p>Branch Name</p>
-                                    </div>
-                                    <div class="flex text-grey">
-                                      <span class="mr-3">:</span>
-                                      <p>deepika phool</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="md:w-[40%] w-[100%] mt-2">
-                                <p class="text-secondary text-md font-semibold">
-                                  Other withdrawel methods
-                                </p>
-                                <div
-                                  class="shadow-2xl shadow-grey rounded-md py-2 px-4 mt-6 w-[50%]"
-                                >
-                                  <div class="font-semibold items-center">
-                                    <img
-                                      src="../images/pay1.png"
-                                      alt="img"
-                                      class="mx-auto"
-                                    />
-                                    <p class="text-center">paypal</p>
-                                  </div>
-                                </div>
-                                <div
-                                  class="shadow-2xl shadow-grey rounded-md py-2 px-4 mt-4 w-[50%]"
-                                >
-                                  <div class="font-semibold items-center">
-                                    <img
-                                      src="../images/pay2.png"
-                                      alt="img"
-                                      class="mx-auto w-[40px]"
-                                    />
-                                    <p class="text-center">payoneer</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- cneter div end -->
                         </div>
                       </div>
+                      <!-- center div start -->
+                      <div class="mt-4">
+                        <div class="w-[100%] py-3 items-center md:w-full">
+                          <div
+                            class="lg:flex gap-4 justify-between items-center"
+                          >
+                            <!-- graph section start -->
+                            <div
+                              class="md:w-[60%] w-full bg-white rounded-xl shadow-xl"
+                            >
+                              <div
+                                class="w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4 md:p-8"
+                              >
+                                <div class="">
+                                  <p
+                                    class="text-base font-semibold text-secondary"
+                                  >
+                                    New Customers
+                                  </p>
+                                </div>
+                                <div id="area-chart"></div>
+                                <div
+                                  class="grid grid-cols-1 items-center border-gray-200 border-t dark:border-gray-700 justify-between"
+                                ></div>
+                              </div>
+                            </div>
+                            <!-- graph section end -->
+                            <!-- rating section start -->
+                            <div
+                              class="md:w-[40%] w-full bg-white rounded-xl py-7 px-5 shadow-xl"
+                            >
+                              <div>
+                                <h4 class="font-semibold text-secondary">
+                                  customer rating
+                                </h4>
+                                <div
+                                  class="w-[140px] mt-4 text-center h-[80px] rounded-md bg-blue p-4 mx-auto"
+                                >
+                                  <h2 class="text-white font-bold text-md">
+                                    4.7
+                                  </h2>
+                                  <p>
+                                    <i
+                                      class="fa-solid fa-star text-[14px] text-yellow"
+                                    ></i>
+                                    <i
+                                      class="fa-solid fa-star text-[14px] text-yellow"
+                                    ></i>
+                                    <i
+                                      class="fa-solid fa-star text-[14px] text-yellow"
+                                    ></i>
+                                    <i
+                                      class="fa-solid fa-star text-[14px] text-yellow"
+                                    ></i>
+                                    <i
+                                      class="fa-solid fa-star-half-stroke text-[14px] text-yellow"
+                                    ></i>
+                                  </p>
+                                </div>
+                                <div
+                                  class="flex justify-between items-center mt-5"
+                                >
+                                  <div>
+                                    <p class="text-lightwh text-[15px]">
+                                      communication
+                                    </p>
+                                  </div>
+                                  <div>
+                                    <p>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                  <div>
+                                    <p class="text-lightwh text-[15px]">
+                                      product quality
+                                    </p>
+                                  </div>
+                                  <div>
+                                    <p>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                  <div>
+                                    <p class="text-lightwh text-[15px]">
+                                      delivery
+                                    </p>
+                                  </div>
+                                  <div>
+                                    <p>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-yellow"
+                                      ></i>
+                                      <i
+                                        class="fa-solid fa-star text-[12px] text-lightwh"
+                                      ></i>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- rating section end -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- center div end -->
                       <!-- tebel section start -->
-                      <div class="mt-8">
+                      <div class="mt-4">
                         <div
-                          class="w-[100%] bg-white rounded-xl py-10 items-center md:w-full p-4 shadow-md"
+                          class="w-[100%] bg-white rounded-xl py-10 items-center md:w-full md:p-10 p-4 shadow-xl"
                         >
                           <div class="relative overflow-x-auto">
-                            <p class="text-blue font-semibold">Coupon Table</p>
+                            <div class="flex justify-between items-center">
+                              <p class="text-blue font-semibold">
+                                Cutomer List
+                              </p>
+                              <div>
+                                <select
+                                  id="countries"
+                                  class="text-blue text-sm font-bold mx-2"
+                                >
+                                  <option selected>one</option>
+                                  <option value="US">two</option>
+                                  <option value="CA">three</option>
+                                  <option value="FR">Four</option>
+                                </select>
+
+                                <select
+                                  id="countries"
+                                  class="text-blue text-sm font-bold mx-2"
+                                >
+                                  <option selected>shot by</option>
+                                  <option value="US">United States</option>
+                                  <option value="CA">Canada</option>
+                                  <option value="FR">France</option>
+                                  <option value="DE">Germany</option>
+                                </select>
+                              </div>
+                            </div>
                             <table
-                              class="w-[100%] mt-4 text-sm text-left text-gray-500"
+                              class="w-full mt-4 text-sm text-left text-gray-1"
                             >
                               <thead class="     ">
                                 <tr class="text-xs">
-                                  <th scope="col" class="">withdrawn ID</th>
-                                  <th scope="col" class="  ">withdrawn date</th>
-                                  <th scope="col" class=" ">status</th>
-                                  <th scope="col" class=" ">
-                                    funds cleared date
-                                  </th>
-                                  <th scope="col" class="">
-                                    funds cleared method
-                                  </th>
-                                  <th scope="col" class=" ">action</th>
+                                  <th scope="col" class=" ">SL</th>
+                                  <th scope="col" class=" ">Name</th>
+                                  <th scope="col" class=" ">Customer ID</th>
+                                  <th scope="col" class=" ">email</th>
+                                  <th scope="col" class=" ">country</th>
+                                  <th scope="col" class=" ">date</th>
+                                  <th scope="col" class="">status</th>
+                                  <th scope="col" class="">action</th>
                                 </tr>
                               </thead>
                               <tbody>
-                                <tr class="bg-white border-b-4 border-gray">
-                                  <td class="py-5 text-clifford">#3210</td>
+                                <tr class="bg-#f0e8e8 border-b-4 border-gray">
+                                  <td class="py-5">Arlan Pond</td>
+                                  <td class="py-5">#3210</td>
+                                  <td class="py-5">apond0@nytimes.com</td>
+                                  <td class="py-5">$239.00</td>
                                   <td class="py-5">May,03,2022</td>
-                                  <td class="py-5">
-                                    <button
-                                      class="text-blue bg-skylight font-semibold px-1 py-1 rounded-md"
+                                  <td class="py-5">$5,400.00</td>
+                                  <td class="  ">
+                                    <p
+                                      class="bg-lightgreen text-green py-2 px-2 w-20 rounded-md"
                                     >
-                                      transfered
-                                    </button>
+                                      active
+                                    </p>
                                   </td>
-                                  <td class="py-5">May,03,2022</td>
-                                  <td class="py-5">bank account</td>
 
                                   <td class="py-5 flex gap-2">
+                                    <a href="./detailorder.html">
+                                      <i
+                                        class="fa-regular text-center fa-eye text-blue border-2 w-6 h-6 rounded-md"
+                                      ></i
+                                    ></a>
                                     <i
-                                      class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                      class="fa-solid fa-address-card text-clifford border-2 w-6 h-6 rounded-md"
                                     ></i>
 
                                     <i
-                                      class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                      class="fa-solid fa-ban text-center text-pink border-2 w-6 h-6 rounded-md"
                                     ></i>
                                   </td>
                                 </tr>
 
-                                <tr class="bg-white border-b-4 border-gray">
-                                  <td class="py-5 text-clifford">#3210</td>
+                                <tr class="bg-#f0e8e8 border-b-4 border-gray">
+                                  <td class="py-5">Arlan Pond</td>
+                                  <td class="py-5">#3210</td>
+                                  <td class="py-5">apond0@nytimes.com</td>
+                                  <td class="py-5">$239.00</td>
                                   <td class="py-5">May,03,2022</td>
-                                  <td class="py-5">
-                                    <button
-                                      class="text-blue bg-skylight font-semibold px-1 py-1 rounded-md"
+                                  <td class="py-5">$5,400.00</td>
+                                  <td class="  ">
+                                    <p
+                                      class="bg-lightgreen text-green py-2 px-2 w-20 rounded-md"
                                     >
-                                      transfered
-                                    </button>
+                                      active
+                                    </p>
                                   </td>
-                                  <td class="py-5">May,03,2022</td>
-                                  <td class="py-5">bank account</td>
 
                                   <td class="py-5 flex gap-2">
+                                    <a href="./detailorder.html">
+                                      <i
+                                        class="fa-regular text-center fa-eye text-blue border-2 w-6 h-6 rounded-md"
+                                      ></i
+                                    ></a>
                                     <i
-                                      class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                      class="fa-solid fa-address-card text-clifford border-2 w-6 h-6 rounded-md"
                                     ></i>
 
                                     <i
-                                      class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                      class="fa-solid fa-ban text-center text-pink border-2 w-6 h-6 rounded-md"
                                     ></i>
                                   </td>
                                 </tr>
-                                <tr class="bg-white border-b-4 border-gray">
-                                  <td class="py-5 text-clifford">#3210</td>
+                                <tr class="bg-#f0e8e8 border-b-4 border-gray">
+                                  <td class="py-5">Arlan Pond</td>
+                                  <td class="py-5">#3210</td>
+                                  <td class="py-5">apond0@nytimes.com</td>
+                                  <td class="py-5">$239.00</td>
                                   <td class="py-5">May,03,2022</td>
-                                  <td class="py-5">
-                                    <button
-                                      class="text-green bg-lightgreen font-semibold px-1 py-1 rounded-md"
+                                  <td class="py-5">$5,400.00</td>
+                                  <td class="  ">
+                                    <p
+                                      class="bg-lightgreen text-green py-2 px-2 w-20 rounded-md"
                                     >
-                                      panding
-                                    </button>
+                                      active
+                                    </p>
                                   </td>
-                                  <td class="py-5">May,03,2022</td>
-                                  <td class="py-5">bank account</td>
 
                                   <td class="py-5 flex gap-2">
+                                    <a href="./detailorder.html">
+                                      <i
+                                        class="fa-regular text-center fa-eye text-blue border-2 w-6 h-6 rounded-md"
+                                      ></i
+                                    ></a>
                                     <i
-                                      class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                      class="fa-solid fa-address-card text-clifford border-2 w-6 h-6 rounded-md"
                                     ></i>
 
                                     <i
-                                      class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                      class="fa-solid fa-ban text-center text-pink border-2 w-6 h-6 rounded-md"
                                     ></i>
                                   </td>
                                 </tr>
-                                <tr class="bg-white border-b-4 border-gray">
-                                  <td class="py-5 text-clifford">#3210</td>
+                                <tr class="bg-#f0e8e8 border-b-4 border-gray">
+                                  <td class="py-5">Arlan Pond</td>
+                                  <td class="py-5">#3210</td>
+                                  <td class="py-5">apond0@nytimes.com</td>
+                                  <td class="py-5">$239.00</td>
                                   <td class="py-5">May,03,2022</td>
-                                  <td class="py-5">
-                                    <button
-                                      class="text-blue bg-skylight font-semibold px-1 py-1 rounded-md"
+                                  <td class="py-5">$5,400.00</td>
+                                  <td class="  ">
+                                    <p
+                                      class="bg-lightpink text-pink py-2 px-2 w-20 rounded-md"
                                     >
-                                      transfered
-                                    </button>
+                                      inactive
+                                    </p>
                                   </td>
-                                  <td class="py-5">May,03,2022</td>
-                                  <td class="py-5">bank account</td>
 
                                   <td class="py-5 flex gap-2">
+                                    <a href="./detailorder.html">
+                                      <i
+                                        class="fa-regular text-center fa-eye text-blue border-2 w-6 h-6 rounded-md"
+                                      ></i
+                                    ></a>
                                     <i
-                                      class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
+                                      class="fa-solid fa-address-card text-clifford border-2 w-6 h-6 rounded-md"
                                     ></i>
 
                                     <i
-                                      class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
+                                      class="fa-solid fa-ban text-center text-pink border-2 w-6 h-6 rounded-md"
                                     ></i>
                                   </td>
                                 </tr>
@@ -741,5 +775,97 @@
         });
       }
     </script>
+    <!-- wav graph start -->
+    <script>
+      // ApexCharts options and config
+      window.addEventListener("load", function () {
+        let options = {
+          chart: {
+            height: "100%",
+            maxWidth: "100%",
+            type: "area",
+            fontFamily: "Inter, sans-serif",
+            dropShadow: {
+              enabled: false,
+            },
+            toolbar: {
+              show: false,
+            },
+          },
+          tooltip: {
+            enabled: true,
+            x: {
+              show: false,
+            },
+          },
+          fill: {
+            type: "gradient",
+            gradient: {
+              opacityFrom: 0.55,
+              opacityTo: 0,
+              shade: "#F74B81",
+              gradientToColors: ["#F74B81"],
+            },
+          },
+          dataLabels: {
+            enabled: false,
+          },
+          stroke: {
+            width: 6,
+          },
+          grid: {
+            show: false,
+            strokeDashArray: 4,
+            padding: {
+              left: 2,
+              right: 2,
+              top: 0,
+            },
+          },
+          series: [
+            {
+              name: "New users",
+              data: [6500, 6418, 6456, 6526, 6356, 6456],
+              color: "#F74B81",
+            },
+          ],
+          xaxis: {
+            categories: [
+              "01 February",
+              "02 February",
+              "03 February",
+              "04 February",
+              "05 February",
+              "06 February",
+              "07 February",
+            ],
+            labels: {
+              show: false,
+            },
+            axisBorder: {
+              show: false,
+            },
+            axisTicks: {
+              show: false,
+            },
+          },
+          yaxis: {
+            show: false,
+          },
+        };
+
+        if (
+          document.getElementById("area-chart") &&
+          typeof ApexCharts !== "undefined"
+        ) {
+          const chart = new ApexCharts(
+            document.getElementById("area-chart"),
+            options
+          );
+          chart.render();
+        }
+      });
+    </script>
+    <!-- wav graph end -->
   </body>
 </html>

@@ -10,11 +10,13 @@
         "select-name": "off"
       }
     ],
+    "no-inline-styles": "off",
     "axe/parsing": [
-      "default",
+      "off",
       {
         "duplicate-id-aria": "off"
       }
-    ]
+    ],
+    "button-type": "off"
   }
 }

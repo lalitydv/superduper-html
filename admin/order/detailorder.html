@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tailwind Admin Starter Template : Tailwind Toolbox</title>
+    <meta name="author" content="name" />
+    <meta name="description" content="description here" />
+    <meta name="keywords" content="keywords,here" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--Totally optional :) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"
+      integrity="sha256-xKeoJ50pzbUGkpQxDYHD7o7hxe0LaOGeguUidbq6vis="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              blue: "#00BAF2",
+              darkblue: "#073B74",
+              grey: "#858C8E",
+              lightw: "#D9D9D9",
+              whitel: "#FAFAFC",
+              green: "#3BB77E",
+              yellow: "#FFE144",
+              primary: "#E4E4E4",
+
+              darkblak: "#3C3C3C",
+              lightgreen: "#BCEFD8",
+              greylight: "#E4E4E4",
+              secondary: "#253D4E",
+              skylight: "#C2F1FE",
+              pink: "#FF2E63",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-sans leading-normal tracking-normal mt-12">
+    <header>
+      <!--Nav-->
+      <nav
+        aria-label="menu nav"
+        class="bg-blue shadow pt-2 md:pt-1 pb-1 px-1 mt-0 h-auto fixed w-full z-20 top-0"
+      >
+        <div class="flex flex-wrap items-center py-2">
+          <div
+            class="flex flex-shrink md:w-1/3 justify-center md:justify-start text-white"
+          >
+            <a href="#" aria-label="Home">
+              <nav class="flex" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                  <li class="inline-flex items-center">
+                    <a
+                      href="#"
+                      class="inline-flex items-center font-semibold text-white"
+                    >
+                      Track Orders
+                    </a>
+                  </li>
+                  <span class="mx-2 text-white font-bold">/</span>
+                  <li>
+                    <div class="flex items-center">
+                      <a href="#" class="ml-1 font-semibold text-white md:ml-2"
+                        >Returned Orders</a
+                      >
+                    </div>
+                  </li>
+                </ol>
+              </nav>
+            </a>
+          </div>
+
+          <div
+            class="flex flex-1 md:w-1/3 justify-center md:justify-start text-white px-2"
+          ></div>
+
+          <div
+            class="flex w-full pt-2 content-center justify-between md:w-1/3 md:justify-end"
+          >
+            <ul
+              class="list-reset flex justify-between flex-1 md:flex-none items-center"
+            >
+              <li class="flex-1 md:flex-none md:mr-3 flex">
+                <a class="inline-block text-white no-underline" href="#"
+                  ><img src="../../images/flag.png" alt="adminlogo"
+                /></a>
+              </li>
+
+              <li class="flex-1 md:flex-none md:mr-3">
+                <a href="#" aria-label="Home">
+                  <span class="text-xl p-0">
+                    <img src="../../images/icon2.png" alt="adminlogo" />
+                    <!-- <i class="em em-grinning"></i> -->
+                  </span>
+                </a>
+              </li>
+              <li class="flex-1 md:flex-none md:mr-3">
+                <a href="#" aria-label="Home">
+                  <span class="text-xl p-0">
+                    <img src="../../images/noti.png" alt="adminlogo" />
+                    <!-- <i class="em em-grinning"></i> -->
+                  </span>
+                </a>
+              </li>
+              <li
+                class="flex justify-between gap-3 items-center md:flex-none md:mr-3 bg-white rounded-2xl px-2"
+              >
+                <a href="#" aria-label="Home">
+                  <span class="text-xl p-0">
+                    <img
+                      src="../../images/img.png"
+                      alt="adminlogo"
+                      class="w-[35px]"
+                    />
+                    <!-- <i class="em em-grinning"></i> -->
+                  </span>
+                </a>
+                <div class="dropdown">
+                  <span><i class="fa-solid fa-sort-down text-blue"></i></span>
+                  <div class="dropdown-content py-3">
+                    <p class="text-sm font-normal px-4 py-1">Hello</p>
+                    <hr />
+                    <p class="text-sm font-normal px-4 py-1">World!</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="flex flex-col md:flex-row">
+        <nav aria-label="alternative nav">
+          <div
+            class="bg-white h-20 fixed bottom-0 mt-12 md:relative md:h-screen z-10 w-full md:w-48 content-center"
+          >
+            <div
+              class="md:mt-12 md:w-48 md:fixed md:left-0 md:top-0 content-center md:content-start text-left justify-between"
+            >
+              <div class="md:mt-[400px] md:block hidden">
+                <div
+                  class="border-white md:mt-[400px] rounded-3xl flex flex-col top-10 left-0 w-14 md:w-56 h-screen bg-white shadow-2xl dark:bg-gray-900 transition-all duration-300 border-none z-10 sidebar"
+                >
+                  <div
+                    class="border-white rounded-r-3xl fixed flex flex-col top-14 left-0 w-14 md:w-56 h-screen bg-white shadow-2xl dark:bg-gray-900 transition-all duration-300 border-none z-10 sidebar"
+                  >
+                    <div
+                      class="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow text-md"
+                    >
+                      <div class="sidenav flex flex-col py-14 px- space-y-1">
+                        <div
+                          class="relative item-center justify-center flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
+                        >
+                          <img
+                            src="../../images/admlogo.png"
+                            alt="img"
+                            class="w-20 h-20"
+                          />
+                          <span>Store Name</span>
+                        </div>
+
+                        <div class="sidenav" style="margin-top: 25px">
+                          <a href="../dashboard.html" class="my-2">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-house" class="text-md"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Dashboard
+                            </span>
+                          </a>
+
+                          <a href="./order.html" class="active">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-bag-shopping"></i>
+                            </span>
+                            <span class="tracking-wide truncate ml-2">
+                              Orders
+                            </span>
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                          </a>
+
+                          <a href="../categories.html" class="my-2">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-table-columns"></i>
+                            </span>
+                            <span class="tracking-wide truncate ml-2">
+                              Category
+                            </span>
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                          </a>
+
+                          <a href="../product/products.html">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-sitemap"></i>
+                            </span>
+                            <span class="tracking-wide truncate ml-2">
+                              Products
+                            </span>
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                          </a>
+                          <a href="../customer.html" class="my-2">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-bag-shopping"></i>
+                            </span>
+                            <span class="tracking-wide truncate ml-2">
+                              Customers
+                            </span>
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                          </a>
+
+                          <a href="../storeprofile.html" class="my-2">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-store"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Store Profile
+                            </span>
+                          </a>
+                          <a href="../notification.html">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-regular fa-bell"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Notifications
+                            </span>
+                          </a>
+                          <a href="../coupan.html" class="my-2">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-regular fa-credit-card"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate"
+                              >Coupon</span
+                            >
+                          </a>
+                          <a href="../payout.html">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-regular fa-credit-card"></i>
+                            </span>
+                            <span
+                              class="ml-2 font-semibold tracking-wide truncate"
+                              >Payout</span
+                            >
+                          </a>
+
+                          <a href="#" style="padding: 0px" class="my-5">
+                            <div
+                              class="relative mt-2 h-11 px-4 flex flex-row items-center focus:outline-none dark:hover:bg-gray-600 text-white hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 bg-blue rounded-md"
+                            >
+                              <span
+                                class="inline-flex justify-center items-center"
+                                ><img
+                                  src="../../images/logout.png"
+                                  alt="img"
+                                  class="w-4 mr-3"
+                                />
+                              </span>
+                              <span class="tracking-wide truncate">Logout</span>
+                            </div>
+                          </a>
+                        </div>
+                        <!-- end dropwdown -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <section class="w-full px-5">
+          <div
+            id="main"
+            class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5"
+          >
+            <!-- only for  start -->
+            <div class="w-full">
+              <!-- notification page start  -->
+              <div class="flex flex-col md:mx-4 mx-2 gap-5">
+                <div class="rounded-3xl md:p-4 p-2">
+                  <div class="">
+                    <div class="lg:w-[100%] md:w-[100%]">
+                      <div class="mt-4">
+                        <div
+                          class="relative overflow-hidden md:text-md text-lg"
+                        >
+                          <div
+                            class="bg-white md:rounded-l-full p-2 w-75 md:w-full overflow-hidden shadow-md"
+                          >
+                            <div
+                              class="md:flex flex-wrap md:justify-between grid gap-2 items-center"
+                            >
+                              <div class="md:pl-4">overview</div>
+                              <div class="flex items-center">
+                                <label
+                                  for="countries"
+                                  class="block text-sm font-medium text-gray-1"
+                                >
+                                  Show
+                                </label>
+                                <select
+                                  id="countries"
+                                  class="text-blue text-sm font-bold mx-2"
+                                >
+                                  <option selected>this month</option>
+                                  <option value="US">United States</option>
+                                  <option value="CA">Canada</option>
+                                  <option value="FR">France</option>
+                                  <option value="DE">Germany</option>
+                                </select>
+                              </div>
+                              <div class=" ">
+                                <div class="">
+                                  <form
+                                    class="border-2 border-blue md:rounded-2xl px-10 py-2"
+                                  >
+                                    <input
+                                      type="text"
+                                      placeholder="Search "
+                                      class="text-black w-full border-none inputfoc p-0"
+                                    />
+                                    <!-- <HiSearch class="inline-block text-gray" /> -->
+                                  </form>
+                                </div>
+                              </div>
+                              <button
+                                class="bg-blue text-white md:px-6 rounded-xl py-2"
+                                onClick="{handleClick}"
+                              >
+                                add New Product
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--order tebel section start -->
+                      <p class="text-secondary mt-7 font-semibold text-xl">
+                        Order details
+                      </p>
+                      <div class="mt-4">
+                        <div class="w-[100%] py-3 items-center md:w-full">
+                          <div
+                            class="lg:flex gap-4 justify-between items-center"
+                          >
+                            <div
+                              class="md:w-[60%] w-full bg-white rounded-xl p-4 shadow-xl"
+                            >
+                              <div class="flex justify-between items-center">
+                                <div>
+                                  <span
+                                    class="text-secondary font-normal text-lg"
+                                    >order ID</span
+                                  >
+                                  <span class="text-pink ml-3"> #3210</span>
+                                </div>
+                                <div>
+                                  <p
+                                    class="bg-lightgreen text-green py-2 px-2 rounded-md"
+                                  >
+                                    Completed
+                                  </p>
+                                </div>
+                              </div>
+                              <hr class="my-4" />
+                              <table
+                                class="w-full mx-auto mt-4 text-sm text-left text-gray-1"
+                              >
+                                <thead class="     ">
+                                  <tr class="text-xs">
+                                    <th scope="col" class="text-center">
+                                      Date
+                                    </th>
+                                    <th scope="col" class="text-center">
+                                      Name
+                                    </th>
+                                    <th scope="col" class="text-center">
+                                      Email
+                                    </th>
+                                    <th scope="col" class="text-center">
+                                      Contact No.
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="bg-#f0e8e8 border-b-4 border-gray">
+                                    <td class="py-5 text-center">
+                                      12 Oct 2022
+                                    </td>
+                                    <td class="py-5 text-center">Jagdish</td>
+                                    <td class="py-5 text-center">
+                                      **gmail.com
+                                    </td>
+                                    <td class="py-5 text-center">1234567890</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <div class="md:flex gap-4 items-center mt-6">
+                                <div
+                                  class="border-[1px] shadow-2xl rounded-md md:w-50 w-full"
+                                >
+                                  <div class="pt-2 pb-5 px-4 my-4">
+                                    <div
+                                      class="flex justify-between text-secondary font-semibold"
+                                    >
+                                      <p>Delivery Address</p>
+                                      <div>
+                                        <i class="fa-solid fa-car-on"></i>
+                                      </div>
+                                    </div>
+                                    <p class="mt-5 text-[14px] text-grey">
+                                      Josephin Villa
+                                    </p>
+                                    <p class="text-grey text-[14px] mt-1">
+                                      81 Fulton Park, Brazil/Pedro Leopoldo
+                                    </p>
+                                  </div>
+                                  <hr />
+                                  <p class="text-grey p-4">
+                                    <span
+                                      ><i
+                                        class="fa-solid fa-phone-volume mr-2"
+                                      ></i></span
+                                    >408-963-7769
+                                  </p>
+                                </div>
+
+                                <div
+                                  class="border-[1px] shadow-2xl rounded-md md:w-50 w-full"
+                                >
+                                  <div class="pt-2 pb-5 px-4 my-4">
+                                    <div
+                                      class="flex justify-between text-secondary font-semibold"
+                                    >
+                                      <p>Billing Address</p>
+                                      <div>
+                                        <i class="fa-solid fa-car-on"></i>
+                                      </div>
+                                    </div>
+                                    <p class="mt-5 text-[14px] text-grey">
+                                      Josephin Villa
+                                    </p>
+                                    <p class="text-grey text-[14px] mt-1">
+                                      29543 South Plaza, Canada/Sydney Mines
+                                    </p>
+                                  </div>
+                                  <hr />
+                                  <p class="text-grey p-4">
+                                    <span
+                                      ><i
+                                        class="fa-solid fa-phone-volume mr-2"
+                                      ></i></span
+                                    >408-963-7769
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="md:w-[40%] w-full bg-white rounded-xl py-7 px-5 shadow-xl"
+                            >
+                              <p class="text-secondary font-semibold">
+                                Invoice Details
+                              </p>
+                              <div
+                                class="border-[1px] gradiant mt-4 shadow-2xl rounded-2xl md:w-50 py-10 px-8 w-full"
+                              >
+                                <img
+                                  src="../../images/orde.png"
+                                  alt="img"
+                                  class="mx-auto"
+                                />
+                                <hr class="my-8" />
+                                <div
+                                  class="flex justify-center gap-5 text-[14px] mt-2 items-center"
+                                >
+                                  <p>Invoice No</p>
+                                  <p>#045483210</p>
+                                </div>
+                                <div
+                                  class="flex justify-center gap-5 text-[14px] mt-2 items-center"
+                                >
+                                  <p>Buyer Id</p>
+                                  <p>2954991</p>
+                                </div>
+                                <div
+                                  class="flex justify-center gap-5 text-[14px] mt-2 items-center"
+                                >
+                                  <p>Purchase GST</p>
+                                  <p>22HG9838964Z1</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  section end -->
+                      <!-- last section start -->
+                      <div class="mt-4">
+                        <div class="w-[100%] py-3 items-center md:w-full">
+                          <div
+                            class="lg:flex gap-4 justify-between items-center"
+                          >
+                            <div
+                              class="md:w-[60%] w-full bg-white rounded-xl shadow-xl"
+                            >
+                              <table
+                                class="w-full mx-auto text-sm text-left text-gray-1"
+                              >
+                                <thead
+                                  class="bg-skylight w-full rounded-t-2xl"
+                                  style="height: 60px"
+                                >
+                                  <tr
+                                    class="text-xs bg-skylight py-6 text-blue"
+                                  >
+                                    <th
+                                      scope="col"
+                                      class="text-center"
+                                      colspan="2"
+                                    >
+                                      Product
+                                    </th>
+                                    <th scope="col" class="text-center">
+                                      Unit Price
+                                    </th>
+                                    <th scope="col" class="text-center">Qty</th>
+                                    <th scope="col" class="text-center">
+                                      Sub Total
+                                    </th>
+                                    <th scope="col" class="text-center">
+                                      Remove
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr
+                                    class="bg-#f0e8e8 border-b-4 border-gray font-semibold"
+                                  >
+                                    <td colspan="2" class="py-5 pl-4">
+                                      <div class="flex text-[11px]">
+                                        <img
+                                          src="../../images/mix.png"
+                                          alt="img"
+                                          class="w-16 inline"
+                                        />
+                                        <div class="inline ml-3">
+                                          <span class="inline">
+                                            Chobani Complete Vanilla<br />
+                                            Greek Yogurt</span
+                                          ><br />
+                                          <i
+                                            class="fa-solid fa-star text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-yellow"
+                                          ></i>
+                                          <span class="text-secondary"
+                                            >0.5</span
+                                          >
+                                        </div>
+                                      </div>
+                                    </td>
+
+                                    <td class="py-5 text-center">$152.58</td>
+                                    <td class="py-5 text-center text-blue">
+                                      x1
+                                    </td>
+                                    <td class="py-5 text-center text-blue">
+                                      $152.58
+                                    </td>
+                                    <td class="py-5 text-center">
+                                      <i class="fa-solid fa-trash"></i>
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    class="bg-#f0e8e8 border-b-4 border-gray font-semibold"
+                                  >
+                                    <td colspan="2" class="py-5 pl-4">
+                                      <div class="flex text-[11px]">
+                                        <img
+                                          src="../../images/fan.png"
+                                          alt="img"
+                                          class="w-16 inline"
+                                        />
+                                        <div class="inline ml-3">
+                                          <span class="inline">
+                                            Chobani Complete Vanilla<br />
+                                            Greek Yogurt</span
+                                          ><br />
+                                          <i
+                                            class="fa-solid fa-star text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-yellow"
+                                          ></i>
+                                          <span class="text-secondary"
+                                            >0.5</span
+                                          >
+                                        </div>
+                                      </div>
+                                    </td>
+
+                                    <td class="py-5 text-center">$152.58</td>
+                                    <td class="py-5 text-center text-blue">
+                                      x1
+                                    </td>
+                                    <td class="py-5 text-center text-blue">
+                                      $152.58
+                                    </td>
+                                    <td class="py-5 text-center">
+                                      <i class="fa-solid fa-trash"></i>
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    class="bg-#f0e8e8 border-b-4 border-gray font-semibold"
+                                  >
+                                    <td colspan="2" class="py-5 pl-4">
+                                      <div class="flex text-[11px]">
+                                        <img
+                                          src="../../images/phone.png"
+                                          alt="img"
+                                          class="w-16 inline"
+                                        />
+                                        <div class="inline ml-3">
+                                          <span class="inline">
+                                            Chobani Complete Vanilla<br />
+                                            Greek Yogurt</span
+                                          ><br />
+                                          <i
+                                            class="fa-solid fa-star text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-yellow"
+                                          ></i>
+                                          <i
+                                            class="fa-solid fa-star text-yellow"
+                                          ></i>
+                                          <span class="text-secondary"
+                                            >0.5</span
+                                          >
+                                        </div>
+                                      </div>
+                                    </td>
+
+                                    <td class="py-5 text-center">$152.58</td>
+                                    <td class="py-5 text-center text-blue">
+                                      x1
+                                    </td>
+                                    <td class="py-5 text-center text-blue">
+                                      $152.58
+                                    </td>
+                                    <td class="py-5 text-center">
+                                      <i class="fa-solid fa-trash"></i>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div
+                              class="md:w-[40%] w-full bg-white rounded-xl py-7 px-5 shadow-xl"
+                            >
+                              <div
+                                class="border-[1px] mt-4 shadow-2xl rounded-2xl md:w-50 py-10 px-8 w-full"
+                              >
+                                <div
+                                  class="flex text-grey justify-between border-[1px] p-3 shadow-2xl gap-5 text-[14px] mt-2 items-center"
+                                >
+                                  <p>sub total</p>
+                                  <p class="text-blue">$1.250.00</p>
+                                </div>
+                                <div
+                                  class="flex text-grey justify-between border-[1px] p-3 shadow-2xl gap-5 text-[14px] mt-7 items-center"
+                                >
+                                  <p>Processing fee</p>
+                                  <p>$2.00</p>
+                                </div>
+                                <div
+                                  class="flex text-grey justify-between border-[1px] p-3 shadow-2xl gap-5 text-[14px] mt-2 items-center"
+                                >
+                                  <p>packaging fee</p>
+                                  <p>$2.00</p>
+                                </div>
+                                <div
+                                  class="flex text-grey justify-between border-[1px] p-3 shadow-2xl gap-5 text-[14px] mt-2 items-center"
+                                >
+                                  <p>delivery fee</p>
+                                  <p>free</p>
+                                </div>
+                                <div
+                                  class="flex text-grey justify-between border-[1px] p-3 shadow-2xl gap-5 text-[14px] mt-7 items-center"
+                                >
+                                  <p>Total</p>
+                                  <p class="text-blue">$2.00</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- last section end -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  page end -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      /*Toggle dropdown list*/
+      function toggleDD(myDropMenu) {
+        document.getElementById(myDropMenu).classList.toggle("invisible");
+      }
+      /*Filter dropdown options*/
+      function filterDD(myDropMenu, myDropMenuSearch) {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById(myDropMenuSearch);
+        filter = input.value.toUpperCase();
+        div = document.getElementById(myDropMenu);
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (
+          !event.target.matches(".drop-button") &&
+          !event.target.matches(".drop-search")
+        ) {
+          var dropdowns = document.getElementsByclass("dropdownlist");
+          for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (!openDropdown.classList.contains("invisible")) {
+              openDropdown.classList.add("invisible");
+            }
+          }
+        }
+      };
+    </script>
+    <!-- dropdown start -->
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

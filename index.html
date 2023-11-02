@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
     <title>Superduper</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <script>
       tailwind.config = {
         theme: {
@@ -16,6 +18,9 @@
               blue: "#073B74",
               grey: "#858C8E",
               lightw: "#D9D9D9",
+              lighgrey: "#343A40",
+            dark:"#253D4E",
+            lightblue:"#00BAF2"
             },
           },
         },
@@ -23,72 +28,127 @@
     </script>
   </head>
   <body>
+    <!-- forgot form start -->
     <div class="flex justify-center items-center z-1 p-5">
-      <div
-        class="max-w-xl p-4 w-full rounded-md border-l-4 border-blue border-r-2 border-blue border-t-8 border-blue border-b-8 border-blue"
-      >
-        <img src="images\logo1.png" alt="img" class="mx-auto" />
-        <div class="text-center">
-          <h1 class="text-3xl font-bold">Login</h1>
-          <p class="mt-2 text-grey">(Admin of Employee Login)</p>
-        </div>
-        <!-- form start -->
-        <div class="px-8 py-4">
-          <form>
-            <div>
-              <label for="fname" class="text-grey text-[13px]">Your Email</label
-              ><br />
-              <input
-                type="email"
-                name="fname"
-                class="border-2 border-grey w-full p-1 px-3 rounded-md mt-2 focus:outline-none"
-              />
-            </div>
-            <div class="mt-3">
-              <label for="lname" class="text-grey text-[13px]">Password</label
-              ><br />
-              <input
-                type="password"
-                id="fname"
-                name="fname"
-                class="border-2 border-grey w-full p-1 px-3 rounded-md mt-2 focus:outline-none"
-              />
-            </div>
-            <div class="flex justify-between flex-wrap md:flex-nowrap my-4">
-              <div>
-                <input type="checkbox" id="vehicle1" name="vehicle1" />
-                <span class="ms-2">Remember me</span>
-              </div>
-              <div>
-                <a href="./forgot.html">
-                  <p class="text-blue font-semibold">Forgot Password ?</p></a
-                >
-              </div>
-            </div>
+      <div class="md:max-w-4xl w-full">
+        <img src="images\logo.png" alt="logoimg" class="w-[180px]" />
+
+        <div
+          class="flex gap-6 md:flex-nowrap items-center flex-wrap items-end h-fit-content mt-5"
+        >
+          <div>
+            <img src="images\f1.png" alt="forgotimg" class="w-[350px]" />
+          </div>
+          <div class="pb-5">
+            <p class="text-center text-dark font-bold text-2xl">
+                Create Your Shop
+            </p>
+           
             <div
-              class="flex justify-between items-center w-[100%] md:w-[70%] bg-lightw px-3 py-2"
+              class="p-4 mt-1 max-w-md rounded-md  shadow-2xl"
             >
-              <div class="flex items-center">
-                <input
-                  type="checkbox"
-                  name="vehicle1"
-                  class="w-[18px] h-[18px]"
-                />
-                <span class="ms-2">i'm Not a Robot</span>
+              <!-- form start -->
+              <div class="px-8 py-2">
+                    <form>
+                      <p class="text-dark">
+                        Sign up with your socials or create an account.
+                      </p>
+                       
+                        <button class="shadow-4xl mt-4 px-12 py-2 text-dark mx-auto block font-semibold rounded-md"
+                        style="box-shadow: 0px 10px 10px 10px rgba(0,0,0,0.1);">
+                        <i class="fa-brands fa-google text-lightblue mr-2"></i>
+                        continue with google
+                        </button>
+                       <p class="or_div relative text-center mt-5">or</p>
+                
+                        <div class="mt-3">
+                          <label
+                            for="lname"
+                            class="text-dark text-[15px] font-semibold"
+                            >Store Name
+                            </label
+                          ><br />
+                          <input
+                            placeholder="Enter Store Name"
+                            type="text"
+                            name="fname"
+                            class="border-[1px] bg-lightw text-sm border-grey w-full p-2 px-3 rounded-md focus:outline-none"
+                          />
+                        </div>
+                        <div class="mt-3">
+                          <label
+                            for="lname"
+                            class="text-dark text-[15px] font-semibold"
+                            >Email
+                            </label
+                          ><br />
+                          <input
+                            placeholder="Enter email "
+                            type="email"
+                            name="fname"
+                            class="border-[1px] bg-lightw text-sm border-grey w-full p-2 px-3 rounded-md focus:outline-none"
+                          />
+                        </div>
+                        <div class="mt-3">
+                          <label
+                            for="lname"
+                            class="text-dark text-[15px] font-semibold"
+                            >Password</label
+                          ><br />
+                          <input
+                            placeholder="Enter Password"
+                            type="password"
+                            name="fname"
+                            class="border-[1px] bg-lightw text-sm border-grey w-full p-2 px-3 rounded-md focus:outline-none"
+                          />
+                        </div>
+                        <div class="flex mt-3 ">
+                          <input type="checkbox"/>
+                          <span class="text-[14px] ml-2">by signing up, you agree to the<span class="text-lightblue"> terms of service and privacy policy</span> 
+                        </span>
+                        </div>
+               
+                   
+                        <div class="mt-4">
+                          <label class="text-lightblue text-[14px]">
+                            please accept the terms & conditions
+                          </label>
+                            
+                              <button class="bg-lightblue w-full focus:outline-none text-center py-2 text-white  rounded-md"
+                                  >
+                                  Sing up
+                              </button></a>
+                        
+                          
+                        </div>
+
+                        <div class="text-center mt-3 font-semibold">
+                          <span class="text-lighgrey">
+                            Already have an account?  
+                           
+                          </span>
+                          <!-- <a href="./index.html"> -->
+                            <a href="./login.html">  
+                          <span class="text-lightblue text-md">
+                            login
+                            </span>
+                            </a>
+                          <!-- </a> -->
+                        </div>
+                     
+                    </form>
               </div>
-              <div>
-                <img src="images\loginim.png" alt="img" class="w-[80%]" />
-              </div>
+              <!-- form end -->
             </div>
-            <a href="./register.html">
-              <input
-                value="Sing in"
-                class="bg-blue w-full py-2 text-center text-white mt-7 rounded-md"
-            /></a>
-          </form>
+          </div>
         </div>
-        <!-- form end -->
       </div>
     </div>
+      <!-- forgot form end -->
+
+    <script src="js/main.js"></script>
+   
+   
   </body>
 </html>
+

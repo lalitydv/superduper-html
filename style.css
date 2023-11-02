@@ -1,9 +1,8 @@
-body{
-    font-family: 'Open Sans', sans-serif;
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
-
-#signUpForm .form-header .stepIndicator.active {
+/* #signUpForm .form-header .stepIndicator.active {
     font-weight: 900;
     color: #073B74;
     font-size: 12px;
@@ -24,14 +23,13 @@ body{
     height: 20px;
     font-size: 12px;
     font-weight: 900;
-    /* background-color: #c3dafe; */
-    /* border-radius: 50%; */
+    
     border: 3px solid #ebf4ff;
 }
 
 #signUpForm .form-header .stepIndicator.finish::before {
     background-color: #159800;
-    /* border: 3px solid #c3dafe; */
+    
 }
 #signUpForm .form-header .stepIndicator::after {
     content: "";
@@ -52,95 +50,112 @@ body{
 }
 #signUpForm .step {
   display: none;
-}
+} */
 /* admin csss
 /* Googlefont Poppins CDN Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+@import url( 'https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-.sidebar{
+
+.sidebar {
   position: fixed;
   height: 100%;
   width: 240px;
   background: #d16ea3;
-  transition: all 0.5s ease;
+  transition: all .5s ease;
 }
-.sidebar.active{
+
+.sidebar.active {
   width: 60px;
 }
-.sidebar .logo-details{
+
+.sidebar .logo-details {
   height: 80px;
   display: flex;
   align-items: center;
 }
-.sidebar .logo-details i{
+
+.sidebar .logo-details i {
   font-size: 28px;
   font-weight: 500;
   color: #fff;
   min-width: 60px;
-  text-align: center
+  text-align: center;
 }
-.sidebar .logo-details .logo_name{
+
+.sidebar .logo-details .logo_name {
   color: #fff;
   font-size: 24px;
   font-weight: 500;
 }
-.sidebar .nav-links{
+
+.sidebar .nav-links {
   margin-top: 10px;
 }
-.sidebar .nav-links li{
+
+.sidebar .nav-links li {
   position: relative;
   list-style: none;
   height: 50px;
 }
-.sidebar .nav-links li a{
+
+.sidebar .nav-links li a {
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   text-decoration: none;
-  transition: all 0.4s ease;
+  transition: all .4s ease;
 }
-.sidebar .nav-links li a.active{
+
+.sidebar .nav-links li a.active {
   background: #081D45;
 }
-.sidebar .nav-links li a:hover{
+
+.sidebar .nav-links li a:hover {
   background: #081D45;
 }
-.sidebar .nav-links li i{
+
+.sidebar .nav-links li i {
   min-width: 60px;
   text-align: center;
   font-size: 18px;
   color: #fff;
 }
-.sidebar .nav-links li a .links_name{
+
+.sidebar .nav-links li a .links_name {
   color: #fff;
   font-size: 15px;
   font-weight: 400;
   white-space: nowrap;
 }
-.sidebar .nav-links .log_out{
+
+.sidebar .nav-links .log_out {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
-.home-section{
+
+.home-section {
   position: relative;
   background: #f5f5f5;
   min-height: 100vh;
   width: calc(100% - 240px);
   left: 240px;
-  transition: all 0.5s ease;
+  transition: all .5s ease;
 }
-.sidebar.active ~ .home-section{
+
+.sidebar.active ~ .home-section {
   width: calc(100% - 60px);
   left: 60px;
 }
-.home-section nav{
+
+.home-section nav {
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -153,30 +168,35 @@ body{
   z-index: 100;
   padding: 0 20px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  transition: all 0.5s ease;
+  transition: all .5s ease;
 }
-.sidebar.active ~ .home-section nav{
+
+.sidebar.active ~ .home-section nav {
   left: 60px;
   width: calc(100% - 60px);
 }
-.home-section nav .sidebar-button{
+
+.home-section nav .sidebar-button {
   display: flex;
   align-items: center;
   font-size: 24px;
   font-weight: 500;
 }
-nav .sidebar-button i{
+
+nav .sidebar-button i {
   font-size: 35px;
   margin-right: 10px;
 }
-.home-section nav .search-box{
+
+.home-section nav .search-box {
   position: relative;
   height: 50px;
   max-width: 550px;
   width: 100%;
   margin: 0 20px;
 }
-nav .search-box input{
+
+nav .search-box input {
   height: 100%;
   width: 100%;
   outline: none;
@@ -186,7 +206,8 @@ nav .search-box input{
   font-size: 18px;
   padding: 0 15px;
 }
-nav .search-box .bx-search{
+
+nav .search-box .bx-search {
   position: absolute;
   height: 40px;
   width: 40px;
@@ -199,9 +220,10 @@ nav .search-box .bx-search{
   text-align: center;
   color: #fff;
   font-size: 22px;
-  transition: all 0.4 ease;
+  transition: all .4 ease;
 }
-.home-section nav .profile-details{
+
+.home-section nav .profile-details {
   display: flex;
   align-items: center;
   background: #F5F6FA;
@@ -211,7 +233,7 @@ nav .search-box .bx-search{
   min-width: 190px;
   padding: 0 15px 0 2px;
 }
-nav .profile-details img{
+/* nav .profile-details img{
   height: 40px;
   width: 40px;
   border-radius: 6px;
@@ -308,15 +330,15 @@ nav .profile-details i{
 .home-content .total-order{
   font-size: 20px;
   font-weight: 500;
-}
-.home-content .sales-boxes{
+} */
+.home-content .sales-boxes {
   display: flex;
   justify-content: space-between;
   /* padding: 0 20px; */
 }
 
 /* left box */
-.home-content .sales-boxes .recent-sales{
+.home-content .sales-boxes .recent-sales {
   width: 65%;
   background: #fff;
   padding: 20px 30px;
@@ -324,36 +346,43 @@ nav .profile-details i{
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.home-content .sales-boxes .sales-details{
+
+.home-content .sales-boxes .sales-details {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.sales-boxes .box .title{
+
+.sales-boxes .box .title {
   font-size: 24px;
   font-weight: 500;
   /* margin-bottom: 10px; */
 }
-.sales-boxes .sales-details li.topic{
+
+.sales-boxes .sales-details li.topic {
   font-size: 20px;
   font-weight: 500;
 }
-.sales-boxes .sales-details li{
+
+.sales-boxes .sales-details li {
   list-style: none;
   margin: 8px 0;
 }
-.sales-boxes .sales-details li a{
+
+.sales-boxes .sales-details li a {
   font-size: 18px;
   color: #333;
   font-size: 400;
   text-decoration: none;
 }
-.sales-boxes .box .button{
+
+.sales-boxes .box .button {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
-.sales-boxes .box .button a{
+
+.sales-boxes .box .button a {
   color: #fff;
   background: #0A2558;
   padding: 4px 12px;
@@ -361,14 +390,15 @@ nav .profile-details i{
   font-weight: 400;
   border-radius: 4px;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
 }
-.sales-boxes .box .button a:hover{
-  background:  #0d3073;
+
+.sales-boxes .box .button a:hover {
+  background: #0d3073;
 }
 
 /* Right box */
-.home-content .sales-boxes .top-sales{
+.home-content .sales-boxes .top-sales {
   width: 35%;
   background: #fff;
   padding: 20px 30px;
@@ -376,13 +406,15 @@ nav .profile-details i{
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.sales-boxes .top-sales li{
+
+.sales-boxes .top-sales li {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 10px 0;
 }
-.sales-boxes .top-sales li a img{
+
+.sales-boxes .top-sales li a img {
   height: 40px;
   width: 40px;
   object-fit: cover;
@@ -390,120 +422,138 @@ nav .profile-details i{
   margin-right: 10px;
   background: #333;
 }
-.sales-boxes .top-sales li a{
+
+.sales-boxes .top-sales li a {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-.sales-boxes .top-sales li .product,
-.price{
+
+.price,
+.sales-boxes .top-sales li .product {
   font-size: 17px;
   font-weight: 400;
   color: #333;
 }
 /* Responsive Media Query */
 @media (max-width: 1240px) {
-  .sidebar{
+  .sidebar {
     width: 60px;
   }
-  .sidebar.active{
+
+  .sidebar.active {
     width: 220px;
   }
-  .home-section{
+
+  .home-section {
     width: calc(100% - 60px);
     left: 60px;
   }
-  .sidebar.active ~ .home-section{
+
+  .sidebar.active ~ .home-section {
     /* width: calc(100% - 220px); */
     overflow: hidden;
     left: 220px;
   }
-  .home-section nav{
+
+  .home-section nav {
     width: calc(100% - 60px);
     left: 60px;
   }
-  .sidebar.active ~ .home-section nav{
+
+  .sidebar.active ~ .home-section nav {
     width: calc(100% - 220px);
     left: 220px;
   }
 }
 @media (max-width: 1150px) {
-  .home-content .sales-boxes{
+  .home-content .sales-boxes {
     flex-direction: column;
   }
-  .home-content .sales-boxes .box{
+
+  .home-content .sales-boxes .box {
     width: 100%;
     overflow-x: scroll;
     margin-bottom: 30px;
   }
-  .home-content .sales-boxes .top-sales{
+
+  .home-content .sales-boxes .top-sales {
     margin: 0;
   }
 }
 @media (max-width: 1000px) {
-  .overview-boxes .box{
+  .overview-boxes .box {
     width: calc(100% / 2 - 15px);
     margin-bottom: 15px;
   }
 }
 @media (max-width: 700px) {
-  nav .sidebar-button .dashboard,
   nav .profile-details .admin_name,
-  nav .profile-details i{
+  nav .profile-details i,
+  nav .sidebar-button .dashboard {
     display: none;
   }
-  .home-section nav .profile-details{
+
+  .home-section nav .profile-details {
     height: 50px;
     min-width: 40px;
   }
-  .home-content .sales-boxes .sales-details{
+
+  .home-content .sales-boxes .sales-details {
     width: 560px;
   }
 }
 @media (max-width: 550px) {
-  .overview-boxes .box{
+  .overview-boxes .box {
     width: 100%;
     margin-bottom: 15px;
   }
-  .sidebar.active ~ .home-section nav .profile-details{
+
+  .sidebar.active ~ .home-section nav .profile-details {
     display: none;
   }
 }
-  @media (max-width: 400px) {
-  .sidebar{
+@media (max-width: 400px) {
+  .sidebar {
     width: 0;
   }
-  .sidebar.active{
+
+  .sidebar.active {
     width: 60px;
   }
-  .home-section{
+
+  .home-section {
     width: 100%;
     left: 0;
   }
-  .sidebar.active ~ .home-section{
+
+  .sidebar.active ~ .home-section {
     left: 60px;
     width: calc(100% - 60px);
   }
-  .home-section nav{
+
+  .home-section nav {
     width: 100%;
     left: 0;
   }
-  .sidebar.active ~ .home-section nav{
+
+  .sidebar.active ~ .home-section nav {
     left: 60px;
     width: calc(100% - 60px);
   }
-} 
+}
 /* dropdown start */
 .dropdown {
   position: absolute;
   width: 130px;
- 
+
   height: fit-content;
   z-index: 9999;
-  
+
   /* background-color: lightblue; */
   display: none;
 }
+
 .toggler:focus {
   outline: none;
 }
@@ -514,11 +564,11 @@ nav .profile-details i{
 /* dropdown end */
 
 /* dropdown start */
-.sidenav a, .dropdown-btn {
+.dropdown-btn,
+.sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
- 
-  
+
   display: block;
   border: none;
   background: none;
@@ -528,22 +578,18 @@ nav .profile-details i{
   outline: none;
 }
 
-
-
 /* Main content */
 .main {
-  margin-left: 200px; /* Same as the width of the sidenav */
-  
-  padding: 0px 10px;
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+
+  padding: 0 10px;
 }
-
-
-
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
- 
+
   padding-left: 8px;
   background-color: white;
 }
@@ -556,17 +602,22 @@ nav .profile-details i{
 
 /* Some media queries for responsiveness */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 /* drawwwwwre start */
 /* popup side setting css start */
 .open-button {
- 
+
   border: none;
   cursor: pointer;
- 
+
   width: 280px;
 }
 
@@ -588,37 +639,37 @@ nav .profile-details i{
 }
 
 /* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
+.form-container input[type=password],
+.form-container input[type=text] {
   width: 100%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  margin: 5px 0 22px;
   border: none;
   background: #f1f1f1;
 }
 
 /* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+.form-container input[type=password]:focus,
+.form-container input[type=text]:focus {
   background-color: #ddd;
   outline: none;
 }
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  
 
   padding: 16px 20px;
   border: none;
   cursor: pointer;
   color: white;
 
-  margin-bottom:10px;
-  opacity: 0.8;
+  margin-bottom: 10px;
+  opacity: .8;
 }
 
-
-
 /* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
+.form-container .btn:hover,
+.open-button:hover {
   opacity: 1;
 }
 
@@ -626,7 +677,7 @@ nav .profile-details i{
 h1 {
   text-align: center;
   font-family: Tahoma, Arial, sans-serif;
-  
+
   margin: 80px 0;
 }
 
@@ -649,9 +700,8 @@ h1 {
   border-radius: 20px/50px;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.3s ease-out;
+  transition: all .3s ease-out;
 }
-
 
 .overlay {
   position: fixed;
@@ -664,6 +714,7 @@ h1 {
   visibility: hidden;
   opacity: 0;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
@@ -686,6 +737,7 @@ h1 {
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
 }
+
 .popup .close {
   position: absolute;
   top: 20px;
@@ -703,55 +755,117 @@ h1 {
   max-height: 30%;
   overflow: auto;
 }
-.opacit{
+
+.opacit {
   transition: opacity 500ms;
   /* visibility: hidden; */
-  opacity: 0.3;
+  opacity: .3;
   background: rgba(0, 0, 0, 0.7);
 }
-
-@media screen and (max-width: 700px){
-  .box{
+@media screen and (max-width: 700px) {
+  .box {
     width: 70%;
   }
-  .popup{
+
+  .popup {
     width: 70%;
   }
 }
-
-@media screen and (max-width: 1240px){
-  .respons{
+@media screen and (max-width: 1240px) {
+  .respons {
     flex-wrap: wrap;
   }
-  
+
 }
 /* myprofile css */
-
-.inputfoc:focus{
-border:none !important;
-outline:none !important;
-box-shadow: none !important;
+.inputfoc:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
-@media screen and (max-width: 1240px){
+@media screen and (max-width: 1240px) {
   .prespons {
     flex-wrap: wrap;
   }
-  
+
 }
 /* dashboard css responerr*/
-@media screen and (max-width: 1240px){
+@media screen and (max-width: 1240px) {
   .divresop {
     flex-wrap: wrap;
   }
-  
+
 }
-@media screen and (max-width: 1240px){
+@media screen and (max-width: 1240px) {
   .responerr {
     flex-wrap: wrap;
   }
-  
+
 }
-.active{
-  background-color: #073B74;
+
+.active {
+  background-color: #00BAF2 !important;
   color: white;
+}
+/* navdropdown css start*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  /* width: fit-content; */
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: -80px !important;
+  top: 28px;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* nav css end */
+/* login css*/
+.or_div::after {
+  content: "";
+  background-color: grey;
+  width: 40%;
+  position: absolute;
+  right: 0;
+  display: block;
+  height: 1px;
+  top: 50%;
+}
+
+.or_div::before {
+  content: "";
+  background-color: grey;
+  width: 40%;
+  position: absolute;
+  left: 0;
+  display: block;
+  height: 1px;
+  top: 50%;
+}
+/* dashboard css */
+.gradiant{
+  background: linear-gradient(to bottom,#F74B81 , #FF84AA);
+}
+.gradiant2{
+  background: linear-gradient(to bottom,#3BB77E, #73F4B9);
+}
+
+.gradiant3{
+  background: linear-gradient(to bottom,#FED000, #FFEC94);
+}
+.gradiant4{
+  background: linear-gradient(to bottom,#534EBE, #C3C0FF);
 }
