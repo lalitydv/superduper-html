@@ -67,6 +67,9 @@
               blackligh: "#3C3C3C",
               pinkd: "#F74B81",
               purpel: "#906ED1",
+              lgpink: "#FFC1D5",
+              ligyel: "#FFEC94",
+              red: "#C20000",
             },
           },
         },
@@ -185,20 +188,23 @@
                     <div
                       class="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow text-md"
                     >
-                      <div class="sidenav flex flex-col py-14 px- space-y-1">
+                      <div class="sidenav flex flex-col py-14 space-y-1">
                         <div
                           class="relative item-center justify-center flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
                         >
                           <img
                             src="../images/admlogo.png"
                             alt="img"
-                            class="w-20 h-20"
+                            class="mx-auto"
                           />
-                          <span>Store Name</span>
+                          <!-- <span>Store Name</span> -->
                         </div>
 
                         <div class="sidenav" style="margin-top: 25px">
-                          <a href="#">
+                          <a
+                            href="./dashboard.html"
+                            class="my-2 text-black active"
+                          >
                             <span
                               class="inline-flex justify-center items-center"
                             >
@@ -208,90 +214,136 @@
                               Dashboard
                             </span>
                           </a>
-
-                          <button class="dropdown-btn">
+                          <!-- <a href="#" class="hover:bg-blue hover:text-white">
                             <span
                               class="inline-flex justify-center items-center"
                             >
                               <i class="fa-solid fa-bag-shopping"></i>
                             </span>
-                            <span class="tracking-wide truncate ml-2">
-                              orders
+                            <span class="ml-2 tracking-wide truncate">
+                              OPS
                             </span>
-                            <i class="fa fa-caret-down"></i>
-                          </button>
-
-                          <div class="dropdown-container">
-                            <a href="./order/total.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Total</a
-                            >
-                            <a href="./order/pending.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Pending</a
-                            >
-                            <a href="./order/confirm.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Confirmed</a
-                            >
-                            <a href="./order/packageing.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Packaging</a
-                            >
-                            <a href="./order/shipped.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Shipped</a
-                            >
-                            <a href="./order/delivery.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Deliverd</a
-                            >
-                            <a href="./order/return.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Returned</a
-                            >
-                            <a href="./order/failed.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Failed</a
-                            >
-                            <a href=".order/cancel.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Canceled</a
-                            >
+                          </a> -->
+                          <div class="my-2">
+                            <p class="text-blue text-center font-semibold">
+                              Order Management
+                            </p>
                           </div>
-
-                          <button class="dropdown-btn">
+                          <a href="#" class="">
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-table-columns"></i>
+                              <i class="fa-solid fa-cart-shopping"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Orders</span
+                            >
+                          </a>
+                          <!-- <button class="dropdown-btn my-2">
+                    <span
+                      class="inline-flex justify-center items-center"
+                    >
+                      <i
+                        class="fa-solid fa-cart-shopping text-black"
+                      ></i>
+                    </span>
+                    <span
+                      class="tracking-wide truncate ml-2 text-black"
+                    >
+                      Orders
+                    </span>
+                    <i class="fa fa-caret-down"></i>
+                  </button> -->
+
+                          <!-- <div class="dropdown-container">
+                    <a href="./order/total.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Total</a
+                    >
+                    <a href="./order/pending.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Pending</a
+                    >
+                    <a href="./order/confirm.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Confirmed</a
+                    >
+                    <a href="./order/packageing.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Packaging</a
+                    >
+                    <a href="./order/shipped.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Shipped</a
+                    >
+                    <a href="./order/delivery.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Deliverd</a
+                    >
+                    <a href="./order/return.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Returned</a
+                    >
+                    <a href="./order/failed.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Failed</a
+                    >
+                    <a href=".order/cancel.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Canceled</a
+                    >
+                  </div> -->
+                          <a
+                            href="#"
+                            class="my-2 hover:bg-blue hover:text-white"
+                          >
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-regular fa-credit-card"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate"
+                              >Refund Requests</span
+                            >
+                          </a>
+                          <div class="my-2">
+                            <p class="text-blue text-center font-semibold">
+                              Product Management
+                            </p>
+                          </div>
+
+                          <button class="dropdown-btn my-2">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-bars-staggered"></i>
                             </span>
                             <span class="tracking-wide truncate ml-2">
-                              category
+                              Category Setup
                             </span>
                             <i class="fa fa-caret-down"></i>
                           </button>
                           <div class="dropdown-container">
                             <a
-                              href="./category/categories.html"
+                              href="../admin/category/categories.html"
                               class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
@@ -299,7 +351,7 @@
                               >categories</a
                             >
                             <a
-                              href="./category/subcategories.html"
+                              href="../admin/category/subcategories.html"
                               class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
@@ -307,7 +359,7 @@
                               >sub categories</a
                             >
                             <a
-                              href="./category/subsubcategories.html"
+                              href="../admin/category/subsubcategories.html"
                               class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
@@ -319,88 +371,171 @@
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-sitemap"></i>
+                              <i class="fa-solid fa-star"></i>
                             </span>
                             <span class="tracking-wide truncate ml-2">
-                              product
+                              Brands
                             </span>
                             <i class="fa fa-caret-down"></i>
                           </button>
                           <div class="dropdown-container">
-                            <a href="./product/product.html" class="text-grey"
+                            <a
+                              href="../admin/brand/addnew.html"
+                              class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Product</a
+                              ></i>
+                              Add new</a
                             >
-                            <a href="./product/bluk.html" class="text-grey"
+                            <a href="../admin/brand/list.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
-                              >Bluk imports</a
+                              >List
+                            </a>
+                          </div>
+                          <a
+                            href="./productatributs.html"
+                            class="my-2 hover:bg-blue hover:text-white"
+                          >
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-cubes"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Product Attributes
+                            </span>
+                          </a>
+
+                          <button class="dropdown-btn">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-house-flag"></i>
+                            </span>
+                            <span class="tracking-wide truncate ml-2">
+                              Inhouse Products
+                            </span>
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-container">
+                            <a
+                              href="../admin/product/product.html"
+                              class="text-grey"
+                            >
+                              <i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i>
+                              Product List</a
+                            >
+                            <a
+                              href="../admin/product/bluk.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Bulk Import
+                            </a>
+                          </div>
+                          <!-- <a href="Storepage.html">
+                    <span
+                      class="inline-flex justify-center items-center"
+                    >
+                      <i class="fa-solid fa-store"></i>
+                    </span>
+                    <span class="ml-2 tracking-wide truncate">
+                      Store Profile
+                    </span>
+                  </a> -->
+                          <!-- <a href="Notification.html">
+                    <span
+                      class="inline-flex justify-center items-center"
+                    >
+                      <i class="fa-regular fa-bell"></i>
+                    </span>
+                    <span class="ml-2 tracking-wide truncate">
+                      Notifications
+                    </span>
+                  </a> -->
+
+                          <!-- <a href="payout.html">
+                    <span
+                      class="inline-flex justify-center items-center"
+                    >
+                      <i class="fa-regular fa-credit-card"></i>
+                    </span>
+                    <span
+                      class="ml-2 font-semibold tracking-wide truncate"
+                      >Seller Products</span
+                    >
+                  </a> -->
+                          <button class="dropdown-btn my-2">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-suitcase"></i>
+                            </span>
+                            <span class="tracking-wide truncate ml-2">
+                              Seller Products
+                            </span>
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-container">
+                            <a
+                              href="../admin/seller/update.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Updated products</a
+                            >
+                            <a
+                              href="../admin/seller/newproduct.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >New products</a
+                            >
+                            <a
+                              href="../admin/seller/approved.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Approved products</a
+                            >
+                            <a
+                              href="../admin/seller/deniend.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Denied products</a
                             >
                           </div>
-                          <a href="Storepage.html">
+
+                          <button class="dropdown-btn">
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-store"></i>
-                            </span>
-                            <span class="ml-2 tracking-wide truncate">
-                              Store Profile
-                            </span>
-                          </a>
-                          <a href="Notification.html">
-                            <span
-                              class="inline-flex justify-center items-center"
-                            >
-                              <i class="fa-regular fa-bell"></i>
-                            </span>
-                            <span class="ml-2 tracking-wide truncate">
-                              Notifications
-                            </span>
-                          </a>
-                          <a href="couponpage.html">
-                            <span
-                              class="inline-flex justify-center items-center"
-                            >
-                              <i class="fa-regular fa-credit-card"></i>
-                            </span>
-                            <span class="ml-2 tracking-wide truncate"
-                              >Coupon</span
-                            >
-                          </a>
-                          <a href="payout.html">
-                            <span
-                              class="inline-flex justify-center items-center"
-                            >
-                              <i class="fa-regular fa-credit-card"></i>
-                            </span>
-                            <span
-                              class="ml-2 font-semibold tracking-wide truncate"
-                              >Payout</span
-                            >
-                          </a>
-                          <button class="dropdown-btn h-11 rounded-md">
-                            <span
-                              class="inline-flex justify-center items-center"
-                            >
-                              <i class="fa-solid fa-bag-shopping"></i>
+                              <i class="fa-solid fa-user-lock"></i>
                             </span>
                             <span class="tracking-wide truncate ml-2">
-                              My Profile
+                              User Manager
                             </span>
                             <i class="fa fa-caret-down"></i>
                           </button>
                           <div class="dropdown-container">
-                            <a href="../myprofile.html" class="text-grey"
+                            <a href="../Myprofile.html" class="text-grey"
                               ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
+                                class="fa-solid fa-circle-chevron-right mr-2 text-black"
                               ></i
                               >My Profile</a
                             >
                             <a
-                              href="./myprofile/addnewemployee.html"
+                              href="../admin/myprofile/addnewemployee.html"
                               class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
@@ -408,21 +543,23 @@
                               >Add New Employee</a
                             >
                             <a
-                              href="./myprofile/employeelist.html"
+                              href="../admin/myprofile/employeelist.html"
                               class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Employee List</a
                             >
-                            <a href="./myprofile/Addrole.html" class="text-grey"
+                            <a
+                              href="../admin/myprofile/Addrole.html"
+                              class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Add Role</a
                             >
                             <a
-                              href="./myprofile/rolelist.html"
+                              href="../admin/myprofile/rolelist.html"
                               class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
@@ -464,1009 +601,1108 @@
             <div class="w-full">
               <!-- notification page start  -->
               <div class="flex flex-col md:mx-4 mx-2 gap-5">
-                <div class="rounded-3xl md:p-4 p-2">
+                <div class="rounded-3xl md:p-4 p-3">
                   <div class="">
                     <div class="lg:w-[100%] md:w-[100%]">
                       <div class="mt-4">
                         <div
                           class="relative overflow-hidden md:text-md text-lg"
                         >
-                          <div
-                            class="bg-white p-2 md:rounded-l-full w-75 md:w-full overflow-hidden shadow-md"
-                          >
-                            <div
-                              class="md:flex flex-wrap md:justify-between grid gap-2 items-center"
-                            >
-                              <div class="md:pl-4">overview</div>
-                              <div class="flex items-center">
-                                <label
-                                  for="countries"
-                                  class="block text-sm font-medium text-gray-1"
-                                >
-                                  Show
-                                </label>
-                                <select
-                                  id="countries"
-                                  class="text-blue text-sm font-bold mx-2"
-                                >
-                                  <option selected>this month</option>
-                                  <option value="US">United States</option>
-                                  <option value="CA">Canada</option>
-                                  <option value="FR">France</option>
-                                  <option value="DE">Germany</option>
-                                </select>
-                              </div>
-                              <div class=" ">
-                                <div class="">
-                                  <form
-                                    class="border-2 border-black md:rounded-2xl px-10 py-2"
-                                  >
-                                    <input
-                                      type="text"
-                                      placeholder="Search "
-                                      class="text-black w-full border-none inputfoc p-0"
-                                    />
-                                  </form>
-                                </div>
-                              </div>
-                              <button
-                                class="bg-blue text-white md:px-6 rounded-xl py-2"
-                                onClick="{handleClick}"
-                              >
-                                add New Product
-                              </button>
-                            </div>
-                          </div>
+                          <p class="text-md">Business Analytics</p>
+
                           <!-- card section start -->
-
-                          <div
-                            class="rounded-lg grow flex-wrap md:justify-between justify-center flex lg:flex-row flex-wrap gap-5 mt-8"
-                          >
-                            <!-- card 1 -->
-                            <div
-                              class="shadow-md shadow-grey rounded-lg p-3 mt-2"
-                            >
-                              <div
-                                class="flex justify-between w-full grow gap-10 items-center"
-                              >
-                                <div class="w-[40%]">
-                                  <img
-                                    src="../images/d1.png"
-                                    alt="img"
-                                    class="w-[80px]"
-                                  />
-                                </div>
-                                <div class="w-[60%]">
-                                  <p
-                                    class="text-blue font-bold text-[15px] w-fit"
-                                  >
-                                    Pending
-                                  </p>
-                                  <p
-                                    class="text-blue font-bold text-[12px] w-fit"
-                                  >
-                                    40
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- card 2 -->
-                            <div
-                              class="shadow-md shadow-grey rounded-lg p-3 mt-2"
-                            >
-                              <div
-                                class="flex w-full justify-between grow gap-10 items-center"
-                              >
-                                <div class="w-[40%]">
-                                  <img
-                                    src="../images/d2.png"
-                                    alt="img"
-                                    class="w-[80px]"
-                                  />
-                                </div>
-                                <div class="w-[60%]">
-                                  <p
-                                    class="text-blue font-bold text-[15px] w-fit"
-                                  >
-                                    Confirmed
-                                  </p>
-                                  <p
-                                    class="text-blue font-bold text-[12px] w-fit"
-                                  >
-                                    10
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- card 3 -->
-                            <div
-                              class="shadow-md shadow-grey rounded-lg p-3 mt-2"
-                            >
-                              <div
-                                class="flex w-full justify-between gap-10 grow items-center"
-                              >
-                                <div class="w-[40%]">
-                                  <img
-                                    src="../images/d3.png"
-                                    alt="img"
-                                    class="w-[80px]"
-                                  />
-                                </div>
-                                <div class="w-[60%]">
-                                  <p
-                                    class="text-blue font-bold text-[15px] w-fit"
-                                  >
-                                    Packaging
-                                  </p>
-                                  <p
-                                    class="text-blue font-bold text-[12px] w-fit"
-                                  >
-                                   30
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- card4 -->
-                            <div
-                              class="shadow-md shadow-grey rounded-lg p-3 mt-2"
-                            >
-                              <div
-                                class="flex w-full justify-between gap-10 grow items-center"
-                              >
-                                <div class="w-[40%]">
-                                  <img
-                                    src="../images/d4.png"
-                                    alt="img"
-                                    class="w-[80px]"
-                                  />
-                                </div>
-                                <div class="w-[60%]">
-                                  <p
-                                    class="text-blue font-bold text-[15px] w-fit"
-                                  >
-                                    Shipped
-                                  </p>
-                                  <p
-                                    class="text-blue font-bold text-[12px] w-fit"
-                                  >
-                                    20
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <!-- card section end -->
-                          <!-- graph section start -->
-                          <div
-                            class="flex responerr justify-between gap-5 items-center mt-8"
-                          >
-                            <div
-                              class="w-[100%] md:w-[100%] bg-white rounded-md px-2 py-4"
-                            >
-                              <div class="flex justify-between">
-                                <div>
-                                  <p
-                                    class="text-base font-[15px] text-black dark:text-gray-400"
-                                  >
-                                    Revenue Stats
-                                  </p>
-                                </div>
-                                <div
-                                  class="flex items-center px-2.5 py-0.5 text-base font-semibold text-[12px] text-green-500 dark:text-green-500 text-center"
-                                >
-                                  <svg
-                                    class="w-3 h-3 ml-1"
-                                    aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 10 14"
-                                  >
-                                    <path
-                                      stroke="currentColor"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                      stroke-width="2"
-                                      d="M5 13V1m0 0L1 5m4-4 4 4"
-                                    />
-                                  </svg>
-                                  8.30%
-
-                                  <span class="text-black"> $6,789.00</span>
-                                </div>
-                              </div>
-                              <div class="mt-5 w-[100%]">
-                                <div
-                                  class="w-full bg-white rounded-lg shadow dark:bg-gray-800"
-                                >
-                                  <div
-                                    class="flex justify-between pb-0 md:pb-0"
-                                  ></div>
-                                  <div id="labels-chart" class="px-2.5"></div>
-                                  <div
-                                    class="grid grid-cols-1 items-center border-gray-200 border-t dark:border-gray-700 justify-between mt-5 p-4 md:p-6 pt-0 md:pt-0"
-                                  ></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              class="md:w-[100%] bg-white rounded-md px-8 py-4"
-                            >
-                              <div>
-                                <p>sales by category</p>
-                                <div
-                                  id="myChart"
-                                  style="
-                                    width: 100%;
-                                    margin: 0 auto;
-                                    height: 260px;
-                                    /* max-width: 600px;
-                                    height: 260px; */
-                                  "
-                                ></div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- graph section end -->
-                          <!--  rating section start -->
-                          <div
-                            class="flex prespons justify-between gap-2 items-center mt-4"
-                          >
-                            <!-- first customer rating -->
-                            <div
-                              class="bg-white rounded-md p-4 md:w-[33%] w-[100%]"
-                            >
-                              <div>
-                                <h4 class="font-semibold text-textcoo">
-                                  customer rating
-                                </h4>
-                                <div
-                                  class="w-[140px] mt-4 text-center h-[80px] rounded-md bg-blue p-4 mx-auto"
-                                >
-                                  <h2 class="text-white font-bold text-md">
-                                    4.7
-                                  </h2>
-                                  <p>
-                                    <i
-                                      class="fa-solid fa-star text-[14px] text-yellow"
-                                    ></i>
-                                    <i
-                                      class="fa-solid fa-star text-[14px] text-yellow"
-                                    ></i>
-                                    <i
-                                      class="fa-solid fa-star text-[14px] text-yellow"
-                                    ></i>
-                                    <i
-                                      class="fa-solid fa-star text-[14px] text-yellow"
-                                    ></i>
-                                    <i
-                                      class="fa-solid fa-star-half-stroke text-[14px] text-yellow"
-                                    ></i>
-                                  </p>
-                                </div>
-                                <div
-                                  class="flex justify-between items-center mt-5"
-                                >
-                                  <div>
-                                    <p class="text-lightwh text-[15px]">
-                                      communication
-                                    </p>
-                                  </div>
-                                  <div>
-                                    <p>
-                                      <i
-                                        class="fa-solid fa-star text-[12px] text-yellow"
-                                      ></i>
-                                      <i
-                                        class="fa-solid fa-star text-[12px] text-yellow"
-                                      ></i>
-                                      <i
-                                        class="fa-solid fa-star text-[12px] text-yellow"
-                                      ></i>
-                                      <i
-                                        class="fa-solid fa-star text-[12px] text-yellow"
-                                      ></i>
-                                      <i
-                                        class="fa-solid fa-star text-[12px] text-yellow"
-                                      ></i>
-                                    </p>
-                                  </div>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                  <div>
-                                    <p class="text-lightwh text-[15px]">
-                                      product quality
-                                    </p>
-                                  </div>
-                                  <div>
-                                    <p>
-                                      <i
-                                        class="fa-solid fa-star text-[12px] text-yellow"
-                                      ></i>
-                                      <i
-                                        class="fa-solid fa-star text-[12px] text-yellow"
-                                      ></i>
-                                      <i
-                                        class="fa-solid fa-star text-[12px] text-yellow"
-                                      ></i>
-                                      <i
-                                        class="fa-solid fa-star text-[12px] text-yellow"
-                                      ></i>
-                                      <i
-                                        class="fa-solid fa-star text-[12px] text-yellow"
-                                      ></i>
-                                    </p>
-                                  </div>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                  <div>
-                                    <p class="text-lightwh text-[15px]">
-                                      delivery
-                                    </p>
-                                  </div>
-                                  <div>
-                                    <p>
-                                      <i
-                                        class="fa-solid fa-star text-[12px] text-yellow"
-                                      ></i>
-                                      <i
-                                        class="fa-solid fa-star text-[12px] text-yellow"
-                                      ></i>
-                                      <i
-                                        class="fa-solid fa-star text-[12px] text-yellow"
-                                      ></i>
-                                      <i
-                                        class="fa-solid fa-star text-[12px] text-yellow"
-                                      ></i>
-                                      <i
-                                        class="fa-solid fa-star text-[12px] text-lightwh"
-                                      ></i>
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- selling product start -->
-                            <div
-                              class="bg-pink rounded-md p-4 md:w-[33%] w-[100%]"
-                            >
-                              <div>
-                                <h4 class="font-semibold text-textcoo">
-                                  best selling products
-                                </h4>
-                                <div class="mt-3">
-                                  <div
-                                    class="flex gap-3 items-center bg-white rounded-md p-1"
-                                  >
-                                    <div class="bg-lightw p-2 rounded-md">
-                                      <img
-                                        src="../images/dashim1.png"
-                                        alt="dashimg"
-                                      />
-                                    </div>
-                                    <div class="leading-normal">
-                                      <p
-                                        class="font-semibold text-blackligh text-[12px]"
-                                      >
-                                        Chobani Complete Vanilla Greek Yogurt
-                                      </p>
-                                      <div
-                                        class="flex justify-between items-center"
-                                      >
-                                        <div>
-                                          <p class="p-0 m-0">
-                                            <i
-                                              class="fa-solid fa-star text-[10px] text-yellow"
-                                            ></i>
-                                            <i
-                                              class="fa-solid fa-star text-[10px] text-yellow"
-                                            ></i>
-                                            <i
-                                              class="fa-solid fa-star text-[10px] text-yellow"
-                                            ></i>
-                                            <i
-                                              class="fa-solid fa-star text-[10px] text-yellow"
-                                            ></i>
-                                            <i
-                                              class="fa-solid fa-star text-[10px] text-yellow"
-                                            ></i>
-                                            <span
-                                              class="text-lightwh inline ml-2 text-[12px]"
-                                              >5.0</span
-                                            >
-                                          </p>
-                                        </div>
-                                        <div>
-                                          <p class="text-blue text-[12px]">
-                                            $152.58
-                                            <span
-                                              class="ml-2 text-[12px] text-lightwh"
-                                            >
-                                              <del>$120.58</del></span
-                                            >
-                                          </p>
-                                        </div>
-                                      </div>
-                                      <p
-                                        class="font-semibold text-blackligh text-[13px]"
-                                      >
-                                        164
-                                        <span
-                                          class="text-lightwh font-normal text-[12px]"
-                                          >itmes sold</span
-                                        >
-                                      </p>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="flex gap-3 mt-2 items-center bg-white rounded-md p-1"
-                                  >
-                                    <div class="bg-lightw p-2 rounded-md">
-                                      <img
-                                        src="../images/dashim2.png"
-                                        alt="dashimg"
-                                      />
-                                    </div>
-                                    <div class="leading-normal">
-                                      <p
-                                        class="font-semibold text-blackligh text-[12px]"
-                                      >
-                                        Chobani Complete Vanilla Greek Yogurt
-                                      </p>
-                                      <div
-                                        class="flex justify-between items-center"
-                                      >
-                                        <div>
-                                          <p>
-                                            <i
-                                              class="fa-solid fa-star text-[10px] text-yellow"
-                                            ></i>
-                                            <i
-                                              class="fa-solid fa-star text-[10px] text-yellow"
-                                            ></i>
-                                            <i
-                                              class="fa-solid fa-star text-[10px] text-yellow"
-                                            ></i>
-                                            <i
-                                              class="fa-solid fa-star text-[10px] text-yellow"
-                                            ></i>
-                                            <i
-                                              class="fa-solid fa-star text-[10px] text-yellow"
-                                            ></i>
-                                            <span
-                                              class="text-lightwh inline ml-2 text-[12px]"
-                                              >5.0</span
-                                            >
-                                          </p>
-                                        </div>
-                                        <div>
-                                          <p class="text-blue text-[12px]">
-                                            $152.58
-                                            <span
-                                              class="ml-2 text-[12px] text-lightwh"
-                                            >
-                                              <del>$120.58</del></span
-                                            >
-                                          </p>
-                                        </div>
-                                      </div>
-                                      <p
-                                        class="font-semibold text-blackligh text-[13px]"
-                                      >
-                                        164
-                                        <span
-                                          class="text-lightwh font-normal text-[12px]"
-                                          >itmes sold</span
-                                        >
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- selling product end -->
-                            <!-- geo section start -->
-                            <div
-                              class="bg-white rounded-md p-4 md:w-[33%] w-[100%]"
-                            >
-                              <div class="flex justify-between items-center">
-                                <h4 class="font-semibold text-textcoo">
-                                  geogrophical analysis
-                                </h4>
-                                <button
-                                  class="border-none text-blue text-[13px]"
-                                >
-                                  see all
-                                </button>
-                              </div>
-                              <div
-                                class="flex justify-between items-center mt-5"
-                              >
-                                <div>
-                                  <img src="../images/uniflag.png" alt="img" />
-                                </div>
-                                <div>
-                                  <p
-                                    class="text-lightwh font-normal text-[15px]"
-                                  >
-                                    United States
-                                  </p>
-                                </div>
-                                <div>
-                                  <p
-                                    class="text-lightwh font-normal text-[15px]"
-                                  >
-                                    $1,671.10
-                                  </p>
-                                </div>
-                              </div>
-                              <div
-                                class="flex justify-between items-center mt-5"
-                              >
-                                <div>
-                                  <img src="../images/venflag.png" alt="img" />
-                                </div>
-                                <div>
-                                  <p
-                                    class="text-lightwh font-normal text-[15px]"
-                                  >
-                                    United States
-                                  </p>
-                                </div>
-                                <div>
-                                  <p
-                                    class="text-lightwh font-normal text-[15px]"
-                                  >
-                                    $1,671.10
-                                  </p>
-                                </div>
-                              </div>
-                              <div
-                                class="flex justify-between items-center mt-5"
-                              >
-                                <div>
-                                  <img
-                                    src="../images/russifalg.png"
-                                    alt="img"
-                                  />
-                                </div>
-                                <div>
-                                  <p
-                                    class="text-lightwh font-normal text-[15px]"
-                                  >
-                                    United States
-                                  </p>
-                                </div>
-                                <div>
-                                  <p
-                                    class="text-lightwh font-normal text-[15px]"
-                                  >
-                                    $1,671.10
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- ego section end -->
-                          </div>
-                          <!--  rating section end -->
-                          <!-- last new added section start -->
                           <div>
-                            <div class="md:flex gap-4 mt-8 box-border">
-                              <div class="flex-col">
-                                <div class="col-span-2">
-                                  <div class="bg-white rounded-2xl p-3">
-                                    <div
-                                      class="flex justify-between gap-3 items-center"
+                            <div
+                              class="rounded-lg grow flex-wrap md:justify-between justify-center flex lg:flex-row flex-wrap gap-5 mt-8"
+                            >
+                              <!-- card 1 -->
+                              <div
+                                class="shadow-md shadow-grey rounded-lg p-3 mt-2"
+                              >
+                                <div
+                                  class="flex justify-between w-full grow gap-10 items-center"
+                                >
+                                  <div class="w-[40%]">
+                                    <img
+                                      src="../images/card1.png"
+                                      alt="img"
+                                      class="w-[80px]"
+                                    />
+                                  </div>
+                                  <div class="w-[60%]">
+                                    <p
+                                      class="text-blue font-bold text-[15px] w-fit"
                                     >
-                                      <div class="w-[30%]">
-                                        <img
-                                          src="../images/dasl1.png"
-                                          alt="img"
-                                        />
-                                      </div>
-                                      <div class="w-[70%]">
-                                        <p class="font-semibold text-textcoo">
-                                          new oredrs
-                                        </p>
-                                        <hr class="mt-2 h-[2px]" />
-                                        <div class="leading-none">
-                                          <input
-                                            type="range"
-                                            id="vol"
-                                            name="vol"
-                                            min="0"
-                                            max="50"
-                                            class="accent-green mt-2 w-[100%]"
-                                          />
-                                          <p
-                                            class="text-lightwh font-normal text-[12px]"
-                                          >
-                                            60 items delivered
-                                          </p>
-                                        </div>
-                                      </div>
+                                      Pending
+                                    </p>
+                                    <p
+                                      class="text-blue font-bold text-[12px] w-fit"
+                                    >
+                                      20
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- card 2 -->
+                              <div
+                                class="shadow-md shadow-grey rounded-lg p-3 mt-2"
+                              >
+                                <div
+                                  class="flex w-full justify-between grow gap-10 items-center"
+                                >
+                                  <div class="w-[40%]">
+                                    <img
+                                      src="../images/card2.png"
+                                      alt="img"
+                                      class="w-[80px]"
+                                    />
+                                  </div>
+                                  <div class="w-[60%]">
+                                    <p
+                                      class="text-blue font-bold text-[15px] w-fit"
+                                    >
+                                      Confirmed
+                                    </p>
+                                    <p
+                                      class="text-blue font-bold text-[12px] w-fit"
+                                    >
+                                      20
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- card 3 -->
+                              <div
+                                class="shadow-md shadow-grey rounded-lg p-3 mt-2"
+                              >
+                                <div
+                                  class="flex w-full justify-between gap-10 grow items-center"
+                                >
+                                  <div class="w-[40%]">
+                                    <img
+                                      src="../images/card3.png"
+                                      alt="img"
+                                      class="w-[80px]"
+                                    />
+                                  </div>
+                                  <div class="w-[60%]">
+                                    <p
+                                      class="text-blue font-bold text-[15px] w-fit"
+                                    >
+                                      Packaging
+                                    </p>
+                                    <p
+                                      class="text-blue font-bold text-[12px] w-fit"
+                                    >
+                                      20
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- card4 -->
+                              <div
+                                class="shadow-md shadow-grey rounded-lg p-3 mt-2"
+                              >
+                                <div
+                                  class="flex w-full justify-between gap-10 grow items-center"
+                                >
+                                  <div class="w-[40%]">
+                                    <img
+                                      src="../images/card4.png"
+                                      alt="img"
+                                      class="w-[80px]"
+                                    />
+                                  </div>
+                                  <div class="w-[60%]">
+                                    <p
+                                      class="text-blue font-bold text-[15px] w-fit"
+                                    >
+                                      Shipped
+                                    </p>
+                                    <p
+                                      class="text-blue font-bold text-[12px] w-fit"
+                                    >
+                                      20
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- card section end -->
+
+                            <div
+                              class="flex lg:flex-row flex-wrap justify-between gap-10 items-center mt-8"
+                            >
+                              <!-- pie section start responerr-->
+                              <div class="grow bg-white rounded-md px-8 py-4">
+                                <div class="flex justify-between">
+                                  <div
+                                    class="flex items-center px-2.5 py-0.5 text-base font-semibold text-[12px] text-green-500 dark:text-green-500 text-center"
+                                  >
+                                    <div
+                                      class="w-full mx-auto bg-white rounded-lg dark:bg-gray-800 p-4 md:p-6"
+                                    >
+                                      <!-- Line Chart -->
+                                      <div class="py-6" id="pie-chart"></div>
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-span-2 mt-3">
-                                  <div class="bg-white rounded-2xl p-3">
+                              </div>
+                              <!-- pie section end -->
+
+                              <!-- wallect sections -->
+                              <div class="grow rounded-md">
+                                <div class="bg-lgpink rounded-2xl p-7">
+                                  <div class="font-bold text-lg">
+                                    Admin Wallet
+                                  </div>
+                                  <div
+                                    class="text-center py-4 justify-center items-center bg-white rounded-xl md:mx-3 mt-3"
+                                  >
                                     <div
-                                      class="flex justify-between gap-3 items-center"
+                                      class="flex justify-center items-center flex-col"
                                     >
-                                      <div class="w-[30%]">
+                                      <img
+                                        src="../images/w1.png"
+                                        alt="img1"
+                                        class="w-10 h-10 object-contain flex justify-center items-center"
+                                      />
+                                      <h3 class="text-lg font-semibold">
+                                        $11,641.02
+                                      </h3>
+                                      <small class="text-lightwh text-[15px]"
+                                        >In-House Earning</small
+                                      >
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="flex lg:flex-row flex-wrap justify-center items-center gap-7 my-3"
+                                  >
+                                    <div class="bg-white rounded-xl p-5">
+                                      <small class="text-lightwh text-[15px]"
+                                        >Commission Earned</small
+                                      >
+                                      <div
+                                        class="flex justify-center items-center gap-5"
+                                      >
+                                        <div class="text-lg font-semibold">
+                                          $11,641.02
+                                        </div>
                                         <img
-                                          src="../images/dash2.png"
-                                          alt="img"
+                                          src="../images/w2.png"
+                                          alt=""
+                                          class="w-7 h-7 object-contain"
                                         />
                                       </div>
-                                      <div class="w-[70%]">
-                                        <p class="font-semibold text-textcoo">
-                                          delivered
-                                        </p>
-                                        <hr class="mt-2 h-[2px]" />
-                                        <div class="leading-none">
-                                          <input
-                                            type="range"
-                                            id="vol"
-                                            name="vol"
-                                            min="0"
-                                            max="50"
-                                            class="accent-pinkd mt-2 w-[100%]"
-                                          />
-                                          <p
-                                            class="text-lightwh font-normal text-[12px]"
-                                          >
-                                            60 items delivered
-                                          </p>
+                                    </div>
+                                    <div class="bg-white rounded-xl p-5">
+                                      <small class="text-lightwh text-[15px]"
+                                        >Delivery Charge Earned</small
+                                      >
+                                      <div
+                                        class="flex justify-center items-center gap-7"
+                                      >
+                                        <div class="text-lg font-semibold">
+                                          $1,320.00
                                         </div>
+                                        <img
+                                          src="../images/w3.png"
+                                          alt=""
+                                          class="w-7 h-7 object-contain"
+                                        />
                                       </div>
                                     </div>
                                   </div>
-                                </div>
-                                <div class="col-span-2 mt-3">
-                                  <div class="bg-white rounded-2xl p-3">
-                                    <div
-                                      class="flex justify-between gap-3 items-center"
-                                    >
-                                      <div class="w-[30%]">
+                                  <div
+                                    class="flex lg:flex-row flex-wrap justify-center items-center gap-5 my-3"
+                                  >
+                                    <div class="bg-white rounded-xl p-5">
+                                      <small class="text-lightwh text-[15px]"
+                                        >Total Tax Collected</small
+                                      >
+                                      <div
+                                        class="flex justify-center items-center gap-5"
+                                      >
+                                        <div class="text-lg font-semibold">
+                                          $2,093.00
+                                        </div>
                                         <img
-                                          src="../images/dash3.png"
-                                          alt="img"
+                                          src="../images/w4.png"
+                                          alt=""
+                                          class="w-7 h-7 object-contain"
                                         />
                                       </div>
-                                      <div class="w-[70%]">
-                                        <p class="font-semibold text-textcoo">
-                                          returned
-                                        </p>
-                                        <hr class="mt-2 h-[2px]" />
-                                        <div class="leading-none">
-                                          <input
-                                            type="range"
-                                            id="vol"
-                                            name="vol"
-                                            min="0"
-                                            max="50"
-                                            class="accent-purpel mt-2 w-[100%]"
-                                          />
-                                          <p
-                                            class="text-lightwh font-normal text-[12px]"
-                                          >
-                                            60 items delivered
-                                          </p>
+                                    </div>
+                                    <div class="bg-white rounded-xl p-5">
+                                      <small class="text-lightwh text-[15px]"
+                                        >Pending Amount</small
+                                      >
+                                      <div
+                                        class="flex justify-center items-center gap-5"
+                                      >
+                                        <div class="text-lg font-semibold">
+                                          $9,151.00
                                         </div>
+                                        <img
+                                          src="../images/w5.png"
+                                          alt=""
+                                          class="w-7 h-7 object-contain"
+                                        />
                                       </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              <div class="grow">
-                                <p class="font-semibold text-textcoo">
-                                  newely added products
-                                </p>
-                                <div
-                                  class="md:flex divresop gap-4 w-full box-border"
+                              <!-- wallect sections -->
+                            </div>
+
+                            <!-- bar graph chart start -->
+                            <div
+                              class="max-w-[90%] md:max-w-3xl md:mx-auto bg-white rounded-lg shadow dark:bg-gray-800 p-2 md:p-6 mt-8"
+                            >
+                              <div class="grid grid-cols-2">
+                                <dl class="flex items-center">
+                                  <dt
+                                    class="text-gray-500 dark:text-gray-400 text-sm font-normal mr-1"
+                                  >
+                                    Earning Statistics
+                                  </dt>
+                                </dl>
+                                <dl class="flex gap-2 items-center justify-end">
+                                  <button
+                                    class="bg-blue text-white rounded-md px-2 text-[12px]"
+                                  >
+                                    this year
+                                  </button>
+                                  <button
+                                    class="border-blue border-[1px] text-blue rounded-md px-2 text-[12px]"
+                                  >
+                                    this month
+                                  </button>
+                                  <button
+                                    class="border-blue border-[1px] text-blue rounded-md px-2 text-[12px]"
+                                  >
+                                    this week
+                                  </button>
+                                </dl>
+                              </div>
+
+                              <div id="column-chart"></div>
+                              <div
+                                class="grid grid-cols-1 items-center border-gray-200 border-t dark:border-gray-700 justify-between"
+                              ></div>
+                            </div>
+
+                            <!-- bar grph chaat end -->
+                            <!-- Top customer start   -->
+                            <div
+                              class="bg-lgpink rounded-xl shadow-2xl py-8 my-6"
+                            >
+                              <div class="w-fit px-3">
+                                <p
+                                  class="w-fit md:text-start text-xl font-bold text-center"
                                 >
-                                  <!-- add product first section -->
-                                  <div class="w-[100%] md:w-[100%] pt-5">
-                                    <div
-                                      class="bg-white rounded-md w-full p-4 relative"
-                                    >
-                                      <div>
-                                        <img
-                                          src="../images/mob.png"
-                                          alt="img"
-                                          class="mx-auto"
-                                        />
-                                      </div>
-                                      <div class="leading-tight mt-2">
-                                        <p
-                                          class="font-semibold text-textcoo text-[14px]"
-                                        >
-                                          Iphone 11 pro max-256GB 5000mhz
-                                        </p>
-                                        <p>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <span
-                                            class="text-lightwh inline ml-2 text-[12px]"
-                                            >5.0</span
-                                          >
-                                        </p>
-                                        <p class="text-[15px]">
-                                          by<span class="text-blue">
-                                            Davinci</span
-                                          >
-                                        </p>
-                                      </div>
-                                      <p
-                                        class="text-blue font-semibold text-[14px] mt-2"
-                                      >
-                                        $152.58
-                                        <span
-                                          class="ml-2 text-[12px] text-lightwh"
-                                        >
-                                          <del>$120.58</del></span
-                                        >
-                                      </p>
-                                      <button
-                                        class="bg-blue text-white text-[14px] block mx-auto rounded-md px-5 py-1 mt-2"
-                                      >
-                                        <i
-                                          class="fa-solid fa-cart-shopping mr-2"
-                                        ></i
-                                        >Add to Card
-                                      </button>
+                                  Top customer
+                                </p>
+                              </div>
 
-                                      <div class="absolute left-0 top-0">
-                                        <button
-                                          class="bg-green rounded-br-lg rounded-tl-lg text-white px-3 text-[13px]"
-                                        >
-                                          new
-                                        </button>
+                              <div
+                                class="flex w-full md:justify-around justify-between items-center md:flex-row flex-col"
+                              >
+                                <div
+                                  class="text-center mt-2 justify-center items-center bg-white rounded-md p-2"
+                                >
+                                  <div
+                                    class="flex justify-center items-center gap-5"
+                                  >
+                                    <img
+                                      src="../images/c1.png"
+                                      alt="img1"
+                                      class="w-12 h-12 object-contain flex justify-center items-center border-2 rounded-full"
+                                    />
+                                    <div
+                                      class="flex justify-center items-start flex-col"
+                                    >
+                                      <div class="text-[15px]">
+                                        Customer Name
                                       </div>
+                                      <button
+                                        class="bg-blue text-white px-2 text-[12px] rounded-md"
+                                      >
+                                        Order : 37
+                                      </button>
                                     </div>
                                   </div>
-                                  <!-- add product first section -->
-                                  <!-- add product second section -->
-                                  <div class="md:w-[100%] pt-5">
+                                </div>
+                                <div
+                                  class="text-center mt-2 justify-center items-center bg-white rounded-md p-2"
+                                >
+                                  <div
+                                    class="flex justify-center items-center gap-5"
+                                  >
+                                    <img
+                                      src="../images/c1.png"
+                                      alt="img1"
+                                      class="w-12 h-12 object-contain flex justify-center items-center border-2 rounded-full"
+                                    />
                                     <div
-                                      class="bg-white rounded-md w-full p-4 relative"
+                                      class="flex justify-center items-start flex-col"
                                     >
-                                      <div>
-                                        <img
-                                          src="../images/jbs.png"
-                                          alt="img"
-                                          class="mx-auto"
-                                        />
+                                      <div class="text-[15px]">
+                                        Customer Name
                                       </div>
-                                      <div class="leading-tight mt-2">
-                                        <p
-                                          class="font-semibold text-textcoo text-[14px]"
-                                        >
-                                          Iphone 11 pro max-256GB 5000mhz
-                                        </p>
-                                        <p>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <span
-                                            class="text-lightwh inline ml-2 text-[12px]"
-                                            >5.0</span
-                                          >
-                                        </p>
-                                        <p class="text-[15px]">
-                                          by<span class="text-blue">
-                                            Davinci</span
-                                          >
-                                        </p>
-                                      </div>
-                                      <p
-                                        class="text-blue font-semibold text-[14px] mt-2"
-                                      >
-                                        $152.58
-                                        <span
-                                          class="ml-2 text-[12px] text-lightwh"
-                                        >
-                                          <del>$120.58</del></span
-                                        >
-                                      </p>
                                       <button
-                                        class="bg-blue text-white text-[14px] block mx-auto rounded-md px-5 py-1 mt-2"
+                                        class="bg-blue text-white px-2 text-[12px] rounded-md"
                                       >
-                                        <i
-                                          class="fa-solid fa-cart-shopping mr-2"
-                                        ></i
-                                        >Add to Card
+                                        Order : 37
                                       </button>
-
-                                      <div class="absolute left-0 top-0">
-                                        <button
-                                          class="bg-green rounded-br-lg rounded-tl-lg text-white px-3 text-[13px]"
-                                        >
-                                          new
-                                        </button>
-                                      </div>
                                     </div>
                                   </div>
-                                  <!-- add product second section -->
-                                  <!-- add product third section -->
-                                  <div class="md:w-[100%] pt-5">
+                                </div>
+                                <div
+                                  class="text-center mt-2 justify-center items-center bg-white rounded-md p-2"
+                                >
+                                  <div
+                                    class="flex justify-center items-center gap-5"
+                                  >
+                                    <img
+                                      src="../images/c1.png"
+                                      alt="img1"
+                                      class="w-12 h-12 object-contain flex justify-center items-center border-2 rounded-full"
+                                    />
                                     <div
-                                      class="bg-white rounded-md w-full p-4 relative"
+                                      class="flex justify-center items-start flex-col"
                                     >
-                                      <div>
-                                        <img
-                                          src="../images/bag.png"
-                                          alt="img"
-                                          class="mx-auto"
-                                        />
+                                      <div class="text-[15px]">
+                                        Customer Name
                                       </div>
-                                      <div class="leading-tight mt-2">
-                                        <p
-                                          class="font-semibold text-textcoo text-[14px]"
-                                        >
-                                          Iphone 11 pro max-256GB 5000mhz
-                                        </p>
-                                        <p>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <span
-                                            class="text-lightwh inline ml-2 text-[12px]"
-                                            >5.0</span
-                                          >
-                                        </p>
-                                        <p class="text-[15px]">
-                                          by<span class="text-blue">
-                                            Davinci</span
-                                          >
-                                        </p>
-                                      </div>
-                                      <p
-                                        class="text-blue font-semibold text-[14px] mt-2"
-                                      >
-                                        $152.58
-                                        <span
-                                          class="ml-2 text-[12px] text-lightwh"
-                                        >
-                                          <del>$120.58</del></span
-                                        >
-                                      </p>
                                       <button
-                                        class="bg-blue text-white text-[14px] block mx-auto rounded-md px-5 py-1 mt-2"
+                                        class="bg-blue text-white px-2 text-[12px] rounded-md"
                                       >
-                                        <i
-                                          class="fa-solid fa-cart-shopping mr-2"
-                                        ></i
-                                        >Add to Card
+                                        Order : 37
                                       </button>
-
-                                      <div class="absolute left-0 top-0">
-                                        <button
-                                          class="bg-green rounded-br-lg rounded-tl-lg text-white px-3 text-[13px]"
-                                        >
-                                          new
-                                        </button>
-                                      </div>
                                     </div>
                                   </div>
-                                  <!-- add product third section -->
-                                  <!-- add product four section -->
-                                  <div class="md:w-[100%] pt-5">
-                                    <div
-                                      class="bg-white rounded-md w-full p-4 relative"
-                                    >
-                                      <div>
-                                        <img
-                                          src="../images/dress.png"
-                                          alt="img"
-                                          class="mx-auto"
-                                        />
-                                      </div>
-                                      <div class="leading-tight mt-2">
-                                        <p
-                                          class="font-semibold text-textcoo text-[14px]"
-                                        >
-                                          Iphone 11 pro max-256GB 5000mhz
-                                        </p>
-                                        <p>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <i
-                                            class="fa-solid fa-star text-[11px] text-yellow"
-                                          ></i>
-                                          <span
-                                            class="text-lightwh inline ml-2 text-[12px]"
-                                            >5.0</span
-                                          >
-                                        </p>
-                                        <p class="text-[15px]">
-                                          by<span class="text-blue">
-                                            Davinci</span
-                                          >
-                                        </p>
-                                      </div>
-                                      <p
-                                        class="text-blue font-semibold text-[14px] mt-2"
-                                      >
-                                        $152.58
-                                        <span
-                                          class="ml-2 text-[12px] text-lightwh"
-                                        >
-                                          <del>$120.58</del></span
-                                        >
-                                      </p>
-                                      <button
-                                        class="bg-blue text-white text-[14px] block mx-auto rounded-md px-5 py-1 mt-2"
-                                      >
-                                        <i
-                                          class="fa-solid fa-cart-shopping mr-2"
-                                        ></i
-                                        >Add to Card
-                                      </button>
-
-                                      <div class="absolute left-0 top-0">
-                                        <button
-                                          class="bg-green rounded-br-lg rounded-tl-lg text-white px-3 text-[13px]"
-                                        >
-                                          new
-                                        </button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!-- add product four section -->
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <!-- last new added section end -->
+
+                          <!-- Top customer End   -->
+                          <!-- Most populer stores start   -->
+
+                          <div
+                            class="flex lg:flex-row flex-wrap md:justify-evenly gap-10 justify-center my-10 md:px-10"
+                          >
+                            <!-- {/* Most populer stores start  */} -->
+                            <div
+                              class="bg-lightgreen grow rounded-2xl p-5 shadow-2xl mt-2"
+                            >
+                              <div class="text-lg font-bold">
+                                Most populer stores
+                              </div>
+                              <div
+                                class="flex flex-row bg-white justify-between items-center rounded-md my-5"
+                              >
+                                <div class="flex justify-center items-center">
+                                  <div>
+                                    <img
+                                      src="../images/s1.png"
+                                      alt=""
+                                      class="w-10 h-10 object-contain"
+                                    />
+                                  </div>
+                                  <div>Deluxe online</div>
+                                </div>
+                                <div
+                                  class="flex bg-red justify-center text-white items-center px-2 gap-2 rounded-md m-1"
+                                >
+                                  <i class="fa-solid fa-heart"></i>
+                                  <div>38</div>
+                                </div>
+                              </div>
+                              <div
+                                class="flex flex-row bg-white justify-between items-center rounded-md my-5"
+                              >
+                                <div class="flex justify-center items-center">
+                                  <div>
+                                    <img
+                                      src="../images/s1.png"
+                                      alt=""
+                                      class="w-10 h-10 object-contain"
+                                    />
+                                  </div>
+                                  <div>Deluxe online</div>
+                                </div>
+                                <div
+                                  class="flex bg-red justify-center text-white items-center px-2 gap-2 rounded-md m-1"
+                                >
+                                  <i class="fa-solid fa-heart"></i>
+                                  <div>38</div>
+                                </div>
+                              </div>
+                              <div
+                                class="flex flex-row bg-white justify-between items-center rounded-md my-5"
+                              >
+                                <div class="flex justify-center items-center">
+                                  <div>
+                                    <img
+                                      src="../images/s1.png"
+                                      alt=""
+                                      class="w-10 h-10 object-contain"
+                                    />
+                                  </div>
+                                  <div>Deluxe online</div>
+                                </div>
+                                <div
+                                  class="flex bg-red justify-center text-white items-center px-2 gap-2 rounded-md m-1"
+                                >
+                                  <i class="fa-solid fa-heart"></i>
+                                  <div>38</div>
+                                </div>
+                              </div>
+                              <div
+                                class="flex flex-row bg-white justify-between items-center rounded-md my-5"
+                              >
+                                <div class="flex justify-center items-center">
+                                  <div>
+                                    <img
+                                      src="../images/s1.png"
+                                      alt=""
+                                      class="w-10 h-10 object-contain"
+                                    />
+                                  </div>
+                                  <div>Deluxe online</div>
+                                </div>
+                                <div
+                                  class="flex bg-red justify-center text-white items-center px-2 gap-2 rounded-md m-1"
+                                >
+                                  <i class="fa-solid fa-heart"></i>
+                                  <div>38</div>
+                                </div>
+                              </div>
+                              <div
+                                class="flex flex-row bg-white justify-between items-center rounded-md my-5"
+                              >
+                                <div class="flex justify-center items-center">
+                                  <div>
+                                    <img
+                                      src="../images/s1.png"
+                                      alt=""
+                                      class="w-10 h-10 object-contain"
+                                    />
+                                  </div>
+                                  <div>Deluxe online</div>
+                                </div>
+                                <div
+                                  class="flex bg-red justify-center text-white items-center px-2 gap-2 rounded-md m-1"
+                                >
+                                  <i class="fa-solid fa-heart"></i>
+                                  <div>38</div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- {/* Top Selling Store   */} -->
+
+                            <div
+                              class="bg-ligyel rounded-2xl grow p-5 shadow-2xl mt-2"
+                            >
+                              <div class="text-lg font-bold">
+                                Top Selling Store
+                              </div>
+                              <div
+                                class="flex flex-row bg-white justify-between items-center rounded-md my-5"
+                              >
+                                <div class="flex justify-center items-center">
+                                  <div>
+                                    <img
+                                      src="../images/s2.png"
+                                      alt=""
+                                      class="w-10 h-10 object-contain"
+                                    />
+                                  </div>
+                                  <div>Deluxe online</div>
+                                </div>
+                                <div
+                                  class="flex bg-lgpink justify-center text-white items-center px-2 gap-2 rounded-md m-1"
+                                >
+                                  <i class="fa-solid fa-cart-shopping"></i>
+                                  <div>38</div>
+                                </div>
+                              </div>
+                              <div
+                                class="flex flex-row bg-white justify-between items-center rounded-md my-5"
+                              >
+                                <div class="flex justify-center items-center">
+                                  <div>
+                                    <img
+                                      src="../images/s3.png"
+                                      alt=""
+                                      class="w-10 h-10 object-contain"
+                                    />
+                                  </div>
+                                  <div>Deluxe online</div>
+                                </div>
+                                <div
+                                  class="flex bg-lgpink justify-center text-white items-center px-2 gap-2 rounded-md m-1"
+                                >
+                                  <i class="fa-solid fa-cart-shopping"></i>
+                                  <div>38</div>
+                                </div>
+                              </div>
+                              <div
+                                class="flex flex-row bg-white justify-between items-center rounded-md my-5"
+                              >
+                                <div class="flex justify-center items-center">
+                                  <div>
+                                    <img
+                                      src="../images/s4e.png"
+                                      alt=""
+                                      class="w-10 h-10 object-contain"
+                                    />
+                                  </div>
+                                  <div>Deluxe online</div>
+                                </div>
+                                <div
+                                  class="flex bg-lgpink justify-center text-white items-center px-2 gap-2 rounded-md m-1"
+                                >
+                                  <i class="fa-solid fa-cart-shopping"></i>
+                                  <div>38</div>
+                                </div>
+                              </div>
+                              <div
+                                class="flex flex-row bg-white justify-between items-center rounded-md my-5"
+                              >
+                                <div class="flex justify-center items-center">
+                                  <div>
+                                    <img
+                                      src="../images/s5.png"
+                                      alt=""
+                                      class="w-10 h-10 object-contain"
+                                    />
+                                  </div>
+                                  <div>Deluxe online</div>
+                                </div>
+                                <div
+                                  class="flex bg-lgpink justify-center text-white items-center px-2 gap-2 rounded-md m-1"
+                                >
+                                  <i class="fa-solid fa-cart-shopping"></i>
+                                  <div>38</div>
+                                </div>
+                              </div>
+                              <div
+                                class="flex flex-row bg-white justify-between items-center rounded-md my-5"
+                              >
+                                <div class="flex justify-center items-center">
+                                  <div>
+                                    <img
+                                      src="../images/s6.png"
+                                      alt=""
+                                      class="w-10 h-10 object-contain"
+                                    />
+                                  </div>
+                                  <div>Deluxe online</div>
+                                </div>
+                                <div
+                                  class="flex bg-lgpink justify-center text-white items-center px-2 gap-2 rounded-md m-1"
+                                >
+                                  <i class="fa-solid fa-cart-shopping"></i>
+                                  <div>38</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- {/* Most popular Products */} -->
+                          <div class="flex justify-evenly my-10 gap-2">
+                            <!-- {/* Most popular Products  */} -->
+                            <div class="bg-white rounded-2xl p-5 shadow-2xl">
+                              <div class="text-lg font-bold">
+                                Most popular Products
+                              </div>
+                              <div
+                                class="flex justify-center lg:flex-row flex-wrap items-center gap-2 my-5"
+                              >
+                                <div
+                                  class="shadow-2xl justify-center bg-white items-center rounded-2xl py-2 px-1 flex flex-col leading-normal"
+                                >
+                                  <div>
+                                    <img
+                                      src="../images/m1.png"
+                                      alt=""
+                                      class="w-14 h-14 object-cover"
+                                    />
+                                  </div>
+                                  <div class="w-36 text-center text-[12px]">
+                                    Chobani Complete Vanilla Greek Yogurt
+                                  </div>
+                                  <div class="flex items-center justify-center">
+                                    <svg
+                                      class="w-4 h-4 text-yellow-300"
+                                      aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="currentColor"
+                                      viewBox="0 0 22 20"
+                                    >
+                                      <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                                      />
+                                    </svg>
+                                    <div class="text-[12px]">
+                                      2486 (10 Reviews)
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="shadow-2xl justify-center bg-white items-center rounded-2xl p-1 flex flex-col leading-normal"
+                                >
+                                  <div>
+                                    <img
+                                      src="../images/m2.png"
+                                      alt=""
+                                      class="w-14 h-14 object-cover"
+                                    />
+                                  </div>
+                                  <div class="w-36 text-center text-[12px]">
+                                    Chobani Complete Vanilla Greek Yogurt
+                                  </div>
+                                  <div class="flex items-center justify-center">
+                                    <svg
+                                      class="w-4 h-4 text-yellow-300"
+                                      aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="currentColor"
+                                      viewBox="0 0 22 20"
+                                    >
+                                      <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                                      />
+                                    </svg>
+                                    <div class="text-[12px]">
+                                      2486 (10 Reviews)
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="shadow-2xl justify-center bg-white items-center rounded-2xl p-1 flex flex-col leading-normal"
+                                >
+                                  <div>
+                                    <img
+                                      src="../images/m1.png"
+                                      alt=""
+                                      class="w-14 h-14 object-cover"
+                                    />
+                                  </div>
+                                  <div class="w-36 text-center text-[12px]">
+                                    Chobani Complete Vanilla Greek Yogurt
+                                  </div>
+                                  <div class="flex items-center justify-center">
+                                    <svg
+                                      class="w-4 h-4 text-yellow-300"
+                                      aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="currentColor"
+                                      viewBox="0 0 22 20"
+                                    >
+                                      <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                                      />
+                                    </svg>
+                                    <div class="text-[12px]">
+                                      2486 (10 Reviews)
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="shadow-2xl justify-center bg-white items-center rounded-2xl p-1 flex flex-col leading-normal"
+                                >
+                                  <div>
+                                    <img
+                                      src="../images/m2.png"
+                                      alt=""
+                                      class="w-14 h-14 object-cover"
+                                    />
+                                  </div>
+                                  <div class="w-36 text-center text-[12px]">
+                                    Chobani Complete Vanilla Greek Yogurt
+                                  </div>
+                                  <div class="flex items-center justify-center">
+                                    <svg
+                                      class="w-4 h-4 text-yellow-300"
+                                      aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="currentColor"
+                                      viewBox="0 0 22 20"
+                                    >
+                                      <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                                      />
+                                    </svg>
+                                    <div class="text-[12px]">
+                                      2486 (10 Reviews)
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="shadow-2xl justify-center bg-white items-center rounded-2xl p-1 flex flex-col leading-normal"
+                                >
+                                  <div>
+                                    <img
+                                      src="../images/m1.png"
+                                      alt=""
+                                      class="w-14 h-14 object-cover"
+                                    />
+                                  </div>
+                                  <div class="w-36 text-center text-[12px]">
+                                    Chobani Complete Vanilla Greek Yogurt
+                                  </div>
+                                  <div class="flex items-center justify-center">
+                                    <svg
+                                      class="w-4 h-4 text-yellow-300"
+                                      aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="currentColor"
+                                      viewBox="0 0 22 20"
+                                    >
+                                      <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                                      />
+                                    </svg>
+                                    <div class="text-[12px]">
+                                      2486 (10 Reviews)
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="shadow-2xl justify-center bg-white items-center rounded-2xl p-1 flex flex-col leading-normal"
+                                >
+                                  <div>
+                                    <img
+                                      src="../images/m2.png"
+                                      alt=""
+                                      class="w-14 h-14 object-cover"
+                                    />
+                                  </div>
+                                  <div class="w-36 text-center text-[12px]">
+                                    Chobani Complete Vanilla Greek Yogurt
+                                  </div>
+                                  <div class="flex items-center justify-center">
+                                    <svg
+                                      class="w-4 h-4 text-yellow-300"
+                                      aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="currentColor"
+                                      viewBox="0 0 22 20"
+                                    >
+                                      <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                                      />
+                                    </svg>
+                                    <div class="text-[12px]">
+                                      2486 (10 Reviews)
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- {/* Top Top Selling Products Store   */} -->
+
+                            <div class="bg-white rounded-2xl p-5 shadow-2xl">
+                              <div class="text-lg font-bold">
+                                Top Selling Products
+                              </div>
+                              <div
+                                class="flex justify-center lg:flex-row flex-wrap items-center gap-2 my-5"
+                              >
+                                <div
+                                  class="shadow-2xl justify-center bg-white items-center rounded-2xl px-1 py-2 flex flex-col leading-normal"
+                                >
+                                  <div>
+                                    <img
+                                      src="../images/m3.png"
+                                      alt=""
+                                      class="w-14 h-14 object-cover"
+                                    />
+                                  </div>
+                                  <div class="w-36 text-center text-[12px]">
+                                    Chobani Complete Vanilla Greek Yogurt
+                                  </div>
+                                  <div class="flex items-center justify-center">
+                                    <svg
+                                      class="w-4 h-4 text-yellow-300"
+                                      aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="currentColor"
+                                      viewBox="0 0 22 20"
+                                    >
+                                      <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                                      />
+                                    </svg>
+                                    <div class="text-[12px]">
+                                      2486 (10 Reviews)
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="shadow-2xl justify-center bg-white items-center rounded-2xl px-1 py-2 flex flex-col leading-normal"
+                                >
+                                  <div>
+                                    <img
+                                      src="../images/m4.png"
+                                      alt=""
+                                      class="w-14 h-14 object-cover"
+                                    />
+                                  </div>
+                                  <div class="w-36 text-center text-[12px]">
+                                    Chobani Complete Vanilla Greek Yogurt
+                                  </div>
+                                  <div class="flex items-center justify-center">
+                                    <svg
+                                      class="w-4 h-4 text-yellow-300"
+                                      aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="currentColor"
+                                      viewBox="0 0 22 20"
+                                    >
+                                      <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                                      />
+                                    </svg>
+                                    <div class="text-[12px]">
+                                      2486 (10 Reviews)
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="shadow-2xl justify-center bg-white items-center rounded-2xl px-1 py-2 flex flex-col leading-normal"
+                                >
+                                  <div>
+                                    <img
+                                      src="../images/m3.png"
+                                      alt=""
+                                      class="w-14 h-14 object-cover"
+                                    />
+                                  </div>
+                                  <div class="w-36 text-center text-[12px]">
+                                    Chobani Complete Vanilla Greek Yogurt
+                                  </div>
+                                  <div class="flex items-center justify-center">
+                                    <svg
+                                      class="w-4 h-4 text-yellow-300"
+                                      aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="currentColor"
+                                      viewBox="0 0 22 20"
+                                    >
+                                      <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                                      />
+                                    </svg>
+                                    <div class="text-[12px]">
+                                      2486 (10 Reviews)
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="shadow-2xl justify-center bg-white items-center rounded-2xl px-1 py-2 flex flex-col leading-normal"
+                                >
+                                  <div>
+                                    <img
+                                      src="../images/m4.png"
+                                      alt=""
+                                      class="w-14 h-14 object-cover"
+                                    />
+                                  </div>
+                                  <div class="w-36 text-center text-[12px]">
+                                    Chobani Complete Vanilla Greek Yogurt
+                                  </div>
+                                  <div class="flex items-center justify-center">
+                                    <svg
+                                      class="w-4 h-4 text-yellow-300"
+                                      aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="currentColor"
+                                      viewBox="0 0 22 20"
+                                    >
+                                      <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                                      />
+                                    </svg>
+                                    <div class="text-[12px]">
+                                      2486 (10 Reviews)
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="shadow-2xl justify-center bg-white items-center rounded-2xl px-1 py-2 flex flex-col leading-normal"
+                                >
+                                  <div>
+                                    <img
+                                      src="../images/m3.png"
+                                      alt=""
+                                      class="w-14 h-14 object-cover"
+                                    />
+                                  </div>
+                                  <div class="w-36 text-center text-[12px]">
+                                    Chobani Complete Vanilla Greek Yogurt
+                                  </div>
+                                  <div class="flex items-center justify-center">
+                                    <svg
+                                      class="w-4 h-4 text-yellow-300"
+                                      aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="currentColor"
+                                      viewBox="0 0 22 20"
+                                    >
+                                      <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                                      />
+                                    </svg>
+                                    <div class="text-[12px]">
+                                      2486 (10 Reviews)
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="shadow-2xl justify-center bg-white items-center rounded-2xl px-1 py-2 flex flex-col leading-normal"
+                                >
+                                  <div>
+                                    <img
+                                      src="../images/m4.png"
+                                      alt=""
+                                      class="w-14 h-14 object-cover"
+                                    />
+                                  </div>
+                                  <div class="w-36 text-center text-[12px]">
+                                    Chobani Complete Vanilla Greek Yogurt
+                                  </div>
+                                  <div class="flex items-center justify-center">
+                                    <svg
+                                      class="w-4 h-4 text-yellow-300"
+                                      aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="currentColor"
+                                      viewBox="0 0 22 20"
+                                    >
+                                      <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                                      />
+                                    </svg>
+                                    <div class="text-[12px]">
+                                      2486 (10 Reviews)
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- {/* Most popular Products */} -->
+                          <div class="bg-white rounded-xl shadow-2xl py-5 my-2">
+                            <div class="text-xl font-bold mx-10 my-5">
+                              Most popular Products
+                            </div>
+                            <div
+                              class="flex md:justify-between justify-center items-center md:flex-row flex-wrap gap- mx-3"
+                            >
+                              <div
+                                class="text-center justify-center items-center bg-blue text-white rounded-md p-2 mt-2"
+                              >
+                                <div
+                                  class="flex justify-center items-center gap-5"
+                                >
+                                  <img
+                                    src="../images/p1.png"
+                                    alt="img1"
+                                    class="w-12 h-12 object-contain flex justify-center items-center rounded-full"
+                                  />
+                                  <div
+                                    class="flex justify-center items-start flex-col"
+                                  >
+                                    <div class=" ">Lorem Ipsum</div>
+                                    <button
+                                      class="border-2 border-blue bg-white text-blue py-1 px-2 text-sm rounded-md"
+                                    >
+                                      Delivered : 5
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="text-center justify-center items-center bg-white border-2 border-blue rounded-md p-2 mt-2"
+                              >
+                                <div
+                                  class="flex justify-center items-center gap-5"
+                                >
+                                  <img
+                                    src="../images/p2.png"
+                                    alt="img1"
+                                    class="w-12 h-12 object-contain flex justify-center items-center border-2 rounded-full"
+                                  />
+                                  <div
+                                    class="flex justify-center items-start flex-col"
+                                  >
+                                    <div class=" ">Lorem Ipsum</div>
+                                    <button
+                                      class="border-2 border-blue text-blue py-1 px-2 text-sm rounded-md"
+                                    >
+                                      Delivered : 5
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="text-center justify-center items-center bg-white border-2 border-blue rounded-md p-2 mt-2"
+                              >
+                                <div
+                                  class="flex justify-center items-center gap-5"
+                                >
+                                  <img
+                                    src="../images/p1.png"
+                                    alt="img1"
+                                    class="w-12 h-12 object-contain flex justify-center items-center border-2 rounded-full"
+                                  />
+                                  <div
+                                    class="flex justify-center items-start flex-col"
+                                  >
+                                    <div class=" ">Lorem Ipsum</div>
+                                    <button
+                                      class="border-2 border-blue text-blue py-1 px-2 text-sm rounded-md"
+                                    >
+                                      Delivered : 5
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="text-center justify-center items-center bg-white border-2 border-blue rounded-md p-2 mt-2"
+                              >
+                                <div
+                                  class="flex justify-center items-center gap-5"
+                                >
+                                  <img
+                                    src="../images/p2.png"
+                                    alt="img1"
+                                    class="w-12 h-12 object-contain flex justify-center items-center border-2 rounded-full"
+                                  />
+                                  <div
+                                    class="flex justify-center items-start flex-col"
+                                  >
+                                    <div class=" ">Lorem Ipsum</div>
+                                    <button
+                                      class="border-2 border-blue text-blue py-1 px-2 text-sm rounded-md"
+                                    >
+                                      Delivered : 5
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- {/* Most popular Products End  */} -->
                         </div>
                       </div>
                     </div>
@@ -1570,57 +1806,179 @@
         });
       }
     </script>
-    <!-- pei chat  -->
-    <script>
-      google.charts.load("current", { packages: ["corechart"] });
-      google.charts.setOnLoadCallback(drawChart);
 
-      function drawChart() {
-        const data = google.visualization.arrayToDataTable([
-          ["Contry", "Mhl"],
-          ["Electronic  43%", 54.8],
-          // ["France", 48.6],
-          ["other  21%s", 44.4],
-          ["mobile phones  32%", 23.9],
-          ["headsets  4%", 14.5],
-        ]);
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
 
-        const options = {
-          title: "",
-          is3D: true,
-        };
-
-        const chart = new google.visualization.PieChart(
-          document.getElementById("myChart")
-        );
-        chart.draw(data, options);
-      }
-    </script>
-    <!-- pei chat -->
-    <!-- wave chat start -->
+    <!-- pie chat start -->
     <script>
       // ApexCharts options and config
       window.addEventListener("load", function () {
-        let options = {
-          // set the labels option to true to show the labels on the X and Y axis
-          xaxis: {
+        const getChartOptions = () => {
+          return {
+            series: [40.8, 26.8, 20.4, 10.4, 5.4],
+            colors: ["#1C64F2", "#16BDCA", "#9061F9", "#3BB77E", "#FFEC94"],
+            chart: {
+              height: 420,
+              width: "100%",
+              type: "pie",
+            },
+            stroke: {
+              colors: ["white"],
+              lineCap: "",
+            },
+            plotOptions: {
+              pie: {
+                labels: {
+                  show: true,
+                },
+                size: "100%",
+                dataLabels: {
+                  offset: -25,
+                },
+              },
+            },
+            labels: ["Direct", "Organic search", "Referrals"],
+            dataLabels: {
+              enabled: true,
+              style: {
+                fontFamily: "Inter, sans-serif",
+              },
+            },
+            legend: {
+              position: "bottom",
+              fontFamily: "Inter, sans-serif",
+            },
+            yaxis: {
+              labels: {
+                formatter: function (value) {
+                  return value + "%";
+                },
+              },
+            },
+            xaxis: {
+              labels: {
+                formatter: function (value) {
+                  return value + "%";
+                },
+              },
+              axisTicks: {
+                show: false,
+              },
+              axisBorder: {
+                show: false,
+              },
+            },
+          };
+        };
+
+        if (
+          document.getElementById("pie-chart") &&
+          typeof ApexCharts !== "undefined"
+        ) {
+          const chart = new ApexCharts(
+            document.getElementById("pie-chart"),
+            getChartOptions()
+          );
+          chart.render();
+        }
+      });
+    </script>
+    <!-- pei chat end -->
+    <!-- bar chat -->
+    <script>
+      // ApexCharts options and config
+      window.addEventListener("load", function () {
+        const options = {
+          colors: ["#1A56DB", "#FDBA8C"],
+          series: [
+            {
+              name: "Organic",
+              color: "#58C998",
+              data: [
+                { x: "Jan", y: 231 },
+                { x: "Feb", y: 122 },
+                { x: "Mar", y: 63 },
+                { x: "April", y: 421 },
+                { x: "May", y: 122 },
+                { x: "Jun", y: 323 },
+                { x: "July", y: 111 },
+                { x: "Aug", y: 231 },
+                { x: "Sem", y: 122 },
+                { x: "Oct", y: 63 },
+                { x: "Nov", y: 421 },
+                { x: "Dec", y: 122 },
+              ],
+            },
+            {
+              name: "Social media",
+              color: "#F899B7",
+              data: [
+                { x: "Mon", y: 232 },
+                { x: "Tue", y: 113 },
+                { x: "Wed", y: 341 },
+                { x: "Thu", y: 224 },
+                { x: "Fri", y: 522 },
+                { x: "Sat", y: 411 },
+                { x: "Sun", y: 243 },
+              ],
+            },
+          ],
+          chart: {
+            type: "bar",
+            height: "320px",
+            fontFamily: "Inter, sans-serif",
+            toolbar: {
+              show: false,
+            },
+          },
+          plotOptions: {
+            bar: {
+              horizontal: false,
+              columnWidth: "70%",
+              borderRadiusApplication: "end",
+              borderRadius: 8,
+            },
+          },
+          tooltip: {
+            shared: true,
+            intersect: false,
+            style: {
+              fontFamily: "Inter, sans-serif",
+            },
+          },
+          states: {
+            hover: {
+              filter: {
+                type: "darken",
+                value: 1,
+              },
+            },
+          },
+          stroke: {
             show: true,
-            categories: [
-              "01 may",
-              "02 may",
-              "03 may",
-              "04 may",
-              "05 may",
-              "06 may",
-              "07 may",
-              "08 may",
-              "09 may",
-              "10 may",
-              "11 may",
-              "12 may",
-              "13 may",
-              "14 may",
-            ],
+            width: 0,
+            colors: ["transparent"],
+          },
+          grid: {
+            show: false,
+            strokeDashArray: 4,
+            padding: {
+              left: 2,
+              right: 2,
+              top: -14,
+            },
+          },
+          dataLabels: {
+            enabled: false,
+          },
+          legend: {
+            show: false,
+          },
+          xaxis: {
+            floating: false,
             labels: {
               show: true,
               style: {
@@ -1637,87 +1995,39 @@
             },
           },
           yaxis: {
-            show: true,
-            labels: {
-              show: true,
-              style: {
-                fontFamily: "Inter, sans-serif",
-                cssClass:
-                  "text-xs font-normal fill-gray-500 dark:fill-gray-400",
-              },
-              formatter: function (value) {
-                return "$" + value;
-              },
-            },
-          },
-          series: [
-            {
-              name: "Developer Edition",
-              data: [120, 160, 150, 100, 160, 105, 100],
-              color: "blue",
-            },
-            {
-              name: "Designer Edition",
-              data: [43, 13, 65, 12, 42, 73, 100, 10],
-              color: "pink",
-            },
-          ],
-          chart: {
-            sparkline: {
-              enabled: false,
-            },
-            height: "100%",
-            width: "100%",
-            type: "area",
-            fontFamily: "Inter, sans-serif",
-            dropShadow: {
-              enabled: false,
-            },
-            toolbar: {
-              show: false,
-            },
-          },
-          tooltip: {
-            enabled: true,
-            x: {
-              show: false,
-            },
+            show: false,
           },
           fill: {
-            type: "gradient",
-            gradient: {
-              opacityFrom: 0.55,
-              opacityTo: 0,
-              shade: "#1C64F2",
-              gradientToColors: ["#1C64F2"],
-            },
-          },
-          dataLabels: {
-            enabled: false,
-          },
-          stroke: {
-            width: 6,
-          },
-          legend: {
-            show: false,
-          },
-          grid: {
-            show: false,
+            opacity: 1,
           },
         };
 
         if (
-          document.getElementById("labels-chart") &&
+          document.getElementById("column-chart") &&
           typeof ApexCharts !== "undefined"
         ) {
           const chart = new ApexCharts(
-            document.getElementById("labels-chart"),
+            document.getElementById("column-chart"),
             options
           );
           chart.render();
         }
       });
     </script>
-    <!-- wave chat end -->
+    <!-- bar chat -->
+    <!-- all active button start -->
+    <script>
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("myDIV");
+      var btns = header.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+    <!-- all -->
   </body>
 </html>

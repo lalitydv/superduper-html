@@ -173,13 +173,16 @@
                           <img
                             src="../../images/admlogo.png"
                             alt="img"
-                            class="w-20 h-20"
+                            class="mx-auto"
                           />
-                          <span>Store Name</span>
+                          <!-- <span>Store Name</span> -->
                         </div>
 
                         <div class="sidenav" style="margin-top: 25px">
-                          <a href="../dashboard.html">
+                          <a
+                            href="../dashboard.html"
+                            class="my-2 hover:bg-blue hover:text-white"
+                          >
                             <span
                               class="inline-flex justify-center items-center"
                             >
@@ -189,84 +192,59 @@
                               Dashboard
                             </span>
                           </a>
-
-                          <button class="dropdown-btn">
+                          <!-- <a href="#" class="hover:bg-blue hover:text-white">
                             <span
                               class="inline-flex justify-center items-center"
                             >
                               <i class="fa-solid fa-bag-shopping"></i>
                             </span>
-                            <span class="tracking-wide truncate ml-2">
-                              orders
+                            <span class="ml-2 tracking-wide truncate">
+                              OPS
                             </span>
-                            <i class="fa fa-caret-down"></i>
-                          </button>
-
-                          <div class="dropdown-container">
-                            <a href="../order/total.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Total</a
-                            >
-                            <a href="../order/pending.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Pending</a
-                            >
-                            <a href="../order/confirm.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Confirmed</a
-                            >
-                            <a href="../order/packageing.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Packaging</a
-                            >
-                            <a href="../order/shipped.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Shipped</a
-                            >
-                            <a href="../order/delivery.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Deliverd</a
-                            >
-                            <a href="../order/return.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Returned</a
-                            >
-                            <a href="../order/failed.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Failed</a
-                            >
-                            <a href="..order/cancel.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Canceled</a
-                            >
+                          </a> -->
+                          <div class="my-2">
+                            <p class="text-blue text-center font-semibold">
+                              Order Management
+                            </p>
                           </div>
-
-                          <button class="dropdown-btn">
+                          <a href="#" class="hover:bg-blue hover:text-white">
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-table-columns"></i>
+                              <i class="fa-solid fa-cart-shopping"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Orders</span
+                            >
+                          </a>
+
+                          <a
+                            href="#"
+                            class="my-2 hover:bg-blue hover:text-white"
+                          >
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-regular fa-credit-card"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate"
+                              >Refund Requests</span
+                            >
+                          </a>
+                          <div class="my-2">
+                            <p class="text-blue text-center font-semibold">
+                              Product Management
+                            </p>
+                          </div>
+
+                          <button class="dropdown-btn my-2">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-bars-staggered"></i>
                             </span>
                             <span class="tracking-wide truncate ml-2">
-                              category
+                              Category Setup
                             </span>
                             <i class="fa fa-caret-down"></i>
                           </button>
@@ -300,78 +278,115 @@
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-sitemap"></i>
+                              <i class="fa-solid fa-star"></i>
                             </span>
                             <span class="tracking-wide truncate ml-2">
-                              product
+                              Brands
                             </span>
                             <i class="fa fa-caret-down"></i>
                           </button>
                           <div class="dropdown-container">
-                            <a href="../product/product.html" class="text-grey"
+                            <a href="../brand/addnew.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i>
+                              Add new</a
+                            >
+                            <a href="../brand/list.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
-                              >Product</a
-                            >
-                            <a href="../product/bluk.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Bluk imports</a
-                            >
+                              >List
+                            </a>
                           </div>
-                          <a href="../Storepage.html">
-                            <span
-                              class="inline-flex justify-center items-center"
-                            >
-                              <i class="fa-solid fa-store"></i>
-                            </span>
-                            <span class="ml-2 tracking-wide truncate">
-                              Store Profile
-                            </span>
-                          </a>
-                          <a href="../Notification.html">
-                            <span
-                              class="inline-flex justify-center items-center"
-                            >
-                              <i class="fa-regular fa-bell"></i>
-                            </span>
-                            <span class="ml-2 tracking-wide truncate">
-                              Notifications
-                            </span>
-                          </a>
-                          <a href="../couponpage.html">
-                            <span
-                              class="inline-flex justify-center items-center"
-                            >
-                              <i class="fa-regular fa-credit-card"></i>
-                            </span>
-                            <span class="ml-2 tracking-wide truncate"
-                              >Coupon</span
-                            >
-                          </a>
-                          <a href="../payout.html">
-                            <span
-                              class="inline-flex justify-center items-center"
-                            >
-                              <i class="fa-regular fa-credit-card"></i>
-                            </span>
-                            <span
-                              class="ml-2 font-semibold tracking-wide truncate"
-                              >Payout</span
-                            >
-                          </a>
-                          <button
-                            class="dropdown-btn h-11 rounded-md bg-blue text-white"
+                          <a
+                            href="Notification.html"
+                            class="my-2 hover:bg-blue hover:text-white"
                           >
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-bag-shopping"></i>
+                              <i class="fa-solid fa-cubes"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Product Attributes
+                            </span>
+                          </a>
+
+                          <button class="dropdown-btn">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-house-flag"></i>
                             </span>
                             <span class="tracking-wide truncate ml-2">
-                              My Profile
+                              Inhouse Products
+                            </span>
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-container">
+                            <a href="./product/product.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i>
+                              Product List</a
+                            >
+                            <a href="./product/bluk.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Bulk Import
+                            </a>
+                          </div>
+
+                          <button class="dropdown-btn my-2">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-suitcase"></i>
+                            </span>
+                            <span class="tracking-wide truncate ml-2">
+                              Seller Products
+                            </span>
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-container">
+                            <a href="../seller/update.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Updated products</a
+                            >
+                            <a
+                              href="../seller/newproduct.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >New products</a
+                            >
+                            <a href="../seller/approved.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Approved products</a
+                            >
+                            <a href="../seller/deniend.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Denied products</a
+                            >
+                          </div>
+
+                          <button class="dropdown-btn active">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-user-lock"></i>
+                            </span>
+                            <span class="tracking-wide truncate ml-2">
+                              User Manager
                             </span>
                             <i class="fa fa-caret-down"></i>
                           </button>
@@ -382,7 +397,7 @@
                               ></i
                               >My Profile</a
                             >
-                            <a href="./addnewemployee.html" class="text-blue"
+                            <a href="./addnewemployee.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
@@ -432,7 +447,7 @@
             </div>
           </div>
         </nav>
-        <section class="w-full px-5">
+        <section class="md:w-75 w-full px-5">
           <div
             id="main"
             class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5"
@@ -440,7 +455,7 @@
             <!-- only for demo start -->
             <div class="w-full">
               <div class="flex flex-col md:mx-4 mx-2 gap-5">
-                <div class="bg-white rounded-3xl p-2">
+                <div class="bg-white rounded-3xl md:p-4">
                   <div class="">
                     <div class="lg:w-[100%%] md:w-[100%]">
                       <div class="mt-4">
@@ -450,87 +465,42 @@
                           <!-- addnew page start  -->
                           <div className="w-screen  ">
                             <div
-                              class="bg-white p-2 rounded-l-full md:w-full shadow-md"
+                              class="bg-white md:rounded-2xl text-center md:py-4 w-75 md:w-full p-4 md:overflow-hidden shadow-md"
                             >
                               <div
-                                class="md:flex flex-wrap md:justify-between grid gap-2 items-center"
+                                class="md:flex grid md:gap-2 gap-4 items-center"
                               >
-                                <div class="md:pl-4">overview</div>
-                                <div class="flex items-center">
-                                  <label
-                                    for="countries"
-                                    class="block text-sm font-medium text-gray-1"
-                                  >
-                                    Show
-                                  </label>
-                                  <select
-                                    id="countries"
-                                    class="text-blue text-sm font-bold mx-2"
-                                  >
-                                    <option selected>this month</option>
-                                    <option value="US">United States</option>
-                                    <option value="CA">Canada</option>
-                                    <option value="FR">France</option>
-                                    <option value="DE">Germany</option>
-                                  </select>
-                                </div>
-                                <div class=" ">
-                                  <div class="">
-                                    <form
-                                      class="border-2 border-black md:rounded-2xl px-10 py-2"
-                                    >
-                                      <input
-                                        type="text"
-                                        placeholder="Search "
-                                        class="text-black w-full border-none inputfoc p-0"
-                                      />
-                                      <!-- <HiSearch class="inline-block text-gray" /> -->
-                                    </form>
-                                  </div>
-                                </div>
-                                <button
-                                  class="bg-blue text-white md:px-6 rounded-xl py-2"
-                                 
-                                >
-                                  add New Product
-                                </button>
-                              </div>
-                            </div>
-                            <div
-                              class="bg-white rounded-2xl py-10 mt-2 md:w-full p-4 overflow-hidden shadow-md"
-                            >
-                              <div class="md:flex gap-4 gap-y-2 items-center">
                                 <a href="../../Myprofile.html">
                                   <div
-                                    class="border-gray border-2 px-10 py-3 mt-2 rounded-xl text-sm text-black"
+                                    class="border-gray border-2 px-10 py-3 rounded-xl text-sm text-black"
                                   >
                                     My Profile
                                   </div></a
                                 >
                                 <a href="./addnewemployee.html">
                                   <div
-                                    class="bg-blue px-2 py-3 rounded-xl mt-2 text-white text-sm"
+                                    class="bg-blue px-2 py-3 rounded-xl text-white text-sm"
                                   >
                                     Add New Employee
                                   </div></a
                                 >
                                 <a href="./employeelist.html">
                                   <div
-                                    class="border-gray border-2 mt-2 px-10 py-3 rounded-xl text-sm text-black"
+                                    class="border-gray border-2 px-10 py-3 rounded-xl text-sm text-black"
                                   >
                                     Employee List
                                   </div></a
                                 >
                                 <a href="./Addrole.html">
                                   <div
-                                    class="border-gray border-2 mt-2 px-10 py-3 rounded-xl text-sm text-black"
+                                    class="border-gray border-2 px-10 py-3 rounded-xl text-sm text-black"
                                   >
                                     Add Role
                                   </div>
                                 </a>
                                 <a href="./rolelist.html">
                                   <div
-                                    class="border-gray border-2 mt-2 px-10 py-3 rounded-xl text-sm text-black"
+                                    class="border-gray border-2 px-10 py-3 rounded-xl text-sm text-black"
                                   >
                                     Role List
                                   </div>
@@ -578,7 +548,7 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div className="my-4">
+                                <div class="my-4">
                                   <h1 class="text-start">
                                     Employee Name <sup class="text-red">*</sup>
                                   </h1>
@@ -586,11 +556,11 @@
                                     type="text"
                                     name=""
                                     id=""
-                                    placeholder="enter your name"
-                                    class="rounded-xl text-sm mt-1 focus:outline-none border-blue border-[1px] md:px-10 px-4 md:w-96 py-2"
+                                    placeholder="name"
+                                    class="rounded-xl text-sm focus:outline-none border-[1px] border-blue md:px-10 px-4 md:w-96 py-2"
                                   />
                                 </div>
-                                <div className="my-4">
+                                <div class="my-4">
                                   <h1 class="text-start">
                                     Gender <sup class="text-red">*</sup>
                                   </h1>
@@ -638,8 +608,8 @@
                                     type="text"
                                     name=""
                                     id=""
-                                    placeholder="Address"
-                                    class="rounded-xl text-sm mt-1 focus:outline-none border-blue border-[1px] md:px-10 px-4 md:w-96 py-2"
+                                    placeholder=" Enter First Mobile No"
+                                    class="rounded-xl text-sm focus:outline-none border-[1px] border-blue md:px-10 px-4 md:w-96 py-2"
                                   />
                                 </div>
                                 <div class="my-4">
@@ -648,12 +618,12 @@
                                     type="text"
                                     name=""
                                     id=""
-                                    placeholder="Address"
-                                    class="rounded-xl text-sm mt-1 focus:outline-none border-blue border-[1px] md:px-10 px-4 md:w-96 py-2"
+                                    placeholder="Enter your second mob no."
+                                    class="rounded-xl text-sm focus:outline-none border-[1px] border-blue md:px-10 px-4 md:w-96 py-2"
                                   />
                                 </div>
 
-                                <div class="flex gap-8 my-4">
+                                <div class="md:flex gap-8 my-4">
                                   <div>
                                     <h1 class="text-start">
                                       Country <sup class="text-red">*</sup>
@@ -663,7 +633,7 @@
                                       name=""
                                       id=""
                                       placeholder="123456"
-                                      class="rounded-xl text-sm mt-1 focus:outline-none border-blue border-[1px] md:px-10 px-4 md:w-44 py-2"
+                                      class="rounded-xl text-sm focus:outline-none border-[1px] border-blue md:px-10 px-4 md:w-44 py-2"
                                     />
                                   </div>
 
@@ -676,12 +646,12 @@
                                       name=""
                                       id=""
                                       placeholder="123456"
-                                      class="rounded-xl text-sm mt-1 focus:outline-none border-blue border-[1px] md:px-10 px-4 md:w-44 py-2"
+                                      class="rounded-xl text-sm focus:outline-none border-[1px] border-blue md:px-10 px-4 md:w-44 py-2"
                                     />
                                   </div>
                                 </div>
 
-                                <div class="flex gap-8 my-4">
+                                <div class="md:flex gap-8 my-4">
                                   <div>
                                     <h1 class="text-start">
                                       City <sup class="text-red">*</sup>
@@ -691,7 +661,7 @@
                                       name=""
                                       id=""
                                       placeholder="INDIA"
-                                      class="rounded-xl text-sm mt-1 focus:outline-none border-blue border-[1px] md:px-10 px-4 md:w-44 py-2"
+                                      class="rounded-xl text-sm focus:outline-none border-[1px] border-blue md:px-10 px-4 md:w-44 py-2"
                                     />
                                   </div>
 
@@ -704,7 +674,7 @@
                                       name=""
                                       id=""
                                       placeholder="(GMT+11:00)"
-                                      class="rounded-xl text-sm mt-1 focus:outline-none border-blue border-[1px] md:px-10 px-4 md:w-44 py-2"
+                                      class="rounded-xl text-sm focus:outline-none border-[1px] border-blue md:px-10 px-4 md:w-44 py-2"
                                     />
                                   </div>
                                 </div>
@@ -718,32 +688,32 @@
                                     name=""
                                     id=""
                                     placeholder="Address"
-                                    class="rounded-xl text-sm mt-1 focus:outline-none border-blue border-[1px] md:px-10 px-4 md:w-96 py-2"
+                                    class="rounded-xl text-sm focus:outline-none border-[1px] border-blue md:px-10 px-4 md:w-96 py-2"
                                   />
                                 </div>
                                 <div className="my-4">
                                   <h1 class="text-start">Pan Card No.</h1>
                                   <input
-                                    type="text"
+                                    type="number"
                                     name=""
                                     id=""
-                                    placeholder="Address"
-                                    class="rounded-xl text-sm mt-1 focus:outline-none border-blue border-[1px] md:px-10 px-4 md:w-96 py-2"
+                                    placeholder="pan card no."
+                                    class="rounded-xl text-sm focus:outline-none border-[1px] border-blue md:px-10 px-4 md:w-96 py-2"
                                   />
                                 </div>
 
                                 <div class="md:flex gap-10 py-4">
-                                  <div class="mt-2">
+                                  <div class="">
                                     <button
-                                      class="text-white w-full bg-green px-12 rounded-lg py-2"
+                                      class="text-white mt-2 w-full bg-green px-12 rounded-lg py-2"
                                     >
                                       Submit
                                     </button>
                                   </div>
 
-                                  <div class="mt-2">
+                                  <div class="">
                                     <button
-                                      class="text-white w-full bg-clifford px-12 rounded-lg py-2"
+                                      class="text-white w-full mt-2 bg-clifford px-12 rounded-lg py-2"
                                     >
                                       Cancel
                                     </button>

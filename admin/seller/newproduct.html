@@ -8,8 +8,7 @@
     <meta name="author" content="name" />
     <meta name="description" content="description here" />
     <meta name="keywords" content="keywords,here" />
-
-    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -53,6 +52,9 @@
               darkblak: "#3C3C3C",
               lightgreen: "#BCEFD8",
               greylight: "#E4E4E4",
+              secondary: "#253D4E",
+              skylight: "#C2F1FE",
+              pink: "#FF2E63",
             },
           },
         },
@@ -74,7 +76,7 @@
             <a href="#" aria-label="Home">
               <span class="text-xl p-0 flex items-center">
                 <img
-                  src="../images/logo1.png"
+                  src="../../images/logo1.png"
                   alt="adminlogo"
                   class="w-[220px]"
                 />
@@ -98,13 +100,13 @@
             >
               <li class="flex-1 md:flex-none md:mr-3 flex">
                 <a class="inline-block text-white no-underline" href="#"
-                  ><img src="../images/flag.png" alt="adminlogo"
+                  ><img src="../../images/flag.png" alt="adminlogo"
                 /></a>
               </li>
               <li class="flex-1 md:flex-none md:mr-3">
                 <a href="#" aria-label="Home">
                   <span class="text-xl p-0">
-                    <img src="../images/icon1.png" alt="adminlogo" />
+                    <img src="../../images/icon1.png" alt="adminlogo" />
                     <!-- <i class="em em-grinning"></i> -->
                   </span>
                 </a>
@@ -113,7 +115,7 @@
               <li class="flex-1 md:flex-none md:mr-3">
                 <a href="#" aria-label="Home">
                   <span class="text-xl p-0">
-                    <img src="../images/icon2.png" alt="adminlogo" />
+                    <img src="../../images/icon2.png" alt="adminlogo" />
                     <!-- <i class="em em-grinning"></i> -->
                   </span>
                 </a>
@@ -130,7 +132,7 @@
                 <a href="#" aria-label="Home">
                   <span class="text-xl p-0">
                     <img
-                      src="../images/profile.png"
+                      src="../../images/profile.png"
                       alt="adminlogo"
                       class="w-[35px]"
                     />
@@ -176,15 +178,18 @@
                           class="relative item-center justify-center flex flex-row items-center h-11 focus:outline-none dark:hover:bg-gray text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
                         >
                           <img
-                            src="../images/admlogo.png"
+                            src="../../images/admlogo.png"
                             alt="img"
-                            class="w-20 h-20"
+                            class="mx-auto"
                           />
-                          <span>Store Name</span>
+                          <!-- <span>Store Name</span> -->
                         </div>
 
                         <div class="sidenav" style="margin-top: 25px">
-                          <a href="./dashboard.html">
+                          <a
+                            href="../dashboard.html"
+                            class="my-2 hover:bg-blue hover:text-white"
+                          >
                             <span
                               class="inline-flex justify-center items-center"
                             >
@@ -194,90 +199,136 @@
                               Dashboard
                             </span>
                           </a>
-
-                          <button class="dropdown-btn">
+                          <!-- <a href="#" class="hover:bg-blue hover:text-white">
                             <span
                               class="inline-flex justify-center items-center"
                             >
                               <i class="fa-solid fa-bag-shopping"></i>
                             </span>
-                            <span class="tracking-wide truncate ml-2">
-                              orders
+                            <span class="ml-2 tracking-wide truncate">
+                              OPS
                             </span>
-                            <i class="fa fa-caret-down"></i>
-                          </button>
-
-                          <div class="dropdown-container">
-                            <a href="./order/total.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Total</a
-                            >
-                            <a href="./order/pending.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Pending</a
-                            >
-                            <a href="./order/confirm.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Confirmed</a
-                            >
-                            <a href="./order/packageing.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Packaging</a
-                            >
-                            <a href="./order/shipped.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Shipped</a
-                            >
-                            <a href="./order/delivery.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Deliverd</a
-                            >
-                            <a href="./order/return.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Returned</a
-                            >
-                            <a href="./order/failed.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Failed</a
-                            >
-                            <a href=".order/cancel.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Canceled</a
-                            >
+                          </a> -->
+                          <div class="my-2">
+                            <p class="text-blue text-center font-semibold">
+                              Order Management
+                            </p>
                           </div>
-
-                          <button class="dropdown-btn">
+                          <a href="#" class="hover:bg-blue hover:text-white">
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-table-columns"></i>
+                              <i class="fa-solid fa-cart-shopping"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Orders</span
+                            >
+                          </a>
+                          <!-- <button class="dropdown-btn my-2">
+                    <span
+                      class="inline-flex justify-center items-center"
+                    >
+                      <i
+                        class="fa-solid fa-cart-shopping "
+                      ></i>
+                    </span>
+                    <span
+                      class="tracking-wide truncate ml-2 "
+                    >
+                      Orders
+                    </span>
+                    <i class="fa fa-caret-down"></i>
+                  </button> -->
+
+                          <!-- <div class="dropdown-container">
+                    <a href="./order/total.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Total</a
+                    >
+                    <a href="./order/pending.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Pending</a
+                    >
+                    <a href="./order/confirm.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Confirmed</a
+                    >
+                    <a href="./order/packageing.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Packaging</a
+                    >
+                    <a href="./order/shipped.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Shipped</a
+                    >
+                    <a href="./order/delivery.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Deliverd</a
+                    >
+                    <a href="./order/return.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Returned</a
+                    >
+                    <a href="./order/failed.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Failed</a
+                    >
+                    <a href=".order/cancel.html" class="text-grey"
+                      ><i
+                        class="fa-solid fa-circle-chevron-right mr-2"
+                      ></i
+                      >Canceled</a
+                    >
+                  </div> -->
+                          <a
+                            href="#"
+                            class="my-2 hover:bg-blue hover:text-white"
+                          >
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-regular fa-credit-card"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate"
+                              >Refund Requests</span
+                            >
+                          </a>
+                          <div class="my-2">
+                            <p class="text-blue text-center font-semibold">
+                              Product Management
+                            </p>
+                          </div>
+
+                          <button class="dropdown-btn my-2">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-bars-staggered"></i>
                             </span>
                             <span class="tracking-wide truncate ml-2">
-                              category
+                              Category Setup
                             </span>
                             <i class="fa fa-caret-down"></i>
                           </button>
                           <div class="dropdown-container">
                             <a
-                              href="./category/categories.html"
+                              href="../category/categories.html"
                               class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
@@ -285,7 +336,7 @@
                               >categories</a
                             >
                             <a
-                              href="./category/subcategories.html"
+                              href="../category/subcategories.html"
                               class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
@@ -293,7 +344,7 @@
                               >sub categories</a
                             >
                             <a
-                              href="./category/subsubcategories.html"
+                              href="../category/subsubcategories.html"
                               class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
@@ -305,88 +356,156 @@
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-sitemap"></i>
+                              <i class="fa-solid fa-star"></i>
                             </span>
                             <span class="tracking-wide truncate ml-2">
-                              product
+                              Brands
                             </span>
                             <i class="fa fa-caret-down"></i>
                           </button>
                           <div class="dropdown-container">
-                            <a href="./product/product.html" class="text-grey"
+                            <a href="../brand/addnew.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Product</a
+                              ></i>
+                              Add new</a
                             >
-                            <a href="./product/bluk.html" class="text-grey"
+                            <a href="../brand/list.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
-                              >Bluk imports</a
+                              >List
+                            </a>
+                          </div>
+                          <a
+                            href="../productatributs.html"
+                            class="my-2 hover:bg-blue hover:text-white"
+                          >
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-cubes"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Product Attributes
+                            </span>
+                          </a>
+
+                          <button class="dropdown-btn">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-house-flag"></i>
+                            </span>
+                            <span class="tracking-wide truncate ml-2">
+                              Inhouse Products
+                            </span>
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-container">
+                            <a href="../product/product.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i>
+                              Product List</a
+                            >
+                            <a href="../product/bluk.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Bulk Import
+                            </a>
+                          </div>
+                          <!-- <a href="Storepage.html">
+                    <span
+                      class="inline-flex justify-center items-center"
+                    >
+                      <i class="fa-solid fa-store"></i>
+                    </span>
+                    <span class="ml-2 tracking-wide truncate">
+                      Store Profile
+                    </span>
+                  </a> -->
+                          <!-- <a href="Notification.html">
+                    <span
+                      class="inline-flex justify-center items-center"
+                    >
+                      <i class="fa-regular fa-bell"></i>
+                    </span>
+                    <span class="ml-2 tracking-wide truncate">
+                      Notifications
+                    </span>
+                  </a> -->
+
+                          <!-- <a href="payout.html">
+                    <span
+                      class="inline-flex justify-center items-center"
+                    >
+                      <i class="fa-regular fa-credit-card"></i>
+                    </span>
+                    <span
+                      class="ml-2 font-semibold tracking-wide truncate"
+                      >Seller Products</span
+                    >
+                  </a> -->
+                          <button class="dropdown-btn active my-2">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-suitcase"></i>
+                            </span>
+                            <span class="tracking-wide truncate ml-2">
+                              Seller Products
+                            </span>
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-container">
+                            <a href="./update.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Updated products</a
+                            >
+                            <a href="./newproduct.html" class="text-blue"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2 text-blue"
+                              ></i
+                              >New products</a
+                            >
+                            <a href="./approved.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Approved products</a
+                            >
+                            <a href="./deniend.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Denied products</a
                             >
                           </div>
-                          <a href="Storepage.html">
+
+                          <button class="dropdown-btn">
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-store"></i>
-                            </span>
-                            <span class="ml-2 tracking-wide truncate">
-                              Store Profile
-                            </span>
-                          </a>
-                          <a href="Notification.html">
-                            <span
-                              class="inline-flex justify-center items-center"
-                            >
-                              <i class="fa-regular fa-bell"></i>
-                            </span>
-                            <span class="ml-2 tracking-wide truncate">
-                              Notifications
-                            </span>
-                          </a>
-                          <a href="couponpage.html">
-                            <span
-                              class="inline-flex justify-center items-center"
-                            >
-                              <i class="fa-regular fa-credit-card"></i>
-                            </span>
-                            <span class="ml-2 tracking-wide truncate"
-                              >Coupon</span
-                            >
-                          </a>
-                          <a href="payout.html">
-                            <span
-                              class="inline-flex justify-center items-center"
-                            >
-                              <i class="fa-regular fa-credit-card"></i>
-                            </span>
-                            <span
-                              class="ml-2 font-semibold tracking-wide truncate"
-                              >Payout</span
-                            >
-                          </a>
-                          <button class="dropdown-btn h-11 rounded-md">
-                            <span
-                              class="inline-flex justify-center items-center"
-                            >
-                              <i class="fa-solid fa-bag-shopping"></i>
+                              <i class="fa-solid fa-user-lock"></i>
                             </span>
                             <span class="tracking-wide truncate ml-2">
-                              My Profile
+                              User Manager
                             </span>
                             <i class="fa fa-caret-down"></i>
                           </button>
                           <div class="dropdown-container">
-                            <a href="../myprofile.html" class="text-grey"
+                            <a href="../../Myprofile.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >My Profile</a
                             >
                             <a
-                              href="./myprofile/addnewemployee.html"
+                              href="../myprofile/addnewemployee.html"
                               class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
@@ -394,21 +513,23 @@
                               >Add New Employee</a
                             >
                             <a
-                              href="./myprofile/employeelist.html"
+                              href="../myprofile/employeelist.html"
                               class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Employee List</a
                             >
-                            <a href="./myprofile/Addrole.html" class="text-grey"
+                            <a
+                              href="../myprofile/Addrole.html"
+                              class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
                               >Add Role</a
                             >
                             <a
-                              href="./myprofile/rolelist.html"
+                              href="../myprofile/rolelist.html"
                               class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
@@ -423,7 +544,7 @@
                               <span
                                 class="inline-flex justify-center items-center"
                                 ><img
-                                  src="../images/logout.png"
+                                  src="../../images/logout.png"
                                   alt="img"
                                   class="w-4 mr-3"
                                 />
@@ -441,276 +562,107 @@
             </div>
           </div>
         </nav>
-        <section class="w-full px-5">
+        <section class="md:w-75 w-full px-5">
           <div
             id="main"
             class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5"
           >
             <!-- only for  start -->
             <div class="w-full">
-              <!-- coupon  page start  -->
+              <!-- notification page start  -->
               <div class="flex flex-col md:mx-4 mx-2 gap-5">
-                <div class="rounded-3xl md:p-4 p-2">
+                <div class="rounded-3xl md:p-4">
                   <div class="">
                     <div class="lg:w-[100%] md:w-[100%]">
                       <div class="mt-4">
                         <div
                           class="relative overflow-hidden md:text-md text-lg"
                         >
-                          <div
-                            class="bg-white md:rounded-l-full p-2 w-75 md:w-full overflow-hidden shadow-md"
-                          >
-                            <div
-                              class="md:flex flex-wrap md:justify-between grid gap-2 items-center"
-                            >
-                              <div class="md:pl-4">overview</div>
-                              <div class="flex items-center">
-                                <label
-                                  for="countries"
-                                  class="block text-sm font-medium text-gray-1"
-                                >
-                                  Show
-                                </label>
-                                <select
-                                  id="countries"
-                                  class="text-blue text-sm font-bold mx-2"
-                                >
-                                  <option selected>this month</option>
-                                  <option value="US">United States</option>
-                                  <option value="CA">Canada</option>
-                                  <option value="FR">France</option>
-                                  <option value="DE">Germany</option>
-                                </select>
-                              </div>
-                              <div class=" ">
-                                <div class="">
-                                  <form
-                                    class="border-2 border-black md:rounded-2xl px-10 py-2"
-                                  >
-                                    <input
-                                      type="text"
-                                      placeholder="Search "
-                                      class="text-black w-full border-none inputfoc p-0"
-                                    />
-                                    <!-- <HiSearch class="inline-block text-gray" /> -->
-                                  </form>
-                                </div>
-                              </div>
-                              <button
-                                class="bg-blue text-white md:px-6 rounded-xl py-2"
-                                onClick="{handleClick}"
-                              >
-                                add New Product
-                              </button>
-                            </div>
-                          </div>
+                          <!-- center div start -->
 
-                          <!--  section start -->
-
-                          <div
-                            class="py-5 mt-4 bg-white w-full rounded-xl shadow-md p-2"
-                          >
-                            <p class="text-blue font-bold">Add New Coupon</p>
-                            <div
-                              class="bg-white rounded-xl shadow-md p-2 w-full"
-                            >
-                              <div class="md:flex grid md:gap-8 gap-4 my-4">
-                                <div class="md:w-[50%] w-[100%]">
-                                  <label class="text-blue font-semibold"
-                                    >Type</label
-                                  >
-                                  <select
-                                    name="cars"
-                                    id="cars"
-                                    style="width: 100%"
-                                    class="w-[100%] bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 w-full px-4 md:w-80 py-2"
-                                  >
-                                    <option value="volvo">
-                                      Discount on Purchase
-                                    </option>
-                                    <option value="saab">Saab</option>
-                                    <option value="mercedes">Mercedes</option>
-                                    <option value="audi">Audi</option>
-                                  </select>
-                                </div>
-
-                                <div class="md:w-[50%] w-[100%]">
-                                  <label class="text-blue font-semibold"
-                                    >title</label
-                                  >
-                                  <input
-                                    type="text"
-                                    name=""
-                                    id=""
-                                    placeholder="title"
-                                    class="w-[100%] bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                    style="width: 100%"
-                                  />
-                                </div>
-                              </div>
-
-                              <div class="md:flex grid md:gap-8 gap-4 my-4">
-                                <div class="grow md:w-[50%] w-[100%]">
-                                  <label class="text-blue font-semibold"
-                                    >Code</label
-                                  >
-                                  <input
-                                    type="text"
-                                    name=""
-                                    id=""
-                                    placeholder="Discount on Purchase "
-                                    class="w-[100%] bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                    style="width: 100%"
-                                  />
-                                </div>
-
-                                <div class="grow md:w-[50%] w-[100%]">
-                                  <label class="text-blue font-semibold"
-                                    >Discount Type</label
-                                  >
-                                  <select
-                                    name="cars"
-                                    id="cars"
-                                    style="width: 100%"
-                                    class="w-[100%] bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 w-full px-4 md:w-80 py-2"
-                                  >
-                                    <option value="volvo">Amount</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="mercedes">Mercedes</option>
-                                    <option value="audi">Audi</option>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="md:flex grid md:gap-8 gap-4 my-4">
-                                <div class="grow md:w-[50%] w-[100%]">
-                                  <label class="text-blue font-semibold"
-                                    >Start Date</label
-                                  >
-                                  <input
-                                    type="date"
-                                    name=""
-                                    id=""
-                                    placeholder="address line 1* "
-                                    style="width: 100%"
-                                    class="w-full bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                    style="width: 100%"
-                                  />
-                                </div>
-
-                                <div class="grow md:w-[50%] w-[100%]">
-                                  <label class="text-blue font-semibold"
-                                    >Expire date</label
-                                  >
-                                  <input
-                                    type="date"
-                                    name=""
-                                    id=""
-                                    placeholder="address line 2"
-                                    class="w-[100%] bg-primary focus:outline-none w-full rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                    style="width: 100%"
-                                  />
-                                </div>
-                              </div>
-                              <div class="md:flex grid md:gap-8 gap-4 my-4">
-                                <div class="grow md:w-[50%] w-[100%]">
-                                  <label class="text-blue font-semibold"
-                                    >limit for same user</label
-                                  >
-                                  <input
-                                    type="text"
-                                    name=""
-                                    id=""
-                                    placeholder="postcode/zipcode* "
-                                    class="w-[100%] bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                    style="width: 100%"
-                                  />
-                                </div>
-
-                                <div class="grow md:w-[50%] w-[100%]">
-                                  <label class="text-blue font-semibold"
-                                    >minimum purchse</label
-                                  >
-
-                                  <input
-                                    type="text"
-                                    name=""
-                                    id=""
-                                    placeholder="city*"
-                                    class="w-[100%] bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                    style="width: 100%"
-                                  />
-                                </div>
-                              </div>
-                              <div
-                                class="md:flex items-end justify-between gap-4 my-4"
-                              >
-                                <div class="grow md:w-[50%] w-[100%] mt-1">
-                                  <label class="text-blue font-semibold"
-                                    >discount</label
-                                  >
-                                  <input
-                                    type="text"
-                                    name=""
-                                    id=""
-                                    placeholder="postcode/zipcode* "
-                                    class="w-[100%] bg-primary focus:outline-none rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                    style="width: 100%"
-                                  />
-                                </div>
-
-                                <div class="grow md:w-[50%] w-[100%] mt-1">
-                                  <input
-                                    type="button"
-                                    value="save details"
-                                    name=""
-                                    id=""
-                                    placeholder="city*"
-                                    class="w-[100%] text-white bg-blue focus:outline-none rounded-xl border-4 border-gray md:px-4 px-4 md:w-80 py-2"
-                                    style="width: 100%"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <hr />
-                          <!--  section end -->
+                          <!-- cneter div end -->
                         </div>
                       </div>
                       <!-- tebel section start -->
                       <div class="mt-4">
                         <div
-                          class="w-[100%] bg-white rounded-xl py-10 items-center md:w-full p-4 shadow-md"
+                          class="w-[100%] bg-white rounded-xl py-5 items-center md:w-full p-4 shadow-md"
                         >
-                          <div class="relative overflow-x-auto">
-                            <p class="text-blue font-semibold">Coupon Table</p>
+                          <h4 class="font-semibold text-secondary text-2xl">
+                            Seller Product List
+                          </h4>
+                          <div class="relative overflow-x-auto mt-4">
+                            <div class="flex justify-between items-center">
+                              <div>
+                                <div class="flex border border-blue rounded">
+                                  <input
+                                    type="text"
+                                    class="block w-full px-5 py-2 text-blue bg-white border rounded-md focus:border-blue focus:ring-blue focus:outline-none focus:ring focus:ring-opacity-40 focus:border-none"
+                                    placeholder="Search by Product Name"
+                                  />
+                                  <button
+                                    class="px-10 text-white bg-blue border-l rounded"
+                                  >
+                                    Search
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+
                             <table
-                              class="w-[100%] mt-4 text-sm text-left text-gray-500"
+                              class="w-[100%] mt-8 text-sm text-left text-gray-500"
                             >
                               <thead class="     ">
                                 <tr class="text-xs">
-                                  <th scope="col" class="">COUPON TYPE</th>
-                                  <th scope="col" class="  ">TITLE</th>
-                                  <th scope="col" class=" ">USER LIMIT</th>
-                                  <th scope="col" class=" ">
-                                    MINIMUM PURCHASE
+                                  <th scope="col" class="text-center">SL</th>
+                                  <th scope="col" class="text-center">
+                                    Product Name
                                   </th>
-                                  <th scope="col" class="">DISCOUNT</th>
-                                  <th scope="col" class=" ">EXPIRE DATE</th>
-                                  <th scope="col" class="">status</th>
-                                  <th scope="col" class="">action</th>
+                                  <th scope="col" class="text-center">
+                                    Product Type
+                                  </th>
+                                  <th scope="col" class="text-center">
+                                    Purchase Price
+                                  </th>
+                                  <th scope="col" class="text-center">
+                                    Selling Price
+                                  </th>
+                                  <th scope="col" class="text-center">
+                                    Show As Featured
+                                  </th>
+                                  <th scope="col" class="text-center">
+                                    Active Status
+                                  </th>
+
+                                  <th scope="col" class="text-center">
+                                    action
+                                  </th>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr class="bg-white border-b-4 border-gray">
-                                  <td class="py-5 text-clifford">
-                                    Discount On Purchase
+                                  <td class="py-5 text-clifford text-center">
+                                    0
                                   </td>
-                                  <td class="py-5">christmas</td>
-                                  <td class="py-5 text-center">10</td>
-                                  <td class="py-5 text-center">10</td>
-                                  <td class="py-5">10%</td>
-                                  <td class="py-5">May,03,2022</td>
-                                  <td class="py-5">
+                                  <td class="py-5 text-center">
+                                    <img
+                                      src="../../images/catim2.png"
+                                      alt="img"
+                                      class="mx-auto"
+                                    />
+                                  </td>
+                                  <td class="py-5 text-center">Bags & Shoes</td>
+                                  <td class="py-5 text-center">$500</td>
+                                  <td class="py-5 text-center">$500</td>
+                                  <td class="py-5 text-center">
+                                    <button
+                                      class="text-green bg-lightgreen font-semibold px-1 py-1 rounded-md"
+                                    >
+                                      Approved
+                                    </button>
+                                  </td>
+                                  <!-- <td class="py-5">bank account</td> -->
+                                  <td class="py-5 text-center">
                                     <input
                                       class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
                                       type="checkbox"
@@ -723,7 +675,7 @@
                                     >
                                     </label>
                                   </td>
-                                  <td class="py-5 flex gap-2">
+                                  <td class="py-5 flex gap-2 justify-center">
                                     <i
                                       class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
                                     ></i>
@@ -735,15 +687,28 @@
                                 </tr>
 
                                 <tr class="bg-white border-b-4 border-gray">
-                                  <td class="py-5 text-clifford">
-                                    Discount On Purchase
+                                  <td class="py-5 text-clifford text-center">
+                                    1
                                   </td>
-                                  <td class="py-5">christmas</td>
-                                  <td class="py-5 text-center">10</td>
-                                  <td class="py-5 text-center">10</td>
-                                  <td class="py-5">10%</td>
-                                  <td class="py-5">May,03,2022</td>
-                                  <td class="py-5">
+                                  <td class="py-5 text-center">
+                                    <img
+                                      src="../../images/catim2.png"
+                                      alt="img"
+                                      class="mx-auto"
+                                    />
+                                  </td>
+                                  <td class="py-5 text-center">Bags & Shoes</td>
+                                  <td class="py-5 text-center">$500</td>
+                                  <td class="py-5 text-center">$500</td>
+                                  <td class="py-5 text-center">
+                                    <button
+                                      class="text-green bg-lightgreen font-semibold px-1 py-1 rounded-md"
+                                    >
+                                      Approved
+                                    </button>
+                                  </td>
+                                  <!-- <td class="py-5">bank account</td> -->
+                                  <td class="py-5 text-center">
                                     <input
                                       class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
                                       type="checkbox"
@@ -756,7 +721,7 @@
                                     >
                                     </label>
                                   </td>
-                                  <td class="py-5 flex gap-2">
+                                  <td class="py-5 flex gap-2 justify-center">
                                     <i
                                       class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
                                     ></i>
@@ -767,15 +732,27 @@
                                   </td>
                                 </tr>
                                 <tr class="bg-white border-b-4 border-gray">
-                                  <td class="py-5 text-clifford">
-                                    Discount On Purchase
+                                  <td class="py-5 text-clifford text-center">
+                                    3
                                   </td>
-                                  <td class="py-5">christmas</td>
-                                  <td class="py-5 text-center">10</td>
-                                  <td class="py-5 text-center">10</td>
-                                  <td class="py-5">10%</td>
-                                  <td class="py-5">May,03,2022</td>
-                                  <td class="py-5">
+                                  <td class="py-5 text-center text-center">
+                                    <img
+                                      src="../../images/catim3.png"
+                                      alt="img"
+                                      class="mx-auto"
+                                    />
+                                  </td>
+                                  <td class="py-5 text-center">Bags & Shoes</td>
+                                  <td class="py-5 text-center">$500</td>
+                                  <td class="py-5 text-center">$500</td>
+                                  <td class="py-5 text-center">
+                                    <button
+                                      class="text-green bg-lightgreen font-semibold px-1 py-1 rounded-md"
+                                    >
+                                      Approved
+                                    </button>
+                                  </td>
+                                  <td class="py-5 text-center">
                                     <input
                                       class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
                                       type="checkbox"
@@ -788,39 +765,9 @@
                                     >
                                     </label>
                                   </td>
-                                  <td class="py-5 flex gap-2">
-                                    <i
-                                      class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
-                                    ></i>
+                                  <!-- <td class="py-5">bank account</td> -->
 
-                                    <i
-                                      class="fa-sharp text-center fa-solid fa-trash text-clifford border-2 w-6 h-6 rounded-md"
-                                    ></i>
-                                  </td>
-                                </tr>
-                                <tr class="bg-white border-b-4 border-gray">
-                                  <td class="py-5 text-clifford">
-                                    Discount On Purchase
-                                  </td>
-                                  <td class="py-5">christmas</td>
-                                  <td class="py-5 text-center">10</td>
-                                  <td class="py-5 text-center">10</td>
-                                  <td class="py-5">10%</td>
-                                  <td class="py-5">May,03,2022</td>
-                                  <td class="py-5">
-                                    <input
-                                      class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
-                                      type="checkbox"
-                                      role="switch"
-                                      id="flexSwitchCheckDefault"
-                                    />
-                                    <label
-                                      class="inline-block pl-[0.15rem] hover:cursor-pointer"
-                                      for="flexSwitchCheckDefault"
-                                    >
-                                    </label>
-                                  </td>
-                                  <td class="py-5 flex gap-2">
+                                  <td class="py-5 flex gap-2 justify-center">
                                     <i
                                       class="fa-solid text-center fa-pen-to-square text-blue border-2 w-6 h-6 rounded-md"
                                     ></i>
@@ -846,6 +793,7 @@
         </section>
       </div>
     </main>
+
     <script>
       /*Toggle dropdown list*/
       function toggleDD(myDropMenu) {

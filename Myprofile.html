@@ -79,12 +79,16 @@
             class="flex flex-shrink md:w-1/3 justify-center md:justify-start text-white"
           >
             <a href="#" aria-label="Home">
-              <span class="text-xl p-0 flex justify-center items-center">
-                <img src="./images/logo1.png" alt="adminlogo inline" />
-                <!-- <i class="em em-grinning"></i> -->
+              <span class="text-xl p-0 flex items-center">
+                <img
+                  src="./images/logo1.png"
+                  alt="adminlogo"
+                  class="w-[220px]"
+                />
                 <i
                   class="fa-solid fa-bars-staggered text-blue inline ml-3 openbtn"
                 ></i>
+                <!-- <i class="em em-grinning"></i> -->
               </span>
             </a>
           </div>
@@ -1032,13 +1036,16 @@
                           <img
                             src="./images/admlogo.png"
                             alt="img"
-                            class="w-20 h-20"
+                            class="mx-auto"
                           />
-                          <span>Store Name</span>
+                          <!-- <span>Store Name</span> -->
                         </div>
 
                         <div class="sidenav" style="margin-top: 25px">
-                          <a href="./admin/dashboard.html">
+                          <a
+                            href="./admin/dashboard.html"
+                            class="my-2 hover:bg-blue hover:text-white"
+                          >
                             <span
                               class="inline-flex justify-center items-center"
                             >
@@ -1048,106 +1055,65 @@
                               Dashboard
                             </span>
                           </a>
-
-                          <button class="dropdown-btn">
+                          <!-- <a href="#" class="hover:bg-blue hover:text-white">
                             <span
                               class="inline-flex justify-center items-center"
                             >
                               <i class="fa-solid fa-bag-shopping"></i>
                             </span>
-                            <span class="tracking-wide truncate ml-2">
-                              orders
+                            <span class="ml-2 tracking-wide truncate">
+                              OPS
                             </span>
-                            <i class="fa fa-caret-down"></i>
-                          </button>
-
-                          <div class="dropdown-container">
-                            <a href="./admin/order/total.html" class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Total</a
-                            >
-                            <a
-                              href="./admin/order/pending.html"
-                              class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Pending</a
-                            >
-                            <a
-                              href="./admin/order/confirm.html"
-                              class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Confirmed</a
-                            >
-                            <a
-                              href="./admin/order/packageing.html"
-                              class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Packaging</a
-                            >
-                            <a
-                              href="./admin/order/shipped.html"
-                              class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Shipped</a
-                            >
-                            <a
-                              href="./admin/order/delivery.html"
-                              class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Deliverd</a
-                            >
-                            <a
-                              href="./admin/order/return.html"
-                              class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Returned</a
-                            >
-                            <a
-                              href="./admin/order/failed.html"
-                              class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Failed</a
-                            >
-                            <a
-                              href="./admin/order/cancel.html"
-                              class="text-grey"
-                              ><i
-                                class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Canceled</a
-                            >
+                          </a> -->
+                          <div class="my-2">
+                            <p class="text-blue text-center font-semibold">
+                              Order Management
+                            </p>
                           </div>
-
-                          <button class="dropdown-btn">
+                          <a href="#" class="hover:bg-blue hover:text-white">
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-table-columns"></i>
+                              <i class="fa-solid fa-cart-shopping"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Orders</span
+                            >
+                          </a>
+
+                          <a
+                            href="#"
+                            class="my-2 hover:bg-blue hover:text-white"
+                          >
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-regular fa-credit-card"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate"
+                              >Refund Requests</span
+                            >
+                          </a>
+                          <div class="my-2">
+                            <p class="text-blue text-center font-semibold">
+                              Product Management
+                            </p>
+                          </div>
+
+                          <button class="dropdown-btn my-2">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-bars-staggered"></i>
                             </span>
                             <span class="tracking-wide truncate ml-2">
-                              category
+                              Category Setup
                             </span>
                             <i class="fa fa-caret-down"></i>
                           </button>
                           <div class="dropdown-container">
                             <a
-                              href="./admin//category/categories.html"
+                              href="./admin/category/categories.html"
                               class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
@@ -1175,10 +1141,51 @@
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-sitemap"></i>
+                              <i class="fa-solid fa-star"></i>
                             </span>
                             <span class="tracking-wide truncate ml-2">
-                              product
+                              Brands
+                            </span>
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-container">
+                            <a
+                              href="./admin/brand/addnew.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i>
+                              Add new</a
+                            >
+                            <a href="./admin/brand/list.html" class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >List
+                            </a>
+                          </div>
+                          <a
+                            href="./admin/productatributs.html"
+                            class="my-2 hover:bg-blue hover:text-white"
+                          >
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-cubes"></i>
+                            </span>
+                            <span class="ml-2 tracking-wide truncate">
+                              Product Attributes
+                            </span>
+                          </a>
+
+                          <button class="dropdown-btn">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-house-flag"></i>
+                            </span>
+                            <span class="tracking-wide truncate ml-2">
+                              Inhouse Products
                             </span>
                             <i class="fa fa-caret-down"></i>
                           </button>
@@ -1188,91 +1195,76 @@
                               class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
-                              ></i
-                              >Product</a
+                              ></i>
+                              Product List</a
                             >
-                            <a
-                              href="./admin/product /bluk.html"
-                              class="text-grey"
+                            <a href="./product/bluk.html" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
-                              >Bluk imports</a
-                            >
+                              >Bulk Import
+                            </a>
                           </div>
 
-                          <a href="./admin/Storepage.html">
-                            <!-- <div
-                              class="relative flex flex-row items-center focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
-                            > -->
+                          <button class="dropdown-btn my-2">
                             <span
                               class="inline-flex justify-center items-center"
                             >
-                              <i class="fa-solid fa-store"></i>
-                            </span>
-                            <span class="ml-2 tracking-wide truncate">
-                              Store Profile
-                            </span>
-                            <!-- </div> -->
-                          </a>
-                          <a href="./admin/Notification.html">
-                            <!-- <div
-                              class="relative flex flex-row items-center focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
-                            > -->
-                            <span
-                              class="inline-flex justify-center items-center"
-                            >
-                              <i class="fa-regular fa-bell"></i>
-                            </span>
-                            <span class="ml-2 tracking-wide truncate">
-                              Notifications
-                            </span>
-                            <!-- </div> -->
-                          </a>
-                          <a href="./admin/couponpage.html">
-                            <!-- <div
-                              class="relative flex flex-row items-center focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
-                            > -->
-                            <span
-                              class="inline-flex justify-center items-center"
-                            >
-                              <i class="fa-regular fa-credit-card"></i>
-                            </span>
-                            <span class="ml-2 tracking-wide truncate"
-                              >Coupon</span
-                            >
-                            <!-- </div> -->
-                          </a>
-                          <a href="./admin/payout.html">
-                            <div
-                              class="relative flex flex-row items-center focus:outline-none dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6"
-                            >
-                              <span
-                                class="inline-flex justify-center items-center"
-                              >
-                                <i class="fa-regular fa-credit-card"></i>
-                              </span>
-                              <span
-                                class="ml-2 font-semibold tracking-wide truncate"
-                                >Payout</span
-                              >
-                            </div>
-                          </a>
-                          <button
-                            class="dropdown-btn rounded-md bg-blue h-11 text-white"
-                          >
-                            <span
-                              class="inline-flex justify-center items-center"
-                            >
-                              <i class="fa-solid fa-bag-shopping"></i>
+                              <i class="fa-solid fa-suitcase"></i>
                             </span>
                             <span class="tracking-wide truncate ml-2">
-                              My Profile
+                              Seller Products
                             </span>
                             <i class="fa fa-caret-down"></i>
                           </button>
                           <div class="dropdown-container">
-                            <a href="#" class="text-blue"
+                            <a
+                              href="./admin/seller/update.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Updated products</a
+                            >
+                            <a
+                              href="./admin/seller/newproduct.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >New products</a
+                            >
+                            <a
+                              href="./admin/seller/approved.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Approved products</a
+                            >
+                            <a
+                              href="./admin/seller/deniend.html"
+                              class="text-grey"
+                              ><i
+                                class="fa-solid fa-circle-chevron-right mr-2"
+                              ></i
+                              >Denied products</a
+                            >
+                          </div>
+
+                          <button class="dropdown-btn active">
+                            <span
+                              class="inline-flex justify-center items-center"
+                            >
+                              <i class="fa-solid fa-user-lock"></i>
+                            </span>
+                            <span class="tracking-wide truncate ml-2">
+                              User Manager
+                            </span>
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-container">
+                            <a href="" class="text-grey"
                               ><i
                                 class="fa-solid fa-circle-chevron-right mr-2"
                               ></i
@@ -1320,14 +1312,13 @@
                                 ><img
                                   src="./images/logout.png"
                                   alt="img"
-                                  class="w-4 mr-2"
+                                  class="w-4 mr-3"
                                 />
                               </span>
                               <span class="tracking-wide truncate">Logout</span>
                             </div>
                           </a>
                         </div>
-
                         <!-- end dropwdown -->
                       </div>
                     </div>
@@ -1337,7 +1328,7 @@
             </div>
           </div>
         </nav>
-        <section class="w-full px-5">
+        <section class="md:w-75 w-full px-5">
           <div
             id="main"
             class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5"
@@ -1345,67 +1336,22 @@
             <!-- only for demo start -->
             <div class="w-full">
               <div class="flex flex-col md:mx-4 mx-2 gap-5">
-                <div class="bg-white rounded-3xl md:p-4">
-                  <div class="">
+                <div class="bg-white rounded-3xl p-2 md:p-8">
+                  <div class="flex lg:flex-nowrap gap-4 flex-wrap box-border">
                     <div class="lg:w-[100%] md:w-[100%]">
                       <div class="mt-4">
                         <div
                           class="relative overflow-hidden md:text-md text-lg"
                         >
-                          <div
-                            class="bg-white md:rounded-l-full w-75 p-2 md:w-full overflow-hidden shadow-md"
-                          >
-                            <div
-                              class="md:flex flex-wrap md:justify-between grid gap-2 items-center"
-                            >
-                              <div class="md:pl-4">overview</div>
-                              <div class="flex items-center">
-                                <label
-                                  for="countries"
-                                  class="block text-sm font-medium text-gray-1"
-                                >
-                                  Show
-                                </label>
-                                <select
-                                  id="countries"
-                                  class="text-blue inputfoc border-none text-sm font-bold mx-2"
-                                >
-                                  <option selected>this month</option>
-                                  <option value="US">United States</option>
-                                  <option value="CA">Canada</option>
-                                  <option value="FR">France</option>
-                                  <option value="DE">Germany</option>
-                                </select>
-                              </div>
-                              <div class="">
-                                <form
-                                  class="border-2 border-black md:rounded-2xl px-10 py-2"
-                                >
-                                  <input
-                                    type="text"
-                                    placeholder="Search "
-                                    class="text-black w-full border-none inputfoc p-0"
-                                  />
-                                  <!-- <HiSearch class="inline-block text-gray" /> -->
-                                </form>
-                              </div>
-                              <button
-                                class="bg-blue text-white md:px-3 rounded-xl py-2"
-                                onClick="{handleClick}"
-                              >
-                                add New Product
-                              </button>
-                            </div>
-                          </div>
                           <!-- head navbar start -->
                           <div
                             class="bg-white md:rounded-2xl text-center md:py-4 w-75 md:w-full p-4 md:overflow-hidden shadow-md"
                           >
                             <div
-                              class="md:flex grid md:gap-3 gap-4 items-center"
+                              class="md:flex grid md:gap-2 gap-4 items-center"
                             >
                               <div
-                                class="bg-blue px-10 py-3 rounded-xl text-white text-sm"
+                                class="bg-blue md:px-10 px-2 py-3 rounded-xl text-white text-sm"
                               >
                                 My Profile
                               </div>
@@ -1450,7 +1396,7 @@
                             </div>
 
                             <div
-                              class="bg-white justify-between rounded-xl gap-x-10 py-10 md:flex items-center md:w-full w-full md:px-10 px-2 overflow-hidden shadow-md"
+                              class="bg-white justify-between rounded-xl gap-x-10 py-10 md:flex items-center md:w-full w-[90%] md:px-10 px-2 overflow-hidden shadow-md"
                             >
                               <div>
                                 <div class="my-4">

@@ -517,8 +517,6 @@ nav .profile-details i{
 .sidenav a, .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
- 
-  
   display: block;
   border: none;
   background: none;
@@ -526,6 +524,13 @@ nav .profile-details i{
   text-align: left;
   cursor: pointer;
   outline: none;
+  color: black;
+ 
+}
+.active, .dropdown-btn:hover {
+  /* background-color: #666; */
+  color: white !important;
+  background-color: #073B74;
 }
 
 
@@ -752,6 +757,6 @@ box-shadow: none !important;
   
 }
 .active{
-  background-color: #073B74;
+  background-color: #073B74 !important;
   color: white;
 }
